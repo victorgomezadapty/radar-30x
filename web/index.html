@@ -89,6 +89,20 @@ button { font: inherit; }
 .pasos li.hecho .dot { background: var(--emergente); border-color: var(--emergente); }
 @keyframes gira { to { transform: rotate(360deg); } }
 .log { background: var(--hero); color: #cbd5e1; font: 12px/1.5 ui-monospace, Consolas, monospace; border-radius: 10px; padding: 10px 12px; max-height: 180px; overflow: auto; white-space: pre-wrap; }
+.carga { position: fixed; inset: 0; background: rgba(7, 11, 22, .72); display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 50; }
+.carga-card { background: var(--panel); color: var(--ink); border-radius: 18px; width: min(560px, 100%); padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,.35); max-height: 90vh; overflow: auto; }
+.carga-cab { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px; }
+.carga-cab h3 { margin: 0 0 2px; font-size: 19px; letter-spacing: -.01em; }
+.carga-cab p { margin: 0; }
+.carga-reloj { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--muted); }
+.spinner { width: 34px; height: 34px; border-radius: 50%; border: 4px solid var(--accent-soft); border-top-color: var(--accent); animation: gira .9s linear infinite; flex: none; }
+.spinner.ok { animation: none; border-color: var(--emergente); background: var(--emergente); }
+.spinner.mal { animation: none; border-color: var(--down); background: var(--down); }
+.carga .pasos li { padding: 6px 0; font-size: 15px; }
+.carga-error { background: #fee2e2; color: #991b1b; border-radius: 10px; padding: 12px 14px; margin: 12px 0; font-size: 14px; }
+.carga-det { margin-top: 12px; font-size: 13px; color: var(--muted); }
+.carga-det .log { margin-top: 8px; }
+.carga-acc { display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px; }
 .ultima { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 
 /* resultados */
@@ -211,10 +225,6 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
         <label class="check"><input type="checkbox" id="recolectar" checked> Traer datos nuevos de las redes</label>
         <span class="nota" id="nota-correr">Tarda entre 1 y 3 minutos.</span>
       </div>
-      <div class="progreso" id="progreso">
-        <ul class="pasos" id="pasos"></ul>
-        <div class="log" id="log"></div>
-      </div>
       <div class="ultima" id="ultima"></div>
     </div>
   </div>
@@ -322,6 +332,26 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
   </div>
 </section>
 
+<div class="carga oculto" id="carga" role="dialog" aria-modal="true" aria-labelledby="carga-titulo">
+  <div class="carga-card">
+    <div class="carga-cab">
+      <div class="spinner" id="carga-spin"></div>
+      <div>
+        <h3 id="carga-titulo">Lanzando la corrida…</h3>
+        <p id="carga-sub" class="nota">Esto tarda entre 2 y 5 minutos. Puedes dejar esta pestaña abierta.</p>
+      </div>
+      <div class="carga-reloj" id="carga-reloj">0:00</div>
+    </div>
+    <ul class="pasos" id="pasos"></ul>
+    <div class="carga-error oculto" id="carga-error"></div>
+    <details class="carga-det"><summary>Ver detalle técnico</summary><div class="log" id="log"></div></details>
+    <div class="carga-acc">
+      <a class="btn chico oculto" id="carga-gh" target="_blank" rel="noopener">Ver en GitHub Actions</a>
+      <button class="btn chico oculto" id="carga-cerrar">Cerrar</button>
+    </div>
+  </div>
+</div>
+
 <script src="data.js"></script>
 <script>
 const SENALES = { fuerza: "Fuerza", aceleracion: "Aceleración", temprano: "Temprano", multired: "Multired", frescura: "Frescura" };
@@ -380,6 +410,7 @@ async function init() {
   $("r-costo").onclick = () => cambiarTab("costo");
   $("reset").onclick = () => { pesos = { ...DATA[sector].pesos }; pintarPesos(); pintarTendencias(); };
   $("pago-actual").oninput = pintarAhorro;
+  $("carga-cerrar").onclick = cerrarCarga;
   if (location.hash === "#resultados" && DATA[sectorInicio]) abrirResultados(sectorInicio);
   if (servidor) seguirProgreso(true);
 }
@@ -415,31 +446,71 @@ function pintarInicio() {
 }
 const redesElegidas = () => [...document.querySelectorAll("#redes input:checked")].map(i => i.value);
 
-let generadoAntes = null;
+let generadoAntes = null, relojInicio = null, relojTimer = null;
+
+function abrirCarga(titulo, sub) {
+  $("carga").classList.remove("oculto");
+  $("carga-spin").className = "spinner";
+  $("carga-error").classList.add("oculto");
+  $("carga-cerrar").classList.add("oculto");
+  estadoCarga(titulo, sub);
+  if (!relojTimer) {
+    relojInicio = relojInicio || Date.now() / 1000;
+    relojTimer = setInterval(() => {
+      const s = Math.max(0, Math.round(Date.now() / 1000 - relojInicio));
+      $("carga-reloj").textContent = `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+    }, 500);
+  }
+}
+function estadoCarga(titulo, sub) {
+  if (titulo) $("carga-titulo").textContent = titulo;
+  if (sub !== undefined) $("carga-sub").textContent = sub;
+}
+function pararReloj() { clearInterval(relojTimer); relojTimer = null; }
+function errorCarga(msg, url) {
+  pararReloj();
+  $("carga").classList.remove("oculto");
+  $("carga-spin").className = "spinner mal";
+  estadoCarga("No se pudo completar la corrida", "");
+  $("carga-error").textContent = msg;
+  $("carga-error").classList.remove("oculto");
+  $("carga-cerrar").classList.remove("oculto");
+  if (url) { $("carga-gh").href = url; $("carga-gh").classList.remove("oculto"); }
+  $("correr").disabled = false;
+}
+function cerrarCarga() { pararReloj(); relojInicio = null; $("carga").classList.add("oculto"); }
 
 async function correr() {
   const redes = redesElegidas();
   if (!redes.length) { $("nota-correr").textContent = "Elige al menos una red."; return; }
   const clave = $("clave-acceso").value.trim();
-  if (MODO === "remoto" && !clave) { $("nota-correr").textContent = "Escribe el código de acceso."; return; }
+  if (MODO === "remoto" && !clave) { $("nota-correr").textContent = "Escribe el código de acceso."; $("clave-acceso").focus(); return; }
   $("correr").disabled = true;
   generadoAntes = DATA[sectorInicio]?.generado || null;
+  relojInicio = Date.now() / 1000;
+  $("pasos").innerHTML = ""; $("log").textContent = ""; $("carga-gh").classList.add("oculto");
+  abrirCarga("Lanzando la corrida…", MODO === "remoto" ? "Enviando la orden a GitHub Actions." : "Preparando el radar.");
   const r = await fetch("/api/correr", { method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ sector: sectorInicio, redes, recolectar: $("recolectar").checked, clave }) }).catch(() => null);
   if (!r || !r.ok) {
     const e = r ? await r.json().catch(() => ({})) : {};
-    $("nota-correr").textContent = e.error || "No se pudo lanzar la corrida."; $("correr").disabled = false; return;
+    if (r && r.status === 401) { guardar("radar-clave", ""); $("clave-acceso").value = ""; }
+    errorCarga(r && r.status === 401 ? "El código de acceso no es correcto. Revísalo (mayúsculas, minúsculas y guiones) y vuelve a intentarlo."
+      : r && r.status === 409 ? "Ya hay una corrida en curso. Espera a que termine; abajo puedes seguirla."
+      : (e.error || "No se pudo lanzar la corrida. Revisa tu conexión e inténtalo de nuevo."));
+    if (r && r.status === 409) seguirProgreso(false);
+    return;
   }
   if (MODO === "remoto") guardar("radar-clave", clave);
-  $("progreso").classList.add("on");
-  $("log").textContent = "Corrida lanzada. Esperando a GitHub Actions…";
+  estadoCarga("Corrida en cola", MODO === "remoto" ? "GitHub Actions está preparando una máquina para correr el radar (unos 20 a 40 segundos)." : "");
   setTimeout(() => seguirProgreso(false), MODO === "remoto" ? 4000 : 800);
 }
 
 function pintarPasos(e) {
   if (e.pasos) {  // remoto: pasos del flujo de GitHub Actions
     const cls = { hecho: "hecho", activo: "activo", omitido: "hecho", error: "", pendiente: "" };
-    $("pasos").innerHTML = e.pasos.map(p => `<li class="${cls[p.estado]}"><span class="dot"></span>${esc(p.nombre)}${p.estado === "omitido" ? " (omitido)" : ""}${p.estado === "error" ? " (falló)" : ""}</li>`).join("");
+    $("pasos").innerHTML = e.pasos.map(p => `<li class="${cls[p.estado]}"><span class="dot"></span>${esc(p.nombre)}${p.estado === "omitido" ? " (omitido)" : ""}${p.estado === "error" ? " (falló)" : ""}</li>`).join("")
+      + `<li class="${e.corriendo ? "" : "activo"}"><span class="dot"></span>Mostrar resultados en esta página</li>`;
     return;
   }
   const actual = Math.max(0, ...e.log.map(l => (l.match(/^PASO (\d)\/6/) || [0, 0])[1] * 1));
@@ -450,34 +521,57 @@ function pintarPasos(e) {
   }).join("");
 }
 
+function textoEstado(e) {
+  if (e.pasos) {
+    const activo = e.pasos.find(p => p.estado === "activo");
+    if (!activo) return ["Preparando la máquina en GitHub Actions…", "Instalando Python y las dependencias."];
+    return {
+      "Recolectar redes": ["Recolectando las redes…", "YouTube, Reddit, Instagram, LinkedIn, TikTok y Hacker News."],
+      "Analizar con JEV y DeepSeek": ["Analizando con JEV y DeepSeek…", "Clasificando cada pieza, calculando el ranking y redactando ideas."],
+      "Guardar y publicar resultados": ["Guardando resultados…", "Subiendo la corrida para publicarla."],
+    }[activo.nombre] || [activo.nombre, ""];
+  }
+  const ult = [...(e.log || [])].reverse().find(l => /^PASO/.test(l));
+  return [ult ? ult.replace(/^PASO \d\/6 /, "") + "…" : "Corriendo el radar…", ""];
+}
+
 async function seguirProgreso(soloSiCorre) {
   const r = await fetch("/api/estado", { cache: "no-store" }).catch(() => null);
   if (!r || !r.ok) { if (!soloSiCorre) setTimeout(() => seguirProgreso(false), 4000); return; }
   const e = await r.json();
   if (soloSiCorre && !e.corriendo) return;
-  $("progreso").classList.add("on");
+  if (e.inicio && (!relojInicio || soloSiCorre)) relojInicio = e.inicio;
+  abrirCarga();
   $("correr").disabled = e.corriendo;
+  if (e.url) { $("carga-gh").href = e.url; $("carga-gh").classList.remove("oculto"); }
   pintarPasos(e);
-  const seg = Math.max(0, Math.round(((e.fin || Date.now() / 1000) - (e.inicio || Date.now() / 1000))));
-  $("log").textContent = (e.log || []).slice(-60).join("\n") + (e.corriendo ? `\n… ${seg} s` : "");
+  $("log").textContent = (e.log || []).slice(-60).join("\n");
   $("log").scrollTop = 1e9;
-  if (e.corriendo) { $("nota-correr").textContent = `Corriendo · ${seg} s`; setTimeout(() => seguirProgreso(false), MODO === "remoto" ? 4000 : 1500); return; }
-  if (e.error) { $("nota-correr").innerHTML = "Error: " + esc(e.error) + (e.url ? ` <a href="${esc(e.url)}" target="_blank" rel="noopener">ver detalle</a>` : ""); $("correr").disabled = false; return; }
-  if (MODO === "remoto" && !soloSiCorre) return esperarPublicacion(e.sector || sectorInicio, 0);
-  $("nota-correr").textContent = `Terminó en ${seg} s.`;
+  if (e.corriendo) {
+    const [t, sub] = textoEstado(e); estadoCarga(t, sub);
+    setTimeout(() => seguirProgreso(false), MODO === "remoto" ? 4000 : 1500); return;
+  }
+  if (e.error) return errorCarga(e.error, e.url);
+  if (MODO === "remoto") return esperarPublicacion(e.sector || sectorInicio, 0);
   await cargarDatos();
+  terminarCarga(e.sector || sectorInicio);
+}
+
+function terminarCarga(s) {
+  pararReloj();
+  $("carga-spin").className = "spinner ok";
+  estadoCarga("¡Listo!", "Abriendo los resultados…");
+  $("correr").disabled = false;
   pintarInicio();
-  if (!soloSiCorre) abrirResultados(e.sector);
+  setTimeout(() => { cerrarCarga(); abrirResultados(s); }, 900);
 }
 
 async function esperarPublicacion(s, intento) {
   // GitHub Actions ya terminó; Vercel tarda un momento en publicar los resultados nuevos
-  $("nota-correr").textContent = "Publicando resultados…";
+  estadoCarga("Publicando los resultados…", "La corrida terminó. Vercel está publicando la versión nueva (unos 30 a 60 segundos).");
   await cargarDatos().catch(() => {});
-  if (DATA[s] && DATA[s].generado !== generadoAntes) {
-    $("nota-correr").textContent = "Listo."; $("correr").disabled = false; pintarInicio(); return abrirResultados(s);
-  }
-  if (intento > 45) { $("nota-correr").textContent = "La corrida terminó; recarga la página en un minuto para ver los resultados."; $("correr").disabled = false; return; }
+  if (DATA[s] && (!generadoAntes || DATA[s].generado !== generadoAntes)) return terminarCarga(s);
+  if (intento > 45) return errorCarga("La corrida terminó, pero la publicación está tardando más de lo normal. Recarga la página en un minuto.");
   setTimeout(() => esperarPublicacion(s, intento + 1), 4000);
 }
 
