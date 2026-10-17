@@ -66,8 +66,8 @@ jobs:
 
       - name: Guardar y publicar resultados
         run: |
-          git config user.name "radar-30x"
-          git config user.email "radar-30x@users.noreply.github.com"
+          git config user.name "Victor Gomez"
+          git config user.email "victorgomeztrainer@gmail.com"   # Vercel solo publica commits de autores del proyecto
           git add data/radar.db out web/data.js web/datos.json web/sectores.json
           git diff --cached --quiet && echo "sin cambios" && exit 0
           git commit -m "Radar: ${{ github.event_name == 'schedule' && 'captura de métricas' || format('corrida {0}', inputs.sector) }}"
