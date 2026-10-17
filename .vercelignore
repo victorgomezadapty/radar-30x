@@ -1,0 +1,10 @@
+.env
+.venv
+data
+radar
+out
+config
+scripts
+.github
+.claude
+*.md
