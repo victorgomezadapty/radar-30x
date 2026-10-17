@@ -6,9 +6,11 @@ module.exports = async (req, res) => {
   if (req.method !== "POST") return res.status(405).json({ error: "usa POST" });
   try {
     const b = typeof req.body === "string" ? JSON.parse(req.body || "{}") : (req.body || {});
-    const esperado = process.env.RADAR_CLAVE_ACCESO;
+    // se ignoran espacios y comillas sobrantes, que suelen colarse al copiar y pegar
+    const limpiar = v => String(v || "").trim().replace(/^["']+|["']+$/g, "").trim();
+    const esperado = limpiar(process.env.RADAR_CLAVE_ACCESO);
     if (!esperado) return res.status(500).json({ error: "Falta RADAR_CLAVE_ACCESO en Vercel" });
-    if (b.clave !== esperado) return res.status(401).json({ error: "Código de acceso incorrecto" });
+    if (limpiar(b.clave) !== esperado) return res.status(401).json({ error: "Código de acceso incorrecto" });
     const sector = String(b.sector || "ia_latam");
     if (!/^[a-z_]{2,40}$/.test(sector)) return res.status(400).json({ error: "sector inválido" });
     const redes = (Array.isArray(b.redes) ? b.redes : []).filter(r => REDES.includes(r));
