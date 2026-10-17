@@ -1,0 +1,74 @@
+name: Radar
+run-name: "Radar ${{ inputs.sector || 'capturas programadas' }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      sector:
+        description: "Sector (ia_latam, fitness)"
+        default: "ia_latam"
+      redes:
+        description: "Redes separadas por coma (vacío = todas)"
+        default: ""
+      recolectar:
+        description: "Traer datos nuevos (true/false)"
+        default: "true"
+  schedule:
+    - cron: "17 */3 * * *"   # captura de métricas cada 3 horas, para medir aceleración real
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+      REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      SECTOR: ${{ inputs.sector || 'ia_latam' }}
+      REDES: ${{ inputs.redes }}
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Capturar métricas
+        if: github.event_name == 'schedule'
+        run: |
+          for s in ia_latam fitness; do python -m radar capturar --sector "$s" || true; done
+
+      - name: Recolectar redes
+        if: github.event_name == 'workflow_dispatch' && inputs.recolectar != 'false'
+        run: python -m radar recolectar --sector "$SECTOR" --redes "$REDES"
+
+      - name: Analizar con JEV y DeepSeek
+        if: github.event_name == 'workflow_dispatch'
+        run: python -m radar correr --sector "$SECTOR" --redes "$REDES" --sin-recolectar
+
+      - name: Guardar y publicar resultados
+        run: |
+          git config user.name "radar-30x"
+          git config user.email "radar-30x@users.noreply.github.com"
+          git add data/radar.db out web/data.js web/datos.json web/sectores.json
+          git diff --cached --quiet && echo "sin cambios" && exit 0
+          git commit -m "Radar: ${{ github.event_name == 'schedule' && 'captura de métricas' || format('corrida {0}', inputs.sector) }}"
+          git push

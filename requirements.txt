@@ -1,0 +1,5 @@
+openai>=3.33
+pydantic>=2
+python-dotenv>=1
+pyyaml>=6
+requests>=2.31

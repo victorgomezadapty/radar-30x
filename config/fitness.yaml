@@ -1,0 +1,52 @@
+sector: fitness
+nombre: "Fitness y entrenamiento en Latinoamérica"
+persona: >-
+  Adult in Latin America who wants to train, lose fat or gain muscle with a busy schedule.
+  Not an athlete. Wants practical, safe, science-based advice in Spanish.
+pista_temas: >-
+  Fitness topics: strength training, fat loss, nutrition, supplements, running, mobility,
+  home workouts, wearables, recovery. Avoid elite competition topics.
+pregunta_es_sector: "The content is about fitness, exercise, training, nutrition for fitness or physical health."
+
+dias_ventana: 14
+max_piezas_por_red: 80
+
+redes:
+  youtube:
+    activa: true
+    consultas:
+      - "rutina de fuerza en casa"
+      - "perder grasa entrenamiento"
+      - "nutrición para ganar músculo"
+      - "creatina beneficios"
+      - "entrenamiento para principiantes"
+      - "running para principiantes"
+    canales_semilla: []
+    region: "MX"
+    idioma: "es"
+  reddit:
+    activa: true
+    subreddits: ["Fitness", "loseit", "bodyweightfitness", "running", "nutrition", "naturalbodybuilding"]
+  instagram:
+    activa: true
+    cuentas: []
+    hashtags: ["fitness", "gymmotivation", "entrenamiento"]
+    consultas_web: ["rutina gimnasio", "nutrición fitness"]
+  linkedin:
+    activa: true
+    consultas: ["bienestar corporativo ejercicio", "salud y productividad entrenamiento"]
+  tiktok:
+    activa: true
+    paises: ["MX", "CO", "AR", "CL", "PE"]
+    consultas_web: ["rutina gym", "perder grasa", "ganar músculo"]
+  hn:
+    activa: false
+    consultas: []
+
+pesos:
+  pieza: { crecimiento: 0.5, ajuste: 0.5 }
+  tema: { fuerza: 0.35, aceleracion: 0.20, temprano: 0.20, multired: 0.15, frescura: 0.10 }
+
+umbrales:
+  es_sector: 0.6
+  confianza_min: 0.6

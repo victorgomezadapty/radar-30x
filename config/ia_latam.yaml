@@ -1,0 +1,58 @@
+sector: ia_latam
+nombre: "IA para líderes de Latinoamérica"
+persona: >-
+  Executive or team lead in Latin America learning how to apply AI in their company.
+  Not an engineer. Wants practical, business-ready ideas in Spanish.
+pista_temas: >-
+  AI topics that matter for business leaders: agents, AI in the enterprise, productivity,
+  regulation, tools, Latin American cases. Avoid pure research topics.
+pregunta_es_sector: "The content is about artificial intelligence (AI, LLMs, AI tools, AI agents, AI in business)."
+
+dias_ventana: 14
+max_piezas_por_red: 80
+
+redes:
+  youtube:
+    activa: true
+    consultas:
+      - "agentes de IA empresa"
+      - "inteligencia artificial para negocios"
+      - "ChatGPT para empresas"
+      - "IA generativa productividad"
+      - "Claude IA"
+      - "automatización con IA"
+      - "AI agents business"
+      - "IA en Latinoamérica"
+    canales_semilla: []        # IDs de canal (UC...), opcional
+    region: "MX"
+    idioma: "es"
+  reddit:
+    activa: true
+    subreddits: ["artificial", "ChatGPT", "OpenAI", "ClaudeAI", "LocalLLaMA", "singularity", "Emprendedores"]
+  instagram:
+    activa: true
+    cuentas: ["crece30x"]      # cuentas business/creator públicas (Business Discovery)
+    hashtags: ["inteligenciaartificial", "iaparanegocios", "chatgpt"]
+    consultas_web: ["inteligencia artificial negocios", "agentes de IA"]
+  linkedin:
+    activa: true
+    consultas:
+      - "agentes de IA en empresas Latinoamérica"
+      - "inteligencia artificial liderazgo empresa"
+      - "IA generativa productividad equipos"
+      - "AI agents enterprise adoption"
+  tiktok:
+    activa: true
+    paises: ["MX", "CO", "AR", "CL", "PE"]
+    consultas_web: ["inteligencia artificial negocios", "herramientas de IA", "ChatGPT trucos trabajo"]
+  hn:
+    activa: true
+    consultas: ["AI agents", "LLM enterprise", "Claude", "OpenAI"]
+
+pesos:
+  pieza: { crecimiento: 0.5, ajuste: 0.5 }
+  tema: { fuerza: 0.35, aceleracion: 0.20, temprano: 0.20, multired: 0.15, frescura: 0.10 }
+
+umbrales:
+  es_sector: 0.6
+  confianza_min: 0.6
