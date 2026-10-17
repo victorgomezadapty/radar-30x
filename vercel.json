@@ -1,0 +1,6 @@
+{
+  "buildCommand": "echo sin build",
+  "installCommand": "echo sin dependencias",
+  "outputDirectory": "web",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- web api vercel.json"
+}

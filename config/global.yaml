@@ -1,0 +1,27 @@
+# Ajustes compartidos por todos los sectores.
+
+jev:
+  modelo: "jev-1.13.0"         # fijo: jev-latest cambia a 1.14.0 alrededor del 21 de octubre
+  paralelo: 8
+  precio_entrada_mtok: 0.042   # USD por millón de tokens de entrada; salida gratis
+
+llm:
+  proveedor: "DeepSeek"
+  base_url: "https://api.deepseek.com"
+  modelo_pequeno: "deepseek-flash"     # proponer temas
+  modelo_grande: "deepseek-v4-pro"     # redacción y predicciones
+  pensar:                              # modo pensamiento de DeepSeek por paso (más lento y caro)
+    temas: false
+    redaccion: false
+    predicciones: false
+  precios:                              # USD por millón de tokens (entrada sin caché, salida), tarifa pico.
+    deepseek-flash: [0.30, 1.20]       # Fuera de pico cuesta la mitad. Fuente: api-docs.deepseek.com/quick_start/pricing
+    deepseek-v4-pro: [1.32, 3.96]
+    tavily: [0, 0]
+
+busqueda:                              # Tavily, para LinkedIn, TikTok e Instagram sin Graph API
+  consultas_por_red: 4
+  resultados_por_consulta: 10
+
+instagram:
+  graph_version: "v24.0"

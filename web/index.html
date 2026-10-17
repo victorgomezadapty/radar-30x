@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar 30X</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root {
+  --bg: #f5f6fa; --panel: #ffffff; --panel-2: #f0f2f8; --ink: #0f172a; --muted: #64748b; --line: #e2e8f0;
+  --accent: #4f46e5; --accent-ink: #ffffff; --accent-soft: #eef2ff;
+  --hero: #0b1020; --hero-ink: #e2e8f0; --hero-muted: #94a3b8;
+  --emergente: #16a34a; --creciendo: #4f46e5; --pico: #d97706; --saturado: #94a3b8;
+  --up: #16a34a; --down: #dc2626; --warn: #b45309;
+  --radius: 14px; --shadow: 0 1px 2px rgba(15,23,42,.04), 0 4px 16px rgba(15,23,42,.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1020; --panel: #121a2e; --panel-2: #18223a; --ink: #e5e9f2; --muted: #94a3b8; --line: #243049;
+    --accent: #818cf8; --accent-ink: #0b1020; --accent-soft: #1e2547;
+    --hero: #070b16; --emergente: #4ade80; --creciendo: #818cf8; --pico: #fbbf24; --saturado: #64748b;
+    --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+button { font: inherit; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+@media (max-width: 700px) { .wrap { padding: 0 16px; } }
+
+/* barra superior */
+.top { background: var(--hero); color: var(--hero-ink); }
+.top .wrap { display: flex; align-items: center; gap: 16px; height: 60px; }
+.logo { font-weight: 800; font-size: 18px; letter-spacing: -.02em; color: #fff; cursor: pointer; }
+.logo span { color: #a5b4fc; }
+.top nav { margin-left: auto; display: flex; gap: 4px; }
+.top nav button { background: transparent; border: 0; color: var(--hero-muted); padding: 8px 12px; border-radius: 8px; cursor: pointer; }
+.top nav button.on, .top nav button:hover { color: #fff; background: rgba(255,255,255,.08); }
+
+/* inicio */
+.hero { background: var(--hero); color: var(--hero-ink); padding: 48px 0 64px; }
+.hero h1 { font-size: clamp(30px, 4.5vw, 48px); line-height: 1.08; letter-spacing: -.03em; margin: 0 0 14px; color: #fff; max-width: 820px; }
+.hero h1 em { font-style: normal; color: #a5b4fc; }
+.hero p { color: var(--hero-muted); font-size: 18px; max-width: 700px; margin: 0 0 28px; }
+.pilares { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; max-width: 900px; }
+.pilar { border: 1px solid rgba(255,255,255,.1); border-radius: 12px; padding: 14px 16px; background: rgba(255,255,255,.03); }
+.pilar b { display: block; color: #fff; margin-bottom: 2px; }
+.pilar span { color: var(--hero-muted); font-size: 13px; }
+@media (max-width: 800px) { .pilares { grid-template-columns: 1fr; } }
+.config { margin-top: -36px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.config .card { padding: 24px; }
+.paso-t { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px; }
+.sectores { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+.opcion { border: 1.5px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 12px; padding: 12px 16px; cursor: pointer; text-align: left; }
+.opcion.on { border-color: var(--accent); background: var(--accent-soft); }
+.opcion small { display: block; color: var(--muted); font-size: 12px; }
+.redes { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; margin-bottom: 22px; }
+.red-op { display: flex; gap: 10px; align-items: flex-start; }
+.red-op input { margin-top: 4px; accent-color: var(--accent); width: 16px; height: 16px; }
+.red-op.off { opacity: .5; cursor: not-allowed; }
+.badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 999px; margin-top: 4px; }
+.badge.si { background: #dcfce7; color: #166534; } .badge.no { background: var(--panel-2); color: var(--muted); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge.si { background: #14321f; color: #86efac; } }
+.acciones { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.btn { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 10px; padding: 10px 16px; cursor: pointer; font-weight: 600; }
+.btn:hover { border-color: var(--accent); }
+.btn.primario { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); padding: 12px 22px; font-size: 16px; }
+.btn.primario:disabled { opacity: .5; cursor: not-allowed; }
+.btn.chico { padding: 6px 10px; font-size: 13px; font-weight: 500; }
+.campo-clave { padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font: inherit; width: 180px; }
+.check { display: flex; gap: 8px; align-items: center; color: var(--muted); font-size: 14px; }
+.nota { color: var(--muted); font-size: 13px; }
+.aviso-modo { background: var(--accent-soft); border-radius: 10px; padding: 10px 14px; font-size: 14px; margin-bottom: 18px; }
+
+/* progreso */
+.progreso { margin-top: 18px; display: none; }
+.progreso.on { display: block; }
+.pasos { list-style: none; padding: 0; margin: 0 0 12px; display: grid; gap: 6px; }
+.pasos li { display: flex; gap: 10px; align-items: center; color: var(--muted); }
+.pasos li .dot { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--line); flex: none; }
+.pasos li.activo { color: var(--ink); font-weight: 600; }
+.pasos li.activo .dot { border-color: var(--accent); border-top-color: transparent; animation: gira .8s linear infinite; }
+.pasos li.hecho { color: var(--ink); }
+.pasos li.hecho .dot { background: var(--emergente); border-color: var(--emergente); }
+@keyframes gira { to { transform: rotate(360deg); } }
+.log { background: var(--hero); color: #cbd5e1; font: 12px/1.5 ui-monospace, Consolas, monospace; border-radius: 10px; padding: 10px 12px; max-height: 180px; overflow: auto; white-space: pre-wrap; }
+.ultima { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+/* resultados */
+.cabecera { padding: 28px 0 8px; display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; }
+.cabecera h2 { margin: 0; font-size: 26px; letter-spacing: -.02em; }
+.cabecera .meta { color: var(--muted); font-size: 13px; }
+.costo-pill { margin-left: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; font-weight: 700; cursor: pointer; }
+.costo-pill span { color: var(--muted); font-weight: 500; font-size: 13px; }
+.pregunta { font-size: 17px; font-weight: 600; margin: 4px 0 16px; max-width: 900px; }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 20px; overflow-x: auto; }
+.tabs { scrollbar-width: none; } .tabs::-webkit-scrollbar { display: none; }
+.tabs button { background: none; border: 0; padding: 10px 14px; color: var(--muted); font-weight: 600; cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; }
+.tabs button.on { color: var(--ink); border-bottom-color: var(--accent); }
+.grid2 { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 20px; align-items: start; }
+@media (max-width: 980px) { .grid2 { grid-template-columns: 1fr; } }
+.side .card { padding: 16px; margin-bottom: 14px; }
+h3.sec { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
+
+.tema { padding: 16px 18px; margin-bottom: 12px; display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 2px 14px; }
+.rank { font-size: 24px; font-weight: 800; color: var(--muted); line-height: 1.1; }
+.delta { font-size: 11px; font-weight: 700; display: block; }
+.delta.up { color: var(--up); } .delta.down { color: var(--down); }
+.tema h4 { margin: 0; font-size: 17px; letter-spacing: -.01em; }
+.etapa { display: inline-block; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 2px 8px; border-radius: 999px; color: #fff; margin-left: 8px; vertical-align: 2px; }
+.score { text-align: right; }
+.score b { font-size: 22px; font-variant-numeric: tabular-nums; }
+.barra { height: 6px; background: var(--panel-2); border-radius: 3px; width: 90px; margin-top: 4px; overflow: hidden; }
+.barra i { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+.full { grid-column: 2 / 4; }
+.porque { margin: 4px 0 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; font-size: 12px; }
+.chip { background: var(--accent-soft); padding: 2px 9px; border-radius: 999px; }
+.chip.gris { background: transparent; border: 1px solid var(--line); color: var(--muted); }
+.ruta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; font-size: 12.5px; }
+.ruta .nodo { border: 1px solid var(--line); border-radius: 8px; padding: 3px 8px; background: var(--panel-2); }
+.ruta .nodo b { font-weight: 600; }
+.ruta .flecha { color: var(--muted); font-size: 11px; }
+.ruta .origen { border-color: var(--accent); }
+.detalle { display: none; margin-top: 12px; font-size: 13.5px; border-top: 1px dashed var(--line); padding-top: 12px; }
+.tema.abierto .detalle { display: block; }
+.senales { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 12px; }
+.senales div { font-size: 12px; color: var(--muted); }
+.senales .barra { width: 100%; }
+@media (max-width: 600px) { .senales { grid-template-columns: repeat(2, 1fr); } .tema { grid-template-columns: 34px minmax(0,1fr) auto; } }
+.piezas { padding-left: 18px; margin: 8px 0 0; }
+.piezas li { margin-bottom: 5px; }
+.red-t { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.ver { margin-top: 8px; justify-self: start; }
+.peso { margin-bottom: 10px; }
+.peso label { display: flex; justify-content: space-between; font-size: 13px; }
+.peso input { width: 100%; accent-color: var(--accent); }
+.leyenda { display: grid; gap: 6px; font-size: 13px; }
+.leyenda span.etapa { margin: 0 6px 0 0; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.pred, .idea { padding: 18px; display: flex; flex-direction: column; gap: 8px; }
+.pred h4, .idea h4 { margin: 0; font-size: 17px; letter-spacing: -.01em; }
+.etq { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--accent); }
+.medidor { display: flex; align-items: center; gap: 10px; }
+.medidor .barra { flex: 1; width: auto; height: 8px; }
+.medidor b { font-variant-numeric: tabular-nums; }
+.campo { font-size: 13.5px; }
+.campo b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 1px; }
+.hoy { background: var(--accent-soft); border-radius: 10px; padding: 10px 12px; font-size: 13.5px; }
+.mini { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); }
+.mini b { color: var(--ink); }
+.gancho { font-style: italic; margin: 0; }
+
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.kpi { padding: 16px; }
+.kpi .v { font-size: 30px; font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.kpi .l { color: var(--muted); font-size: 13px; }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+td, th { padding: 7px 6px; border-bottom: 1px solid var(--line); text-align: left; }
+th { color: var(--muted); font-weight: 500; font-size: 12px; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+.hist { display: flex; align-items: flex-end; gap: 4px; height: 70px; margin-top: 8px; }
+.hist i { flex: 1; background: var(--accent); border-radius: 3px 3px 0 0; min-height: 2px; opacity: .8; }
+.ahorro { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 8px; }
+.ahorro input { width: 120px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--ink); font: inherit; }
+.barras-origen .fila { display: grid; grid-template-columns: 110px 1fr 40px; gap: 10px; align-items: center; margin-bottom: 8px; font-size: 13.5px; }
+.barras-origen .barra { width: 100%; height: 10px; }
+.vacio { padding: 40px; text-align: center; color: var(--muted); }
+.oculto { display: none !important; }
+footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="wrap">
+    <div class="logo" id="ir-inicio">Radar <span>30X</span></div>
+    <nav><button id="nav-inicio" class="on">Inicio</button><button id="nav-res">Resultados</button></nav>
+  </div>
+</div>
+
+<!-- INICIO -->
+<section id="vista-inicio">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Qué está creciendo hoy, <em>por qué funciona</em> y cómo adaptarlo a tu audiencia.</h1>
+      <p>El radar revisa YouTube, Reddit, Instagram, LinkedIn y TikTok, mide la velocidad de cada pieza y decide el ranking en código. JEV clasifica cada pieza por centavos.</p>
+      <div class="pilares">
+        <div class="pilar"><b>Detecta temprano</b><span>Velocidad, aceleración y saltos entre redes, no volumen total.</span></div>
+        <div class="pilar"><b>Explica el porqué</b><span>Gancho, formato, momento y origen de cada tendencia.</span></div>
+        <div class="pilar"><b>Filtra por audiencia</b><span>Ajuste a líderes de LatAm, con pesos visibles y ajustables.</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap config">
+    <div class="card">
+      <div id="aviso-estatico" class="aviso-modo oculto">Modo de solo lectura: esta versión muestra la última corrida guardada. Para lanzar corridas nuevas, abre la app local con <code>python -m radar servir</code>.</div>
+      <div id="aviso-remoto" class="aviso-modo oculto">Las corridas se ejecutan en GitHub Actions y se publican aquí al terminar (unos 3 a 5 minutos). Necesitas el código de acceso del equipo.</div>
+      <p class="paso-t">1. Elige el sector</p>
+      <div class="sectores" id="sectores"></div>
+      <p class="paso-t">2. Elige las redes a revisar</p>
+      <div class="redes" id="redes"></div>
+      <div class="acciones">
+        <input type="password" id="clave-acceso" class="campo-clave oculto" placeholder="Código de acceso" autocomplete="off">
+        <button class="btn primario" id="correr">Correr radar</button>
+        <label class="check"><input type="checkbox" id="recolectar" checked> Traer datos nuevos de las redes</label>
+        <span class="nota" id="nota-correr">Tarda entre 1 y 3 minutos.</span>
+      </div>
+      <div class="progreso" id="progreso">
+        <ul class="pasos" id="pasos"></ul>
+        <div class="log" id="log"></div>
+      </div>
+      <div class="ultima" id="ultima"></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<section id="vista-res" class="oculto">
+  <div class="wrap">
+    <div class="cabecera">
+      <div>
+        <h2 id="r-titulo"></h2>
+        <div class="meta" id="r-meta"></div>
+      </div>
+      <div class="costo-pill" id="r-costo" title="Ver detalle del costo"></div>
+    </div>
+    <div class="pregunta" id="r-pregunta"></div>
+    <div class="tabs" id="tabs">
+      <button data-t="tendencias" class="on">Tendencias hoy</button>
+      <button data-t="viene">Lo que viene</button>
+      <button data-t="ideas">Ideas para 30X</button>
+      <button data-t="origen">Origen de las tendencias</button>
+      <button data-t="costo">Costo y transparencia</button>
+    </div>
+
+    <div id="t-tendencias" class="grid2">
+      <div id="lista"></div>
+      <aside class="side">
+        <div class="card">
+          <h3 class="sec">Pesos del score</h3>
+          <div id="pesos"></div>
+          <button class="btn chico" id="reset">Restaurar pesos</button>
+          <p class="nota">El ranking se recalcula en código con estos pesos. El LLM no decide el orden.</p>
+        </div>
+        <div class="card">
+          <h3 class="sec">Etapas</h3>
+          <div class="leyenda">
+            <div><span class="etapa" style="background:var(--emergente)">emergente</span>acelera con poco volumen</div>
+            <div><span class="etapa" style="background:var(--creciendo)">creciendo</span>acelera con volumen</div>
+            <div><span class="etapa" style="background:var(--pico)">pico</span>mucho volumen, ya no acelera</div>
+            <div><span class="etapa" style="background:var(--saturado)">saturado</span>muchas cuentas y frenando</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div id="t-viene" class="oculto">
+      <p class="nota" style="margin-top:0">Hipótesis, no hechos: temas que todavía no son tendencia pero las señales de hoy apuntan a que pueden serlo. La fuerza combina el respaldo de los datos (aceleración de los temas en que se basa) con la evaluación de JEV.</p>
+      <div class="cards" id="preds"></div>
+    </div>
+
+    <div id="t-ideas" class="oculto">
+      <p class="nota" style="margin-top:0" id="ideas-tema"></p>
+      <div class="cards" id="ideas"></div>
+    </div>
+
+    <div id="t-origen" class="oculto">
+      <div class="grid2">
+        <div class="card" style="padding:18px">
+          <h3 class="sec">Dónde nacen las tendencias</h3>
+          <div class="barras-origen" id="origen-barras"></div>
+          <p class="nota" id="origen-nota"></p>
+        </div>
+        <div class="card" style="padding:18px">
+          <h3 class="sec">Fuentes externas más citadas</h3>
+          <div id="fuentes"></div>
+        </div>
+      </div>
+      <div class="card" style="padding:18px; margin-top:16px">
+        <h3 class="sec">Ruta de cada tendencia</h3>
+        <div id="rutas"></div>
+      </div>
+    </div>
+
+    <div id="t-costo" class="oculto">
+      <div class="kpis" id="kpis"></div>
+      <div class="grid2">
+        <div>
+          <div class="card" style="padding:18px; margin-bottom:16px">
+            <h3 class="sec">Costo por paso</h3>
+            <table id="costo-tabla"></table>
+            <p class="nota">Medido con el campo <code>usage</code> de cada respuesta de JEV y DeepSeek, no estimado.</p>
+          </div>
+          <div class="card" style="padding:18px">
+            <h3 class="sec">Cobertura por red</h3>
+            <table id="cobertura"></table>
+            <p class="nota" id="conteos"></p>
+          </div>
+        </div>
+        <aside class="side">
+          <div class="card">
+            <h3 class="sec">Comparación</h3>
+            <div class="nota">¿Cuánto pagas hoy al mes por datos de tendencias?</div>
+            <div class="ahorro"><span>USD</span><input type="number" min="0" step="10" id="pago-actual" placeholder="ej. 300"></div>
+            <p id="ahorro-res" class="nota"></p>
+          </div>
+          <div class="card">
+            <h3 class="sec">Historial de corridas</h3>
+            <div class="hist" id="hist"></div>
+            <p class="nota" id="hist-nota"></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer>Radar 30X · JEV (TypeSafe) para clasificar, DeepSeek para redactar, código para decidir. Solo datos públicos de piezas, nunca de personas.</footer>
+  </div>
+</section>
+
+<script src="data.js"></script>
+<script>
+const SENALES = { fuerza: "Fuerza", aceleracion: "Aceleración", temprano: "Temprano", multired: "Multired", frescura: "Frescura" };
+const REDES = { youtube: "YouTube", reddit: "Reddit", instagram: "Instagram", linkedin: "LinkedIn", tiktok: "TikTok", hn: "Hacker News" };
+const VIAS = { api: "API", rss: "RSS", busqueda_web: "búsqueda web", manual: "manual", comunidad: "comunidad" };
+const GANCHOS = { pregunta: "pregunta", dato: "dato sorprendente", contraste: "contraste", promesa: "promesa", historia: "historia", polemica: "polémica" };
+const FORMATOS = { tutorial: "tutorial", opinion: "opinión", noticia: "noticia", caso: "caso", demo: "demo", lista: "lista" };
+const PASOS = ["Recolección de las redes", "Temas de la corrida (DeepSeek)", "Clasificación con JEV", "Score, etapas y rastreo (código)", "Explicaciones e ideas", "Lo que viene"];
+
+let DATA = window.RADAR_DATA || {}, SECTORES = [], servidor = false;
+let sectorInicio = null, sector = null, pesos = {}, abiertos = new Set(), tab = "tendencias";
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const usd = v => v == null ? "—" : "$" + (v === 0 ? "0" : v < 0.01 ? v.toFixed(4) : v < 1 ? v.toFixed(3) : v.toFixed(2));
+const fecha = t => t ? new Date(t * 1000).toLocaleDateString("es", { day: "numeric", month: "short" }) : "s/f";
+const pct = v => Math.round((v || 0) * 100);
+function guardar(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+function leer(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+
+let MODO = "estatico";   // local: servidor Python · remoto: Vercel + GitHub Actions · estatico: solo lectura
+
+async function cargarDatos() {
+  if (MODO === "local") { const d = await fetch("/api/datos", { cache: "no-store" }); if (d.ok) DATA = await d.json(); }
+  else if (MODO === "remoto") { const d = await fetch("datos.json?t=" + Date.now(), { cache: "no-store" }); if (d.ok) DATA = await d.json(); }
+}
+
+async function init() {
+  try {
+    const r = await fetch("/api/estado", { cache: "no-store" });
+    const e = r.ok || r.status === 500 ? await r.json() : null;
+    if (e && e.modo === "local") MODO = "local";
+    else if (e && e.modo === "remoto" && !(e.error || "").startsWith("Faltan")) MODO = "remoto";
+  } catch (e) {}
+  try {
+    if (MODO === "local") SECTORES = await (await fetch("/api/sectores", { cache: "no-store" })).json();
+    else if (MODO === "remoto") SECTORES = await (await fetch("sectores.json?t=" + Date.now(), { cache: "no-store" })).json();
+  } catch (e) { SECTORES = []; }
+  await cargarDatos().catch(() => {});
+  if (!SECTORES.length) SECTORES = Object.keys(DATA).map(id => ({ id, nombre: DATA[id].nombre, redes: Object.keys(REDES).map(r => ({
+    id: r, nombre: REDES[r], activa: true, disponible: (DATA[id].redes_elegidas || []).includes(r), con_metricas: ["youtube", "hn"].includes(r), via: "" })) }));
+  servidor = MODO !== "estatico";
+  $("aviso-estatico").classList.toggle("oculto", servidor);
+  $("aviso-remoto").classList.toggle("oculto", MODO !== "remoto");
+  $("clave-acceso").classList.toggle("oculto", MODO !== "remoto");
+  $("clave-acceso").value = leer("radar-clave") || "";
+  $("nota-correr").textContent = MODO === "remoto" ? "Tarda entre 3 y 5 minutos." : "Tarda entre 1 y 3 minutos.";
+  $("correr").disabled = !servidor;
+  SECTORES.sort((a, b) => (b.id === "ia_latam") - (a.id === "ia_latam"));
+  sectorInicio = SECTORES.find(s => s.id === leer("radar-sector"))?.id || SECTORES[0]?.id;
+  pintarInicio();
+  $("ir-inicio").onclick = $("nav-inicio").onclick = () => mostrar("inicio");
+  $("nav-res").onclick = () => abrirResultados(sector || sectorInicio);
+  $("correr").onclick = correr;
+  $("tabs").onclick = e => { const t = e.target.dataset.t; if (t) cambiarTab(t); };
+  $("r-costo").onclick = () => cambiarTab("costo");
+  $("reset").onclick = () => { pesos = { ...DATA[sector].pesos }; pintarPesos(); pintarTendencias(); };
+  $("pago-actual").oninput = pintarAhorro;
+  if (location.hash === "#resultados" && DATA[sectorInicio]) abrirResultados(sectorInicio);
+  if (servidor) seguirProgreso(true);
+}
+
+function mostrar(v) {
+  $("vista-inicio").classList.toggle("oculto", v !== "inicio");
+  $("vista-res").classList.toggle("oculto", v !== "res");
+  $("nav-inicio").classList.toggle("on", v === "inicio");
+  $("nav-res").classList.toggle("on", v === "res");
+  history.replaceState(null, "", v === "res" ? "#resultados" : "#");
+  window.scrollTo(0, 0);
+}
+
+/* ---------- inicio ---------- */
+function pintarInicio() {
+  $("sectores").innerHTML = SECTORES.map(s => `<button class="opcion ${s.id === sectorInicio ? "on" : ""}" data-s="${esc(s.id)}">
+    <b>${esc(s.nombre)}</b><small>${DATA[s.id] ? "Última corrida: " + new Date(DATA[s.id].generado).toLocaleString("es", { dateStyle: "short", timeStyle: "short" }) : "Sin corridas todavía"}</small></button>`).join("");
+  $("sectores").onclick = e => { const b = e.target.closest(".opcion"); if (!b) return; sectorInicio = b.dataset.s; guardar("radar-sector", sectorInicio); pintarInicio(); };
+  const s = SECTORES.find(x => x.id === sectorInicio);
+  const elegidas = JSON.parse(leer("radar-redes-" + sectorInicio) || "null");
+  $("redes").innerHTML = (s?.redes || []).filter(r => r.activa).map(r => {
+    const on = r.disponible && (!elegidas || elegidas.includes(r.id));
+    return `<label class="opcion red-op ${r.disponible ? "" : "off"}">
+      <input type="checkbox" value="${r.id}" ${on ? "checked" : ""} ${r.disponible ? "" : "disabled"}>
+      <span><b>${esc(r.nombre)}</b>${r.via ? `<small>${esc(r.via)}</small>` : ""}
+      <span class="badge ${r.con_metricas ? "si" : "no"}">${r.con_metricas ? "con métricas" : "presencia y ajuste"}</span></span></label>`;
+  }).join("");
+  $("redes").onchange = () => guardar("radar-redes-" + sectorInicio, JSON.stringify(redesElegidas()));
+  const d = DATA[sectorInicio];
+  $("ultima").innerHTML = d ? `<button class="btn" id="ver-ultima">Ver última corrida</button>
+    <span class="nota">${d.temas.length} temas · ${d.conteos.en_ranking} piezas en el ranking · costo ${usd(d.costo.total_usd)}</span>` : "";
+  if (d) $("ver-ultima").onclick = () => abrirResultados(sectorInicio);
+}
+const redesElegidas = () => [...document.querySelectorAll("#redes input:checked")].map(i => i.value);
+
+let generadoAntes = null;
+
+async function correr() {
+  const redes = redesElegidas();
+  if (!redes.length) { $("nota-correr").textContent = "Elige al menos una red."; return; }
+  const clave = $("clave-acceso").value.trim();
+  if (MODO === "remoto" && !clave) { $("nota-correr").textContent = "Escribe el código de acceso."; return; }
+  $("correr").disabled = true;
+  generadoAntes = DATA[sectorInicio]?.generado || null;
+  const r = await fetch("/api/correr", { method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ sector: sectorInicio, redes, recolectar: $("recolectar").checked, clave }) }).catch(() => null);
+  if (!r || !r.ok) {
+    const e = r ? await r.json().catch(() => ({})) : {};
+    $("nota-correr").textContent = e.error || "No se pudo lanzar la corrida."; $("correr").disabled = false; return;
+  }
+  if (MODO === "remoto") guardar("radar-clave", clave);
+  $("progreso").classList.add("on");
+  $("log").textContent = "Corrida lanzada. Esperando a GitHub Actions…";
+  setTimeout(() => seguirProgreso(false), MODO === "remoto" ? 4000 : 800);
+}
+
+function pintarPasos(e) {
+  if (e.pasos) {  // remoto: pasos del flujo de GitHub Actions
+    const cls = { hecho: "hecho", activo: "activo", omitido: "hecho", error: "", pendiente: "" };
+    $("pasos").innerHTML = e.pasos.map(p => `<li class="${cls[p.estado]}"><span class="dot"></span>${esc(p.nombre)}${p.estado === "omitido" ? " (omitido)" : ""}${p.estado === "error" ? " (falló)" : ""}</li>`).join("");
+    return;
+  }
+  const actual = Math.max(0, ...e.log.map(l => (l.match(/^PASO (\d)\/6/) || [0, 0])[1] * 1));
+  const terminado = !e.corriendo && e.fin;
+  $("pasos").innerHTML = PASOS.map((p, i) => {
+    const n = i + 1, cls = terminado && !e.error ? "hecho" : n < actual ? "hecho" : n === actual ? "activo" : "";
+    return `<li class="${cls}"><span class="dot"></span>${p}</li>`;
+  }).join("");
+}
+
+async function seguirProgreso(soloSiCorre) {
+  const r = await fetch("/api/estado", { cache: "no-store" }).catch(() => null);
+  if (!r || !r.ok) { if (!soloSiCorre) setTimeout(() => seguirProgreso(false), 4000); return; }
+  const e = await r.json();
+  if (soloSiCorre && !e.corriendo) return;
+  $("progreso").classList.add("on");
+  $("correr").disabled = e.corriendo;
+  pintarPasos(e);
+  const seg = Math.max(0, Math.round(((e.fin || Date.now() / 1000) - (e.inicio || Date.now() / 1000))));
+  $("log").textContent = (e.log || []).slice(-60).join("\n") + (e.corriendo ? `\n… ${seg} s` : "");
+  $("log").scrollTop = 1e9;
+  if (e.corriendo) { $("nota-correr").textContent = `Corriendo · ${seg} s`; setTimeout(() => seguirProgreso(false), MODO === "remoto" ? 4000 : 1500); return; }
+  if (e.error) { $("nota-correr").innerHTML = "Error: " + esc(e.error) + (e.url ? ` <a href="${esc(e.url)}" target="_blank" rel="noopener">ver detalle</a>` : ""); $("correr").disabled = false; return; }
+  if (MODO === "remoto" && !soloSiCorre) return esperarPublicacion(e.sector || sectorInicio, 0);
+  $("nota-correr").textContent = `Terminó en ${seg} s.`;
+  await cargarDatos();
+  pintarInicio();
+  if (!soloSiCorre) abrirResultados(e.sector);
+}
+
+async function esperarPublicacion(s, intento) {
+  // GitHub Actions ya terminó; Vercel tarda un momento en publicar los resultados nuevos
+  $("nota-correr").textContent = "Publicando resultados…";
+  await cargarDatos().catch(() => {});
+  if (DATA[s] && DATA[s].generado !== generadoAntes) {
+    $("nota-correr").textContent = "Listo."; $("correr").disabled = false; pintarInicio(); return abrirResultados(s);
+  }
+  if (intento > 45) { $("nota-correr").textContent = "La corrida terminó; recarga la página en un minuto para ver los resultados."; $("correr").disabled = false; return; }
+  setTimeout(() => esperarPublicacion(s, intento + 1), 4000);
+}
+
+/* ---------- resultados ---------- */
+function abrirResultados(s) {
+  if (!DATA[s]) { mostrar("inicio"); return; }
+  sector = s; const d = DATA[s];
+  pesos = { ...d.pesos }; abiertos = new Set();
+  $("r-titulo").textContent = d.nombre;
+  $("r-meta").textContent = `${new Date(d.generado).toLocaleString("es", { dateStyle: "long", timeStyle: "short" })} · ${d.duracion_s} s · ${(d.redes_elegidas || Object.keys(d.cobertura)).map(r => REDES[r] || r).join(", ")} · ${d.modelo_jev}`;
+  $("r-costo").innerHTML = `${usd(d.costo.total_usd)} <span>esta corrida</span>`;
+  $("r-pregunta").textContent = `¿Cuáles son los 10 temas de ${s === "ia_latam" ? "IA" : d.nombre.toLowerCase()} que más están creciendo esta semana, por qué funcionan y cómo los adapta 30X?`;
+  pintarPesos(); pintarTendencias(); pintarPredicciones(); pintarIdeas(); pintarOrigen(); pintarCosto();
+  mostrar("res"); cambiarTab(tab);
+}
+
+function cambiarTab(t) {
+  tab = t;
+  document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.t === t));
+  ["tendencias", "viene", "ideas", "origen", "costo"].forEach(x => $("t-" + x).classList.toggle("oculto", x !== t));
+}
+
+function pintarPesos() {
+  $("pesos").innerHTML = Object.keys(SENALES).map(k => `<div class="peso"><label><span>${SENALES[k]}</span><span id="v-${k}">${(pesos[k] ?? 0).toFixed(2)}</span></label>
+    <input type="range" min="0" max="1" step="0.05" value="${pesos[k] ?? 0}" data-k="${k}"></div>`).join("");
+  $("pesos").oninput = e => { const k = e.target.dataset.k; if (!k) return; pesos[k] = parseFloat(e.target.value); $("v-" + k).textContent = pesos[k].toFixed(2); pintarTendencias(); };
+}
+
+const ranking = (temas, w) => temas.map(t => ({ ...t, s: Object.keys(SENALES).reduce((a, k) => a + (w[k] || 0) * (t.senales[k] || 0), 0) })).sort((a, b) => b.s - a.s);
+
+function rutaHtml(r) {
+  if (!r || !r.ruta || !r.ruta.length) return "";
+  return `<div class="ruta">${r.ruta.map((n, i) => `${i ? `<span class="flecha">→ ${r.horas_entre_redes[i - 1] < 48 ? Math.round(r.horas_entre_redes[i - 1]) + " h" : Math.round(r.horas_entre_redes[i - 1] / 24) + " d"} →</span>` : ""}
+    <a class="nodo ${i === 0 ? "origen" : ""}" href="${esc(n.url)}" target="_blank" rel="noopener" title="${esc(n.titulo)}"><b>${esc(REDES[n.red] || n.red)}</b> ${fecha(n.fecha)}</a>`).join("")}</div>`;
+}
+
+function pintarTendencias() {
+  const d = DATA[sector];
+  const original = ranking(d.temas, d.pesos).map(t => t.id);
+  const actual = ranking(d.temas, pesos).slice(0, 10);
+  const max = Math.max(...actual.map(t => t.s), 0.0001);
+  if (!actual.length) { $("lista").innerHTML = '<div class="card vacio">Sin temas en esta corrida.</div>'; return; }
+  $("lista").innerHTML = actual.map((t, i) => {
+    const delta = original.indexOf(t.id) - i;
+    const dh = delta > 0 ? `<span class="delta up">▲ ${delta}</span>` : delta < 0 ? `<span class="delta down">▼ ${-delta}</span>` : "";
+    const redes = Object.entries(t.redes).sort((a, b) => b[1] - a[1]).map(([r, n]) => `<span class="chip">${esc(REDES[r] || r)} · ${n}</span>`).join("");
+    const g = t.rasgos.gancho.map(x => `${GANCHOS[x.valor] || x.valor} ${pct(x.pct)}%`).join(", ");
+    const f = t.rasgos.formato.map(x => `${FORMATOS[x.valor] || x.valor} ${pct(x.pct)}%`).join(", ");
+    const fuentes = (t.rastreo?.fuentes_externas || []).map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.dominio)}</a> (${x.veces})`).join(", ");
+    const senales = Object.keys(SENALES).map(k => `<div>${SENALES[k]} ${pct(t.senales[k])}<div class="barra"><i style="width:${Math.min(100, pct(t.senales[k]))}%"></i></div></div>`).join("");
+    const piezas = t.top_piezas.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.titulo || p.url)}</a>
+      <span class="red-t">${esc(REDES[p.red] || p.red)}${p.cuenta ? " · " + esc(p.cuenta) : ""}${p.con_metricas ? "" : " · sin métricas"}</span></li>`).join("");
+    return `<div class="card tema ${abiertos.has(t.id) ? "abierto" : ""}" data-id="${esc(t.id)}">
+      <div class="rank">${i + 1}${dh}</div>
+      <div><h4>${esc(t.nombre)}<span class="etapa" style="background:var(--${t.etapa})">${esc(t.etapa)}</span></h4></div>
+      <div class="score"><b>${pct(t.s)}</b><div class="barra"><i style="width:${t.s / max * 100}%"></i></div></div>
+      <div class="full">
+        <p class="porque">${esc(t.porque || "")}</p>
+        <div class="chips">${redes}<span class="chip gris">${t.volumen} piezas · ${t.piezas_7d} esta semana</span>${t.aceleracion_estimada ? '<span class="chip gris" title="Hace falta más de una captura de métricas">aceleración estimada</span>' : ""}</div>
+        ${rutaHtml(t.rastreo)}
+        <div class="detalle">
+          <div class="senales">${senales}</div>
+          <div>Ganchos: ${esc(g)} · Formatos: ${esc(f)} · Menciona un lanzamiento: ${pct(t.rasgos.menciona_lanzamiento)}%</div>
+          ${fuentes ? `<div style="margin-top:6px">Fuentes externas citadas: ${fuentes}</div>` : ""}
+          <ul class="piezas">${piezas}</ul>
+        </div>
+        <button class="btn chico ver">${abiertos.has(t.id) ? "Ocultar detalle" : "Ver detalle"}</button>
+      </div></div>`;
+  }).join("");
+  $("lista").onclick = e => {
+    if (!e.target.classList.contains("ver")) return;
+    const id = e.target.closest(".tema").dataset.id;
+    abiertos.has(id) ? abiertos.delete(id) : abiertos.add(id); pintarTendencias();
+  };
+}
+
+function pintarPredicciones() {
+  const d = DATA[sector], nombres = Object.fromEntries(d.temas.map(t => [t.id, t.nombre]));
+  const ps = d.predicciones || [];
+  if (!ps.length) { $("preds").innerHTML = '<div class="card vacio">Esta corrida no tiene predicciones. Vuelve a correr el radar.</div>'; return; }
+  $("preds").innerHTML = ps.map((p, i) => `<div class="card pred">
+    <div class="etq">Posible tendencia #${i + 1} · ${esc(p.ventana)}</div>
+    <h4>${esc(p.nombre)}</h4>
+    <div class="medidor"><span class="nota">Fuerza</span><div class="barra"><i style="width:${pct(p.fuerza)}%"></i></div><b>${pct(p.fuerza)}</b></div>
+    <div class="campo">${esc(p.tesis)}</div>
+    ${p.basado_en.length ? `<div class="chips">${p.basado_en.map(b => `<span class="chip">${esc(nombres[b] || b)}</span>`).join("")}</div>` : ""}
+    <div class="campo"><b>Señal a vigilar</b>${esc(p.senal_a_vigilar)}</div>
+    <div class="hoy"><b>Qué publicar hoy:</b> ${esc(p.que_publicar_hoy)}</div>
+    <div class="mini"><span>Respaldo de datos <b>${pct(p.respaldo_datos)}</b></span>${p.jev ? `<span>Interés (JEV) <b>${pct(p.jev.interes_audiencia)}</b></span><span>Novedad (JEV) <b>${pct(p.jev.novedad)}</b></span>` : ""}</div>
+  </div>`).join("");
+}
+
+function pintarIdeas() {
+  const d = DATA[sector];
+  $("ideas-tema").textContent = d.temas[0] ? `Adaptación del tema número 1: “${d.temas[0].nombre}”.` : "";
+  $("ideas").innerHTML = (d.ideas || []).map(i => `<div class="card idea">
+    <div class="etq">${esc(i.formato)}</div><h4>${esc(i.titulo)}</h4>
+    <p class="gancho">“${esc(i.gancho)}”</p><div class="campo">${esc(i.desarrollo)}</div>
+    ${i.jev ? `<div class="mini"><span>Ajuste a la audiencia (JEV) <b>${pct(i.jev.ajuste_audiencia.score)}</b></span><span>Fuerza del gancho <b>${pct(i.jev.fuerza_gancho.score)}</b></span></div>` : ""}
+  </div>`).join("") || '<div class="card vacio">Sin ideas en esta corrida.</div>';
+}
+
+function pintarOrigen() {
+  const d = DATA[sector], top = d.temas.slice(0, 10);
+  const conteo = {};
+  top.forEach(t => { const o = t.rastreo?.origen?.red; if (o) conteo[o] = (conteo[o] || 0) + 1; });
+  const total = Object.values(conteo).reduce((a, b) => a + b, 0) || 1;
+  $("origen-barras").innerHTML = Object.entries(conteo).sort((a, b) => b[1] - a[1]).map(([r, n]) =>
+    `<div class="fila"><span>${esc(REDES[r] || r)}</span><div class="barra"><i style="width:${n / total * 100}%"></i></div><b>${n}</b></div>`).join("") || '<p class="nota">Sin fechas suficientes.</p>';
+  const saltos = top.flatMap(t => t.rastreo?.horas_entre_redes || []);
+  $("origen-nota").textContent = saltos.length ? `Primera aparición detectada por el radar entre los 10 temas principales. En promedio, un tema tarda ${Math.round(saltos.reduce((a, b) => a + b, 0) / saltos.length / 24 * 10) / 10} días en saltar a la siguiente red.` : "";
+  const fuentes = {};
+  top.forEach(t => (t.rastreo?.fuentes_externas || []).forEach(f => { fuentes[f.dominio] = fuentes[f.dominio] || { ...f, veces: 0 }; fuentes[f.dominio].veces += f.veces; }));
+  const lf = Object.values(fuentes).sort((a, b) => b.veces - a.veces).slice(0, 8);
+  $("fuentes").innerHTML = lf.length ? `<table><tr><th>Fuente</th><th class="n">Citas</th></tr>${lf.map(f => `<tr><td><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.dominio)}</a></td><td class="n">${f.veces}</td></tr>`).join("")}</table>`
+    : '<p class="nota">Las fuentes externas salen de los links que comparten los hilos de Hacker News y Reddit.</p>';
+  $("rutas").innerHTML = top.map(t => `<div style="margin-bottom:14px"><b>${esc(t.nombre)}</b> <span class="nota">· activo hace ${t.rastreo?.dias_activo ?? "?"} días</span>${rutaHtml(t.rastreo)}</div>`).join("");
+}
+
+function pintarCosto() {
+  const d = DATA[sector], c = d.costo;
+  const mensual = c.total_usd * 8 * 30;
+  $("kpis").innerHTML = [
+    [usd(c.total_usd), "costo de esta corrida"],
+    [usd(c.jev_usd), "JEV (clasificación)"],
+    [usd(c.llm_usd ?? c.claude_usd), (c.proveedor_llm || "LLM") + " (temas y redacción)"],
+    [usd(c.por_tema_usd), "por tema del top 10"],
+    [usd(mensual), "al mes si corre cada 3 horas"],
+  ].map(([v, l]) => `<div class="card kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+  const nombres = { jev_piezas: "JEV: clasificar piezas", jev_ideas: "JEV: puntuar ideas", jev_predicciones: "JEV: puntuar predicciones",
+    llm_temas: "DeepSeek: proponer temas", llm_redaccion: "DeepSeek: redactar", llm_predicciones: "DeepSeek: lo que viene" };
+  const filas = Object.entries(c.pasos).sort((a, b) => b[1].usd - a[1].usd).map(([k, v]) => `<tr><td>${esc(nombres[k] || k.replace("busqueda_", "Búsqueda web: ").replaceAll("_", " "))}</td>
+    <td class="n">${v.llamadas}</td><td class="n">${v.tokens_entrada ? (v.tokens_entrada / 1000).toFixed(1) + "k" : v.busquedas_web + " búsq."}</td><td class="n">${usd(v.usd)}</td></tr>`).join("");
+  $("costo-tabla").innerHTML = `<tr><th>Paso</th><th class="n">Llamadas</th><th class="n">Entrada</th><th class="n">USD</th></tr>${filas}
+    <tr><td><b>Total</b></td><td></td><td></td><td class="n"><b>${usd(c.total_usd)}</b></td></tr>`;
+  $("cobertura").innerHTML = `<tr><th>Red</th><th class="n">Piezas</th><th class="n">En ranking</th><th class="n">Con métricas</th><th>Vía</th></tr>` +
+    Object.entries(d.cobertura).map(([r, v]) => `<tr><td>${esc(REDES[r] || r)}</td><td class="n">${v.recolectadas}</td><td class="n">${v.en_ranking}</td><td class="n">${v.con_metricas}</td><td>${esc(v.vias.map(x => VIAS[x] || x).join(", "))}</td></tr>`).join("");
+  const n = d.conteos;
+  $("conteos").textContent = `${n.recolectadas} piezas analizadas · ${n.en_ranking} en el ranking · ${n.fuera_de_sector} fuera del sector · ${n.sin_tema ?? 0} sin tema · ${n.baja_confianza} excluidas por baja confianza de JEV.`;
+  const h = c.historial || [];
+  const hmax = Math.max(...h.map(x => x.usd), 0.0001);
+  $("hist").innerHTML = h.slice(-30).map(x => `<i style="height:${x.usd / hmax * 100}%" title="${esc(new Date(x.generado).toLocaleString("es"))}: ${usd(x.usd)}"></i>`).join("");
+  $("hist-nota").textContent = h.length ? `${h.length} corridas · gasto acumulado ${usd(h.reduce((a, x) => a + x.usd, 0))}` : "";
+  const g = leer("radar-pago"); if (g) $("pago-actual").value = g;
+  pintarAhorro();
+}
+
+function pintarAhorro() {
+  const v = parseFloat($("pago-actual").value);
+  const c = DATA[sector]?.costo; if (!c) return;
+  const mensual = c.total_usd * 8 * 30;
+  if (!isNaN(v)) guardar("radar-pago", v);
+  $("ahorro-res").textContent = isNaN(v) || v <= 0 ? `Corriendo cada 3 horas, el radar cuesta unos ${usd(mensual)} al mes.`
+    : `Hoy: ${usd(v)} al mes. Radar cada 3 horas: ${usd(mensual)} al mes (${Math.round(mensual / v * 1000) / 10}% de lo que pagas hoy).`;
+}
+
+init();
+</script>
+</body>
+</html>
