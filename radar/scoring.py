@@ -167,6 +167,7 @@ def calcular(con, filas, respuestas: dict, temas: list[dict], cfg: dict) -> dict
             "top_piezas": [_resumen(p) for p in sorted(ps, key=lambda p: p["score"], reverse=True)[:6]],
         })
     resultado.sort(key=lambda t: t["score"], reverse=True)
+    ganchos = resumen_ganchos([p for p in piezas if p["tema"] in {t["id"] for t in resultado[:10]}])
     cobertura = {}
     for f in filas:
         d = cobertura.setdefault(f["red"], {"recolectadas": 0, "en_ranking": 0, "con_metricas": 0, "vias": set()})
@@ -177,10 +178,28 @@ def calcular(con, filas, respuestas: dict, temas: list[dict], cfg: dict) -> dict
         cobertura[p["red"]]["con_metricas"] += int(p["con_metricas"])
     for d in cobertura.values():
         d["vias"] = sorted(d["vias"])
-    return {"temas": resultado, "cobertura": cobertura,
+    return {"temas": resultado, "cobertura": cobertura, "ganchos": ganchos,
             "conteos": {"recolectadas": len(filas), "clasificadas": len(respuestas), "en_ranking": len(piezas),
                         "fuera_de_sector": descartadas, "baja_confianza": baja_conf,
                         "sin_tema": sin_tema}}
+
+
+def resumen_ganchos(piezas: list[dict]) -> list[dict]:
+    """Por gancho: qué parte de las piezas del top 10 lo usa y cuánto crecen frente al promedio."""
+    if not piezas:
+        return []
+    con_m = [p for p in piezas if p.get("crecimiento") is not None]
+    media = mean(p["crecimiento"] for p in con_m) if con_m else None
+    salida = []
+    for g, n in Counter(p["gancho"] for p in piezas).most_common():
+        crec = [p["crecimiento"] for p in con_m if p["gancho"] == g]
+        mejor = max((p for p in piezas if p["gancho"] == g), key=lambda p: p["score"])
+        salida.append({
+            "gancho": g, "piezas": n, "pct": round(n / len(piezas), 3),
+            "crecimiento_vs_media": round(mean(crec) / media - 1, 3) if crec and media else None,
+            "ejemplo": {"titulo": mejor["titulo"], "url": mejor["url"], "red": mejor["red"]},
+        })
+    return sorted(salida, key=lambda g: (g["crecimiento_vs_media"] is None, -(g["crecimiento_vs_media"] or 0)))
 
 
 def etapa(acel: float, pct_vol: float, pct_sat: float) -> str:

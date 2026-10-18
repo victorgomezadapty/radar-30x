@@ -7,6 +7,7 @@
 """
 import io
 import json
+import re
 import sys
 import threading
 import time
@@ -52,7 +53,7 @@ class _Salida(io.TextIOBase):
         _stdout_original.flush()
 
 
-def lanzar(sector: str, redes: list[str], recolectar: bool) -> bool:
+def lanzar(sector: str, redes: list[str], recolectar: bool, nicho: str = "", audiencia: str = "") -> bool:
     with TRABAJO.lock:
         if TRABAJO.ocupado():
             return False
@@ -61,7 +62,10 @@ def lanzar(sector: str, redes: list[str], recolectar: bool) -> bool:
 
         def correr():
             try:
-                pipeline.correr(sector, con_recoleccion=recolectar, redes=redes or None)
+                if nicho:
+                    print("PASO 0/6 Creando el sector para tu temática")
+                    pipeline.crear_sector(sector, nicho, audiencia)
+                pipeline.correr(sector, con_recoleccion=recolectar or bool(nicho), redes=redes or None)
             except SystemExit as e:
                 TRABAJO.error = str(e)
             except Exception as e:
@@ -94,7 +98,7 @@ class Manejador(SimpleHTTPRequestHandler):
     def do_GET(self):
         ruta = self.path.split("?")[0]
         if ruta == "/api/estado":
-            return self._json({**TRABAJO.estado(), "modo": "local"})
+            return self._json({**TRABAJO.estado(), "modo": "local", "requiereClave": False})
         if ruta == "/api/datos":
             datos = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in sorted(DIR_OUT.glob("*.json"))}
             return self._json(datos)
@@ -116,11 +120,15 @@ class Manejador(SimpleHTTPRequestHandler):
             datos = json.loads(self.rfile.read(largo) or b"{}")
         except ValueError:
             return self._json({"error": "JSON inválido"}, 400)
-        sector = datos.get("sector", "ia_latam")
-        if not (DIR_CONFIG / f"{sector}.yaml").exists():
+        sector = str(datos.get("sector", "ia_latam"))
+        nicho = str(datos.get("nicho", "")).replace("\n", " ").strip()[:140]
+        audiencia = str(datos.get("audiencia", "")).replace("\n", " ").strip()[:140]
+        if not re.fullmatch(r"[a-z0-9_]{2,60}", sector):
+            return self._json({"error": "sector inválido"}, 400)
+        if not nicho and not (DIR_CONFIG / f"{sector}.yaml").exists():
             return self._json({"error": f"sector desconocido: {sector}"}, 400)
         redes = [r for r in datos.get("redes", []) if r in REDES]
-        if not lanzar(sector, redes, bool(datos.get("recolectar", True))):
+        if not lanzar(sector, redes, bool(datos.get("recolectar", True)), nicho, audiencia):
             return self._json({"error": "ya hay una corrida en curso"}, 409)
         return self._json({"ok": True})
 

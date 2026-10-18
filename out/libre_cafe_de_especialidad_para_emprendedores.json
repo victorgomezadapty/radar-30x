@@ -1,0 +1,2760 @@
+{
+ "sector": "libre_cafe_de_especialidad_para_emprendedores",
+ "nombre": "Café de especialidad para emprendedores",
+ "redes_elegidas": [
+  "youtube",
+  "reddit",
+  "instagram",
+  "linkedin",
+  "tiktok"
+ ],
+ "marca": "tu marca",
+ "nicho_libre": "café de especialidad para emprendedores",
+ "corrida_anterior": null,
+ "ganchos": [
+  {
+   "gancho": "historia",
+   "piezas": 5,
+   "pct": 0.122,
+   "crecimiento_vs_media": 0.317,
+   "ejemplo": {
+    "titulo": "☕️🍃 Conoce como el santandereano Reagan Rodríguez ...",
+    "url": "https://es.linkedin.com/posts/mercycorpscolombia_conoce-como-el-santandereano-reagan-activity-7516155133534105601-hZrA",
+    "red": "linkedin"
+   }
+  },
+  {
+   "gancho": "promesa",
+   "piezas": 15,
+   "pct": 0.366,
+   "crecimiento_vs_media": 0.105,
+   "ejemplo": {
+    "titulo": "Cómo preparar el café perfecto en Moka Italiana? 🇮🇹☕ | Método fácil paso a paso",
+    "url": "https://www.youtube.com/watch?v=lSl-jKp-bL0",
+    "red": "youtube"
+   }
+  },
+  {
+   "gancho": "dato",
+   "piezas": 2,
+   "pct": 0.049,
+   "crecimiento_vs_media": 0.068,
+   "ejemplo": {
+    "titulo": "O café do Centro do Rio que serve cafés especiais desde 2003",
+    "url": "https://www.youtube.com/watch?v=md1axju43U4",
+    "red": "youtube"
+   }
+  },
+  {
+   "gancho": "pregunta",
+   "piezas": 11,
+   "pct": 0.268,
+   "crecimiento_vs_media": -0.199,
+   "ejemplo": {
+    "titulo": "Cómo preparar café en Chemex ☕ | Café de especialidad de El Salvador 🇸🇻 #Shorts #viral",
+    "url": "https://www.youtube.com/watch?v=raHCz5DklUw",
+    "red": "youtube"
+   }
+  },
+  {
+   "gancho": "contraste",
+   "piezas": 6,
+   "pct": 0.146,
+   "crecimiento_vs_media": -0.234,
+   "ejemplo": {
+    "titulo": "Muchas personas creen que para vender café necesitan ...",
+    "url": "https://www.instagram.com/reel/DecMD08DtGz",
+    "red": "instagram"
+   }
+  },
+  {
+   "gancho": "polemica",
+   "piezas": 2,
+   "pct": 0.049,
+   "crecimiento_vs_media": null,
+   "ejemplo": {
+    "titulo": "caída de un gran exportador cafetero colombiano",
+    "url": "https://es.linkedin.com/posts/cesar-augusto-echeverry-casta%C3%B1o-376438266_apartes-del-capitulo-xxv-del-tomo-iv-de-la-activity-7512688799395598337-JyVn",
+    "red": "linkedin"
+   }
+  }
+ ],
+ "generado": "2026-10-18T04:03:59+00:00",
+ "duracion_s": 88.6,
+ "modelo_jev": "jev-1.13.0",
+ "modelos_llm": [
+  "deepseek-flash",
+  "deepseek-v4-pro"
+ ],
+ "pesos": {
+  "fuerza": 0.35,
+  "aceleracion": 0.2,
+  "temprano": 0.2,
+  "multired": 0.15,
+  "frescura": 0.1
+ },
+ "temas": [
+  {
+   "id": "social_media_content_creation",
+   "nombre": "Creación de contenido",
+   "descripcion": "Tips and strategies for creating social media content, videos, and vlogs for coffee shops and baristas.",
+   "score": 0.7175,
+   "senales": {
+    "fuerza": 0.7824,
+    "aceleracion": 0.9375,
+    "temprano": 0.8496,
+    "multired": 0.2,
+    "frescura": 0.5625
+   },
+   "aceleracion_estimada": true,
+   "etapa": "emergente",
+   "volumen": 1,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "youtube": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=k8ESmv6X2uo",
+    "titulo": "Videos para cafeterías: tres planos que filmaría",
+    "cuenta": "Gisella | Publicista Digital",
+    "publicado": 1792245632.0,
+    "via": "api",
+    "metrica": 89.0,
+    "gancho": "promesa",
+    "formato": "lista",
+    "score": 0.7823809523809524,
+    "ajuste": 0.8099999999999999,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1792245632.0,
+     "url": "https://www.youtube.com/watch?v=k8ESmv6X2uo",
+     "titulo": "Videos para cafeterías: tres planos que filmaría",
+     "cuenta": "Gisella | Publicista Digital"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1792245632.0,
+      "url": "https://www.youtube.com/watch?v=k8ESmv6X2uo",
+      "titulo": "Videos para cafeterías: tres planos que filmaría",
+      "cuenta": "Gisella | Publicista Digital"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 0.6,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=k8ESmv6X2uo",
+     "titulo": "Videos para cafeterías: tres planos que filmaría",
+     "cuenta": "Gisella | Publicista Digital",
+     "publicado": 1792245632.0,
+     "via": "api",
+     "metrica": 89.0,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.7823809523809524,
+     "ajuste": 0.8099999999999999,
+     "con_metricas": true
+    }
+   ],
+   "porque": "Los videos en formato lista con promesas claras captan atención porque ofrecen pasos accionables y rápidos para mejorar el contenido visual de las cafeterías.",
+   "rank_anterior": null
+  },
+  {
+   "id": "cafe_profitability_strategies",
+   "nombre": "Rentabilidad y precios",
+   "descripcion": "Content on making a cafe profitable, pricing strategies, and financial sustainability without losing passion.",
+   "score": 0.658,
+   "senales": {
+    "fuerza": 0.7643,
+    "aceleracion": 0.8125,
+    "temprano": 0.5586,
+    "multired": 0.4,
+    "frescura": 0.5625
+   },
+   "aceleracion_estimada": true,
+   "etapa": "emergente",
+   "volumen": 2,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "youtube": 1,
+    "instagram": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.5
+     },
+     {
+      "valor": "historia",
+      "pct": 0.5
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 0.5
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.5
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=5rZyuu45eOI",
+    "titulo": "Cómo Hacer tu Cafetería RENTABLE (Sin Matar tu Pasión)",
+    "cuenta": "La Tribu del Café",
+    "publicado": 1791423008.0,
+    "via": "api",
+    "metrica": 431.0,
+    "gancho": "promesa",
+    "formato": "lista",
+    "score": 0.7643452380952381,
+    "ajuste": 0.7941666666666667,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791423008.0,
+     "url": "https://www.youtube.com/watch?v=5rZyuu45eOI",
+     "titulo": "Cómo Hacer tu Cafetería RENTABLE (Sin Matar tu Pasión)",
+     "cuenta": "La Tribu del Café"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791423008.0,
+      "url": "https://www.youtube.com/watch?v=5rZyuu45eOI",
+      "titulo": "Cómo Hacer tu Cafetería RENTABLE (Sin Matar tu Pasión)",
+      "cuenta": "La Tribu del Café"
+     },
+     {
+      "red": "instagram",
+      "fecha": 1792163665.09,
+      "url": "https://www.instagram.com/reel/Dej1J50xQhs",
+      "titulo": "Instagram",
+      "cuenta": ""
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 10.1,
+    "horas_entre_redes": [
+     205.7
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=5rZyuu45eOI",
+     "titulo": "Cómo Hacer tu Cafetería RENTABLE (Sin Matar tu Pasión)",
+     "cuenta": "La Tribu del Café",
+     "publicado": 1791423008.0,
+     "via": "api",
+     "metrica": 431.0,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.7643452380952381,
+     "ajuste": 0.7941666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/Dej1J50xQhs",
+     "titulo": "Instagram",
+     "cuenta": "",
+     "publicado": 1792163665.09,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "opinion",
+     "score": 0.5741666666666666,
+     "ajuste": 0.5741666666666666,
+     "con_metricas": false
+    }
+   ],
+   "porque": "El equilibrio entre promesas de rentabilidad y narrativas personales resuena porque los dueños buscan soluciones que no sacrifiquen su pasión por el café.",
+   "rank_anterior": null
+  },
+  {
+   "id": "cafe_technology_equipment",
+   "nombre": "Equipamiento y tecnología",
+   "descripcion": "Reviews, buying guides, and tips on coffee equipment, machines, and technology for home or cafe use.",
+   "score": 0.6325,
+   "senales": {
+    "fuerza": 0.6088,
+    "aceleracion": 1.0,
+    "temprano": 0.6875,
+    "multired": 0.4,
+    "frescura": 0.2188
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 2,
+   "piezas_7d": 2,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "youtube": 1,
+    "reddit": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "contraste",
+      "pct": 0.5
+     },
+     {
+      "valor": "polemica",
+      "pct": 0.5
+     }
+    ],
+    "formato": [
+     {
+      "valor": "demo",
+      "pct": 0.5
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.5
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "reddit",
+    "url": "https://www.reddit.com/r/barista/comments/1x3jdbg/do_not_buy_a_mazzer_from_temu/",
+    "titulo": "Do NOT buy a Mazzer from Temu",
+    "cuenta": "r/barista",
+    "publicado": 1791752393.0,
+    "via": "rss",
+    "metrica": null,
+    "gancho": "polemica",
+    "formato": "opinion",
+    "score": 0.5458333333333333,
+    "ajuste": 0.5458333333333333,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "reddit",
+     "fecha": 1791752393.0,
+     "url": "https://www.reddit.com/r/barista/comments/1x3jdbg/do_not_buy_a_mazzer_from_temu/",
+     "titulo": "Do NOT buy a Mazzer from Temu",
+     "cuenta": "r/barista"
+    },
+    "ruta": [
+     {
+      "red": "reddit",
+      "fecha": 1791752393.0,
+      "url": "https://www.reddit.com/r/barista/comments/1x3jdbg/do_not_buy_a_mazzer_from_temu/",
+      "titulo": "Do NOT buy a Mazzer from Temu",
+      "cuenta": "r/barista"
+     },
+     {
+      "red": "youtube",
+      "fecha": 1791904225.0,
+      "url": "https://www.youtube.com/watch?v=jBVxEaNWbyQ",
+      "titulo": "My Coffee Corner Just Became a Specialty Cafe ☕️ | Meraki",
+      "cuenta": "Vlad Teplin"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 6.3,
+    "horas_entre_redes": [
+     42.2
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=jBVxEaNWbyQ",
+     "titulo": "My Coffee Corner Just Became a Specialty Cafe ☕️ | Meraki",
+     "cuenta": "Vlad Teplin",
+     "publicado": 1791904225.0,
+     "via": "api",
+     "metrica": 4144.0,
+     "gancho": "contraste",
+     "formato": "demo",
+     "score": 0.60875,
+     "ajuste": 0.4425,
+     "con_metricas": true
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/barista/comments/1x3jdbg/do_not_buy_a_mazzer_from_temu/",
+     "titulo": "Do NOT buy a Mazzer from Temu",
+     "cuenta": "r/barista",
+     "publicado": 1791752393.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "polemica",
+     "formato": "opinion",
+     "score": 0.5458333333333333,
+     "ajuste": 0.5458333333333333,
+     "con_metricas": false
+    }
+   ],
+   "porque": "Las demostraciones y opiniones polémicas sobre equipos generan curiosidad al contrastar opciones costosas con alternativas accesibles para cafeterías emergentes.",
+   "rank_anterior": null
+  },
+  {
+   "id": "coffee_events_community",
+   "nombre": "Eventos y comunidad",
+   "descripcion": "Coverage of coffee festivals, local events, and community initiatives related to specialty coffee.",
+   "score": 0.5988,
+   "senales": {
+    "fuerza": 0.6765,
+    "aceleracion": 0.625,
+    "temprano": 0.5664,
+    "multired": 0.2,
+    "frescura": 0.9375
+   },
+   "aceleracion_estimada": true,
+   "etapa": "emergente",
+   "volumen": 1,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "youtube": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "historia",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=pgMh44bAQe4",
+    "titulo": "ASÍ SE VIVIÓ COFFEE FEST CURICÓ 2026 | Café, baristas y emprendimiento local",
+    "cuenta": "Luminaprisma Media",
+    "publicado": 1791504383.0,
+    "via": "api",
+    "metrica": 84.0,
+    "gancho": "historia",
+    "formato": "noticia",
+    "score": 0.6764880952380952,
+    "ajuste": 0.7625,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791504383.0,
+     "url": "https://www.youtube.com/watch?v=pgMh44bAQe4",
+     "titulo": "ASÍ SE VIVIÓ COFFEE FEST CURICÓ 2026 | Café, baristas y emprendimiento local",
+     "cuenta": "Luminaprisma Media"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791504383.0,
+      "url": "https://www.youtube.com/watch?v=pgMh44bAQe4",
+      "titulo": "ASÍ SE VIVIÓ COFFEE FEST CURICÓ 2026 | Café, baristas y emprendimiento local",
+      "cuenta": "Luminaprisma Media"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 9.2,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=pgMh44bAQe4",
+     "titulo": "ASÍ SE VIVIÓ COFFEE FEST CURICÓ 2026 | Café, baristas y emprendimiento local",
+     "cuenta": "Luminaprisma Media",
+     "publicado": 1791504383.0,
+     "via": "api",
+     "metrica": 84.0,
+     "gancho": "historia",
+     "formato": "noticia",
+     "score": 0.6764880952380952,
+     "ajuste": 0.7625,
+     "con_metricas": true
+    }
+   ],
+   "porque": "Las historias de eventos comunitarios inspiran al mostrar el impacto local y las conexiones humanas que fortalecen la identidad de las cafeterías.",
+   "rank_anterior": null
+  },
+  {
+   "id": "brewing_methods_home",
+   "nombre": "Métodos de preparación en casa",
+   "descripcion": "Tutorials and guides on brewing specialty coffee at home using methods like Moka pot, Chemex, and V60.",
+   "score": 0.5828,
+   "senales": {
+    "fuerza": 0.7831,
+    "aceleracion": 0.875,
+    "temprano": 0.2188,
+    "multired": 0.6,
+    "frescura": 0.0
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 5,
+   "piezas_7d": 4,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "youtube": 3,
+    "reddit": 1,
+    "tiktok": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 0.6
+     },
+     {
+      "valor": "promesa",
+      "pct": 0.4
+     }
+    ],
+    "formato": [
+     {
+      "valor": "tutorial",
+      "pct": 0.8
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.2
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=lSl-jKp-bL0",
+    "titulo": "Cómo preparar el café perfecto en Moka Italiana? 🇮🇹☕ | Método fácil paso a paso",
+    "cuenta": "COLOMBIAN coffee 28.0 /CAFICULTURA colombiana ",
+    "publicado": 1791464437.0,
+    "via": "api",
+    "metrica": 1910.0,
+    "gancho": "promesa",
+    "formato": "tutorial",
+    "score": 0.8661904761904762,
+    "ajuste": 0.805,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791464437.0,
+     "url": "https://www.youtube.com/watch?v=lSl-jKp-bL0",
+     "titulo": "Cómo preparar el café perfecto en Moka Italiana? 🇮🇹☕ | Método fácil paso a paso",
+     "cuenta": "COLOMBIAN coffee 28.0 /CAFICULTURA colombiana "
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791464437.0,
+      "url": "https://www.youtube.com/watch?v=lSl-jKp-bL0",
+      "titulo": "Cómo preparar el café perfecto en Moka Italiana? 🇮🇹☕ | Método fácil paso a paso",
+      "cuenta": "COLOMBIAN coffee 28.0 /CAFICULTURA colombiana "
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791819978.0,
+      "url": "https://www.tiktok.com/@franciscoverger/video/7695808208996175125",
+      "titulo": "Cómo Hacer Café Especialidad en Casa: Guía Paso a Paso",
+      "cuenta": "@franciscoverger"
+     },
+     {
+      "red": "reddit",
+      "fecha": 1792032033.0,
+      "url": "https://www.reddit.com/r/Coffee/comments/1x6aafq/using_a_filter_at_bottom_of_french_press_for_easy/",
+      "titulo": "Using a filter at bottom of French Press for easy cleanup?",
+      "cuenta": "r/Coffee"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 9.6,
+    "horas_entre_redes": [
+     98.8,
+     58.9
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=lSl-jKp-bL0",
+     "titulo": "Cómo preparar el café perfecto en Moka Italiana? 🇮🇹☕ | Método fácil paso a paso",
+     "cuenta": "COLOMBIAN coffee 28.0 /CAFICULTURA colombiana ",
+     "publicado": 1791464437.0,
+     "via": "api",
+     "metrica": 1910.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.8661904761904762,
+     "ajuste": 0.805,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=raHCz5DklUw",
+     "titulo": "Cómo preparar café en Chemex ☕ | Café de especialidad de El Salvador 🇸🇻 #Shorts #viral",
+     "cuenta": "Barista en Casa",
+     "publicado": 1791933481.0,
+     "via": "api",
+     "metrica": 793.0,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.7780357142857142,
+     "ajuste": 0.7775,
+     "con_metricas": true
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@franciscoverger/video/7695808208996175125",
+     "titulo": "Cómo Hacer Café Especialidad en Casa: Guía Paso a Paso",
+     "cuenta": "@franciscoverger",
+     "publicado": 1791819978.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.7216666666666667,
+     "ajuste": 0.7216666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=NJdsVsMtEqI",
+     "titulo": "V60 con Café de Especialidad Celeste Coffee Santander",
+     "cuenta": "celestecoffeesantander",
+     "publicado": 1792246894.0,
+     "via": "api",
+     "metrica": 16.0,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.7050595238095239,
+     "ajuste": 0.8458333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/Coffee/comments/1x6aafq/using_a_filter_at_bottom_of_french_press_for_easy/",
+     "titulo": "Using a filter at bottom of French Press for easy cleanup?",
+     "cuenta": "r/Coffee",
+     "publicado": 1792032033.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5133333333333333,
+     "ajuste": 0.5133333333333333,
+     "con_metricas": false
+    }
+   ],
+   "porque": "Los tutoriales con preguntas iniciales enganchan al resolver dudas concretas sobre métodos caseros, posicionando a la cafetería como guía experta.",
+   "rank_anterior": null
+  },
+  {
+   "id": "coffee_marketing_branding",
+   "nombre": "Marketing y branding",
+   "descripcion": "Strategies for branding, community building, and marketing a coffee shop or coffee product.",
+   "score": 0.5171,
+   "senales": {
+    "fuerza": 0.4822,
+    "aceleracion": 0.6875,
+    "temprano": 0.623,
+    "multired": 0.2,
+    "frescura": 0.5625
+   },
+   "aceleracion_estimada": true,
+   "etapa": "emergente",
+   "volumen": 1,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "youtube": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "contraste",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=U2WiqtBdnms",
+    "titulo": "Your Coffee Shop Needs More Than Great Coffee ☕ | Cafe Branding Tips #Shorts",
+    "cuenta": "veronify",
+    "publicado": 1792110851.0,
+    "via": "api",
+    "metrica": 74.0,
+    "gancho": "contraste",
+    "formato": "lista",
+    "score": 0.48220238095238094,
+    "ajuste": 0.6275,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1792110851.0,
+     "url": "https://www.youtube.com/watch?v=U2WiqtBdnms",
+     "titulo": "Your Coffee Shop Needs More Than Great Coffee ☕ | Cafe Branding Tips #Shorts",
+     "cuenta": "veronify"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1792110851.0,
+      "url": "https://www.youtube.com/watch?v=U2WiqtBdnms",
+      "titulo": "Your Coffee Shop Needs More Than Great Coffee ☕ | Cafe Branding Tips #Shorts",
+      "cuenta": "veronify"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 2.1,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=U2WiqtBdnms",
+     "titulo": "Your Coffee Shop Needs More Than Great Coffee ☕ | Cafe Branding Tips #Shorts",
+     "cuenta": "veronify",
+     "publicado": 1792110851.0,
+     "via": "api",
+     "metrica": 74.0,
+     "gancho": "contraste",
+     "formato": "lista",
+     "score": 0.48220238095238094,
+     "ajuste": 0.6275,
+     "con_metricas": true
+    }
+   ],
+   "porque": "El contraste entre solo servir buen café y construir una marca diferenciada impulsa listas que priorizan la identidad visual y emocional.",
+   "rank_anterior": null
+  },
+  {
+   "id": "coffee_entrepreneur_stories",
+   "nombre": "Historias de emprendedores",
+   "descripcion": "Personal stories and journeys of coffee entrepreneurs, from starting to succeeding in the specialty coffee business.",
+   "score": 0.5019,
+   "senales": {
+    "fuerza": 0.6947,
+    "aceleracion": 0.75,
+    "temprano": 0.0469,
+    "multired": 0.6,
+    "frescura": 0.0938
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 9,
+   "piezas_7d": 4,
+   "piezas_7d_previos": 5,
+   "redes": {
+    "youtube": 7,
+    "instagram": 1,
+    "linkedin": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "historia",
+      "pct": 0.33
+     },
+     {
+      "valor": "promesa",
+      "pct": 0.22
+     }
+    ],
+    "formato": [
+     {
+      "valor": "caso",
+      "pct": 0.89
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.11
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=fcmqhgwQanQ",
+    "titulo": "Construye una comunidad para tu producto | Ep 37 The Talk para emprender!",
+    "cuenta": "WORTEV México",
+    "publicado": 1791125451.0,
+    "via": "api",
+    "metrica": 6.0,
+    "gancho": "promesa",
+    "formato": "caso",
+    "score": 0.5383928571428571,
+    "ajuste": 0.8041666666666667,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791125451.0,
+     "url": "https://www.youtube.com/watch?v=fcmqhgwQanQ",
+     "titulo": "Construye una comunidad para tu producto | Ep 37 The Talk para emprender!",
+     "cuenta": "WORTEV México"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791125451.0,
+      "url": "https://www.youtube.com/watch?v=fcmqhgwQanQ",
+      "titulo": "Construye una comunidad para tu producto | Ep 37 The Talk para emprender!",
+      "cuenta": "WORTEV México"
+     },
+     {
+      "red": "instagram",
+      "fecha": 1791737347.703,
+      "url": "https://www.instagram.com/reel/DeXIBNPM5rd",
+      "titulo": "☕🚀 ¿QUIÉN DIJO QUE PARA TENER UNA CAFETERÍA ...",
+      "cuenta": ""
+     },
+     {
+      "red": "linkedin",
+      "fecha": 1791991027.244,
+      "url": "https://es.linkedin.com/posts/mercycorpscolombia_conoce-como-el-santandereano-reagan-activity-7516155133534105601-hZrA",
+      "titulo": "☕️🍃 Conoce como el santandereano Reagan Rodríguez ...",
+      "cuenta": "mercycorpscolombia"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.6,
+    "horas_entre_redes": [
+     170.0,
+     70.5
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=AaEMJSk1_lU",
+     "titulo": "☕ La verdad detrás del café y de emprender | Allan en SI NO SABÍAS… TE LO CUENTO #1",
+     "cuenta": "Y si no sabías, te lo cuento",
+     "publicado": 1791313209.0,
+     "via": "api",
+     "metrica": 579.0,
+     "gancho": "promesa",
+     "formato": "caso",
+     "score": 0.7938095238095237,
+     "ajuste": 0.7566666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "linkedin",
+     "url": "https://es.linkedin.com/posts/mercycorpscolombia_conoce-como-el-santandereano-reagan-activity-7516155133534105601-hZrA",
+     "titulo": "☕️🍃 Conoce como el santandereano Reagan Rodríguez ...",
+     "cuenta": "mercycorpscolombia",
+     "publicado": 1791991027.244,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "caso",
+     "score": 0.755,
+     "ajuste": 0.755,
+     "con_metricas": false
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/DeXIBNPM5rd",
+     "titulo": "☕🚀 ¿QUIÉN DIJO QUE PARA TENER UNA CAFETERÍA ...",
+     "cuenta": "",
+     "publicado": 1791737347.703,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "caso",
+     "score": 0.7491666666666666,
+     "ajuste": 0.7491666666666666,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=md1axju43U4",
+     "titulo": "O café do Centro do Rio que serve cafés especiais desde 2003",
+     "cuenta": "Gregorio Martins",
+     "publicado": 1791208823.0,
+     "via": "api",
+     "metrica": 11218.0,
+     "gancho": "dato",
+     "formato": "caso",
+     "score": 0.6772619047619047,
+     "ajuste": 0.7033333333333334,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=dTW5BTBH1ss",
+     "titulo": "Something Is Brewing at Anthology | Specialty Coffee Islamabad",
+     "cuenta": "Anthology ",
+     "publicado": 1791881075.0,
+     "via": "api",
+     "metrica": 236.0,
+     "gancho": "historia",
+     "formato": "opinion",
+     "score": 0.6129166666666667,
+     "ajuste": 0.3925,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=fcmqhgwQanQ",
+     "titulo": "Construye una comunidad para tu producto | Ep 37 The Talk para emprender!",
+     "cuenta": "WORTEV México",
+     "publicado": 1791125451.0,
+     "via": "api",
+     "metrica": 6.0,
+     "gancho": "promesa",
+     "formato": "caso",
+     "score": 0.5383928571428571,
+     "ajuste": 0.8041666666666667,
+     "con_metricas": true
+    }
+   ],
+   "porque": "Los casos reales de emprendedores generan identificación y aprendizaje práctico al mostrar desafíos y logros concretos del sector.",
+   "rank_anterior": null
+  },
+  {
+   "id": "coffee_education_consumer",
+   "nombre": "Educación al consumidor",
+   "descripcion": "Educational content for consumers about specialty coffee, including definitions, distinctions, and appreciation.",
+   "score": 0.4654,
+   "senales": {
+    "fuerza": 0.4689,
+    "aceleracion": 0.5,
+    "temprano": 0.125,
+    "multired": 0.8,
+    "frescura": 0.5625
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 5,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 4,
+   "redes": {
+    "youtube": 1,
+    "reddit": 1,
+    "instagram": 1,
+    "tiktok": 2
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 0.4
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.4
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=ufDYcWOQ5nw",
+    "titulo": "Brew Line Coffee / 3 common coffee mistakes",
+    "cuenta": "Brew Line Coffee",
+    "publicado": 1791141953.0,
+    "via": "api",
+    "metrica": 31.0,
+    "gancho": "pregunta",
+    "formato": "lista",
+    "score": 0.46886904761904763,
+    "ajuste": 0.7425,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791141953.0,
+     "url": "https://www.youtube.com/watch?v=ufDYcWOQ5nw",
+     "titulo": "Brew Line Coffee / 3 common coffee mistakes",
+     "cuenta": "Brew Line Coffee"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791141953.0,
+      "url": "https://www.youtube.com/watch?v=ufDYcWOQ5nw",
+      "titulo": "Brew Line Coffee / 3 common coffee mistakes",
+      "cuenta": "Brew Line Coffee"
+     },
+     {
+      "red": "instagram",
+      "fecha": 1791213849.26,
+      "url": "https://www.instagram.com/p/DeHhhlpkYUe",
+      "titulo": "¿Qué es un café de especialidad? Aquí os dejamos algunos consejos para ...",
+      "cuenta": ""
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791417663.0,
+      "url": "https://www.tiktok.com/@cris_abrego1/video/7694080280079961351",
+      "titulo": "Tosto Coffee Panamá: ¿Qué hace su café de especialidad ...",
+      "cuenta": "@cris_abrego1"
+     },
+     {
+      "red": "reddit",
+      "fecha": 1792029938.0,
+      "url": "https://www.reddit.com/r/Coffee/comments/1x69luy/best_resources_for_learning_about_coffee/",
+      "titulo": "Best resources for learning about coffee?",
+      "cuenta": "r/Coffee"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.4,
+    "horas_entre_redes": [
+     20.0,
+     56.6,
+     170.1
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@cris_abrego1/video/7694080280079961351",
+     "titulo": "Tosto Coffee Panamá: ¿Qué hace su café de especialidad ...",
+     "cuenta": "@cris_abrego1",
+     "publicado": 1791417663.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "lista",
+     "score": 0.7166666666666667,
+     "ajuste": 0.7166666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/p/DeHhhlpkYUe",
+     "titulo": "¿Qué es un café de especialidad? Aquí os dejamos algunos consejos para ...",
+     "cuenta": "",
+     "publicado": 1791213849.26,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.61,
+     "ajuste": 0.61,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@tuyo.cafe/video/7695075253743144199",
+     "titulo": "¿Los Cafés Cofermentados Son de Especialidad? El ...",
+     "cuenta": "@tuyo.cafe",
+     "publicado": 1791649324.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5341666666666667,
+     "ajuste": 0.5341666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/Coffee/comments/1x69luy/best_resources_for_learning_about_coffee/",
+     "titulo": "Best resources for learning about coffee?",
+     "cuenta": "r/Coffee",
+     "publicado": 1792029938.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.47250000000000003,
+     "ajuste": 0.47250000000000003,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=ufDYcWOQ5nw",
+     "titulo": "Brew Line Coffee / 3 common coffee mistakes",
+     "cuenta": "Brew Line Coffee",
+     "publicado": 1791141953.0,
+     "via": "api",
+     "metrica": 31.0,
+     "gancho": "pregunta",
+     "formato": "lista",
+     "score": 0.46886904761904763,
+     "ajuste": 0.7425,
+     "con_metricas": true
+    }
+   ],
+   "porque": "Las preguntas sobre qué define al café de especialidad reflejan una necesidad educativa que las cafeterías pueden aprovechar para fidelizar clientes.",
+   "rank_anterior": null
+  },
+  {
+   "id": "cafe_startup_guides",
+   "nombre": "Guías para abrir cafetería",
+   "descripcion": "Step-by-step advice, ideas, and tips for starting a coffee shop business from scratch.",
+   "score": 0.4308,
+   "senales": {
+    "fuerza": 0.5398,
+    "aceleracion": 0.5625,
+    "temprano": 0.0,
+    "multired": 0.8,
+    "frescura": 0.0938
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 11,
+   "piezas_7d": 4,
+   "piezas_7d_previos": 7,
+   "redes": {
+    "youtube": 4,
+    "instagram": 1,
+    "linkedin": 1,
+    "tiktok": 5
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.73
+     },
+     {
+      "valor": "contraste",
+      "pct": 0.18
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 0.27
+     },
+     {
+      "valor": "tutorial",
+      "pct": 0.27
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "tiktok",
+    "url": "https://www.tiktok.com/@barista.express7/video/7693963382814182662",
+    "titulo": "Emprende con Café: Convierte tu Pasión por el Barismo en ...",
+    "cuenta": "@barista.express7",
+    "publicado": 1791390446.0,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "promesa",
+    "formato": "opinion",
+    "score": 0.5666666666666667,
+    "ajuste": 0.5666666666666667,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "tiktok",
+     "fecha": 1791390446.0,
+     "url": "https://www.tiktok.com/@barista.express7/video/7693963382814182662",
+     "titulo": "Emprende con Café: Convierte tu Pasión por el Barismo en ...",
+     "cuenta": "@barista.express7"
+    },
+    "ruta": [
+     {
+      "red": "tiktok",
+      "fecha": 1791390446.0,
+      "url": "https://www.tiktok.com/@barista.express7/video/7693963382814182662",
+      "titulo": "Emprende con Café: Convierte tu Pasión por el Barismo en ...",
+      "cuenta": "@barista.express7"
+     },
+     {
+      "red": "youtube",
+      "fecha": 1791405030.0,
+      "url": "https://www.youtube.com/watch?v=e4lEwyw6X_k",
+      "titulo": "Raíces Café: Sabores que nos conectan | Propuesta de Emprendimiento",
+      "cuenta": "Paola BM"
+     },
+     {
+      "red": "instagram",
+      "fecha": 1791907238.481,
+      "url": "https://www.instagram.com/reel/DecMD08DtGz",
+      "titulo": "Muchas personas creen que para vender café necesitan ...",
+      "cuenta": ""
+     },
+     {
+      "red": "linkedin",
+      "fecha": 1791937801.645,
+      "url": "https://es.linkedin.com/posts/redagricola_caf%C3%A9-worldofcoffee-caf%C3%A9deespecialidad-activity-7515931889191546880-ApYg",
+      "titulo": "café #worldofcoffee #cafédeespecialidad #texasamagrilife ...",
+      "cuenta": "redagricola"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 10.5,
+    "horas_entre_redes": [
+     4.1,
+     139.5,
+     8.5
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/DecMD08DtGz",
+     "titulo": "Muchas personas creen que para vender café necesitan ...",
+     "cuenta": "",
+     "publicado": 1791907238.481,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.7374999999999999,
+     "ajuste": 0.7374999999999999,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@nicolas___velasquez/video/7694844835462647061",
+     "titulo": "Cómo emprender con un negocio de café y alimentos",
+     "cuenta": "@nicolas___velasquez",
+     "publicado": 1791595675.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6625,
+     "ajuste": 0.6625,
+     "con_metricas": false
+    },
+    {
+     "red": "linkedin",
+     "url": "https://es.linkedin.com/posts/redagricola_caf%C3%A9-worldofcoffee-caf%C3%A9deespecialidad-activity-7515931889191546880-ApYg",
+     "titulo": "café #worldofcoffee #cafédeespecialidad #texasamagrilife ...",
+     "cuenta": "redagricola",
+     "publicado": 1791937801.645,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "noticia",
+     "score": 0.6483333333333333,
+     "ajuste": 0.6483333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@kellymbarreram/video/7694064309495745799",
+     "titulo": "Cómo emprender una cafetería paso a paso",
+     "cuenta": "@kellymbarreram",
+     "publicado": 1791413945.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6416666666666666,
+     "ajuste": 0.6416666666666666,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@labarista13/video/7694000140566416660",
+     "titulo": "Ideas rápidas para emprender una cafetería desde cero",
+     "cuenta": "@labarista13",
+     "publicado": 1791399005.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.6341666666666667,
+     "ajuste": 0.6341666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=RTUTjmiAX9U",
+     "titulo": "Los errores que Cierran Cafeterías/Consejos para Emprendedores con Gerardo Reyes Cerritos/Mr Barista",
+     "cuenta": "Mr. Barista",
+     "publicado": 1791487812.0,
+     "via": "api",
+     "metrica": 32.0,
+     "gancho": "pregunta",
+     "formato": "lista",
+     "score": 0.6036904761904762,
+     "ajuste": 0.7883333333333333,
+     "con_metricas": true
+    }
+   ],
+   "porque": "El alto interés en guías prácticas con promesas de éxito indica que los aspirantes a emprendedores buscan pasos concretos para reducir riesgos.",
+   "rank_anterior": null
+  },
+  {
+   "id": "coffee_market_trends",
+   "nombre": "Tendencias del mercado",
+   "descripcion": "Insights into coffee market growth, consumer trends, and industry developments.",
+   "score": 0.3648,
+   "senales": {
+    "fuerza": 0.3663,
+    "aceleracion": 0.4375,
+    "temprano": 0.1641,
+    "multired": 0.4,
+    "frescura": 0.5625
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 4,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 3,
+   "redes": {
+    "youtube": 2,
+    "linkedin": 2
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 0.25
+     },
+     {
+      "valor": "dato",
+      "pct": 0.25
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 0.5
+     },
+     {
+      "valor": "noticia",
+      "pct": 0.5
+     }
+    ],
+    "menciona_lanzamiento": 0.75
+   },
+   "pieza_temprana": {
+    "red": "linkedin",
+    "url": "https://es.linkedin.com/posts/cesar-augusto-echeverry-casta%C3%B1o-376438266_apartes-del-capitulo-xxv-del-tomo-iv-de-la-activity-7512688799395598337-JyVn",
+    "titulo": "caída de un gran exportador cafetero colombiano",
+    "cuenta": "cesar-augusto-echeverry-casta%C3%B1o-376438266",
+    "publicado": 1791164588.784,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "polemica",
+    "formato": "noticia",
+    "score": 0.655,
+    "ajuste": 0.655,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "linkedin",
+     "fecha": 1791164588.784,
+     "url": "https://es.linkedin.com/posts/cesar-augusto-echeverry-casta%C3%B1o-376438266_apartes-del-capitulo-xxv-del-tomo-iv-de-la-activity-7512688799395598337-JyVn",
+     "titulo": "caída de un gran exportador cafetero colombiano",
+     "cuenta": "cesar-augusto-echeverry-casta%C3%B1o-376438266"
+    },
+    "ruta": [
+     {
+      "red": "linkedin",
+      "fecha": 1791164588.784,
+      "url": "https://es.linkedin.com/posts/cesar-augusto-echeverry-casta%C3%B1o-376438266_apartes-del-capitulo-xxv-del-tomo-iv-de-la-activity-7512688799395598337-JyVn",
+      "titulo": "caída de un gran exportador cafetero colombiano",
+      "cuenta": "cesar-augusto-echeverry-casta%C3%B1o-376438266"
+     },
+     {
+      "red": "youtube",
+      "fecha": 1791662423.0,
+      "url": "https://www.youtube.com/watch?v=y-hOJUJzoxw",
+      "titulo": "Mercado de cafeterias cresce 38% no Brasil",
+      "cuenta": "O HOJE"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.1,
+    "horas_entre_redes": [
+     138.3
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "linkedin",
+     "url": "https://es.linkedin.com/posts/gabrielalejandrodiazvillarruel-gerentecomercial_y-si-el-pr%C3%B3ximo-gran-salto-del-caf%C3%A9-colombiano-activity-7513380862520975360--V8g",
+     "titulo": "Publicación de Gabriel Alejandro Diaz Villarruel",
+     "cuenta": "gabrielalejandrodiazvillarruel-gerentecomercial",
+     "publicado": 1791329589.491,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "opinion",
+     "score": 0.6691666666666667,
+     "ajuste": 0.6691666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "linkedin",
+     "url": "https://es.linkedin.com/posts/cesar-augusto-echeverry-casta%C3%B1o-376438266_apartes-del-capitulo-xxv-del-tomo-iv-de-la-activity-7512688799395598337-JyVn",
+     "titulo": "caída de un gran exportador cafetero colombiano",
+     "cuenta": "cesar-augusto-echeverry-casta%C3%B1o-376438266",
+     "publicado": 1791164588.784,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "polemica",
+     "formato": "noticia",
+     "score": 0.655,
+     "ajuste": 0.655,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=y-hOJUJzoxw",
+     "titulo": "Mercado de cafeterias cresce 38% no Brasil",
+     "cuenta": "O HOJE",
+     "publicado": 1791662423.0,
+     "via": "api",
+     "metrica": 28.0,
+     "gancho": "dato",
+     "formato": "noticia",
+     "score": 0.5151785714285715,
+     "ajuste": 0.6375000000000001,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=Jc6kxXgZmq0",
+     "titulo": "Where Your Coffee Money Actually Goes",
+     "cuenta": "عشاق المهندس",
+     "publicado": 1791889208.0,
+     "via": "api",
+     "metrica": 0.0,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.2175,
+     "ajuste": 0.435,
+     "con_metricas": true
+    }
+   ],
+   "porque": "La combinación de noticias con análisis de datos responde a la necesidad de dueños de cafeterías de anticiparse a cambios del mercado.",
+   "rank_anterior": null
+  },
+  {
+   "id": "specialty_vs_commercial",
+   "nombre": "Especialidad vs. comercial",
+   "descripcion": "Content explaining the differences between specialty coffee and commercial coffee, including capsule coffee.",
+   "score": 0.1884,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1875,
+    "temprano": 0.0234,
+    "multired": 0.6,
+    "frescura": 0.5625
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 6,
+   "piezas_7d": 4,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "instagram": 3,
+    "linkedin": 2,
+    "tiktok": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "contraste",
+      "pct": 0.5
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.33
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 0.5
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.33
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "instagram",
+    "url": "https://www.instagram.com/reel/DecaJz4vFB6",
+    "titulo": "Día 95 de 365 dándote datos sobre el café! ☕️👀 Estas son las 5 mayores ...",
+    "cuenta": "",
+    "publicado": 1791914627.53,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "promesa",
+    "formato": "lista",
+    "score": 0.6683333333333333,
+    "ajuste": 0.6683333333333333,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "instagram",
+     "fecha": 1791914627.53,
+     "url": "https://www.instagram.com/reel/DecaJz4vFB6",
+     "titulo": "Día 95 de 365 dándote datos sobre el café! ☕️👀 Estas son las 5 mayores ...",
+     "cuenta": ""
+    },
+    "ruta": [
+     {
+      "red": "instagram",
+      "fecha": 1791914627.53,
+      "url": "https://www.instagram.com/reel/DecaJz4vFB6",
+      "titulo": "Día 95 de 365 dándote datos sobre el café! ☕️👀 Estas son las 5 mayores ...",
+      "cuenta": ""
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791915249.0,
+      "url": "https://www.tiktok.com/@cafekhaley/video/7696217394297015570",
+      "titulo": "5 diferencias entre café comercial y café de especialidad",
+      "cuenta": "@cafekhaley"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 4.4,
+    "horas_entre_redes": [
+     0.2
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/DecaJz4vFB6",
+     "titulo": "Día 95 de 365 dándote datos sobre el café! ☕️👀 Estas son las 5 mayores ...",
+     "cuenta": "",
+     "publicado": 1791914627.53,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.6683333333333333,
+     "ajuste": 0.6683333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/p/DefQxxAj2nZ",
+     "titulo": "¿Cómo distinguir un café comercial de uno de especialidad? Empieza por ...",
+     "cuenta": "",
+     "publicado": 1792010375.258,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.6441666666666667,
+     "ajuste": 0.6441666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@cafekhaley/video/7696217394297015570",
+     "titulo": "5 diferencias entre café comercial y café de especialidad",
+     "cuenta": "@cafekhaley",
+     "publicado": 1791915249.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "lista",
+     "score": 0.585,
+     "ajuste": 0.585,
+     "con_metricas": false
+    },
+    {
+     "red": "linkedin",
+     "url": "https://es.linkedin.com/pulse/por-qu%C3%A9-el-caf%C3%A9-de-especialidad-es-tan-caro-sergio-bezares-utabe",
+     "titulo": "¿Por qué el café de especialidad es tan caro?",
+     "cuenta": "",
+     "publicado": null,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.545,
+     "ajuste": 0.545,
+     "con_metricas": false
+    },
+    {
+     "red": "linkedin",
+     "url": "https://es.linkedin.com/pulse/hoy-celebramos-el-d%C3%ADa-internacional-del-caf%C3%A9-javier-pe%C3%B1a-yuize",
+     "titulo": "Hoy celebramos el Día Internacional del Café",
+     "cuenta": "",
+     "publicado": null,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.5358333333333333,
+     "ajuste": 0.5358333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/DekCOxXoHlh",
+     "titulo": "Estas son las diferencias entre el café de cápsulas y el café de especialidad ...",
+     "cuenta": "",
+     "publicado": 1792170520.712,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "lista",
+     "score": 0.5325,
+     "ajuste": 0.5325,
+     "con_metricas": false
+    }
+   ],
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "coffee_shop_management",
+   "nombre": "Gestión de cafetería",
+   "descripcion": "Advice on daily operations, organization, cleaning routines, and managing a coffee shop effectively.",
+   "score": 0.187,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1875,
+    "temprano": 0.1289,
+    "multired": 0.2,
+    "frescura": 0.9375
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 2,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 2,
+   "redes": {
+    "tiktok": 2
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 0.5
+     },
+     {
+      "valor": "tutorial",
+      "pct": 0.5
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "tiktok",
+    "url": "https://www.tiktok.com/@thebartender3/video/7693183215829290248",
+    "titulo": "Cafe organizer tips for new cafes",
+    "cuenta": "@thebartender3",
+    "publicado": 1791208799.0,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "promesa",
+    "formato": "lista",
+    "score": 0.6308333333333334,
+    "ajuste": 0.6308333333333334,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "tiktok",
+     "fecha": 1791208799.0,
+     "url": "https://www.tiktok.com/@thebartender3/video/7693183215829290248",
+     "titulo": "Cafe organizer tips for new cafes",
+     "cuenta": "@thebartender3"
+    },
+    "ruta": [
+     {
+      "red": "tiktok",
+      "fecha": 1791208799.0,
+      "url": "https://www.tiktok.com/@thebartender3/video/7693183215829290248",
+      "titulo": "Cafe organizer tips for new cafes",
+      "cuenta": "@thebartender3"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 12.6,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@worldoflatteart/video/7694600533499301152",
+     "titulo": "Barista Morning Routine: Quick Cafe Prep Tips",
+     "cuenta": "@worldoflatteart",
+     "publicado": 1791538794.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6525,
+     "ajuste": 0.6525,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@thebartender3/video/7693183215829290248",
+     "titulo": "Cafe organizer tips for new cafes",
+     "cuenta": "@thebartender3",
+     "publicado": 1791208799.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.6308333333333334,
+     "ajuste": 0.6308333333333334,
+     "con_metricas": false
+    }
+   ],
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "coffee_sourcing_traceability",
+   "nombre": "Trazabilidad y origen",
+   "descripcion": "Content about coffee sourcing, traceability, and connecting consumers with bean origins.",
+   "score": 0.18,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1875,
+    "temprano": 0.0938,
+    "multired": 0.2,
+    "frescura": 0.9375
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 3,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 3,
+   "redes": {
+    "linkedin": 3
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "contraste",
+      "pct": 0.67
+     },
+     {
+      "valor": "promesa",
+      "pct": 0.33
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "linkedin",
+    "url": "https://es.linkedin.com/posts/danielvelperez_caf%C3%A9-coffeebusiness-branding-activity-7512946691445002240-Y__p",
+    "titulo": "Publicación de Daniel Velasquez",
+    "cuenta": "danielvelperez",
+    "publicado": 1791226075.04,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "contraste",
+    "formato": "opinion",
+    "score": 0.5591666666666667,
+    "ajuste": 0.5591666666666667,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "linkedin",
+     "fecha": 1791226075.04,
+     "url": "https://es.linkedin.com/posts/danielvelperez_caf%C3%A9-coffeebusiness-branding-activity-7512946691445002240-Y__p",
+     "titulo": "Publicación de Daniel Velasquez",
+     "cuenta": "danielvelperez"
+    },
+    "ruta": [
+     {
+      "red": "linkedin",
+      "fecha": 1791226075.04,
+      "url": "https://es.linkedin.com/posts/danielvelperez_caf%C3%A9-coffeebusiness-branding-activity-7512946691445002240-Y__p",
+      "titulo": "Publicación de Daniel Velasquez",
+      "cuenta": "danielvelperez"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 12.4,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "linkedin",
+     "url": "https://es.linkedin.com/posts/arturojms_h%C3%A9roesdelcaf%C3%A9-donsalazarcoffee-innovaci%C3%B3n-activity-7513613819257155584-gDzE",
+     "titulo": "Arturo Marín Salazar",
+     "cuenta": "arturojms",
+     "publicado": 1791385130.705,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "opinion",
+     "score": 0.6191666666666666,
+     "ajuste": 0.6191666666666666,
+     "con_metricas": false
+    },
+    {
+     "red": "linkedin",
+     "url": "https://es.linkedin.com/posts/danielvelperez_caf%C3%A9-coffeebusiness-branding-activity-7512946691445002240-Y__p",
+     "titulo": "Publicación de Daniel Velasquez",
+     "cuenta": "danielvelperez",
+     "publicado": 1791226075.04,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.5591666666666667,
+     "ajuste": 0.5591666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "linkedin",
+     "url": "https://es.linkedin.com/posts/nicolas-de-la-maza-381628280_trazabilidad-cafedeespecialidad-comerciojusto-activity-7513363168971280384-tpyb",
+     "titulo": "Trazabilidad en café de especialidad: clave para conectar ...",
+     "cuenta": "nicolas-de-la-maza-381628280",
+     "publicado": 1791325371.02,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.54,
+     "ajuste": 0.54,
+     "con_metricas": false
+    }
+   ],
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "barista_skills_training",
+   "nombre": "Habilidades de barista",
+   "descripcion": "Tips, tricks, and tutorials for baristas, including latte art, customer service, and efficiency.",
+   "score": 0.1725,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1875,
+    "temprano": 0.0938,
+    "multired": 0.4,
+    "frescura": 0.5625
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 3,
+   "piezas_7d": 2,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "reddit": 2,
+    "tiktok": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 0.67
+     },
+     {
+      "valor": "promesa",
+      "pct": 0.33
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 0.67
+     },
+     {
+      "valor": "lista",
+      "pct": 0.33
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "tiktok",
+    "url": "https://www.tiktok.com/@baristasyed/video/7693451892940082438",
+    "titulo": "Cafe Barista Tips: Quick Coffee Tricks for Busy Shops",
+    "cuenta": "@baristasyed",
+    "publicado": 1791271356.0,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "promesa",
+    "formato": "lista",
+    "score": 0.6125,
+    "ajuste": 0.6125,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "tiktok",
+     "fecha": 1791271356.0,
+     "url": "https://www.tiktok.com/@baristasyed/video/7693451892940082438",
+     "titulo": "Cafe Barista Tips: Quick Coffee Tricks for Busy Shops",
+     "cuenta": "@baristasyed"
+    },
+    "ruta": [
+     {
+      "red": "tiktok",
+      "fecha": 1791271356.0,
+      "url": "https://www.tiktok.com/@baristasyed/video/7693451892940082438",
+      "titulo": "Cafe Barista Tips: Quick Coffee Tricks for Busy Shops",
+      "cuenta": "@baristasyed"
+     },
+     {
+      "red": "reddit",
+      "fecha": 1792101691.0,
+      "url": "https://www.reddit.com/r/barista/comments/1x6yx2j/when_does_it_get_better_for_green_beans_at/",
+      "titulo": "When does it get better for green beans at Starbucks?",
+      "cuenta": "r/barista"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 11.9,
+    "horas_entre_redes": [
+     230.6
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@baristasyed/video/7693451892940082438",
+     "titulo": "Cafe Barista Tips: Quick Coffee Tricks for Busy Shops",
+     "cuenta": "@baristasyed",
+     "publicado": 1791271356.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.6125,
+     "ajuste": 0.6125,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/barista/comments/1x8iq5f/whats_the_most_annoying_order_iyo/",
+     "titulo": "What’s the most annoying order iyo",
+     "cuenta": "r/barista",
+     "publicado": 1792264792.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.43916666666666665,
+     "ajuste": 0.43916666666666665,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/barista/comments/1x6yx2j/when_does_it_get_better_for_green_beans_at/",
+     "titulo": "When does it get better for green beans at Starbucks?",
+     "cuenta": "r/barista",
+     "publicado": 1792101691.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.4091666666666667,
+     "ajuste": 0.4091666666666667,
+     "con_metricas": false
+    }
+   ],
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "coffee_career_advice",
+   "nombre": "Carrera en café",
+   "descripcion": "Advice on getting a job in coffee, career progression, and working as a barista.",
+   "score": 0.1577,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1875,
+    "temprano": 0.1699,
+    "multired": 0.2,
+    "frescura": 0.5625
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 1,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "reddit": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "reddit",
+    "url": "https://www.reddit.com/r/barista/comments/1x54kcg/if_you_work_for_a_small_business_care_to_share/",
+    "titulo": "If you work for a small business, care to share your hourly wage?",
+    "cuenta": "r/barista",
+    "publicado": 1791915984.0,
+    "via": "rss",
+    "metrica": null,
+    "gancho": "pregunta",
+    "formato": "opinion",
+    "score": 0.40166666666666667,
+    "ajuste": 0.40166666666666667,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "reddit",
+     "fecha": 1791915984.0,
+     "url": "https://www.reddit.com/r/barista/comments/1x54kcg/if_you_work_for_a_small_business_care_to_share/",
+     "titulo": "If you work for a small business, care to share your hourly wage?",
+     "cuenta": "r/barista"
+    },
+    "ruta": [
+     {
+      "red": "reddit",
+      "fecha": 1791915984.0,
+      "url": "https://www.reddit.com/r/barista/comments/1x54kcg/if_you_work_for_a_small_business_care_to_share/",
+      "titulo": "If you work for a small business, care to share your hourly wage?",
+      "cuenta": "r/barista"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 4.4,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/barista/comments/1x54kcg/if_you_work_for_a_small_business_care_to_share/",
+     "titulo": "If you work for a small business, care to share your hourly wage?",
+     "cuenta": "r/barista",
+     "publicado": 1791915984.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.40166666666666667,
+     "ajuste": 0.40166666666666667,
+     "con_metricas": false
+    }
+   ],
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "latte_art_design",
+   "nombre": "Arte latte",
+   "descripcion": "Content focused on latte art techniques, tutorials, and showcases.",
+   "score": 0.1425,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1875,
+    "temprano": 0.0938,
+    "multired": 0.2,
+    "frescura": 0.5625
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 3,
+   "piezas_7d": 3,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "reddit": 3
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 0.67
+     },
+     {
+      "valor": "historia",
+      "pct": 0.33
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "reddit",
+    "url": "https://www.reddit.com/r/barista/comments/1x5q7oc/looking_for_indepth_latte_art_tutorials/",
+    "titulo": "Looking for in-depth latte art tutorials",
+    "cuenta": "r/barista",
+    "publicado": 1791981767.0,
+    "via": "rss",
+    "metrica": null,
+    "gancho": "pregunta",
+    "formato": "opinion",
+    "score": 0.5025,
+    "ajuste": 0.5025,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "reddit",
+     "fecha": 1791981767.0,
+     "url": "https://www.reddit.com/r/barista/comments/1x5q7oc/looking_for_indepth_latte_art_tutorials/",
+     "titulo": "Looking for in-depth latte art tutorials",
+     "cuenta": "r/barista"
+    },
+    "ruta": [
+     {
+      "red": "reddit",
+      "fecha": 1791981767.0,
+      "url": "https://www.reddit.com/r/barista/comments/1x5q7oc/looking_for_indepth_latte_art_tutorials/",
+      "titulo": "Looking for in-depth latte art tutorials",
+      "cuenta": "r/barista"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 3.6,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/barista/comments/1x5q7oc/looking_for_indepth_latte_art_tutorials/",
+     "titulo": "Looking for in-depth latte art tutorials",
+     "cuenta": "r/barista",
+     "publicado": 1791981767.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5025,
+     "ajuste": 0.5025,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/barista/comments/1x6nly9/im_getting_pretty_good_at_salvaging_bad_latte_art/",
+     "titulo": "I'm getting pretty good at salvaging bad latte art. This time into some form of turtle",
+     "cuenta": "r/barista",
+     "publicado": 1792075597.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "opinion",
+     "score": 0.43333333333333335,
+     "ajuste": 0.43333333333333335,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/barista/comments/1x7sxhb/rate_my_latte_art/",
+     "titulo": "Rate My Latte Art",
+     "cuenta": "r/barista",
+     "publicado": 1792187063.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.385,
+     "ajuste": 0.385,
+     "con_metricas": false
+    }
+   ],
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "customer_experience_service",
+   "nombre": "Experiencia del cliente",
+   "descripcion": "Best practices for customer service, handling complaints, and creating a welcoming cafe environment.",
+   "score": 0.1288,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1875,
+    "temprano": 0.0469,
+    "multired": 0.4,
+    "frescura": 0.2188
+   },
+   "aceleracion_estimada": true,
+   "etapa": "saturado",
+   "volumen": 5,
+   "piezas_7d": 5,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "reddit": 4,
+    "tiktok": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "historia",
+      "pct": 0.6
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.2
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 0.6
+     },
+     {
+      "valor": "caso",
+      "pct": 0.2
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "reddit",
+    "url": "https://www.reddit.com/r/barista/comments/1x36fc0/tourists_ordering_normal_coffee/",
+    "titulo": "Tourists ordering \"normal\" coffee",
+    "cuenta": "r/barista",
+    "publicado": 1791720009.0,
+    "via": "rss",
+    "metrica": null,
+    "gancho": "historia",
+    "formato": "opinion",
+    "score": 0.4725,
+    "ajuste": 0.4725,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "reddit",
+     "fecha": 1791720009.0,
+     "url": "https://www.reddit.com/r/barista/comments/1x36fc0/tourists_ordering_normal_coffee/",
+     "titulo": "Tourists ordering \"normal\" coffee",
+     "cuenta": "r/barista"
+    },
+    "ruta": [
+     {
+      "red": "reddit",
+      "fecha": 1791720009.0,
+      "url": "https://www.reddit.com/r/barista/comments/1x36fc0/tourists_ordering_normal_coffee/",
+      "titulo": "Tourists ordering \"normal\" coffee",
+      "cuenta": "r/barista"
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791905555.0,
+      "url": "https://www.tiktok.com/@juvenex.the.cafe/video/7696175757881511175",
+      "titulo": "How to Respect Customers in a Café: Simple Service Tips",
+      "cuenta": "@juvenex.the.cafe"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 6.7,
+    "horas_entre_redes": [
+     51.5
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@juvenex.the.cafe/video/7696175757881511175",
+     "titulo": "How to Respect Customers in a Café: Simple Service Tips",
+     "cuenta": "@juvenex.the.cafe",
+     "publicado": 1791905555.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6891666666666667,
+     "ajuste": 0.6891666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/barista/comments/1x8f04s/no_ice/",
+     "titulo": "“No ice”",
+     "cuenta": "r/barista",
+     "publicado": 1792255665.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "opinion",
+     "score": 0.49583333333333335,
+     "ajuste": 0.49583333333333335,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/barista/comments/1x36fc0/tourists_ordering_normal_coffee/",
+     "titulo": "Tourists ordering \"normal\" coffee",
+     "cuenta": "r/barista",
+     "publicado": 1791720009.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "opinion",
+     "score": 0.4725,
+     "ajuste": 0.4725,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/barista/comments/1x5fxwp/customer_complaint/",
+     "titulo": "Customer complaint",
+     "cuenta": "r/barista",
+     "publicado": 1791945473.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "caso",
+     "score": 0.4558333333333333,
+     "ajuste": 0.4558333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/barista/comments/1x3ir1d/best_customer_questions_this_weekend/",
+     "titulo": "Best customer questions this weekend?",
+     "cuenta": "r/barista",
+     "publicado": 1791750853.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.4225,
+     "ajuste": 0.4225,
+     "con_metricas": false
+    }
+   ],
+   "porque": null,
+   "rank_anterior": null
+  }
+ ],
+ "ideas": [
+  {
+   "formato": "carrusel de Instagram",
+   "titulo": "5 videos que toda cafetería debe grabar esta semana",
+   "gancho": "¿Tu contenido no vende? Estos 5 videos simples atraen clientes nuevos.",
+   "desarrollo": "Diapositiva 1: El video del 'detrás de cámaras': muestra cómo preparas tu bebida insignia. Diapositiva 2: El video 'antes y después': limpia y organiza tu espacio, graba el proceso. Diapositiva 3: El video testimonio: pide a un cliente frecuente que diga por qué viene. Diapositiva 4: El video de producto: graba en primer plano el vertido del café, con luz natural. Diapositiva 5: El video reto: haz una encuesta en historias y graba la bebida ganadora. Cierra con un llamado a guardar el carrusel y seguir para más tips.",
+   "jev": {
+    "ajuste_audiencia": {
+     "score": 0.858,
+     "confianza": 0.53
+    },
+    "fuerza_gancho": {
+     "score": 0.748,
+     "confianza": 0.88
+    }
+   }
+  },
+  {
+   "formato": "reel/TikTok",
+   "titulo": "El error que espanta clientes de tu cafetería (y cómo evitarlo)",
+   "gancho": "Si tu café es delicioso pero no lo muestras bien, estás perdiendo ventas.",
+   "desarrollo": "Primeros 3 segundos: toma rápida del letrero de la cafetería con música suave. Voz en off: 'Tienes un café increíble, pero tus fotos no le hacen justicia'. Muestra dos fotos del mismo café: una oscura y otra con luz natural junto a una ventana. Explica en 10 segundos cómo usar la luz de la mañana para fotos apetitosas. Termina con el letrero afuera y personas entrando, con texto: 'Cambia tu foto, cambia tus ventas'.",
+   "jev": {
+    "ajuste_audiencia": {
+     "score": 0.91,
+     "confianza": 0.69
+    },
+    "fuerza_gancho": {
+     "score": 0.748,
+     "confianza": 0.85
+    }
+   }
+  },
+  {
+   "formato": "post de LinkedIn",
+   "titulo": "La lección de contenido que aprendí de una cafetería en Bogotá",
+   "gancho": "No es el equipo caro, es la historia que cuentas.",
+   "desarrollo": "Comienza con una anécdota breve: visitaste una cafetería pequeña que casi no tiene seguidores pero filas en la puerta. Reflexiona sobre por qué su contenido sencillo genera comunidad: muestran el ritual de preparar cada taza y nombran a sus clientes frecuentes. Ofrece tres acciones concretas para dueños de cafeterías: documentar el proceso (no solo el resultado), mostrar a las personas detrás de la barra y responder siempre los comentarios como si fueran clientes en el local. Cierra preguntando: '¿Qué historia está contando tu cafetería hoy?'.",
+   "jev": {
+    "ajuste_audiencia": {
+     "score": 0.838,
+     "confianza": 0.48
+    },
+    "fuerza_gancho": {
+     "score": 0.762,
+     "confianza": 0.83
+    }
+   }
+  }
+ ],
+ "predicciones": [
+  {
+   "nombre": "Contenido en video para cafeterías: planos y mini tuts",
+   "tesis": "La creación de contenido para cafeterías está acelerando más rápido que la mayoría de los temas y aún tiene muy pocas publicaciones. Proviene de YouTube, una comunidad técnica, y todavía no ha llegado a Instagram o LinkedIn, donde los dueños de cafeterías colombianos suelen buscar ideas. En las próximas semanas, otros creadores lo replicarán y se volverá tendencia.",
+   "basado_en": [
+    "social_media_content_creation"
+   ],
+   "senal_a_vigilar": "Aparición de videos similares en Instagram o TikTok enfocados en cafeterías colombianas.",
+   "ventana": "1-2 semanas",
+   "que_publicar_hoy": "Un carrusel en Instagram mostrando 3 planos de video que cualquier cafetería puede filmar solo con un celular para promocionar su café de especialidad.",
+   "respaldo_datos": 0.902,
+   "jev": {
+    "interes_audiencia": 0.743,
+    "novedad": 0.805,
+    "concreta": 0.83
+   },
+   "fuerza": 0.828
+  },
+  {
+   "nombre": "Equipos de café: decisiones de compra inteligentes",
+   "tesis": "El equipamiento y tecnología para café está creciendo y tiene la aceleración más alta de todos los temas, con origen en Reddit. El debate sobre comprar barato vs. invertir bien resuena en dueños de cafeterías. Aún no llega a Instagram o LinkedIn, pero la discusión técnica se traducirá en consejos para emprendedores.",
+   "basado_en": [
+    "cafe_technology_equipment"
+   ],
+   "senal_a_vigilar": "Un post en LinkedIn o Instagram de una cafetería colombiana mostrando su equipo y explicando por qué lo eligió.",
+   "ventana": "1-2 semanas",
+   "que_publicar_hoy": "Un reel en Instagram comparando una máquina de espresso económica con una profesional, explicando para qué tipo de negocio conviene cada una.",
+   "respaldo_datos": 0.875,
+   "jev": {
+    "interes_audiencia": 0.86,
+    "novedad": 0.618,
+    "concreta": 0.62
+   },
+   "fuerza": 0.794
+  },
+  {
+   "nombre": "Rentabilidad sin perder pasión: precios y costos ocultos",
+   "tesis": "El tema de rentabilidad y precios está emergiendo con fuerza, acelerando más que la mayoría y con apenas dos publicaciones. Una es un video viral en YouTube dirigido a dueños de cafeterías. Como el público objetivo es dueños de pequeños negocios, este contenido práctico se difundirá rápidamente en comunidades emprendedoras.",
+   "basado_en": [
+    "cafe_profitability_strategies"
+   ],
+   "senal_a_vigilar": "Aumento de publicaciones en LinkedIn o Instagram sobre estrategias de precios para café de especialidad.",
+   "ventana": "1-2 semanas",
+   "que_publicar_hoy": "Un post en LinkedIn titulado 'Tres costos que matan la rentabilidad de tu cafetería de especialidad (y cómo controlarlos)'.",
+   "respaldo_datos": 0.711,
+   "jev": {
+    "interes_audiencia": 0.93,
+    "novedad": 0.73,
+    "concreta": 0.61
+   },
+   "fuerza": 0.77
+  },
+  {
+   "nombre": "Marketing visual para cafeterías: branding que vende",
+   "tesis": "El marketing y branding para cafeterías es emergente y está acelerando, pero apenas tiene una publicación en YouTube. El ejemplo hace énfasis en que un gran café no es suficiente. Como los dueños de cafeterías buscan diferenciarse, este tema explotará en redes visuales como Instagram.",
+   "basado_en": [
+    "coffee_marketing_branding"
+   ],
+   "senal_a_vigilar": "Un aumento de publicaciones en Instagram con tips de branding para cafeterías.",
+   "ventana": "1-2 semanas",
+   "que_publicar_hoy": "Un post en Instagram mostrando ejemplos de nombres y logos de cafeterías exitosas, y por qué funcionan, con el mensaje: 'Tu café es excelente, pero tu marca debe contarlo'.",
+   "respaldo_datos": 0.662,
+   "jev": {
+    "interes_audiencia": 0.8,
+    "novedad": 0.752,
+    "concreta": 0.63
+   },
+   "fuerza": 0.718
+  },
+  {
+   "nombre": "Eventos locales de café como motor de comunidad",
+   "tesis": "Los eventos y comunidad cafetera están emergiendo, con un solo video en YouTube que muestra un festival local. La alta aceleración y el origen en YouTube sugieren que pronto se compartirán experiencias de eventos en otras redes. Para dueños de cafeterías, participar en eventos es clave para atraer clientes y crear pertenencia.",
+   "basado_en": [
+    "coffee_events_community"
+   ],
+   "senal_a_vigilar": "Publicaciones en Instagram o Facebook sobre festivales de café en ciudades colombianas.",
+   "ventana": "1-2 semanas",
+   "que_publicar_hoy": "Una nota en Instagram Stories con una encuesta: '¿Organizarías una cata en tu cafetería? ¿Qué tema te interesa?'",
+   "respaldo_datos": 0.602,
+   "jev": {
+    "interes_audiencia": 0.73,
+    "novedad": 0.743,
+    "concreta": 0.58
+   },
+   "fuerza": 0.666
+  }
+ ],
+ "cobertura": {
+  "youtube": {
+   "recolectadas": 29,
+   "en_ranking": 22,
+   "con_metricas": 22,
+   "vias": [
+    "api"
+   ]
+  },
+  "reddit": {
+   "recolectadas": 80,
+   "en_ranking": 13,
+   "con_metricas": 0,
+   "vias": [
+    "rss"
+   ]
+  },
+  "instagram": {
+   "recolectadas": 11,
+   "en_ranking": 7,
+   "con_metricas": 0,
+   "vias": [
+    "busqueda_web"
+   ]
+  },
+  "linkedin": {
+   "recolectadas": 9,
+   "en_ranking": 9,
+   "con_metricas": 0,
+   "vias": [
+    "busqueda_web"
+   ]
+  },
+  "tiktok": {
+   "recolectadas": 17,
+   "en_ranking": 13,
+   "con_metricas": 0,
+   "vias": [
+    "busqueda_web"
+   ]
+  }
+ },
+ "conteos": {
+  "recolectadas": 146,
+  "clasificadas": 146,
+  "en_ranking": 64,
+  "fuera_de_sector": 72,
+  "baja_confianza": 7,
+  "sin_tema": 3
+ },
+ "costo": {
+  "total_usd": 0.0307,
+  "jev_usd": 0.01162,
+  "llm_usd": 0.0191,
+  "proveedor_llm": "DeepSeek",
+  "modelos_sin_precio": [],
+  "pasos": {
+   "busqueda_instagram": {
+    "llamadas": 1,
+    "tokens_entrada": 0,
+    "tokens_salida": 0,
+    "busquedas_web": 3,
+    "usd": 0.0
+   },
+   "busqueda_linkedin": {
+    "llamadas": 1,
+    "tokens_entrada": 0,
+    "tokens_salida": 0,
+    "busquedas_web": 3,
+    "usd": 0.0
+   },
+   "busqueda_tiktok": {
+    "llamadas": 1,
+    "tokens_entrada": 0,
+    "tokens_salida": 0,
+    "busquedas_web": 3,
+    "usd": 0.0
+   },
+   "llm_temas": {
+    "llamadas": 1,
+    "tokens_entrada": 2705,
+    "tokens_salida": 956,
+    "busquedas_web": 0,
+    "usd": 0.00196
+   },
+   "jev_piezas": {
+    "llamadas": 146,
+    "tokens_entrada": 271995,
+    "tokens_salida": 65841,
+    "busquedas_web": 0,
+    "usd": 0.01142
+   },
+   "llm_redaccion": {
+    "llamadas": 1,
+    "tokens_entrada": 2937,
+    "tokens_salida": 1216,
+    "busquedas_web": 0,
+    "usd": 0.00869
+   },
+   "jev_ideas": {
+    "llamadas": 3,
+    "tokens_entrada": 1764,
+    "tokens_salida": 120,
+    "busquedas_web": 0,
+    "usd": 7e-05
+   },
+   "llm_predicciones": {
+    "llamadas": 1,
+    "tokens_entrada": 3312,
+    "tokens_salida": 1033,
+    "busquedas_web": 0,
+    "usd": 0.00846
+   },
+   "jev_predicciones": {
+    "llamadas": 5,
+    "tokens_entrada": 2863,
+    "tokens_salida": 275,
+    "busquedas_web": 0,
+    "usd": 0.00012
+   }
+  },
+  "por_tema_usd": 0.00307,
+  "por_pieza_usd": 0.00021,
+  "historial": [
+   {
+    "generado": "2026-10-18T04:03:59+00:00",
+    "usd": 0.0307,
+    "piezas": 146
+   }
+  ]
+ },
+ "temas_corrida": [
+  {
+   "id": "specialty_vs_commercial",
+   "nombre": "Especialidad vs. comercial",
+   "descripcion": "Content explaining the differences between specialty coffee and commercial coffee, including capsule coffee."
+  },
+  {
+   "id": "brewing_methods_home",
+   "nombre": "Métodos de preparación en casa",
+   "descripcion": "Tutorials and guides on brewing specialty coffee at home using methods like Moka pot, Chemex, and V60."
+  },
+  {
+   "id": "cafe_startup_guides",
+   "nombre": "Guías para abrir cafetería",
+   "descripcion": "Step-by-step advice, ideas, and tips for starting a coffee shop business from scratch."
+  },
+  {
+   "id": "cafe_profitability_strategies",
+   "nombre": "Rentabilidad y precios",
+   "descripcion": "Content on making a cafe profitable, pricing strategies, and financial sustainability without losing passion."
+  },
+  {
+   "id": "barista_skills_training",
+   "nombre": "Habilidades de barista",
+   "descripcion": "Tips, tricks, and tutorials for baristas, including latte art, customer service, and efficiency."
+  },
+  {
+   "id": "coffee_shop_management",
+   "nombre": "Gestión de cafetería",
+   "descripcion": "Advice on daily operations, organization, cleaning routines, and managing a coffee shop effectively."
+  },
+  {
+   "id": "coffee_marketing_branding",
+   "nombre": "Marketing y branding",
+   "descripcion": "Strategies for branding, community building, and marketing a coffee shop or coffee product."
+  },
+  {
+   "id": "coffee_sourcing_traceability",
+   "nombre": "Trazabilidad y origen",
+   "descripcion": "Content about coffee sourcing, traceability, and connecting consumers with bean origins."
+  },
+  {
+   "id": "coffee_entrepreneur_stories",
+   "nombre": "Historias de emprendedores",
+   "descripcion": "Personal stories and journeys of coffee entrepreneurs, from starting to succeeding in the specialty coffee business."
+  },
+  {
+   "id": "coffee_events_community",
+   "nombre": "Eventos y comunidad",
+   "descripcion": "Coverage of coffee festivals, local events, and community initiatives related to specialty coffee."
+  },
+  {
+   "id": "coffee_education_consumer",
+   "nombre": "Educación al consumidor",
+   "descripcion": "Educational content for consumers about specialty coffee, including definitions, distinctions, and appreciation."
+  },
+  {
+   "id": "cafe_technology_equipment",
+   "nombre": "Equipamiento y tecnología",
+   "descripcion": "Reviews, buying guides, and tips on coffee equipment, machines, and technology for home or cafe use."
+  },
+  {
+   "id": "social_media_content_creation",
+   "nombre": "Creación de contenido",
+   "descripcion": "Tips and strategies for creating social media content, videos, and vlogs for coffee shops and baristas."
+  },
+  {
+   "id": "coffee_career_advice",
+   "nombre": "Carrera en café",
+   "descripcion": "Advice on getting a job in coffee, career progression, and working as a barista."
+  },
+  {
+   "id": "customer_experience_service",
+   "nombre": "Experiencia del cliente",
+   "descripcion": "Best practices for customer service, handling complaints, and creating a welcoming cafe environment."
+  },
+  {
+   "id": "small_business_operations",
+   "nombre": "Operaciones de pequeño negocio",
+   "descripcion": "General small business advice on legal structures, insurance, hiring, and administrative tasks applicable to coffee businesses."
+  },
+  {
+   "id": "coffee_market_trends",
+   "nombre": "Tendencias del mercado",
+   "descripcion": "Insights into coffee market growth, consumer trends, and industry developments."
+  },
+  {
+   "id": "latte_art_design",
+   "nombre": "Arte latte",
+   "descripcion": "Content focused on latte art techniques, tutorials, and showcases."
+  }
+ ]
+}

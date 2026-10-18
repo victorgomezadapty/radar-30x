@@ -13,14 +13,14 @@
   --accent: #4f46e5; --accent-ink: #ffffff; --accent-soft: #eef2ff;
   --hero: #0b1020; --hero-ink: #e2e8f0; --hero-muted: #94a3b8;
   --emergente: #16a34a; --creciendo: #4f46e5; --pico: #d97706; --saturado: #94a3b8;
-  --up: #16a34a; --down: #dc2626; --warn: #b45309;
+  --up: #16a34a; --down: #dc2626; --nuevo: #0891b2;
   --radius: 14px; --shadow: 0 1px 2px rgba(15,23,42,.04), 0 4px 16px rgba(15,23,42,.05);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0b1020; --panel: #121a2e; --panel-2: #18223a; --ink: #e5e9f2; --muted: #94a3b8; --line: #243049;
     --accent: #818cf8; --accent-ink: #0b1020; --accent-soft: #1e2547;
-    --hero: #070b16; --emergente: #4ade80; --creciendo: #818cf8; --pico: #fbbf24; --saturado: #64748b;
+    --hero: #070b16; --emergente: #4ade80; --creciendo: #818cf8; --pico: #fbbf24; --saturado: #64748b; --nuevo: #22d3ee;
     --shadow: none;
   }
 }
@@ -31,35 +31,75 @@ a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: un
 button { font: inherit; }
 .wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
 @media (max-width: 700px) { .wrap { padding: 0 16px; } }
+.oculto { display: none !important; }
+.nota { color: var(--muted); font-size: 13px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.btn { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 10px; padding: 10px 16px; cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; }
+.btn:hover { border-color: var(--accent); text-decoration: none; }
+.btn.primario { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn.grande { padding: 15px 28px; font-size: 17px; border-radius: 12px; }
+.btn.fantasma { background: transparent; color: #fff; border-color: rgba(255,255,255,.25); }
+.btn.chico { padding: 6px 10px; font-size: 13px; font-weight: 500; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.ico { width: 22px; height: 22px; flex: none; }
+h3.sec { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
+.etapa { display: inline-block; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 2px 8px; border-radius: 999px; color: #fff; vertical-align: 2px; }
 
 /* barra superior */
-.top { background: var(--hero); color: var(--hero-ink); }
-.top .wrap { display: flex; align-items: center; gap: 16px; height: 60px; }
-.logo { font-weight: 800; font-size: 18px; letter-spacing: -.02em; color: #fff; cursor: pointer; }
+.top { background: var(--hero); color: var(--hero-ink); position: sticky; top: 0; z-index: 20; }
+.top .wrap { display: flex; align-items: center; gap: 12px; height: 60px; }
+@media (max-width: 480px) { .top nav button { padding: 8px 8px; font-size: 14px; } }
+.logo { font-weight: 800; font-size: 18px; letter-spacing: -.02em; color: #fff; cursor: pointer; display: flex; align-items: center; gap: 8px; }
 .logo span { color: #a5b4fc; }
 .top nav { margin-left: auto; display: flex; gap: 4px; }
 .top nav button { background: transparent; border: 0; color: var(--hero-muted); padding: 8px 12px; border-radius: 8px; cursor: pointer; }
 .top nav button.on, .top nav button:hover { color: #fff; background: rgba(255,255,255,.08); }
 
-/* inicio */
-.hero { background: var(--hero); color: var(--hero-ink); padding: 48px 0 64px; }
-.hero h1 { font-size: clamp(30px, 4.5vw, 48px); line-height: 1.08; letter-spacing: -.03em; margin: 0 0 14px; color: #fff; max-width: 820px; }
+/* landing */
+.hero { background: var(--hero); color: var(--hero-ink); padding: 64px 0 72px; }
+.hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+@media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
+.hero h1 { font-size: clamp(32px, 4.8vw, 52px); line-height: 1.05; letter-spacing: -.03em; margin: 0 0 16px; color: #fff; }
 .hero h1 em { font-style: normal; color: #a5b4fc; }
-.hero p { color: var(--hero-muted); font-size: 18px; max-width: 700px; margin: 0 0 28px; }
-.pilares { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; max-width: 900px; }
-.pilar { border: 1px solid rgba(255,255,255,.1); border-radius: 12px; padding: 14px 16px; background: rgba(255,255,255,.03); }
-.pilar b { display: block; color: #fff; margin-bottom: 2px; }
-.pilar span { color: var(--hero-muted); font-size: 13px; }
-@media (max-width: 800px) { .pilares { grid-template-columns: 1fr; } }
-.config { margin-top: -36px; }
-.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
-.config .card { padding: 24px; }
-.paso-t { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px; }
-.sectores { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+.hero p.lead { color: var(--hero-muted); font-size: 18px; margin: 0 0 28px; max-width: 560px; }
+.hero .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.hero-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.hcard { border: 1px solid rgba(255,255,255,.1); border-radius: 14px; padding: 16px; background: rgba(255,255,255,.04); }
+.hcard .ibox { width: 42px; height: 42px; border-radius: 11px; display: grid; place-items: center; background: rgba(165,180,252,.15); color: #a5b4fc; margin-bottom: 10px; }
+.hcard b { display: block; color: #fff; font-size: 15px; }
+.hcard span { color: var(--hero-muted); font-size: 13px; }
+.seccion { padding: 48px 0 8px; }
+.seccion h2 { font-size: 26px; letter-spacing: -.02em; margin: 0 0 6px; }
+.seccion > .wrap > p.nota { font-size: 15px; margin: 0 0 22px; }
+.pasos-como { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+@media (max-width: 900px) { .pasos-como { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .pasos-como { grid-template-columns: 1fr; } }
+.paso-como { padding: 18px; }
+.paso-como .num { width: 30px; height: 30px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 800; display: grid; place-items: center; margin-bottom: 10px; }
+.paso-como b { display: block; margin-bottom: 4px; }
+.leer { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+@media (max-width: 980px) { .leer { grid-template-columns: 1fr; } }
+.leer .card { padding: 20px; }
+.leer h4 { margin: 0 0 4px; font-size: 17px; display: flex; gap: 8px; align-items: center; }
+.lista-def { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 10px; font-size: 14px; }
+.lista-def b { display: block; }
+.lista-def li span.nota { display: block; }
+
+/* página correr */
+.correr-cab { padding: 36px 0 18px; }
+.correr-cab h2 { margin: 0 0 4px; font-size: 28px; letter-spacing: -.02em; }
+.config { padding: 24px; margin-bottom: 40px; }
+.paso-t { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px; display: block; }
+.sectores { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
 .opcion { border: 1.5px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 12px; padding: 12px 16px; cursor: pointer; text-align: left; }
 .opcion.on { border-color: var(--accent); background: var(--accent-soft); }
 .opcion small { display: block; color: var(--muted); font-size: 12px; }
-.redes { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; margin-bottom: 22px; }
+.opcion.libre { border-style: dashed; }
+.libre-campos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px; }
+@media (max-width: 700px) { .libre-campos { grid-template-columns: 1fr; } }
+.campo-txt { width: 100%; padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font: inherit; }
+.campo-txt:focus { outline: 2px solid var(--accent); border-color: transparent; }
+.redes { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; margin: 8px 0 22px; }
 .red-op { display: flex; gap: 10px; align-items: flex-start; }
 .red-op input { margin-top: 4px; accent-color: var(--accent); width: 16px; height: 16px; }
 .red-op.off { opacity: .5; cursor: not-allowed; }
@@ -67,28 +107,10 @@ button { font: inherit; }
 .badge.si { background: #dcfce7; color: #166534; } .badge.no { background: var(--panel-2); color: var(--muted); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge.si { background: #14321f; color: #86efac; } }
 .acciones { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-.btn { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 10px; padding: 10px 16px; cursor: pointer; font-weight: 600; }
-.btn:hover { border-color: var(--accent); }
-.btn.primario { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); padding: 12px 22px; font-size: 16px; }
-.btn.primario:disabled { opacity: .5; cursor: not-allowed; }
-.btn.chico { padding: 6px 10px; font-size: 13px; font-weight: 500; }
-.campo-clave { padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font: inherit; width: 180px; }
 .check { display: flex; gap: 8px; align-items: center; color: var(--muted); font-size: 14px; }
-.nota { color: var(--muted); font-size: 13px; }
 .aviso-modo { background: var(--accent-soft); border-radius: 10px; padding: 10px 14px; font-size: 14px; margin-bottom: 18px; }
 
-/* progreso */
-.progreso { margin-top: 18px; display: none; }
-.progreso.on { display: block; }
-.pasos { list-style: none; padding: 0; margin: 0 0 12px; display: grid; gap: 6px; }
-.pasos li { display: flex; gap: 10px; align-items: center; color: var(--muted); }
-.pasos li .dot { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--line); flex: none; }
-.pasos li.activo { color: var(--ink); font-weight: 600; }
-.pasos li.activo .dot { border-color: var(--accent); border-top-color: transparent; animation: gira .8s linear infinite; }
-.pasos li.hecho { color: var(--ink); }
-.pasos li.hecho .dot { background: var(--emergente); border-color: var(--emergente); }
-@keyframes gira { to { transform: rotate(360deg); } }
-.log { background: var(--hero); color: #cbd5e1; font: 12px/1.5 ui-monospace, Consolas, monospace; border-radius: 10px; padding: 10px 12px; max-height: 180px; overflow: auto; white-space: pre-wrap; }
+/* pantalla de carga */
 .carga { position: fixed; inset: 0; background: rgba(7, 11, 22, .72); display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 50; }
 .carga-card { background: var(--panel); color: var(--ink); border-radius: 18px; width: min(560px, 100%); padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,.35); max-height: 90vh; overflow: auto; }
 .carga-cab { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px; }
@@ -98,46 +120,86 @@ button { font: inherit; }
 .spinner { width: 34px; height: 34px; border-radius: 50%; border: 4px solid var(--accent-soft); border-top-color: var(--accent); animation: gira .9s linear infinite; flex: none; }
 .spinner.ok { animation: none; border-color: var(--emergente); background: var(--emergente); }
 .spinner.mal { animation: none; border-color: var(--down); background: var(--down); }
-.carga .pasos li { padding: 6px 0; font-size: 15px; }
+@keyframes gira { to { transform: rotate(360deg); } }
+.pasos { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+.pasos li { display: flex; gap: 10px; align-items: center; color: var(--muted); padding: 5px 0; font-size: 15px; }
+.pasos li .dot { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--line); flex: none; }
+.pasos li.activo { color: var(--ink); font-weight: 600; }
+.pasos li.activo .dot { border-color: var(--accent); border-top-color: transparent; animation: gira .8s linear infinite; }
+.pasos li.hecho { color: var(--ink); }
+.pasos li.hecho .dot { background: var(--emergente); border-color: var(--emergente); }
 .carga-error { background: #fee2e2; color: #991b1b; border-radius: 10px; padding: 12px 14px; margin: 12px 0; font-size: 14px; }
 .carga-det { margin-top: 12px; font-size: 13px; color: var(--muted); }
-.carga-det .log { margin-top: 8px; }
+.log { background: var(--hero); color: #cbd5e1; font: 12px/1.5 ui-monospace, Consolas, monospace; border-radius: 10px; padding: 10px 12px; max-height: 180px; overflow: auto; white-space: pre-wrap; margin-top: 8px; }
 .carga-acc { display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px; }
-.ultima { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 
-/* resultados */
-.cabecera { padding: 28px 0 8px; display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; }
-.cabecera h2 { margin: 0; font-size: 26px; letter-spacing: -.02em; }
-.cabecera .meta { color: var(--muted); font-size: 13px; }
-.costo-pill { margin-left: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; font-weight: 700; cursor: pointer; }
-.costo-pill span { color: var(--muted); font-weight: 500; font-size: 13px; }
-.pregunta { font-size: 17px; font-weight: 600; margin: 4px 0 16px; max-width: 900px; }
-.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 20px; overflow-x: auto; }
-.tabs { scrollbar-width: none; } .tabs::-webkit-scrollbar { display: none; }
-.tabs button { background: none; border: 0; padding: 10px 14px; color: var(--muted); font-weight: 600; cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; }
-.tabs button.on { color: var(--ink); border-bottom-color: var(--accent); }
-.grid2 { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 20px; align-items: start; }
-@media (max-width: 980px) { .grid2 { grid-template-columns: 1fr; } }
-.side .card { padding: 16px; margin-bottom: 14px; }
-h3.sec { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
+/* resultados: menú lateral */
+.res { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 24px; padding: 24px 0 40px; align-items: start; }
+.menu { position: sticky; top: 76px; display: grid; gap: 14px; }
+.menu .card { padding: 14px; }
+.menu h2 { margin: 0 0 2px; font-size: 17px; letter-spacing: -.01em; }
+.menu .meta { color: var(--muted); font-size: 12px; }
+.menu .costo { margin-top: 10px; font-weight: 700; font-size: 20px; cursor: pointer; }
+.menu .costo span { font-weight: 500; font-size: 12px; color: var(--muted); }
+.menu nav { display: grid; gap: 2px; }
+.menu nav button { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; background: transparent; border: 0; padding: 10px 12px; border-radius: 10px; color: var(--muted); font-weight: 600; cursor: pointer; }
+.menu nav button .ico { width: 18px; height: 18px; }
+.menu nav button.on { background: var(--accent-soft); color: var(--ink); }
+.menu nav button:hover { color: var(--ink); }
+@media (max-width: 900px) {
+  .res { grid-template-columns: minmax(0, 1fr); padding-top: 12px; }
+  .menu { position: static; min-width: 0; }
+  .menu .card { min-width: 0; overflow: hidden; }
+  .menu nav { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .menu nav button { white-space: nowrap; width: auto; }
+}
+.res-titulo { font-size: 22px; letter-spacing: -.02em; margin: 0 0 4px; }
+.res-sub { color: var(--muted); margin: 0 0 16px; }
 
-.tema { padding: 16px 18px; margin-bottom: 12px; display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 2px 14px; }
-.rank { font-size: 24px; font-weight: 800; color: var(--muted); line-height: 1.1; }
-.delta { font-size: 11px; font-weight: 700; display: block; }
-.delta.up { color: var(--up); } .delta.down { color: var(--down); }
+/* tendencias */
+.ajustes { padding: 0; margin-bottom: 14px; }
+.ajustes summary { padding: 14px 16px; cursor: pointer; font-weight: 600; display: flex; gap: 10px; align-items: center; list-style: none; flex-wrap: wrap; }
+.ajustes summary::-webkit-details-marker { display: none; }
+.ajustes summary .nota { font-weight: 400; margin-left: auto; }
+.ajustes .cuerpo { padding: 0 16px 16px; }
+.pesos { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+@media (max-width: 800px) { .pesos { grid-template-columns: 1fr 1fr; } }
+.peso label { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; }
+.peso input { width: 100%; accent-color: var(--accent); }
+.peso small { color: var(--muted); font-size: 12px; display: block; line-height: 1.35; }
+.leyenda-fila { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-size: 12.5px; color: var(--muted); margin-bottom: 14px; }
+.leyenda-fila .etapa { margin-right: 4px; }
+.mov { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 6px; }
+.mov.up { color: var(--up); background: color-mix(in srgb, var(--up) 12%, transparent); }
+.mov.down { color: var(--down); background: color-mix(in srgb, var(--down) 12%, transparent); }
+.mov.nuevo { color: var(--nuevo); background: color-mix(in srgb, var(--nuevo) 14%, transparent); }
+.mov.igual { color: var(--muted); background: var(--panel-2); }
+.ganchos { padding: 16px; margin-bottom: 14px; }
+.ganchos-fila { display: grid; grid-template-columns: 130px 1fr 110px; gap: 12px; align-items: center; padding: 6px 0; font-size: 13.5px; border-bottom: 1px solid var(--line); }
+.ganchos-fila:last-child { border-bottom: 0; }
+.ganchos-fila .barra { width: 100%; height: 8px; }
+.ganchos-fila .crec { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+.ganchos-fila .crec.pos { color: var(--up); } .ganchos-fila .crec.neg { color: var(--down); }
+@media (max-width: 600px) { .ganchos-fila { grid-template-columns: 100px 1fr 80px; } }
+.insight { background: var(--accent-soft); border-radius: 10px; padding: 10px 12px; font-size: 14px; margin-bottom: 8px; }
+.insight .nota { display: block; margin-top: 4px; }
+.tema { padding: 16px 18px; margin-bottom: 12px; display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 2px 14px; }
+.rank { font-size: 24px; font-weight: 800; color: var(--muted); line-height: 1.1; text-align: center; }
+.rank .mov { margin-top: 4px; }
 .tema h4 { margin: 0; font-size: 17px; letter-spacing: -.01em; }
-.etapa { display: inline-block; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 2px 8px; border-radius: 999px; color: #fff; margin-left: 8px; vertical-align: 2px; }
+.tema h4 .etapa { margin-left: 8px; }
 .score { text-align: right; }
 .score b { font-size: 22px; font-variant-numeric: tabular-nums; }
+.score small { display: block; color: var(--muted); font-size: 11px; }
 .barra { height: 6px; background: var(--panel-2); border-radius: 3px; width: 90px; margin-top: 4px; overflow: hidden; }
 .barra i { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
 .full { grid-column: 2 / 4; }
 .porque { margin: 4px 0 0; }
-.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; font-size: 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; font-size: 12px; align-items: center; }
 .chip { background: var(--accent-soft); padding: 2px 9px; border-radius: 999px; }
 .chip.gris { background: transparent; border: 1px solid var(--line); color: var(--muted); }
 .ruta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; font-size: 12.5px; }
-.ruta .nodo { border: 1px solid var(--line); border-radius: 8px; padding: 3px 8px; background: var(--panel-2); }
+.ruta .nodo { border: 1px solid var(--line); border-radius: 8px; padding: 3px 8px; background: var(--panel-2); color: var(--ink); }
 .ruta .nodo b { font-weight: 600; }
 .ruta .flecha { color: var(--muted); font-size: 11px; }
 .ruta .origen { border-color: var(--accent); }
@@ -146,32 +208,40 @@ h3.sec { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; colo
 .senales { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 12px; }
 .senales div { font-size: 12px; color: var(--muted); }
 .senales .barra { width: 100%; }
-@media (max-width: 600px) { .senales { grid-template-columns: repeat(2, 1fr); } .tema { grid-template-columns: 34px minmax(0,1fr) auto; } }
+@media (max-width: 600px) { .senales { grid-template-columns: repeat(2, 1fr); } .tema { grid-template-columns: 40px minmax(0,1fr) auto; } }
 .piezas { padding-left: 18px; margin: 8px 0 0; }
 .piezas li { margin-bottom: 5px; }
 .red-t { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
 .ver { margin-top: 8px; justify-self: start; }
-.peso { margin-bottom: 10px; }
-.peso label { display: flex; justify-content: space-between; font-size: 13px; }
-.peso input { width: 100%; accent-color: var(--accent); }
-.leyenda { display: grid; gap: 6px; font-size: 13px; }
-.leyenda span.etapa { margin: 0 6px 0 0; }
 
-.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
-.pred, .idea { padding: 18px; display: flex; flex-direction: column; gap: 8px; }
-.pred h4, .idea h4 { margin: 0; font-size: 17px; letter-spacing: -.01em; }
-.etq { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--accent); }
-.medidor { display: flex; align-items: center; gap: 10px; }
+/* lo que viene: lista */
+.preds { display: grid; gap: 12px; }
+.pred { padding: 16px 18px; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 4px 14px; }
+.pred .n { width: 32px; height: 32px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 800; display: grid; place-items: center; }
+.pred h4 { margin: 2px 0 6px; font-size: 17px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.pred h4 .chip { font-size: 11.5px; font-weight: 500; }
+.medidor { display: flex; align-items: center; gap: 10px; max-width: 320px; margin-bottom: 8px; font-size: 13px; }
 .medidor .barra { flex: 1; width: auto; height: 8px; }
-.medidor b { font-variant-numeric: tabular-nums; }
-.campo { font-size: 13.5px; }
-.campo b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 1px; }
-.hoy { background: var(--accent-soft); border-radius: 10px; padding: 10px 12px; font-size: 13.5px; }
-.mini { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); }
+.puntos { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 14px; }
+.puntos li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; }
+.puntos li .ico { width: 18px; height: 18px; color: var(--accent); margin-top: 2px; }
+.puntos b { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.mini { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); margin-top: 8px; }
 .mini b { color: var(--ink); }
-.gancho { font-style: italic; margin: 0; }
 
-.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 16px; }
+/* ideas */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
+.idea { padding: 18px; display: flex; flex-direction: column; gap: 8px; }
+.idea h4 { margin: 0; font-size: 17px; letter-spacing: -.01em; }
+.etq { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--accent); }
+.gancho { font-style: italic; margin: 0; }
+.idea .acc { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 6px; }
+
+/* origen y costo */
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 900px) { .grid2 { grid-template-columns: 1fr; } }
+.kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 12px; }
+@media (max-width: 700px) { .kpis { grid-template-columns: 1fr; } }
 .kpi { padding: 16px; }
 .kpi .v { font-size: 30px; font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
 .kpi .l { color: var(--muted); font-size: 13px; }
@@ -179,156 +249,255 @@ table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 td, th { padding: 7px 6px; border-bottom: 1px solid var(--line); text-align: left; }
 th { color: var(--muted); font-weight: 500; font-size: 12px; }
 td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+details.mas { margin-top: 12px; }
+details.mas > summary { cursor: pointer; font-weight: 600; color: var(--accent); padding: 8px 0; }
 .hist { display: flex; align-items: flex-end; gap: 4px; height: 70px; margin-top: 8px; }
 .hist i { flex: 1; background: var(--accent); border-radius: 3px 3px 0 0; min-height: 2px; opacity: .8; }
 .ahorro { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 8px; }
-.ahorro input { width: 120px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--ink); font: inherit; }
+.ahorro input { width: 120px; }
 .barras-origen .fila { display: grid; grid-template-columns: 110px 1fr 40px; gap: 10px; align-items: center; margin-bottom: 8px; font-size: 13.5px; }
 .barras-origen .barra { width: 100%; height: 10px; }
 .vacio { padding: 40px; text-align: center; color: var(--muted); }
-.oculto { display: none !important; }
+.toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--hero); color: #fff; padding: 10px 16px; border-radius: 10px; font-size: 14px; z-index: 60; }
 footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-radar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6-6"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/></symbol>
+  <symbol id="i-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .9-3 2s1.3 1.7 3 2 3 .9 3 2-1.3 2-3 2c-1.4 0-2.5-.5-3-1.5M12 6v2M12 16v2"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></symbol>
+</svg>
+
 <div class="top">
   <div class="wrap">
-    <div class="logo" id="ir-inicio">Radar <span>30X</span></div>
-    <nav><button id="nav-inicio" class="on">Inicio</button><button id="nav-res">Resultados</button></nav>
+    <div class="logo" id="ir-landing"><svg class="ico" style="color:#a5b4fc"><use href="#i-radar"/></svg>Radar <span>30X</span></div>
+    <nav><button id="nav-landing" class="on">Inicio</button><button id="nav-correr">Correr</button><button id="nav-res">Resultados</button></nav>
   </div>
 </div>
 
-<!-- INICIO -->
-<section id="vista-inicio">
+<!-- LANDING -->
+<section id="vista-landing">
   <div class="hero">
-    <div class="wrap">
-      <h1>Qué está creciendo hoy, <em>por qué funciona</em> y cómo adaptarlo a tu audiencia.</h1>
-      <p>El radar revisa YouTube, Reddit, Instagram, LinkedIn y TikTok, mide la velocidad de cada pieza y decide el ranking en código. JEV clasifica cada pieza por centavos.</p>
-      <div class="pilares">
-        <div class="pilar"><b>Detecta temprano</b><span>Velocidad, aceleración y saltos entre redes, no volumen total.</span></div>
-        <div class="pilar"><b>Explica el porqué</b><span>Gancho, formato, momento y origen de cada tendencia.</span></div>
-        <div class="pilar"><b>Filtra por audiencia</b><span>Ajuste a líderes de LatAm, con pesos visibles y ajustables.</span></div>
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Descubre qué está <em>creciendo hoy</em> en redes, antes que todos.</h1>
+        <p class="lead">Cinco redes, un ranking hecho con datos y las ideas listas para tu audiencia. En unos minutos y por centavos.</p>
+        <div class="cta">
+          <button class="btn primario grande" id="cta-probar"><svg class="ico"><use href="#i-play"/></svg>Probar ahora</button>
+          <button class="btn fantasma" id="cta-ultima">Ver la última corrida</button>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <div class="hcard"><div class="ibox"><svg class="ico"><use href="#i-radar"/></svg></div><b>Detecta temprano</b><span>Mide velocidad y saltos entre redes.</span></div>
+        <div class="hcard"><div class="ibox"><svg class="ico"><use href="#i-bulb"/></svg></div><b>Explica el porqué</b><span>Gancho, formato y origen de cada tema.</span></div>
+        <div class="hcard"><div class="ibox"><svg class="ico"><use href="#i-target"/></svg></div><b>Filtra por audiencia</b><span>Solo lo que le sirve a tu público.</span></div>
+        <div class="hcard"><div class="ibox"><svg class="ico"><use href="#i-spark"/></svg></div><b>Predice lo que viene</b><span>Temas que pueden explotar pronto.</span></div>
       </div>
     </div>
   </div>
-  <div class="wrap config">
-    <div class="card">
-      <div id="aviso-estatico" class="aviso-modo oculto">Modo de solo lectura: esta versión muestra la última corrida guardada. Para lanzar corridas nuevas, abre la app local con <code>python -m radar servir</code>.</div>
-      <div id="aviso-remoto" class="aviso-modo oculto">Las corridas se ejecutan en GitHub Actions y se publican aquí al terminar (unos 3 a 5 minutos). Necesitas el código de acceso del equipo.</div>
-      <p class="paso-t">1. Elige el sector</p>
+
+  <div class="seccion">
+    <div class="wrap">
+      <h2>Cómo funciona</h2>
+      <p class="nota">Tú eliges el tema y las redes; el radar hace el resto.</p>
+      <div class="pasos-como">
+        <div class="card paso-como"><div class="num">1</div><b>Elige tema y redes</b><span class="nota">IA, fitness o cualquier temática libre. YouTube, Reddit, Instagram, LinkedIn, TikTok y Hacker News.</span></div>
+        <div class="card paso-como"><div class="num">2</div><b>El radar recolecta</b><span class="nota">Trae las piezas públicas de las últimas semanas y mide qué tan rápido crece cada una.</span></div>
+        <div class="card paso-como"><div class="num">3</div><b>JEV clasifica</b><span class="nota">Cada pieza recibe tema, gancho, formato y ajuste a tu audiencia, por fracciones de centavo.</span></div>
+        <div class="card paso-como"><div class="num">4</div><b>Recibes el top 10</b><span class="nota">Con su etapa, por qué funciona, de dónde salió, ideas listas para copiar y lo que viene.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <div class="wrap">
+      <h2>Cómo leer los resultados</h2>
+      <p class="nota">Tres conceptos para entender el ranking.</p>
+      <div class="leer">
+        <div class="card">
+          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-trend"/></svg>Etapas de una tendencia</h4>
+          <ul class="lista-def">
+            <li><span class="etapa" style="background:var(--emergente)">emergente</span> <span class="nota">Acelera rápido y todavía pocos hablan de ella. Es el mejor momento para entrar.</span></li>
+            <li><span class="etapa" style="background:var(--creciendo)">creciendo</span> <span class="nota">Acelera y ya tiene volumen. Todavía hay espacio.</span></li>
+            <li><span class="etapa" style="background:var(--pico)">pico</span> <span class="nota">Mucho volumen, pero ya no acelera. Entra con un ángulo propio.</span></li>
+            <li><span class="etapa" style="background:var(--saturado)">saturado</span> <span class="nota">Muchas cuentas y frenando. Mejor buscar otro tema.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-target"/></svg>Pesos del score</h4>
+          <p class="nota" style="margin:6px 0 0">El score (0 a 100) combina cinco señales. En resultados puedes mover cuánto pesa cada una y el ranking se reordena al instante: si subes "Temprano", ganan los temas que recién empiezan; si subes "Multired", los que ya están en varias redes.</p>
+          <ul class="lista-def">
+            <li><b>Fuerza</b><span class="nota">Qué tan rápido crecen sus mejores piezas y cuánto le sirven a tu audiencia.</span></li>
+            <li><b>Aceleración</b><span class="nota">Si está creciendo más rápido que los demás temas.</span></li>
+            <li><b>Temprano</b><span class="nota">Acelera pero todavía tiene poco volumen: oportunidad.</span></li>
+            <li><b>Multired</b><span class="nota">En cuántas redes aparece a la vez.</span></li>
+            <li><b>Frescura</b><span class="nota">Pocas cuentas cubriéndolo: no está saturado.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-bulb"/></svg>Ganchos</h4>
+          <p class="nota" style="margin:6px 0 0">El gancho es cómo una pieza atrapa la atención en el título o los primeros segundos. JEV lo detecta en cada pieza y el radar mide cuál crece más.</p>
+          <ul class="lista-def" id="glosario-ganchos"></ul>
+        </div>
+      </div>
+      <div style="text-align:center; margin:32px 0 8px"><button class="btn primario grande" id="cta-probar-2"><svg class="ico"><use href="#i-play"/></svg>Probar ahora</button></div>
+    </div>
+  </div>
+  <footer><div class="wrap">Radar 30X · JEV (TypeSafe) para clasificar, DeepSeek para redactar, código para decidir. Solo datos públicos de piezas, nunca de personas.</div></footer>
+</section>
+
+<!-- CORRER -->
+<section id="vista-correr" class="oculto">
+  <div class="wrap">
+    <div class="correr-cab">
+      <h2>Configura tu corrida</h2>
+      <p class="nota" style="font-size:15px;margin:0">Elige el tema y las redes, y pulsa "Correr radar". Los resultados se abren solos al terminar.</p>
+    </div>
+    <div class="card config">
+      <div id="aviso-estatico" class="aviso-modo oculto">Modo de solo lectura: esta versión muestra la última corrida guardada.</div>
+      <p class="paso-t">1. Elige el tema</p>
       <div class="sectores" id="sectores"></div>
-      <p class="paso-t">2. Elige las redes a revisar</p>
+      <div class="libre-campos oculto" id="libre-campos">
+        <div><label class="paso-t" for="nicho">Tu temática</label><input class="campo-txt" id="nicho" maxlength="140" placeholder="Ej.: café de especialidad para emprendedores"></div>
+        <div><label class="paso-t" for="audiencia">¿Para quién? (opcional)</label><input class="campo-txt" id="audiencia" maxlength="140" placeholder="Ej.: dueños de cafeterías en Colombia"></div>
+      </div>
+      <p class="paso-t" style="margin-top:12px">2. Elige las redes</p>
       <div class="redes" id="redes"></div>
       <div class="acciones">
-        <input type="password" id="clave-acceso" class="campo-clave oculto" placeholder="Código de acceso" autocomplete="off">
-        <button class="btn primario" id="correr">Correr radar</button>
+        <input type="password" id="clave-acceso" class="campo-txt oculto" style="width:200px" placeholder="Código de acceso" autocomplete="off">
+        <button class="btn primario grande" id="correr"><svg class="ico"><use href="#i-play"/></svg>Correr radar</button>
         <label class="check"><input type="checkbox" id="recolectar" checked> Traer datos nuevos de las redes</label>
-        <span class="nota" id="nota-correr">Tarda entre 1 y 3 minutos.</span>
       </div>
-      <div class="ultima" id="ultima"></div>
+      <p class="nota" id="nota-correr" style="margin:12px 0 0"></p>
     </div>
   </div>
 </section>
 
 <!-- RESULTADOS -->
 <section id="vista-res" class="oculto">
-  <div class="wrap">
-    <div class="cabecera">
-      <div>
+  <div class="wrap res">
+    <aside class="menu">
+      <div class="card">
         <h2 id="r-titulo"></h2>
         <div class="meta" id="r-meta"></div>
+        <div class="costo" id="r-costo" title="Ver costo"></div>
       </div>
-      <div class="costo-pill" id="r-costo" title="Ver detalle del costo"></div>
-    </div>
-    <div class="pregunta" id="r-pregunta"></div>
-    <div class="tabs" id="tabs">
-      <button data-t="tendencias" class="on">Tendencias hoy</button>
-      <button data-t="viene">Lo que viene</button>
-      <button data-t="ideas">Ideas para 30X</button>
-      <button data-t="origen">Origen de las tendencias</button>
-      <button data-t="costo">Costo y transparencia</button>
-    </div>
+      <div class="card">
+        <nav id="tabs">
+          <button data-t="tendencias" class="on"><svg class="ico"><use href="#i-trend"/></svg>Tendencias hoy</button>
+          <button data-t="viene"><svg class="ico"><use href="#i-spark"/></svg>Lo que viene</button>
+          <button data-t="ideas"><svg class="ico"><use href="#i-pen"/></svg><span id="tab-ideas">Ideas para 30X</span></button>
+          <button data-t="origen"><svg class="ico"><use href="#i-route"/></svg>Origen</button>
+          <button data-t="costo"><svg class="ico"><use href="#i-coin"/></svg>Costo y cobertura</button>
+        </nav>
+      </div>
+      <button class="btn" id="nueva-corrida"><svg class="ico"><use href="#i-play"/></svg>Nueva corrida</button>
+    </aside>
 
-    <div id="t-tendencias" class="grid2">
-      <div id="lista"></div>
-      <aside class="side">
-        <div class="card">
-          <h3 class="sec">Pesos del score</h3>
-          <div id="pesos"></div>
-          <button class="btn chico" id="reset">Restaurar pesos</button>
-          <p class="nota">El ranking se recalcula en código con estos pesos. El LLM no decide el orden.</p>
-        </div>
-        <div class="card">
-          <h3 class="sec">Etapas</h3>
-          <div class="leyenda">
-            <div><span class="etapa" style="background:var(--emergente)">emergente</span>acelera con poco volumen</div>
-            <div><span class="etapa" style="background:var(--creciendo)">creciendo</span>acelera con volumen</div>
-            <div><span class="etapa" style="background:var(--pico)">pico</span>mucho volumen, ya no acelera</div>
-            <div><span class="etapa" style="background:var(--saturado)">saturado</span>muchas cuentas y frenando</div>
+    <main>
+      <div id="t-tendencias">
+        <h3 class="res-titulo">Tendencias de hoy</h3>
+        <p class="res-sub" id="r-pregunta"></p>
+        <details class="card ajustes" id="ajustes">
+          <summary><svg class="ico" style="color:var(--accent)"><use href="#i-target"/></svg>Ajustar el ranking <span class="nota">Mueve cuánto pesa cada señal; el orden cambia al instante</span></summary>
+          <div class="cuerpo">
+            <div class="pesos" id="pesos"></div>
+            <div style="margin-top:10px; display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+              <button class="btn chico" id="reset">Restaurar pesos</button>
+              <span class="nota">El ranking lo calcula el código con estos pesos; la IA no decide el orden.</span>
+            </div>
           </div>
+        </details>
+        <div class="leyenda-fila">
+          <span><span class="etapa" style="background:var(--emergente)">emergente</span>acelera con poco volumen</span>
+          <span><span class="etapa" style="background:var(--creciendo)">creciendo</span>acelera con volumen</span>
+          <span><span class="etapa" style="background:var(--pico)">pico</span>ya no acelera</span>
+          <span><span class="etapa" style="background:var(--saturado)">saturado</span>frenando</span>
         </div>
-      </aside>
-    </div>
-
-    <div id="t-viene" class="oculto">
-      <p class="nota" style="margin-top:0">Hipótesis, no hechos: temas que todavía no son tendencia pero las señales de hoy apuntan a que pueden serlo. La fuerza combina el respaldo de los datos (aceleración de los temas en que se basa) con la evaluación de JEV.</p>
-      <div class="cards" id="preds"></div>
-    </div>
-
-    <div id="t-ideas" class="oculto">
-      <p class="nota" style="margin-top:0" id="ideas-tema"></p>
-      <div class="cards" id="ideas"></div>
-    </div>
-
-    <div id="t-origen" class="oculto">
-      <div class="grid2">
-        <div class="card" style="padding:18px">
-          <h3 class="sec">Dónde nacen las tendencias</h3>
-          <div class="barras-origen" id="origen-barras"></div>
-          <p class="nota" id="origen-nota"></p>
+        <div class="leyenda-fila" id="leyenda-mov">
+          <span><span class="mov up">▲ 2</span> subió 2 puestos desde la corrida anterior</span>
+          <span><span class="mov down">▼ 1</span> bajó 1 puesto</span>
+          <span><span class="mov nuevo">NUEVO</span> no estaba en el top de la corrida anterior</span>
         </div>
-        <div class="card" style="padding:18px">
-          <h3 class="sec">Fuentes externas más citadas</h3>
-          <div id="fuentes"></div>
-        </div>
+        <div class="card ganchos" id="ganchos"></div>
+        <div id="lista"></div>
       </div>
-      <div class="card" style="padding:18px; margin-top:16px">
-        <h3 class="sec">Ruta de cada tendencia</h3>
-        <div id="rutas"></div>
-      </div>
-    </div>
 
-    <div id="t-costo" class="oculto">
-      <div class="kpis" id="kpis"></div>
-      <div class="grid2">
-        <div>
-          <div class="card" style="padding:18px; margin-bottom:16px">
-            <h3 class="sec">Costo por paso</h3>
-            <table id="costo-tabla"></table>
-            <p class="nota">Medido con el campo <code>usage</code> de cada respuesta de JEV y DeepSeek, no estimado.</p>
+      <div id="t-viene" class="oculto">
+        <h3 class="res-titulo">Lo que viene</h3>
+        <p class="res-sub">Hipótesis, no hechos: temas que todavía no son tendencia pero las señales de hoy apuntan a que pueden serlo. La fuerza combina los datos (aceleración de los temas en que se basa) con la evaluación de JEV.</p>
+        <div class="preds" id="preds"></div>
+      </div>
+
+      <div id="t-ideas" class="oculto">
+        <h3 class="res-titulo" id="ideas-titulo">Ideas para 30X</h3>
+        <p class="res-sub" id="ideas-tema"></p>
+        <div class="cards" id="ideas"></div>
+      </div>
+
+      <div id="t-origen" class="oculto">
+        <h3 class="res-titulo">Origen de las tendencias</h3>
+        <p class="res-sub">Dónde apareció primero cada tema y cómo saltó de una red a otra.</p>
+        <div class="grid2">
+          <div class="card" style="padding:18px">
+            <h3 class="sec">Dónde nacen</h3>
+            <div class="barras-origen" id="origen-barras"></div>
+            <p class="nota" id="origen-nota"></p>
           </div>
           <div class="card" style="padding:18px">
-            <h3 class="sec">Cobertura por red</h3>
-            <table id="cobertura"></table>
-            <p class="nota" id="conteos"></p>
+            <h3 class="sec">Fuentes externas más citadas</h3>
+            <div id="fuentes"></div>
           </div>
         </div>
-        <aside class="side">
-          <div class="card">
-            <h3 class="sec">Comparación</h3>
-            <div class="nota">¿Cuánto pagas hoy al mes por datos de tendencias?</div>
-            <div class="ahorro"><span>USD</span><input type="number" min="0" step="10" id="pago-actual" placeholder="ej. 300"></div>
-            <p id="ahorro-res" class="nota"></p>
-          </div>
-          <div class="card">
-            <h3 class="sec">Historial de corridas</h3>
-            <div class="hist" id="hist"></div>
-            <p class="nota" id="hist-nota"></p>
-          </div>
-        </aside>
+        <div class="card" style="padding:18px; margin-top:16px">
+          <h3 class="sec">Ruta de cada tendencia</h3>
+          <div id="rutas"></div>
+        </div>
       </div>
-    </div>
-    <footer>Radar 30X · JEV (TypeSafe) para clasificar, DeepSeek para redactar, código para decidir. Solo datos públicos de piezas, nunca de personas.</footer>
+
+      <div id="t-costo" class="oculto">
+        <h3 class="res-titulo">Costo y cobertura</h3>
+        <p class="res-sub" id="costo-resumen"></p>
+        <div class="kpis" id="kpis"></div>
+        <div class="card" style="padding:18px">
+          <h3 class="sec">Cobertura por red</h3>
+          <table id="cobertura"></table>
+          <p class="nota" id="conteos"></p>
+        </div>
+        <details class="mas">
+          <summary>Ver desglose del costo, historial y comparación</summary>
+          <div class="grid2" style="margin-top:8px">
+            <div class="card" style="padding:18px">
+              <h3 class="sec">Costo por paso</h3>
+              <table id="costo-tabla"></table>
+              <p class="nota">Medido con el campo <code>usage</code> de cada respuesta de JEV y DeepSeek, no estimado.</p>
+            </div>
+            <div>
+              <div class="card" style="padding:18px; margin-bottom:16px">
+                <h3 class="sec">Historial de corridas</h3>
+                <div class="hist" id="hist"></div>
+                <p class="nota" id="hist-nota"></p>
+              </div>
+              <div class="card" style="padding:18px">
+                <h3 class="sec">Comparación</h3>
+                <div class="nota">¿Cuánto pagas hoy al mes por datos de tendencias?</div>
+                <div class="ahorro"><span>USD</span><input class="campo-txt" type="number" min="0" step="10" id="pago-actual" placeholder="ej. 300"></div>
+                <p id="ahorro-res" class="nota"></p>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </main>
   </div>
 </section>
 
@@ -354,15 +523,28 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
 
 <script src="data.js"></script>
 <script>
-const SENALES = { fuerza: "Fuerza", aceleracion: "Aceleración", temprano: "Temprano", multired: "Multired", frescura: "Frescura" };
+const SENALES = {
+  fuerza: ["Fuerza", "Qué tan rápido crecen sus mejores piezas y cuánto sirven a tu audiencia"],
+  aceleracion: ["Aceleración", "Crece más rápido que los demás temas"],
+  temprano: ["Temprano", "Acelera con poco volumen: oportunidad"],
+  multired: ["Multired", "Aparece en varias redes a la vez"],
+  frescura: ["Frescura", "Pocas cuentas lo cubren: no está saturado"],
+};
 const REDES = { youtube: "YouTube", reddit: "Reddit", instagram: "Instagram", linkedin: "LinkedIn", tiktok: "TikTok", hn: "Hacker News" };
 const VIAS = { api: "API", rss: "RSS", busqueda_web: "búsqueda web", manual: "manual", comunidad: "comunidad" };
-const GANCHOS = { pregunta: "pregunta", dato: "dato sorprendente", contraste: "contraste", promesa: "promesa", historia: "historia", polemica: "polémica" };
+const GANCHOS = {
+  pregunta: ["Pregunta", "Abre con una pregunta al público", "«¿Tu equipo ya usa agentes de IA?»"],
+  dato: ["Dato sorprendente", "Abre con una cifra o hecho que sorprende", "«El 80% de las pymes no mide su ROI en IA»"],
+  contraste: ["Contraste", "Antes y después, mito y realidad", "«Lo que crees de la IA vs. lo que realmente pasa»"],
+  promesa: ["Promesa", "Promete un beneficio o resultado concreto", "«Automatiza tus reportes en 10 minutos»"],
+  historia: ["Historia", "Cuenta un caso o experiencia personal", "«Así cambió mi empresa en 3 meses»"],
+  polemica: ["Polémica", "Afirmación provocadora o alarmante", "«La IA va a reemplazar a tu gerente»"],
+};
 const FORMATOS = { tutorial: "tutorial", opinion: "opinión", noticia: "noticia", caso: "caso", demo: "demo", lista: "lista" };
 const PASOS = ["Recolección de las redes", "Temas de la corrida (DeepSeek)", "Clasificación con JEV", "Score, etapas y rastreo (código)", "Explicaciones e ideas", "Lo que viene"];
 
-let DATA = window.RADAR_DATA || {}, SECTORES = [], servidor = false;
-let sectorInicio = null, sector = null, pesos = {}, abiertos = new Set(), tab = "tendencias";
+let DATA = window.RADAR_DATA || {}, SECTORES = [], servidor = false, MODO = "estatico", REQUIERE_CLAVE = false, USO = null;
+let sectorInicio = null, libre = false, sector = null, pesos = {}, abiertos = new Set(), tab = "tendencias";
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -371,8 +553,18 @@ const fecha = t => t ? new Date(t * 1000).toLocaleDateString("es", { day: "numer
 const pct = v => Math.round((v || 0) * 100);
 function guardar(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 function leer(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
-
-let MODO = "estatico";   // local: servidor Python · remoto: Vercel + GitHub Actions · estatico: solo lectura
+// Instagram manda a su página de inicio si no hay sesión; la versión "embed" del post se ve sin iniciar sesión
+function enlace(url) {
+  const m = String(url || "").match(/^(https?:\/\/(?:www\.)?instagram\.com\/(?:p|reel|reels)\/[A-Za-z0-9_-]+)/);
+  return m ? m[1] + "/embed/captioned/" : url;
+}
+const slug = t => t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "").slice(0, 40);
+function toast(t) { const d = document.createElement("div"); d.className = "toast"; d.textContent = t; document.body.appendChild(d); setTimeout(() => d.remove(), 1800); }
+async function copiar(texto) {
+  try { await navigator.clipboard.writeText(texto); }
+  catch (e) { const t = document.createElement("textarea"); t.value = texto; document.body.appendChild(t); t.select(); document.execCommand("copy"); t.remove(); }
+  toast("Copiado al portapapeles");
+}
 
 async function cargarDatos() {
   if (MODO === "local") { const d = await fetch("/api/datos", { cache: "no-store" }); if (d.ok) DATA = await d.json(); }
@@ -385,6 +577,7 @@ async function init() {
     const e = r.ok || r.status === 500 ? await r.json() : null;
     if (e && e.modo === "local") MODO = "local";
     else if (e && e.modo === "remoto" && !(e.error || "").startsWith("Faltan")) MODO = "remoto";
+    if (e) { REQUIERE_CLAVE = !!e.requiereClave; USO = e.uso || null; }
   } catch (e) {}
   try {
     if (MODO === "local") SECTORES = await (await fetch("/api/sectores", { cache: "no-store" })).json();
@@ -394,43 +587,54 @@ async function init() {
   if (!SECTORES.length) SECTORES = Object.keys(DATA).map(id => ({ id, nombre: DATA[id].nombre, redes: Object.keys(REDES).map(r => ({
     id: r, nombre: REDES[r], activa: true, disponible: (DATA[id].redes_elegidas || []).includes(r), con_metricas: ["youtube", "hn"].includes(r), via: "" })) }));
   servidor = MODO !== "estatico";
-  $("aviso-estatico").classList.toggle("oculto", servidor);
-  $("aviso-remoto").classList.toggle("oculto", MODO !== "remoto");
-  $("clave-acceso").classList.toggle("oculto", MODO !== "remoto");
-  $("clave-acceso").value = leer("radar-clave") || "";
-  $("nota-correr").textContent = MODO === "remoto" ? "Tarda entre 3 y 5 minutos." : "Tarda entre 1 y 3 minutos.";
-  $("correr").disabled = !servidor;
-  SECTORES.sort((a, b) => (b.id === "ia_latam") - (a.id === "ia_latam"));
+  SECTORES.sort((a, b) => (b.id === "ia_latam") - (a.id === "ia_latam") || (b.id === "fitness") - (a.id === "fitness"));
   sectorInicio = SECTORES.find(s => s.id === leer("radar-sector"))?.id || SECTORES[0]?.id;
-  pintarInicio();
-  $("ir-inicio").onclick = $("nav-inicio").onclick = () => mostrar("inicio");
-  $("nav-res").onclick = () => abrirResultados(sector || sectorInicio);
+
+  $("glosario-ganchos").innerHTML = Object.values(GANCHOS).map(([n, d, ej]) => `<li><b>${n}</b><span class="nota">${d}. ${ej}</span></li>`).join("");
+  $("ir-landing").onclick = $("nav-landing").onclick = () => mostrar("landing");
+  $("nav-correr").onclick = $("cta-probar").onclick = $("cta-probar-2").onclick = $("nueva-corrida").onclick = () => mostrar("correr");
+  $("nav-res").onclick = $("cta-ultima").onclick = () => abrirResultados(sector || sectorInicio);
   $("correr").onclick = correr;
-  $("tabs").onclick = e => { const t = e.target.dataset.t; if (t) cambiarTab(t); };
+  $("tabs").onclick = e => { const b = e.target.closest("button"); if (b) cambiarTab(b.dataset.t); };
   $("r-costo").onclick = () => cambiarTab("costo");
   $("reset").onclick = () => { pesos = { ...DATA[sector].pesos }; pintarPesos(); pintarTendencias(); };
   $("pago-actual").oninput = pintarAhorro;
   $("carga-cerrar").onclick = cerrarCarga;
-  if (location.hash === "#resultados" && DATA[sectorInicio]) abrirResultados(sectorInicio);
+  $("cta-ultima").classList.toggle("oculto", !Object.keys(DATA).length);
+  pintarCorrer();
+  const h = location.hash;
+  if (h === "#resultados" && DATA[sectorInicio]) abrirResultados(sectorInicio);
+  else if (h === "#correr") mostrar("correr");
   if (servidor) seguirProgreso(true);
 }
 
 function mostrar(v) {
-  $("vista-inicio").classList.toggle("oculto", v !== "inicio");
-  $("vista-res").classList.toggle("oculto", v !== "res");
-  $("nav-inicio").classList.toggle("on", v === "inicio");
+  ["landing", "correr", "res"].forEach(x => { $("vista-" + x).classList.toggle("oculto", x !== v); });
+  $("nav-landing").classList.toggle("on", v === "landing");
+  $("nav-correr").classList.toggle("on", v === "correr");
   $("nav-res").classList.toggle("on", v === "res");
-  history.replaceState(null, "", v === "res" ? "#resultados" : "#");
+  history.replaceState(null, "", v === "res" ? "#resultados" : v === "correr" ? "#correr" : "#");
   window.scrollTo(0, 0);
 }
 
-/* ---------- inicio ---------- */
-function pintarInicio() {
-  $("sectores").innerHTML = SECTORES.map(s => `<button class="opcion ${s.id === sectorInicio ? "on" : ""}" data-s="${esc(s.id)}">
-    <b>${esc(s.nombre)}</b><small>${DATA[s.id] ? "Última corrida: " + new Date(DATA[s.id].generado).toLocaleString("es", { dateStyle: "short", timeStyle: "short" }) : "Sin corridas todavía"}</small></button>`).join("");
-  $("sectores").onclick = e => { const b = e.target.closest(".opcion"); if (!b) return; sectorInicio = b.dataset.s; guardar("radar-sector", sectorInicio); pintarInicio(); };
-  const s = SECTORES.find(x => x.id === sectorInicio);
-  const elegidas = JSON.parse(leer("radar-redes-" + sectorInicio) || "null");
+/* ---------- correr ---------- */
+function pintarCorrer() {
+  $("aviso-estatico").classList.toggle("oculto", servidor);
+  $("clave-acceso").classList.toggle("oculto", !(MODO === "remoto" && REQUIERE_CLAVE));
+  $("clave-acceso").value = leer("radar-clave") || "";
+  $("correr").disabled = !servidor;
+  const tarjetas = SECTORES.map(s => `<button class="opcion ${!libre && s.id === sectorInicio ? "on" : ""}" data-s="${esc(s.id)}">
+    <b>${esc(s.nombre)}</b><small>${DATA[s.id] ? "Última corrida: " + new Date(DATA[s.id].generado).toLocaleString("es", { dateStyle: "short", timeStyle: "short" }) : "Sin corridas todavía"}</small></button>`);
+  tarjetas.push(`<button class="opcion libre ${libre ? "on" : ""}" data-s="__libre"><b>＋ Otra temática (libre)</b><small>Escribe cualquier nicho</small></button>`);
+  $("sectores").innerHTML = tarjetas.join("");
+  $("sectores").onclick = e => {
+    const b = e.target.closest(".opcion"); if (!b) return;
+    if (b.dataset.s === "__libre") libre = true; else { libre = false; sectorInicio = b.dataset.s; guardar("radar-sector", sectorInicio); }
+    pintarCorrer(); if (libre) $("nicho").focus();
+  };
+  $("libre-campos").classList.toggle("oculto", !libre);
+  const s = libre ? { redes: (SECTORES[0]?.redes || []).map(r => ({ ...r, activa: true })) } : SECTORES.find(x => x.id === sectorInicio);
+  const elegidas = JSON.parse(leer("radar-redes-" + (libre ? "__libre" : sectorInicio)) || "null");
   $("redes").innerHTML = (s?.redes || []).filter(r => r.activa).map(r => {
     const on = r.disponible && (!elegidas || elegidas.includes(r.id));
     return `<label class="opcion red-op ${r.disponible ? "" : "off"}">
@@ -438,15 +642,16 @@ function pintarInicio() {
       <span><b>${esc(r.nombre)}</b>${r.via ? `<small>${esc(r.via)}</small>` : ""}
       <span class="badge ${r.con_metricas ? "si" : "no"}">${r.con_metricas ? "con métricas" : "presencia y ajuste"}</span></span></label>`;
   }).join("");
-  $("redes").onchange = () => guardar("radar-redes-" + sectorInicio, JSON.stringify(redesElegidas()));
-  const d = DATA[sectorInicio];
-  $("ultima").innerHTML = d ? `<button class="btn" id="ver-ultima">Ver última corrida</button>
-    <span class="nota">${d.temas.length} temas · ${d.conteos.en_ranking} piezas en el ranking · costo ${usd(d.costo.total_usd)}</span>` : "";
-  if (d) $("ver-ultima").onclick = () => abrirResultados(sectorInicio);
+  $("redes").onchange = () => guardar("radar-redes-" + (libre ? "__libre" : sectorInicio), JSON.stringify(redesElegidas()));
+  $("recolectar").disabled = libre; if (libre) $("recolectar").checked = true;
+  let nota = MODO === "remoto" ? "Tarda entre 2 y 5 minutos." : MODO === "local" ? "Tarda entre 1 y 3 minutos." : "";
+  if (libre) nota += " Una temática nueva se analiza desde cero: la primera vez la aceleración sale estimada.";
+  if (USO && USO.limites) nota += ` Hoy: ${USO.completas} de ${USO.limites.completas} corridas con datos nuevos.`;
+  $("nota-correr").textContent = nota.trim();
 }
 const redesElegidas = () => [...document.querySelectorAll("#redes input:checked")].map(i => i.value);
 
-let generadoAntes = null, relojInicio = null, relojTimer = null;
+let generadoAntes = null, relojInicio = null, relojTimer = null, sectorCorrida = null;
 
 function abrirCarga(titulo, sub) {
   $("carga").classList.remove("oculto");
@@ -462,10 +667,7 @@ function abrirCarga(titulo, sub) {
     }, 500);
   }
 }
-function estadoCarga(titulo, sub) {
-  if (titulo) $("carga-titulo").textContent = titulo;
-  if (sub !== undefined) $("carga-sub").textContent = sub;
-}
+function estadoCarga(titulo, sub) { if (titulo) $("carga-titulo").textContent = titulo; if (sub !== undefined) $("carga-sub").textContent = sub; }
 function pararReloj() { clearInterval(relojTimer); relojTimer = null; }
 function errorCarga(msg, url) {
   pararReloj();
@@ -483,31 +685,35 @@ function cerrarCarga() { pararReloj(); relojInicio = null; $("carga").classList.
 async function correr() {
   const redes = redesElegidas();
   if (!redes.length) { $("nota-correr").textContent = "Elige al menos una red."; return; }
+  const nicho = $("nicho").value.trim(), audiencia = $("audiencia").value.trim();
+  if (libre && nicho.length < 3) { $("nota-correr").textContent = "Escribe tu temática (por ejemplo: café de especialidad)."; $("nicho").focus(); return; }
   const clave = $("clave-acceso").value.trim();
-  if (MODO === "remoto" && !clave) { $("nota-correr").textContent = "Escribe el código de acceso."; $("clave-acceso").focus(); return; }
+  if (MODO === "remoto" && REQUIERE_CLAVE && !clave) { $("nota-correr").textContent = "Escribe el código de acceso."; $("clave-acceso").focus(); return; }
+  sectorCorrida = libre ? "libre_" + (slug(nicho) || "tema") : sectorInicio;
   $("correr").disabled = true;
-  generadoAntes = DATA[sectorInicio]?.generado || null;
+  generadoAntes = DATA[sectorCorrida]?.generado || null;
   relojInicio = Date.now() / 1000;
   $("pasos").innerHTML = ""; $("log").textContent = ""; $("carga-gh").classList.add("oculto");
   abrirCarga("Lanzando la corrida…", MODO === "remoto" ? "Enviando la orden a GitHub Actions." : "Preparando el radar.");
   const r = await fetch("/api/correr", { method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ sector: sectorInicio, redes, recolectar: $("recolectar").checked, clave }) }).catch(() => null);
+    body: JSON.stringify({ sector: sectorCorrida, redes, recolectar: $("recolectar").checked, clave, nicho: libre ? nicho : "", audiencia: libre ? audiencia : "" }) }).catch(() => null);
   if (!r || !r.ok) {
     const e = r ? await r.json().catch(() => ({})) : {};
     if (r && r.status === 401) { guardar("radar-clave", ""); $("clave-acceso").value = ""; }
-    errorCarga(r && r.status === 401 ? "El código de acceso no es correcto. Revísalo (mayúsculas, minúsculas y guiones) y vuelve a intentarlo."
+    errorCarga(r && r.status === 401 ? "El código de acceso no es correcto. Revísalo y vuelve a intentarlo."
       : r && r.status === 409 ? "Ya hay una corrida en curso. Espera a que termine; abajo puedes seguirla."
       : (e.error || "No se pudo lanzar la corrida. Revisa tu conexión e inténtalo de nuevo."));
     if (r && r.status === 409) seguirProgreso(false);
     return;
   }
-  if (MODO === "remoto") guardar("radar-clave", clave);
+  if (MODO === "remoto" && clave) guardar("radar-clave", clave);
+  if (libre) guardar("radar-sector", sectorCorrida);
   estadoCarga("Corrida en cola", MODO === "remoto" ? "GitHub Actions está preparando una máquina para correr el radar (unos 20 a 40 segundos)." : "");
   setTimeout(() => seguirProgreso(false), MODO === "remoto" ? 4000 : 800);
 }
 
 function pintarPasos(e) {
-  if (e.pasos) {  // remoto: pasos del flujo de GitHub Actions
+  if (e.pasos) {
     const cls = { hecho: "hecho", activo: "activo", omitido: "hecho", error: "", pendiente: "" };
     $("pasos").innerHTML = e.pasos.map(p => `<li class="${cls[p.estado]}"><span class="dot"></span>${esc(p.nombre)}${p.estado === "omitido" ? " (omitido)" : ""}${p.estado === "error" ? " (falló)" : ""}</li>`).join("")
       + `<li class="${e.corriendo ? "" : "activo"}"><span class="dot"></span>Mostrar resultados en esta página</li>`;
@@ -526,6 +732,7 @@ function textoEstado(e) {
     const activo = e.pasos.find(p => p.estado === "activo");
     if (!activo) return ["Preparando la máquina en GitHub Actions…", "Instalando Python y las dependencias."];
     return {
+      "Crear sector para el nicho": ["Preparando tu temática…", "DeepSeek arma las búsquedas para cada red."],
       "Recolectar redes": ["Recolectando las redes…", "YouTube, Reddit, Instagram, LinkedIn, TikTok y Hacker News."],
       "Analizar con JEV y DeepSeek": ["Analizando con JEV y DeepSeek…", "Clasificando cada pieza, calculando el ranking y redactando ideas."],
       "Guardar y publicar resultados": ["Guardando resultados…", "Subiendo la corrida para publicarla."],
@@ -539,6 +746,7 @@ async function seguirProgreso(soloSiCorre) {
   const r = await fetch("/api/estado", { cache: "no-store" }).catch(() => null);
   if (!r || !r.ok) { if (!soloSiCorre) setTimeout(() => seguirProgreso(false), 4000); return; }
   const e = await r.json();
+  if (e.uso) USO = e.uso;
   if (soloSiCorre && !e.corriendo) return;
   if (e.inicio && (!relojInicio || soloSiCorre)) relojInicio = e.inicio;
   abrirCarga();
@@ -552,22 +760,26 @@ async function seguirProgreso(soloSiCorre) {
     setTimeout(() => seguirProgreso(false), MODO === "remoto" ? 4000 : 1500); return;
   }
   if (e.error) return errorCarga(e.error, e.url);
-  if (MODO === "remoto") return esperarPublicacion(e.sector || sectorInicio, 0);
+  const s = e.sector || sectorCorrida || sectorInicio;
+  if (MODO === "remoto") return esperarPublicacion(s, 0);
   await cargarDatos();
-  terminarCarga(e.sector || sectorInicio);
+  terminarCarga(s);
 }
 
-function terminarCarga(s) {
+async function terminarCarga(s) {
   pararReloj();
   $("carga-spin").className = "spinner ok";
   estadoCarga("¡Listo!", "Abriendo los resultados…");
   $("correr").disabled = false;
-  pintarInicio();
+  try {
+    if (MODO === "local") SECTORES = await (await fetch("/api/sectores", { cache: "no-store" })).json();
+    else if (MODO === "remoto") SECTORES = await (await fetch("sectores.json?t=" + Date.now(), { cache: "no-store" })).json();
+  } catch (e) {}
+  libre = false; sectorInicio = s; pintarCorrer();
   setTimeout(() => { cerrarCarga(); abrirResultados(s); }, 900);
 }
 
 async function esperarPublicacion(s, intento) {
-  // GitHub Actions ya terminó; Vercel tarda un momento en publicar los resultados nuevos
   estadoCarga("Publicando los resultados…", "La corrida terminó. Vercel está publicando la versión nueva (unos 30 a 60 segundos).");
   await cargarDatos().catch(() => {});
   if (DATA[s] && (!generadoAntes || DATA[s].generado !== generadoAntes)) return terminarCarga(s);
@@ -577,14 +789,18 @@ async function esperarPublicacion(s, intento) {
 
 /* ---------- resultados ---------- */
 function abrirResultados(s) {
-  if (!DATA[s]) { mostrar("inicio"); return; }
+  if (!DATA[s]) { mostrar("correr"); return; }
   sector = s; const d = DATA[s];
   pesos = { ...d.pesos }; abiertos = new Set();
+  const es30x = !d.marca || d.marca === "30X";
   $("r-titulo").textContent = d.nombre;
-  $("r-meta").textContent = `${new Date(d.generado).toLocaleString("es", { dateStyle: "long", timeStyle: "short" })} · ${d.duracion_s} s · ${(d.redes_elegidas || Object.keys(d.cobertura)).map(r => REDES[r] || r).join(", ")} · ${d.modelo_jev}`;
-  $("r-costo").innerHTML = `${usd(d.costo.total_usd)} <span>esta corrida</span>`;
-  $("r-pregunta").textContent = `¿Cuáles son los 10 temas de ${s === "ia_latam" ? "IA" : d.nombre.toLowerCase()} que más están creciendo esta semana, por qué funcionan y cómo los adapta 30X?`;
-  pintarPesos(); pintarTendencias(); pintarPredicciones(); pintarIdeas(); pintarOrigen(); pintarCosto();
+  $("r-meta").textContent = `${new Date(d.generado).toLocaleString("es", { dateStyle: "medium", timeStyle: "short" })} · ${Math.round(d.duracion_s)} s · ${(d.redes_elegidas || Object.keys(d.cobertura)).length} redes`;
+  $("r-costo").innerHTML = `${usd(d.costo.total_usd)} <span>costo de esta corrida</span>`;
+  $("r-pregunta").textContent = `Los 10 temas de ${s === "ia_latam" ? "IA" : d.nombre.toLowerCase()} que más crecen esta semana, por qué funcionan y de dónde salieron.`;
+  $("tab-ideas").textContent = es30x ? "Ideas para 30X" : "Ideas de contenido";
+  $("ideas-titulo").textContent = es30x ? "Ideas para 30X" : "Ideas de contenido";
+  $("leyenda-mov").classList.toggle("oculto", !d.corrida_anterior);
+  pintarPesos(); pintarGanchos(); pintarTendencias(); pintarPredicciones(); pintarIdeas(); pintarOrigen(); pintarCosto();
   mostrar("res"); cambiarTab(tab);
 }
 
@@ -592,11 +808,12 @@ function cambiarTab(t) {
   tab = t;
   document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.t === t));
   ["tendencias", "viene", "ideas", "origen", "costo"].forEach(x => $("t-" + x).classList.toggle("oculto", x !== t));
+  window.scrollTo(0, 0);
 }
 
 function pintarPesos() {
-  $("pesos").innerHTML = Object.keys(SENALES).map(k => `<div class="peso"><label><span>${SENALES[k]}</span><span id="v-${k}">${(pesos[k] ?? 0).toFixed(2)}</span></label>
-    <input type="range" min="0" max="1" step="0.05" value="${pesos[k] ?? 0}" data-k="${k}"></div>`).join("");
+  $("pesos").innerHTML = Object.entries(SENALES).map(([k, [n, ayuda]]) => `<div class="peso"><label><span>${n}</span><span id="v-${k}">${(pesos[k] ?? 0).toFixed(2)}</span></label>
+    <input type="range" min="0" max="1" step="0.05" value="${pesos[k] ?? 0}" data-k="${k}" aria-label="${n}"><small>${ayuda}</small></div>`).join("");
   $("pesos").oninput = e => { const k = e.target.dataset.k; if (!k) return; pesos[k] = parseFloat(e.target.value); $("v-" + k).textContent = pesos[k].toFixed(2); pintarTendencias(); };
 }
 
@@ -605,32 +822,63 @@ const ranking = (temas, w) => temas.map(t => ({ ...t, s: Object.keys(SENALES).re
 function rutaHtml(r) {
   if (!r || !r.ruta || !r.ruta.length) return "";
   return `<div class="ruta">${r.ruta.map((n, i) => `${i ? `<span class="flecha">→ ${r.horas_entre_redes[i - 1] < 48 ? Math.round(r.horas_entre_redes[i - 1]) + " h" : Math.round(r.horas_entre_redes[i - 1] / 24) + " d"} →</span>` : ""}
-    <a class="nodo ${i === 0 ? "origen" : ""}" href="${esc(n.url)}" target="_blank" rel="noopener" title="${esc(n.titulo)}"><b>${esc(REDES[n.red] || n.red)}</b> ${fecha(n.fecha)}</a>`).join("")}</div>`;
+    <a class="nodo ${i === 0 ? "origen" : ""}" href="${esc(enlace(n.url))}" target="_blank" rel="noopener" title="${esc(n.titulo)}"><b>${esc(REDES[n.red] || n.red)}</b> ${fecha(n.fecha)}</a>`).join("")}</div>`;
+}
+
+function movHtml(t, i, d) {
+  if (!d.corrida_anterior) return "";
+  if (!t.rank_anterior) return `<span class="mov nuevo" title="No estaba en el top de la corrida anterior">NUEVO</span>`;
+  const delta = t.rank_anterior - (i + 1);
+  if (delta > 0) return `<span class="mov up" title="Subió ${delta} puestos desde la corrida anterior (#${t.rank_anterior})">▲ ${delta}</span>`;
+  if (delta < 0) return `<span class="mov down" title="Bajó ${-delta} puestos desde la corrida anterior (#${t.rank_anterior})">▼ ${-delta}</span>`;
+  return `<span class="mov igual" title="Mismo puesto que en la corrida anterior">=</span>`;
+}
+
+const nombreGancho = g => (GANCHOS[g] || [g])[0];
+
+function pintarGanchos() {
+  const d = DATA[sector], g = d.ganchos || [];
+  if (!g.length) { $("ganchos").classList.add("oculto"); return; }
+  $("ganchos").classList.remove("oculto");
+  const mejor = g.find(x => x.crecimiento_vs_media != null && x.crecimiento_vs_media > 0) || g[0];
+  const top = d.temas[0], ganchoTop = top && top.rasgos.gancho[0];
+  const fila = x => {
+    const c = x.crecimiento_vs_media;
+    return `<div class="ganchos-fila"><b title="${esc((GANCHOS[x.gancho] || [])[1] || "")}">${esc(nombreGancho(x.gancho))}</b>
+      <div><div class="barra"><i style="width:${pct(x.pct)}%"></i></div><span class="nota">${pct(x.pct)}% de las piezas</span></div>
+      <span class="crec ${c == null ? "" : c >= 0 ? "pos" : "neg"}">${c == null ? "sin métricas" : (c >= 0 ? "+" : "") + Math.round(c * 100) + "% crec."}</span></div>`;
+  };
+  $("ganchos").innerHTML = `<h3 class="sec">¿Qué gancho atrae más?</h3>
+    <div class="insight">Las piezas que abren con un gancho de <b>${esc(nombreGancho(mejor.gancho).toLowerCase())}</b> ${mejor.crecimiento_vs_media != null ? `crecen <b>${Math.round(mejor.crecimiento_vs_media * 100)}% más</b> que el promedio` : "son las más usadas"} en el top 10.${ganchoTop ? ` En el tema número 1, «${esc(top.nombre)}», el ${pct(ganchoTop.pct)}% de las piezas usa un gancho de <b>${esc(nombreGancho(ganchoTop.valor).toLowerCase())}</b>.` : ""}
+    <span class="nota">Ejemplo: <a href="${esc(enlace(mejor.ejemplo.url))}" target="_blank" rel="noopener">${esc(mejor.ejemplo.titulo)}</a></span></div>
+    <details><summary class="nota" style="cursor:pointer;color:var(--accent);font-weight:600">Ver todos los ganchos</summary>
+    ${g.slice(0, 6).map(fila).join("")}
+    <p class="nota" style="margin:8px 0 0">"Crec." compara la velocidad de crecimiento de las piezas con ese gancho contra el promedio del top 10 (solo redes con métricas).</p></details>`;
 }
 
 function pintarTendencias() {
   const d = DATA[sector];
   const original = ranking(d.temas, d.pesos).map(t => t.id);
   const actual = ranking(d.temas, pesos).slice(0, 10);
+  const cambiados = JSON.stringify(pesos) !== JSON.stringify(d.pesos);
   const max = Math.max(...actual.map(t => t.s), 0.0001);
   if (!actual.length) { $("lista").innerHTML = '<div class="card vacio">Sin temas en esta corrida.</div>'; return; }
   $("lista").innerHTML = actual.map((t, i) => {
-    const delta = original.indexOf(t.id) - i;
-    const dh = delta > 0 ? `<span class="delta up">▲ ${delta}</span>` : delta < 0 ? `<span class="delta down">▼ ${-delta}</span>` : "";
+    const antes = original.indexOf(t.id) + 1;
     const redes = Object.entries(t.redes).sort((a, b) => b[1] - a[1]).map(([r, n]) => `<span class="chip">${esc(REDES[r] || r)} · ${n}</span>`).join("");
-    const g = t.rasgos.gancho.map(x => `${GANCHOS[x.valor] || x.valor} ${pct(x.pct)}%`).join(", ");
+    const g = t.rasgos.gancho.map(x => `${nombreGancho(x.valor).toLowerCase()} ${pct(x.pct)}%`).join(", ");
     const f = t.rasgos.formato.map(x => `${FORMATOS[x.valor] || x.valor} ${pct(x.pct)}%`).join(", ");
     const fuentes = (t.rastreo?.fuentes_externas || []).map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.dominio)}</a> (${x.veces})`).join(", ");
-    const senales = Object.keys(SENALES).map(k => `<div>${SENALES[k]} ${pct(t.senales[k])}<div class="barra"><i style="width:${Math.min(100, pct(t.senales[k]))}%"></i></div></div>`).join("");
-    const piezas = t.top_piezas.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.titulo || p.url)}</a>
+    const senales = Object.entries(SENALES).map(([k, [n]]) => `<div>${n} ${pct(t.senales[k])}<div class="barra"><i style="width:${Math.min(100, pct(t.senales[k]))}%"></i></div></div>`).join("");
+    const piezas = t.top_piezas.map(p => `<li><a href="${esc(enlace(p.url))}" target="_blank" rel="noopener">${esc(p.titulo || p.url)}</a>
       <span class="red-t">${esc(REDES[p.red] || p.red)}${p.cuenta ? " · " + esc(p.cuenta) : ""}${p.con_metricas ? "" : " · sin métricas"}</span></li>`).join("");
     return `<div class="card tema ${abiertos.has(t.id) ? "abierto" : ""}" data-id="${esc(t.id)}">
-      <div class="rank">${i + 1}${dh}</div>
+      <div class="rank">${i + 1}<div>${movHtml(t, i, d)}</div></div>
       <div><h4>${esc(t.nombre)}<span class="etapa" style="background:var(--${t.etapa})">${esc(t.etapa)}</span></h4></div>
-      <div class="score"><b>${pct(t.s)}</b><div class="barra"><i style="width:${t.s / max * 100}%"></i></div></div>
+      <div class="score"><b>${pct(t.s)}</b><small>score</small><div class="barra"><i style="width:${t.s / max * 100}%"></i></div>${cambiados && antes !== i + 1 ? `<small>con pesos originales: #${antes}</small>` : ""}</div>
       <div class="full">
         <p class="porque">${esc(t.porque || "")}</p>
-        <div class="chips">${redes}<span class="chip gris">${t.volumen} piezas · ${t.piezas_7d} esta semana</span>${t.aceleracion_estimada ? '<span class="chip gris" title="Hace falta más de una captura de métricas">aceleración estimada</span>' : ""}</div>
+        <div class="chips">${redes}<span class="chip gris">${t.volumen} piezas · ${t.piezas_7d} esta semana</span>${t.aceleracion_estimada ? '<span class="chip gris" title="Hace falta más de una captura de métricas para medir la aceleración">aceleración estimada</span>' : ""}</div>
         ${rutaHtml(t.rastreo)}
         <div class="detalle">
           <div class="senales">${senales}</div>
@@ -638,7 +886,7 @@ function pintarTendencias() {
           ${fuentes ? `<div style="margin-top:6px">Fuentes externas citadas: ${fuentes}</div>` : ""}
           <ul class="piezas">${piezas}</ul>
         </div>
-        <button class="btn chico ver">${abiertos.has(t.id) ? "Ocultar detalle" : "Ver detalle"}</button>
+        <button class="btn chico ver">${abiertos.has(t.id) ? "Ocultar detalle" : "Ver piezas y señales"}</button>
       </div></div>`;
   }).join("");
   $("lista").onclick = e => {
@@ -653,25 +901,59 @@ function pintarPredicciones() {
   const ps = d.predicciones || [];
   if (!ps.length) { $("preds").innerHTML = '<div class="card vacio">Esta corrida no tiene predicciones. Vuelve a correr el radar.</div>'; return; }
   $("preds").innerHTML = ps.map((p, i) => `<div class="card pred">
-    <div class="etq">Posible tendencia #${i + 1} · ${esc(p.ventana)}</div>
-    <h4>${esc(p.nombre)}</h4>
-    <div class="medidor"><span class="nota">Fuerza</span><div class="barra"><i style="width:${pct(p.fuerza)}%"></i></div><b>${pct(p.fuerza)}</b></div>
-    <div class="campo">${esc(p.tesis)}</div>
-    ${p.basado_en.length ? `<div class="chips">${p.basado_en.map(b => `<span class="chip">${esc(nombres[b] || b)}</span>`).join("")}</div>` : ""}
-    <div class="campo"><b>Señal a vigilar</b>${esc(p.senal_a_vigilar)}</div>
-    <div class="hoy"><b>Qué publicar hoy:</b> ${esc(p.que_publicar_hoy)}</div>
-    <div class="mini"><span>Respaldo de datos <b>${pct(p.respaldo_datos)}</b></span>${p.jev ? `<span>Interés (JEV) <b>${pct(p.jev.interes_audiencia)}</b></span><span>Novedad (JEV) <b>${pct(p.jev.novedad)}</b></span>` : ""}</div>
+    <div class="n">${i + 1}</div>
+    <div>
+      <h4>${esc(p.nombre)} <span class="chip gris">${esc(p.ventana)}</span></h4>
+      <div class="medidor"><span>Fuerza</span><div class="barra"><i style="width:${pct(p.fuerza)}%"></i></div><b>${pct(p.fuerza)}</b></div>
+      <ul class="puntos">
+        <li><svg class="ico"><use href="#i-bulb"/></svg><div><b>Por qué</b>${esc(p.tesis)}</div></li>
+        <li><svg class="ico"><use href="#i-eye"/></svg><div><b>Señal a vigilar</b>${esc(p.senal_a_vigilar)}</div></li>
+        <li><svg class="ico"><use href="#i-pen"/></svg><div><b>Qué publicar hoy</b>${esc(p.que_publicar_hoy)} <button class="btn chico" data-copiar-pred="${i}" style="margin-left:6px"><svg class="ico" style="width:14px;height:14px"><use href="#i-copy"/></svg>Copiar</button></div></li>
+      </ul>
+      ${p.basado_en.length ? `<div class="chips"><span class="nota">Basado en:</span>${p.basado_en.map(b => `<span class="chip">${esc(nombres[b] || b)}</span>`).join("")}</div>` : ""}
+      <div class="mini"><span>Respaldo de datos <b>${pct(p.respaldo_datos)}</b></span>${p.jev ? `<span>Interés de la audiencia (JEV) <b>${pct(p.jev.interes_audiencia)}</b></span><span>Novedad (JEV) <b>${pct(p.jev.novedad)}</b></span>` : ""}</div>
+    </div>
   </div>`).join("");
+  $("preds").onclick = e => { const b = e.target.closest("[data-copiar-pred]"); if (b) copiar(ps[+b.dataset.copiarPred].que_publicar_hoy); };
+}
+
+function textoIdea(i) { return `${i.formato}: ${i.titulo}\n\nGancho: ${i.gancho}\n\n${i.desarrollo}`; }
+function promptIdea(i, d) {
+  const t = d.temas[0];
+  const entrega = /carrusel/i.test(i.formato) ? "el texto de cada lámina (7 a 9 láminas), el caption y 5 hashtags"
+    : /reel|tiktok|video/i.test(i.formato) ? "un guion de 30 a 45 segundos con tiempos, el texto en pantalla y el caption"
+    : "un post de 150 a 250 palabras con una llamada a la acción al final";
+  const marca = !d.marca || d.marca === "30X" ? " para 30X, una empresa latinoamericana que enseña IA y negocios a líderes" : "";
+  return `Actúa como estratega y creador de contenido${marca}.
+Temática: ${d.nombre}.
+Tema en tendencia: «${t ? t.nombre : ""}» (etapa: ${t ? t.etapa : ""}).${t && t.porque ? " Por qué funciona: " + t.porque : ""}
+
+Crea ${i.formato.toLowerCase()} con esta idea:
+- Título: ${i.titulo}
+- Gancho inicial: ${i.gancho}
+- Desarrollo: ${i.desarrollo}
+
+Escribe en español neutro latinoamericano, tono cercano y práctico. Entrega ${entrega}.`;
 }
 
 function pintarIdeas() {
   const d = DATA[sector];
-  $("ideas-tema").textContent = d.temas[0] ? `Adaptación del tema número 1: “${d.temas[0].nombre}”.` : "";
-  $("ideas").innerHTML = (d.ideas || []).map(i => `<div class="card idea">
+  $("ideas-tema").textContent = d.temas[0] ? `Adaptación del tema número 1: «${d.temas[0].nombre}». Copia el texto o el prompt y pégalo en ChatGPT, Claude o Canva para generar la pieza.` : "";
+  const ideas = d.ideas || [];
+  $("ideas").innerHTML = ideas.map((i, n) => `<div class="card idea">
     <div class="etq">${esc(i.formato)}</div><h4>${esc(i.titulo)}</h4>
-    <p class="gancho">“${esc(i.gancho)}”</p><div class="campo">${esc(i.desarrollo)}</div>
+    <p class="gancho">“${esc(i.gancho)}”</p><div style="font-size:14px">${esc(i.desarrollo)}</div>
     ${i.jev ? `<div class="mini"><span>Ajuste a la audiencia (JEV) <b>${pct(i.jev.ajuste_audiencia.score)}</b></span><span>Fuerza del gancho <b>${pct(i.jev.fuerza_gancho.score)}</b></span></div>` : ""}
+    <div class="acc">
+      <button class="btn chico" data-texto="${n}"><svg class="ico" style="width:14px;height:14px"><use href="#i-copy"/></svg>Copiar texto</button>
+      <button class="btn chico primario" data-prompt="${n}"><svg class="ico" style="width:14px;height:14px"><use href="#i-copy"/></svg>Copiar prompt para IA</button>
+    </div>
   </div>`).join("") || '<div class="card vacio">Sin ideas en esta corrida.</div>';
+  $("ideas").onclick = e => {
+    const t = e.target.closest("[data-texto]"), p = e.target.closest("[data-prompt]");
+    if (t) copiar(textoIdea(ideas[+t.dataset.texto]));
+    if (p) copiar(promptIdea(ideas[+p.dataset.prompt], d));
+  };
 }
 
 function pintarOrigen() {
@@ -682,7 +964,7 @@ function pintarOrigen() {
   $("origen-barras").innerHTML = Object.entries(conteo).sort((a, b) => b[1] - a[1]).map(([r, n]) =>
     `<div class="fila"><span>${esc(REDES[r] || r)}</span><div class="barra"><i style="width:${n / total * 100}%"></i></div><b>${n}</b></div>`).join("") || '<p class="nota">Sin fechas suficientes.</p>';
   const saltos = top.flatMap(t => t.rastreo?.horas_entre_redes || []);
-  $("origen-nota").textContent = saltos.length ? `Primera aparición detectada por el radar entre los 10 temas principales. En promedio, un tema tarda ${Math.round(saltos.reduce((a, b) => a + b, 0) / saltos.length / 24 * 10) / 10} días en saltar a la siguiente red.` : "";
+  $("origen-nota").textContent = saltos.length ? `Primera aparición detectada entre los 10 temas principales. En promedio, un tema tarda ${Math.round(saltos.reduce((a, b) => a + b, 0) / saltos.length / 24 * 10) / 10} días en saltar a la siguiente red.` : "";
   const fuentes = {};
   top.forEach(t => (t.rastreo?.fuentes_externas || []).forEach(f => { fuentes[f.dominio] = fuentes[f.dominio] || { ...f, veces: 0 }; fuentes[f.dominio].veces += f.veces; }));
   const lf = Object.values(fuentes).sort((a, b) => b.veces - a.veces).slice(0, 8);
@@ -692,27 +974,20 @@ function pintarOrigen() {
 }
 
 function pintarCosto() {
-  const d = DATA[sector], c = d.costo;
-  const mensual = c.total_usd * 8 * 30;
-  $("kpis").innerHTML = [
-    [usd(c.total_usd), "costo de esta corrida"],
-    [usd(c.jev_usd), "JEV (clasificación)"],
-    [usd(c.llm_usd ?? c.claude_usd), (c.proveedor_llm || "LLM") + " (temas y redacción)"],
-    [usd(c.por_tema_usd), "por tema del top 10"],
-    [usd(mensual), "al mes si corre cada 3 horas"],
-  ].map(([v, l]) => `<div class="card kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+  const d = DATA[sector], c = d.costo, mensual = c.total_usd * 8 * 30;
+  $("costo-resumen").textContent = `Esta corrida costó ${usd(c.total_usd)} y analizó ${d.conteos.recolectadas} piezas. Corriendo cada 3 horas serían unos ${usd(mensual)} al mes.`;
+  $("kpis").innerHTML = [[usd(c.total_usd), "esta corrida"], [usd(c.por_tema_usd), "por tema del top 10"], [usd(mensual), "al mes, cada 3 horas"]]
+    .map(([v, l]) => `<div class="card kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
   const nombres = { jev_piezas: "JEV: clasificar piezas", jev_ideas: "JEV: puntuar ideas", jev_predicciones: "JEV: puntuar predicciones",
-    llm_temas: "DeepSeek: proponer temas", llm_redaccion: "DeepSeek: redactar", llm_predicciones: "DeepSeek: lo que viene" };
+    llm_temas: "DeepSeek: proponer temas", llm_redaccion: "DeepSeek: redactar", llm_predicciones: "DeepSeek: lo que viene", llm_sector: "DeepSeek: crear temática" };
   const filas = Object.entries(c.pasos).sort((a, b) => b[1].usd - a[1].usd).map(([k, v]) => `<tr><td>${esc(nombres[k] || k.replace("busqueda_", "Búsqueda web: ").replaceAll("_", " "))}</td>
-    <td class="n">${v.llamadas}</td><td class="n">${v.tokens_entrada ? (v.tokens_entrada / 1000).toFixed(1) + "k" : v.busquedas_web + " búsq."}</td><td class="n">${usd(v.usd)}</td></tr>`).join("");
-  $("costo-tabla").innerHTML = `<tr><th>Paso</th><th class="n">Llamadas</th><th class="n">Entrada</th><th class="n">USD</th></tr>${filas}
-    <tr><td><b>Total</b></td><td></td><td></td><td class="n"><b>${usd(c.total_usd)}</b></td></tr>`;
+    <td class="n">${v.llamadas}</td><td class="n">${usd(v.usd)}</td></tr>`).join("");
+  $("costo-tabla").innerHTML = `<tr><th>Paso</th><th class="n">Llamadas</th><th class="n">USD</th></tr>${filas}<tr><td><b>Total</b></td><td></td><td class="n"><b>${usd(c.total_usd)}</b></td></tr>`;
   $("cobertura").innerHTML = `<tr><th>Red</th><th class="n">Piezas</th><th class="n">En ranking</th><th class="n">Con métricas</th><th>Vía</th></tr>` +
     Object.entries(d.cobertura).map(([r, v]) => `<tr><td>${esc(REDES[r] || r)}</td><td class="n">${v.recolectadas}</td><td class="n">${v.en_ranking}</td><td class="n">${v.con_metricas}</td><td>${esc(v.vias.map(x => VIAS[x] || x).join(", "))}</td></tr>`).join("");
   const n = d.conteos;
-  $("conteos").textContent = `${n.recolectadas} piezas analizadas · ${n.en_ranking} en el ranking · ${n.fuera_de_sector} fuera del sector · ${n.sin_tema ?? 0} sin tema · ${n.baja_confianza} excluidas por baja confianza de JEV.`;
-  const h = c.historial || [];
-  const hmax = Math.max(...h.map(x => x.usd), 0.0001);
+  $("conteos").textContent = `${n.recolectadas} piezas analizadas · ${n.en_ranking} en el ranking · ${n.fuera_de_sector} fuera del tema · ${n.sin_tema ?? 0} sin tema · ${n.baja_confianza} excluidas por baja confianza de JEV.`;
+  const h = c.historial || [], hmax = Math.max(...h.map(x => x.usd), 0.0001);
   $("hist").innerHTML = h.slice(-30).map(x => `<i style="height:${x.usd / hmax * 100}%" title="${esc(new Date(x.generado).toLocaleString("es"))}: ${usd(x.usd)}"></i>`).join("");
   $("hist-nota").textContent = h.length ? `${h.length} corridas · gasto acumulado ${usd(h.reduce((a, x) => a + x.usd, 0))}` : "";
   const g = leer("radar-pago"); if (g) $("pago-actual").value = g;
@@ -720,8 +995,7 @@ function pintarCosto() {
 }
 
 function pintarAhorro() {
-  const v = parseFloat($("pago-actual").value);
-  const c = DATA[sector]?.costo; if (!c) return;
+  const v = parseFloat($("pago-actual").value), c = DATA[sector]?.costo; if (!c) return;
   const mensual = c.total_usd * 8 * 30;
   if (!isNaN(v)) guardar("radar-pago", v);
   $("ahorro-res").textContent = isNaN(v) || v <= 0 ? `Corriendo cada 3 horas, el radar cuesta unos ${usd(mensual)} al mes.`
