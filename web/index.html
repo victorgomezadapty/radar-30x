@@ -603,7 +603,11 @@ async function init() {
   $("cta-ultima").classList.toggle("oculto", !Object.keys(DATA).length);
   pintarCorrer();
   const h = location.hash;
-  if (h === "#resultados" && DATA[sectorInicio]) abrirResultados(sectorInicio);
+  if (h.startsWith("#resultados") && DATA[sectorInicio]) {  // #resultados/viene abre esa pestaña directo
+    const t = h.split("/")[1];
+    if (["tendencias", "viene", "ideas", "origen", "costo"].includes(t)) tab = t;
+    abrirResultados(sectorInicio);
+  }
   else if (h === "#correr") mostrar("correr");
   if (servidor) seguirProgreso(true);
 }
@@ -613,7 +617,7 @@ function mostrar(v) {
   $("nav-landing").classList.toggle("on", v === "landing");
   $("nav-correr").classList.toggle("on", v === "correr");
   $("nav-res").classList.toggle("on", v === "res");
-  history.replaceState(null, "", v === "res" ? "#resultados" : v === "correr" ? "#correr" : "#");
+  history.replaceState(null, "", v === "res" ? "#resultados" + (tab !== "tendencias" ? "/" + tab : "") : v === "correr" ? "#correr" : "#");
   window.scrollTo(0, 0);
 }
 
@@ -808,6 +812,7 @@ function cambiarTab(t) {
   tab = t;
   document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.t === t));
   ["tendencias", "viene", "ideas", "origen", "costo"].forEach(x => $("t-" + x).classList.toggle("oculto", x !== t));
+  if (!$("vista-res").classList.contains("oculto")) history.replaceState(null, "", "#resultados" + (t !== "tendencias" ? "/" + t : ""));
   window.scrollTo(0, 0);
 }
 
