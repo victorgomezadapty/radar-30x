@@ -104,7 +104,7 @@ def correr(sector: str, con_recoleccion: bool = True, redes: list[str] | None = 
         "duracion_s": round(time.time() - inicio, 1),
         "modelo_jev": gcfg["jev"]["modelo"],
         "modelos_llm": [gcfg["llm"]["modelo_pequeno"], gcfg["llm"]["modelo_grande"]],
-        "pesos": cfg["pesos"]["tema"],
+        "pesos": cfg["pesos"]["tema"], "min_piezas_top": cfg["umbrales"].get("min_piezas_top", 3),
         "temas": res["temas"], "ideas": redaccion["ideas"], "predicciones": predicciones,
         "cobertura": res["cobertura"], "conteos": res["conteos"], "costo": costo, "temas_corrida": temas,
     }

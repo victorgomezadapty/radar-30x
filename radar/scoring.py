@@ -166,7 +166,11 @@ def calcular(con, filas, respuestas: dict, temas: list[dict], cfg: dict) -> dict
             "rastreo": rastrear(ps, ahora),
             "top_piezas": [_resumen(p) for p in sorted(ps, key=lambda p: p["score"], reverse=True)[:6]],
         })
-    resultado.sort(key=lambda t: t["score"], reverse=True)
+    # un tema con 1 o 2 piezas puede ser casualidad: queda como señal temprana, detrás de los temas con respaldo
+    min_piezas = cfg["umbrales"].get("min_piezas_top", 3)
+    for t in resultado:
+        t["senal_temprana"] = t["volumen"] < min_piezas
+    resultado.sort(key=lambda t: (not t["senal_temprana"], t["score"]), reverse=True)
     ganchos = resumen_ganchos([p for p in piezas if p["tema"] in {t["id"] for t in resultado[:10]}])
     cobertura = {}
     for f in filas:

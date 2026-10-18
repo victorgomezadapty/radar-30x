@@ -817,7 +817,10 @@ function pintarPesos() {
   $("pesos").oninput = e => { const k = e.target.dataset.k; if (!k) return; pesos[k] = parseFloat(e.target.value); $("v-" + k).textContent = pesos[k].toFixed(2); pintarTendencias(); };
 }
 
-const ranking = (temas, w) => temas.map(t => ({ ...t, s: Object.keys(SENALES).reduce((a, k) => a + (w[k] || 0) * (t.senales[k] || 0), 0) })).sort((a, b) => b.s - a.s);
+// los temas con menos de N piezas (señales tempranas) van siempre detrás de los que tienen respaldo, con cualquier peso
+const respaldo = t => (t.volumen || 0) >= (DATA[sector]?.min_piezas_top || 3);
+const ranking = (temas, w) => temas.map(t => ({ ...t, s: Object.keys(SENALES).reduce((a, k) => a + (w[k] || 0) * (t.senales[k] || 0), 0) }))
+  .sort((a, b) => (respaldo(b) - respaldo(a)) || (b.s - a.s));
 
 function rutaHtml(r) {
   if (!r || !r.ruta || !r.ruta.length) return "";

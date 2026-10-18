@@ -270,5 +270,5 @@ Return JSON with exactly these fields."""
         },
         "pesos": {"pieza": {"crecimiento": 0.5, "ajuste": 0.5},
                   "tema": {"fuerza": 0.35, "aceleracion": 0.20, "temprano": 0.20, "multired": 0.15, "frescura": 0.10}},
-        "umbrales": {"es_sector": 0.6, "confianza_min": 0.6},
+        "umbrales": {"es_sector": 0.6, "confianza_min": 0.6, "min_piezas_top": 3},
     }
