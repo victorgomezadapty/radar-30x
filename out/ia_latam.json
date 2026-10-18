@@ -11,46 +11,24 @@
  ],
  "marca": "30X",
  "nicho_libre": null,
- "corrida_anterior": "2026-10-17T21:34:11+00:00",
+ "corrida_anterior": "2026-10-18T04:08:58+00:00",
  "ganchos": [
   {
-   "gancho": "dato",
-   "piezas": 16,
-   "pct": 0.117,
-   "crecimiento_vs_media": 0.125,
-   "ejemplo": {
-    "titulo": "Agentes de IA no WhatsApp: R$ 461 mil em 57 dias na Tendas Araguaia",
-    "url": "https://www.youtube.com/watch?v=TFQCWlE9V58",
-    "red": "youtube"
-   }
-  },
-  {
    "gancho": "polemica",
-   "piezas": 28,
-   "pct": 0.204,
-   "crecimiento_vs_media": 0.052,
+   "piezas": 35,
+   "pct": 0.25,
+   "crecimiento_vs_media": 0.072,
    "ejemplo": {
-    "titulo": "Containment and monitoring failures are to blame for AI hacking reports: experts",
-    "url": "https://news.ycombinator.com/item?id=50091788",
-    "red": "hn"
-   }
-  },
-  {
-   "gancho": "promesa",
-   "piezas": 58,
-   "pct": 0.423,
-   "crecimiento_vs_media": 0.017,
-   "ejemplo": {
-    "titulo": "Clase 01 - Asistentes de IA desde cero con Claude Cowork y Gemini Gems",
-    "url": "https://www.youtube.com/watch?v=-6KC3hR36d4",
-    "red": "youtube"
+    "titulo": "Instagram",
+    "url": "https://www.instagram.com/p/DecqTI5AUpG",
+    "red": "instagram"
    }
   },
   {
    "gancho": "pregunta",
-   "piezas": 22,
-   "pct": 0.161,
-   "crecimiento_vs_media": -0.065,
+   "piezas": 18,
+   "pct": 0.129,
+   "crecimiento_vs_media": 0.016,
    "ejemplo": {
     "titulo": "Conheça Sólides Start: a gestão de pessoas que cabe no bolso",
     "url": "https://www.youtube.com/watch?v=Vik28g3Avek",
@@ -58,21 +36,43 @@
    }
   },
   {
-   "gancho": "contraste",
-   "piezas": 6,
-   "pct": 0.044,
-   "crecimiento_vs_media": -0.3,
+   "gancho": "promesa",
+   "piezas": 53,
+   "pct": 0.379,
+   "crecimiento_vs_media": 0.002,
    "ejemplo": {
-    "titulo": "Instagram",
-    "url": "https://www.instagram.com/p/DeHezt3DG1-",
-    "red": "instagram"
+    "titulo": "Clase 01 - Asistentes de IA desde cero con Claude Cowork y Gemini Gems",
+    "url": "https://www.youtube.com/watch?v=-6KC3hR36d4",
+    "red": "youtube"
+   }
+  },
+  {
+   "gancho": "dato",
+   "piezas": 17,
+   "pct": 0.121,
+   "crecimiento_vs_media": -0.103,
+   "ejemplo": {
+    "titulo": "Claude Haiku 5.5",
+    "url": "https://news.ycombinator.com/item?id=49996437",
+    "red": "hn"
+   }
+  },
+  {
+   "gancho": "contraste",
+   "piezas": 10,
+   "pct": 0.071,
+   "crecimiento_vs_media": -0.196,
+   "ejemplo": {
+    "titulo": "Pare de vender agentes de IA, venda sistemas de IA para empresas",
+    "url": "https://www.youtube.com/watch?v=lXrsqJbJHFE",
+    "red": "youtube"
    }
   },
   {
    "gancho": "historia",
    "piezas": 7,
-   "pct": 0.051,
-   "crecimiento_vs_media": -0.379,
+   "pct": 0.05,
+   "crecimiento_vs_media": -0.377,
    "ejemplo": {
     "titulo": "Instagram",
     "url": "https://www.instagram.com/reel/DefoDzkJqFN",
@@ -80,8 +80,8 @@
    }
   }
  ],
- "generado": "2026-10-18T04:08:58+00:00",
- "duracion_s": 29.5,
+ "generado": "2026-10-18T04:16:18+00:00",
+ "duracion_s": 31.8,
  "modelo_jev": "jev-1.13.0",
  "modelos_llm": [
   "deepseek-flash",
@@ -94,196 +94,90 @@
   "multired": 0.15,
   "frescura": 0.1
  },
+ "min_piezas_top": 3,
  "temas": [
-  {
-   "id": "latin_american_ai_case_studies",
-   "nombre": "Casos de IA en Latinoamérica",
-   "descripcion": "Concrete Latin American company and bank examples of AI deployment and results.",
-   "score": 0.7635,
-   "senales": {
-    "fuerza": 0.699,
-    "aceleracion": 1.0,
-    "temprano": 0.9444,
-    "multired": 0.2,
-    "frescura": 1.0
-   },
-   "aceleracion_estimada": false,
-   "etapa": "emergente",
-   "volumen": 2,
-   "piezas_7d": 0,
-   "piezas_7d_previos": 2,
-   "redes": {
-    "youtube": 2
-   },
-   "rasgos": {
-    "gancho": [
-     {
-      "valor": "dato",
-      "pct": 0.5
-     },
-     {
-      "valor": "pregunta",
-      "pct": 0.5
-     }
-    ],
-    "formato": [
-     {
-      "valor": "caso",
-      "pct": 1.0
-     }
-    ],
-    "menciona_lanzamiento": 0.0
-   },
-   "pieza_temprana": {
-    "red": "youtube",
-    "url": "https://www.youtube.com/watch?v=r0Ek2pycj8Y",
-    "titulo": "¿Puede la IA cambiar un banco por completo? BCI responde",
-    "cuenta": "EvoAcademy",
-    "publicado": 1791117011.0,
-    "via": "api",
-    "metrica": 1960.0,
-    "gancho": "pregunta",
-    "formato": "caso",
-    "score": 0.6387605485232069,
-    "ajuste": 0.8091666666666667,
-    "con_metricas": true
-   },
-   "rastreo": {
-    "origen": {
-     "red": "youtube",
-     "fecha": 1791117011.0,
-     "url": "https://www.youtube.com/watch?v=r0Ek2pycj8Y",
-     "titulo": "¿Puede la IA cambiar un banco por completo? BCI responde",
-     "cuenta": "EvoAcademy"
-    },
-    "ruta": [
-     {
-      "red": "youtube",
-      "fecha": 1791117011.0,
-      "url": "https://www.youtube.com/watch?v=r0Ek2pycj8Y",
-      "titulo": "¿Puede la IA cambiar un banco por completo? BCI responde",
-      "cuenta": "EvoAcademy"
-     }
-    ],
-    "fuentes_externas": [],
-    "dias_activo": 13.7,
-    "horas_entre_redes": []
-   },
-   "top_piezas": [
-    {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=TFQCWlE9V58",
-     "titulo": "Agentes de IA no WhatsApp: R$ 461 mil em 57 dias na Tendas Araguaia",
-     "cuenta": "Clint",
-     "publicado": 1791584905.0,
-     "via": "api",
-     "metrica": 4359.0,
-     "gancho": "dato",
-     "formato": "caso",
-     "score": 0.7591824894514767,
-     "ajuste": 0.8158333333333333,
-     "con_metricas": true
-    },
-    {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=r0Ek2pycj8Y",
-     "titulo": "¿Puede la IA cambiar un banco por completo? BCI responde",
-     "cuenta": "EvoAcademy",
-     "publicado": 1791117011.0,
-     "via": "api",
-     "metrica": 1960.0,
-     "gancho": "pregunta",
-     "formato": "caso",
-     "score": 0.6387605485232069,
-     "ajuste": 0.8091666666666667,
-     "con_metricas": true
-    }
-   ],
-   "porque": "Un caso real de 461 mil reales en WhatsApp demuestra que la audiencia responde a resultados concretos en LatAm.",
-   "rank_anterior": null
-  },
   {
    "id": "ai_strategy_latam_smes",
    "nombre": "Estrategia de IA para pymes LATAM",
-   "descripcion": "Latin American guidance on AI leadership, adoption strategy, and implementation for SMEs.",
-   "score": 0.7097,
+   "descripcion": "AI strategy and adoption guidance for small and medium enterprises in Latin America.",
+   "score": 0.6586,
    "senales": {
-    "fuerza": 0.6223,
-    "aceleracion": 0.9444,
-    "temprano": 0.4985,
+    "fuerza": 0.6262,
+    "aceleracion": 0.8333,
+    "temprano": 0.3472,
     "multired": 0.8,
     "frescura": 0.8333
    },
    "aceleracion_estimada": false,
-   "etapa": "emergente",
-   "volumen": 11,
-   "piezas_7d": 1,
-   "piezas_7d_previos": 9,
+   "etapa": "creciendo",
+   "volumen": 12,
+   "piezas_7d": 2,
+   "piezas_7d_previos": 10,
    "redes": {
-    "linkedin": 3,
-    "tiktok": 1,
-    "instagram": 4,
-    "youtube": 3
+    "linkedin": 2,
+    "tiktok": 2,
+    "instagram": 2,
+    "youtube": 6
    },
    "rasgos": {
     "gancho": [
      {
       "valor": "promesa",
-      "pct": 0.45
+      "pct": 0.67
      },
      {
       "valor": "historia",
-      "pct": 0.18
+      "pct": 0.17
      }
     ],
     "formato": [
      {
       "valor": "opinion",
-      "pct": 0.55
+      "pct": 0.58
      },
      {
       "valor": "noticia",
-      "pct": 0.36
+      "pct": 0.17
      }
     ],
-    "menciona_lanzamiento": 0.18
+    "menciona_lanzamiento": 0.08
    },
    "pieza_temprana": {
-    "red": "instagram",
-    "url": "https://www.instagram.com/p/DeHezt3DG1-",
-    "titulo": "Instagram",
-    "cuenta": "",
-    "publicado": 1791212424.903,
-    "via": "busqueda_web",
-    "metrica": null,
-    "gancho": "contraste",
-    "formato": "noticia",
-    "score": 0.6991666666666667,
-    "ajuste": 0.6991666666666667,
-    "con_metricas": false
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=Won23AAZYjk",
+    "titulo": "La verdad sobre los agentes de IA: ¿Realmente funcionan?",
+    "cuenta": "Melina Blanco | Agentes IA y Automatizaciones",
+    "publicado": 1791228586.0,
+    "via": "api",
+    "metrica": 4532.0,
+    "gancho": "pregunta",
+    "formato": "opinion",
+    "score": 0.4977215189873418,
+    "ajuste": 0.66,
+    "con_metricas": true
    },
    "rastreo": {
     "origen": {
-     "red": "instagram",
-     "fecha": 1791212424.903,
-     "url": "https://www.instagram.com/p/DeHezt3DG1-",
-     "titulo": "Instagram",
-     "cuenta": ""
+     "red": "youtube",
+     "fecha": 1791228586.0,
+     "url": "https://www.youtube.com/watch?v=Won23AAZYjk",
+     "titulo": "La verdad sobre los agentes de IA: ¿Realmente funcionan?",
+     "cuenta": "Melina Blanco | Agentes IA y Automatizaciones"
     },
     "ruta": [
-     {
-      "red": "instagram",
-      "fecha": 1791212424.903,
-      "url": "https://www.instagram.com/p/DeHezt3DG1-",
-      "titulo": "Instagram",
-      "cuenta": ""
-     },
      {
       "red": "youtube",
       "fecha": 1791228586.0,
       "url": "https://www.youtube.com/watch?v=Won23AAZYjk",
       "titulo": "La verdad sobre los agentes de IA: ¿Realmente funcionan?",
       "cuenta": "Melina Blanco | Agentes IA y Automatizaciones"
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791327723.0,
+      "url": "https://www.tiktok.com/@lucianomusellaa/video/7693693986917125384",
+      "titulo": "Implementar Inteligencia Artificial en tu Negocio",
+      "cuenta": "@lucianomusellaa"
      },
      {
       "red": "linkedin",
@@ -293,19 +187,19 @@
       "cuenta": "juliandiazai"
      },
      {
-      "red": "tiktok",
-      "fecha": 1791513203.0,
-      "url": "https://www.tiktok.com/@mauricehofra/video/7694490618793446663",
-      "titulo": "Mentoría sobre inteligencia artificial para impulsar negocios",
-      "cuenta": "@mauricehofra"
+      "red": "instagram",
+      "fecha": 1791416948.144,
+      "url": "https://www.instagram.com/p/DeNk57rtZAD",
+      "titulo": "Instagram",
+      "cuenta": ""
      }
     ],
     "fuentes_externas": [],
-    "dias_activo": 12.5,
+    "dias_activo": 12.4,
     "horas_entre_redes": [
-     4.5,
-     43.5,
-     35.6
+     27.5,
+     15.9,
+     8.8
     ]
    },
    "top_piezas": [
@@ -319,23 +213,9 @@
      "metrica": 18710.0,
      "gancho": "promesa",
      "formato": "noticia",
-     "score": 0.7354008438818566,
-     "ajuste": 0.6733333333333333,
+     "score": 0.7408175105485233,
+     "ajuste": 0.6841666666666667,
      "con_metricas": true
-    },
-    {
-     "red": "instagram",
-     "url": "https://www.instagram.com/p/DeHezt3DG1-",
-     "titulo": "Instagram",
-     "cuenta": "",
-     "publicado": 1791212424.903,
-     "via": "busqueda_web",
-     "metrica": null,
-     "gancho": "contraste",
-     "formato": "noticia",
-     "score": 0.6991666666666667,
-     "ajuste": 0.6991666666666667,
-     "con_metricas": false
     },
     {
      "red": "linkedin",
@@ -347,8 +227,8 @@
      "metrica": null,
      "gancho": "promesa",
      "formato": "opinion",
-     "score": 0.6633333333333333,
-     "ajuste": 0.6633333333333333,
+     "score": 0.6716666666666666,
+     "ajuste": 0.6716666666666666,
      "con_metricas": false
     },
     {
@@ -361,22 +241,8 @@
      "metrica": null,
      "gancho": "historia",
      "formato": "opinion",
-     "score": 0.6625,
-     "ajuste": 0.6625,
-     "con_metricas": false
-    },
-    {
-     "red": "instagram",
-     "url": "https://www.instagram.com/reel/DePpM_ilG0h",
-     "titulo": "La directora de empresas y experta en IA, María Francisca ...",
-     "cuenta": "",
-     "publicado": 1791486310.302,
-     "via": "busqueda_web",
-     "metrica": null,
-     "gancho": "dato",
-     "formato": "noticia",
-     "score": 0.6441666666666667,
-     "ajuste": 0.6441666666666667,
+     "score": 0.6658333333333333,
+     "ajuste": 0.6658333333333333,
      "con_metricas": false
     },
     {
@@ -389,34 +255,64 @@
      "metrica": 21714.0,
      "gancho": "promesa",
      "formato": "opinion",
-     "score": 0.6391139240506329,
-     "ajuste": 0.62,
+     "score": 0.6401951476793248,
+     "ajuste": 0.6158333333333333,
      "con_metricas": true
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@lucianomusellaa/video/7693693986917125384",
+     "titulo": "Implementar Inteligencia Artificial en tu Negocio",
+     "cuenta": "@lucianomusellaa",
+     "publicado": 1791327723.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "opinion",
+     "score": 0.6108333333333333,
+     "ajuste": 0.6108333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/p/DeNk57rtZAD",
+     "titulo": "Instagram",
+     "cuenta": "",
+     "publicado": 1791416948.144,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5733333333333334,
+     "ajuste": 0.5733333333333334,
+     "con_metricas": false
     }
    ],
-   "porque": "El formato de opinión con promesas en LinkedIn e Instagram está resonando con pymes que buscan dirección práctica.",
-   "rank_anterior": 1
+   "senal_temprana": false,
+   "porque": "Los ganchos de promesa dominan y YouTube concentra la interacción, lo que señala demanda por guías accionables para implementar IA en pymes.",
+   "rank_anterior": 2
   },
   {
    "id": "generative_ai_content_marketing",
    "nombre": "IA generativa para contenido",
-   "descripcion": "Using generative AI for video, infographics, SEO, marketing content, and brand visibility.",
-   "score": 0.574,
+   "descripcion": "Using generative AI for content creation, marketing, video production, and creative workflows.",
+   "score": 0.6122,
    "senales": {
-    "fuerza": 0.6715,
-    "aceleracion": 0.8889,
-    "temprano": 0.3951,
-    "multired": 0.4,
-    "frescura": 0.2222
+    "fuerza": 0.6719,
+    "aceleracion": 0.9444,
+    "temprano": 0.3935,
+    "multired": 0.6,
+    "frescura": 0.1944
    },
    "aceleracion_estimada": false,
    "etapa": "creciendo",
    "volumen": 12,
-   "piezas_7d": 5,
-   "piezas_7d_previos": 7,
+   "piezas_7d": 6,
+   "piezas_7d_previos": 6,
    "redes": {
     "tiktok": 5,
-    "youtube": 7
+    "youtube": 6,
+    "reddit": 1
    },
    "rasgos": {
     "gancho": [
@@ -426,13 +322,13 @@
      },
      {
       "valor": "pregunta",
-      "pct": 0.42
+      "pct": 0.33
      }
     ],
     "formato": [
      {
       "valor": "lista",
-      "pct": 0.42
+      "pct": 0.33
      },
      {
       "valor": "tutorial",
@@ -451,8 +347,8 @@
     "metrica": 1245.0,
     "gancho": "pregunta",
     "formato": "tutorial",
-    "score": 0.46590717299578055,
-    "ajuste": 0.6533333333333333,
+    "score": 0.4548259493670886,
+    "ajuste": 0.6375,
     "con_metricas": true
    },
    "rastreo": {
@@ -477,12 +373,20 @@
       "url": "https://www.tiktok.com/@soydavid_ia/video/7692968965663886612",
       "titulo": "16 Herramientas IA para tu Equipo de Contenido",
       "cuenta": "@soydavid_ia"
+     },
+     {
+      "red": "reddit",
+      "fecha": 1791913571.0,
+      "url": "https://www.reddit.com/r/singularity/comments/1x53gba/googles_gemini_4_argon_autonomously_built_an/",
+      "titulo": "Google's Gemini 4 Argon autonomously built an entire photorealistic pagoda temple complex in Blender from a single prompt, with zero human intervention, using multiple AI agents to critique and refine its own work",
+      "cuenta": "r/singularity"
      }
     ],
     "fuentes_externas": [],
     "dias_activo": 14.0,
     "horas_entre_redes": [
-     19.4
+     19.4,
+     209.6
     ]
    },
    "top_piezas": [
@@ -496,8 +400,8 @@
      "metrica": null,
      "gancho": "promesa",
      "formato": "tutorial",
-     "score": 0.7491666666666666,
-     "ajuste": 0.7491666666666666,
+     "score": 0.7508333333333334,
+     "ajuste": 0.7508333333333334,
      "con_metricas": false
     },
     {
@@ -510,8 +414,8 @@
      "metrica": null,
      "gancho": "promesa",
      "formato": "tutorial",
-     "score": 0.7225,
-     "ajuste": 0.7225,
+     "score": 0.7216666666666667,
+     "ajuste": 0.7216666666666667,
      "con_metricas": false
     },
     {
@@ -524,8 +428,8 @@
      "metrica": null,
      "gancho": "promesa",
      "formato": "lista",
-     "score": 0.7166666666666667,
-     "ajuste": 0.7166666666666667,
+     "score": 0.7216666666666667,
+     "ajuste": 0.7216666666666667,
      "con_metricas": false
     },
     {
@@ -538,22 +442,22 @@
      "metrica": 59973.0,
      "gancho": "promesa",
      "formato": "lista",
-     "score": 0.7098628691983122,
-     "ajuste": 0.5083333333333333,
+     "score": 0.709029535864979,
+     "ajuste": 0.5066666666666667,
      "con_metricas": true
     },
     {
      "red": "tiktok",
-     "url": "https://www.tiktok.com/@alejavirivera/video/7696185141852409121",
-     "titulo": "¡6 herramientas de IA para crear vídeos completamente ...",
-     "cuenta": "@alejavirivera",
-     "publicado": 1791907740.0,
+     "url": "https://www.tiktok.com/@dapta.ai/video/7696301108712525074",
+     "titulo": "Dapta AI - Stack de IA Recomendado",
+     "cuenta": "@dapta.ai",
+     "publicado": 1791934740.0,
      "via": "busqueda_web",
      "metrica": null,
      "gancho": "promesa",
      "formato": "lista",
-     "score": 0.6733333333333333,
-     "ajuste": 0.6733333333333333,
+     "score": 0.6716666666666666,
+     "ajuste": 0.6716666666666666,
      "con_metricas": false
     },
     {
@@ -566,250 +470,58 @@
      "metrica": 2605.0,
      "gancho": "pregunta",
      "formato": "demo",
-     "score": 0.6612025316455696,
-     "ajuste": 0.93,
+     "score": 0.6647837552742616,
+     "ajuste": 0.9308333333333333,
      "con_metricas": true
     }
    ],
-   "porque": "Los tutoriales que prometen convertir PDFs en infografías captan la atención de equipos de contenido en TikTok y YouTube.",
-   "rank_anterior": 5
-  },
-  {
-   "id": "openai_governance_controversies",
-   "nombre": "Controversias de gobernanza en OpenAI",
-   "descripcion": "OpenAI safety researcher firings, rogue incidents, revenue questions, and internal governance scandals.",
-   "score": 0.544,
-   "senales": {
-    "fuerza": 0.6132,
-    "aceleracion": 0.7222,
-    "temprano": 0.4414,
-    "multired": 0.2,
-    "frescura": 0.6667
-   },
-   "aceleracion_estimada": false,
-   "etapa": "emergente",
-   "volumen": 9,
-   "piezas_7d": 2,
-   "piezas_7d_previos": 7,
-   "redes": {
-    "hn": 7,
-    "youtube": 2
-   },
-   "rasgos": {
-    "gancho": [
-     {
-      "valor": "polemica",
-      "pct": 0.78
-     },
-     {
-      "valor": "dato",
-      "pct": 0.11
-     }
-    ],
-    "formato": [
-     {
-      "valor": "noticia",
-      "pct": 0.67
-     },
-     {
-      "valor": "opinion",
-      "pct": 0.22
-     }
-    ],
-    "menciona_lanzamiento": 0.67
-   },
-   "pieza_temprana": {
-    "red": "youtube",
-    "url": "https://www.youtube.com/watch?v=egu3JPLZMMI",
-    "titulo": "El error que le costó ChatGPT a Elon Musk",
-    "cuenta": "Hammer Flex | Historias de Empresas",
-    "publicado": 1791149437.0,
-    "via": "api",
-    "metrica": 4953.0,
-    "gancho": "polemica",
-    "formato": "caso",
-    "score": 0.3707489451476793,
-    "ajuste": 0.48833333333333334,
-    "con_metricas": true
-   },
-   "rastreo": {
-    "origen": {
-     "red": "youtube",
-     "fecha": 1791149437.0,
-     "url": "https://www.youtube.com/watch?v=egu3JPLZMMI",
-     "titulo": "El error que le costó ChatGPT a Elon Musk",
-     "cuenta": "Hammer Flex | Historias de Empresas"
-    },
-    "ruta": [
-     {
-      "red": "youtube",
-      "fecha": 1791149437.0,
-      "url": "https://www.youtube.com/watch?v=egu3JPLZMMI",
-      "titulo": "El error que le costó ChatGPT a Elon Musk",
-      "cuenta": "Hammer Flex | Historias de Empresas"
-     },
-     {
-      "red": "hn",
-      "fecha": 1791226706.0,
-      "url": "https://news.ycombinator.com/item?id=49968947",
-      "titulo": "A Series of Unfortunate Events for OpenAI Users",
-      "cuenta": "garo-pro"
-     }
-    ],
-    "fuentes_externas": [
-     {
-      "dominio": "cnbc.com",
-      "veces": 1,
-      "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html"
-     },
-     {
-      "dominio": "techcrunch.com",
-      "veces": 1,
-      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/"
-     },
-     {
-      "dominio": "bsky.app",
-      "veces": 1,
-      "url": "https://bsky.app/profile/opinionhaver.bsky.social/post/3mxfo2mdjqs2z"
-     }
-    ],
-    "dias_activo": 13.3,
-    "horas_entre_redes": [
-     21.5
-    ]
-   },
-   "top_piezas": [
-    {
-     "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=50008187",
-     "titulo": "OpenAI annualised revenues $20B less than previously signalled",
-     "cuenta": "mfiguiere",
-     "publicado": 1791477958.0,
-     "via": "api",
-     "metrica": 432.0,
-     "gancho": "dato",
-     "formato": "noticia",
-     "score": 0.6448132183908045,
-     "ajuste": 0.3758333333333333,
-     "con_metricas": true
-    },
-    {
-     "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=50018350",
-     "titulo": "OpenAI fires three safety researchers for \"mishandling research information\"",
-     "cuenta": "trakkstar",
-     "publicado": 1791540026.0,
-     "via": "api",
-     "metrica": 366.0,
-     "gancho": "polemica",
-     "formato": "noticia",
-     "score": 0.6027011494252873,
-     "ajuste": 0.3433333333333333,
-     "con_metricas": true
-    },
-    {
-     "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=50132502",
-     "titulo": "OpenAI discloses four more rogue incidents",
-     "cuenta": "DASD",
-     "publicado": 1792254672.0,
-     "via": "api",
-     "metrica": 122.0,
-     "gancho": "polemica",
-     "formato": "noticia",
-     "score": 0.5919827586206896,
-     "ajuste": 0.365,
-     "con_metricas": true
-    },
-    {
-     "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=50021763",
-     "titulo": "The super intelligence shit is a humiliation ritual for OpenAI",
-     "cuenta": "doener",
-     "publicado": 1791559139.0,
-     "via": "api",
-     "metrica": 95.0,
-     "gancho": "polemica",
-     "formato": "opinion",
-     "score": 0.4194971264367816,
-     "ajuste": 0.24416666666666664,
-     "con_metricas": true
-    },
-    {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=5QsnZRVPjJ8",
-     "titulo": "ÚLTIMA HORA | OpenAI sacude el mercado: habría inflado sus ingresos para competir con Anthropic",
-     "cuenta": "Negocios TV",
-     "publicado": 1791525783.0,
-     "via": "api",
-     "metrica": 5633.0,
-     "gancho": "polemica",
-     "formato": "noticia",
-     "score": 0.4120464135021097,
-     "ajuste": 0.4633333333333333,
-     "con_metricas": true
-    },
-    {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=egu3JPLZMMI",
-     "titulo": "El error que le costó ChatGPT a Elon Musk",
-     "cuenta": "Hammer Flex | Historias de Empresas",
-     "publicado": 1791149437.0,
-     "via": "api",
-     "metrica": 4953.0,
-     "gancho": "polemica",
-     "formato": "caso",
-     "score": 0.3707489451476793,
-     "ajuste": 0.48833333333333334,
-     "con_metricas": true
-    }
-   ],
-   "porque": "La polémica sobre despidos y seguridad en OpenAI genera alto engagement, especialmente en Hacker News.",
-   "rank_anterior": 9
+   "senal_temprana": false,
+   "porque": "El contenido práctico con promesas y listas o tutoriales rinde, impulsado por TikTok y YouTube, ideal para mostrar trucos rápidos.",
+   "rank_anterior": 3
   },
   {
    "id": "ai_agent_business_models_monetization",
    "nombre": "Negocios con agentes de IA",
-   "descripcion": "Building, selling, and monetizing AI agent businesses and automated companies, especially in LATAM.",
-   "score": 0.5201,
+   "descripcion": "Business models and monetization strategies for AI agents, including selling agent services and building agent-based companies.",
+   "score": 0.5572,
    "senales": {
-    "fuerza": 0.7448,
-    "aceleracion": 0.4444,
-    "temprano": 0.1358,
+    "fuerza": 0.7459,
+    "aceleracion": 0.5,
+    "temprano": 0.2639,
     "multired": 0.4,
     "frescura": 0.8333
    },
    "aceleracion_estimada": false,
    "etapa": "pico",
-   "volumen": 14,
+   "volumen": 11,
    "piezas_7d": 1,
-   "piezas_7d_previos": 13,
+   "piezas_7d_previos": 10,
    "redes": {
     "tiktok": 1,
-    "youtube": 13
+    "youtube": 10
    },
    "rasgos": {
     "gancho": [
      {
       "valor": "promesa",
-      "pct": 0.71
+      "pct": 0.73
      },
      {
       "valor": "pregunta",
-      "pct": 0.21
+      "pct": 0.18
      }
     ],
     "formato": [
      {
       "valor": "tutorial",
-      "pct": 0.43
+      "pct": 0.36
      },
      {
       "valor": "opinion",
-      "pct": 0.29
+      "pct": 0.27
      }
     ],
-    "menciona_lanzamiento": 0.07
+    "menciona_lanzamiento": 0.09
    },
    "pieza_temprana": {
     "red": "tiktok",
@@ -821,8 +533,8 @@
     "metrica": null,
     "gancho": "promesa",
     "formato": "opinion",
-    "score": 0.525,
-    "ajuste": 0.525,
+    "score": 0.5333333333333333,
+    "ajuste": 0.5333333333333333,
     "con_metricas": false
    },
    "rastreo": {
@@ -866,8 +578,8 @@
      "metrica": 26065.0,
      "gancho": "promesa",
      "formato": "tutorial",
-     "score": 0.8334651898734178,
-     "ajuste": 0.8125,
+     "score": 0.8313818565400843,
+     "ajuste": 0.8083333333333333,
      "con_metricas": true
     },
     {
@@ -880,22 +592,8 @@
      "metrica": 8605.0,
      "gancho": "promesa",
      "formato": "tutorial",
-     "score": 0.7075158227848102,
-     "ajuste": 0.7125,
-     "con_metricas": true
-    },
-    {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=lXrsqJbJHFE",
-     "titulo": "Pare de vender agentes de IA, venda sistemas de IA para empresas",
-     "cuenta": "Afonso Lopes | Automações IA ",
-     "publicado": 1791151201.0,
-     "via": "api",
-     "metrica": 15921.0,
-     "gancho": "contraste",
-     "formato": "opinion",
-     "score": 0.693496835443038,
-     "ajuste": 0.6275,
+     "score": 0.7120991561181435,
+     "ajuste": 0.7216666666666667,
      "con_metricas": true
     },
     {
@@ -908,8 +606,22 @@
      "metrica": 11971.0,
      "gancho": "promesa",
      "formato": "tutorial",
-     "score": 0.69251582278481,
-     "ajuste": 0.6825,
+     "score": 0.6941824894514768,
+     "ajuste": 0.6858333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=lXrsqJbJHFE",
+     "titulo": "Pare de vender agentes de IA, venda sistemas de IA para empresas",
+     "cuenta": "Afonso Lopes | Automações IA ",
+     "publicado": 1791151201.0,
+     "via": "api",
+     "metrica": 15921.0,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.692246835443038,
+     "ajuste": 0.625,
      "con_metricas": true
     },
     {
@@ -922,8 +634,8 @@
      "metrica": 33564.0,
      "gancho": "pregunta",
      "formato": "opinion",
-     "score": 0.6612552742616034,
-     "ajuste": 0.5883333333333334,
+     "score": 0.662753164556962,
+     "ajuste": 0.585,
      "con_metricas": true
     },
     {
@@ -936,268 +648,59 @@
      "metrica": 3435.0,
      "gancho": "promesa",
      "formato": "tutorial",
-     "score": 0.6259810126582279,
-     "ajuste": 0.695,
+     "score": 0.6341455696202531,
+     "ajuste": 0.705,
      "con_metricas": true
     }
    ],
-   "porque": "Los tutoriales en YouTube sobre ganar dinero con agentes están en su punto máximo de demanda.",
-   "rank_anterior": 8
-  },
-  {
-   "id": "ai_productivity_tools_smb",
-   "nombre": "Herramientas de IA para pymes",
-   "descripcion": "Free and low-cost AI tools, productivity hacks, and practical guides for small businesses and teams.",
-   "score": 0.5109,
-   "senales": {
-    "fuerza": 0.7324,
-    "aceleracion": 0.5556,
-    "temprano": 0.0617,
-    "multired": 0.8,
-    "frescura": 0.1111
-   },
-   "aceleracion_estimada": false,
-   "etapa": "pico",
-   "volumen": 22,
-   "piezas_7d": 7,
-   "piezas_7d_previos": 15,
-   "redes": {
-    "hn": 1,
-    "tiktok": 5,
-    "instagram": 3,
-    "youtube": 12,
-    "reddit": 1
-   },
-   "rasgos": {
-    "gancho": [
-     {
-      "valor": "promesa",
-      "pct": 0.64
-     },
-     {
-      "valor": "pregunta",
-      "pct": 0.23
-     }
-    ],
-    "formato": [
-     {
-      "valor": "lista",
-      "pct": 0.36
-     },
-     {
-      "valor": "tutorial",
-      "pct": 0.32
-     }
-    ],
-    "menciona_lanzamiento": 0.05
-   },
-   "pieza_temprana": {
-    "red": "youtube",
-    "url": "https://www.youtube.com/watch?v=Vik28g3Avek",
-    "titulo": "Conheça Sólides Start: a gestão de pessoas que cabe no bolso",
-    "cuenta": "Sólides ",
-    "publicado": 1791201619.0,
-    "via": "api",
-    "metrica": 1684160.0,
-    "gancho": "pregunta",
-    "formato": "demo",
-    "score": 0.8524208860759493,
-    "ajuste": 0.7175,
-    "con_metricas": true
-   },
-   "rastreo": {
-    "origen": {
-     "red": "youtube",
-     "fecha": 1791201619.0,
-     "url": "https://www.youtube.com/watch?v=Vik28g3Avek",
-     "titulo": "Conheça Sólides Start: a gestão de pessoas que cabe no bolso",
-     "cuenta": "Sólides "
-    },
-    "ruta": [
-     {
-      "red": "youtube",
-      "fecha": 1791201619.0,
-      "url": "https://www.youtube.com/watch?v=Vik28g3Avek",
-      "titulo": "Conheça Sólides Start: a gestão de pessoas que cabe no bolso",
-      "cuenta": "Sólides "
-     },
-     {
-      "red": "instagram",
-      "fecha": 1791317848.118,
-      "url": "https://www.instagram.com/reel/DeKn4wujDkd",
-      "titulo": "Instagram",
-      "cuenta": ""
-     },
-     {
-      "red": "tiktok",
-      "fecha": 1791414110.0,
-      "url": "https://www.tiktok.com/@lucianomusellaa/video/7694065016777084180",
-      "titulo": "15 Herramientas de IA de Google Gratis: Guía Completa",
-      "cuenta": "@lucianomusellaa"
-     },
-     {
-      "red": "hn",
-      "fecha": 1791886114.0,
-      "url": "https://news.ycombinator.com/item?id=50069337",
-      "titulo": "Show HN: Use your OpenAI subscription to create audiobooks",
-      "cuenta": "janpmz"
-     },
-     {
-      "red": "reddit",
-      "fecha": 1791977377.0,
-      "url": "https://www.reddit.com/r/ClaudeAI/comments/1x5or3q/what_is_an_ai_lifehack_that_people_dont_seem_to/",
-      "titulo": "What is an AI \"Lifehack\" that people don't seem to know yet?",
-      "cuenta": "r/ClaudeAI"
-     }
-    ],
-    "fuentes_externas": [
-     {
-      "dominio": "pdftomp3.com",
-      "veces": 1,
-      "url": "https://pdftomp3.com/connect-ai/"
-     }
-    ],
-    "dias_activo": 12.7,
-    "horas_entre_redes": [
-     32.3,
-     26.7,
-     131.1,
-     25.4
-    ]
-   },
-   "top_piezas": [
-    {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=Vik28g3Avek",
-     "titulo": "Conheça Sólides Start: a gestão de pessoas que cabe no bolso",
-     "cuenta": "Sólides ",
-     "publicado": 1791201619.0,
-     "via": "api",
-     "metrica": 1684160.0,
-     "gancho": "pregunta",
-     "formato": "demo",
-     "score": 0.8524208860759493,
-     "ajuste": 0.7175,
-     "con_metricas": true
-    },
-    {
-     "red": "tiktok",
-     "url": "https://www.tiktok.com/@yoigoempresas/video/7694265707202202902",
-     "titulo": "5 Herramientas de IA para tu Negocio | Ahorra Tiempo",
-     "cuenta": "@yoigoempresas",
-     "publicado": 1791460837.0,
-     "via": "busqueda_web",
-     "metrica": null,
-     "gancho": "promesa",
-     "formato": "lista",
-     "score": 0.7066666666666667,
-     "ajuste": 0.7066666666666667,
-     "con_metricas": false
-    },
-    {
-     "red": "tiktok",
-     "url": "https://www.tiktok.com/@lucianomusellaa/video/7694065016777084180",
-     "titulo": "15 Herramientas de IA de Google Gratis: Guía Completa",
-     "cuenta": "@lucianomusellaa",
-     "publicado": 1791414110.0,
-     "via": "busqueda_web",
-     "metrica": null,
-     "gancho": "promesa",
-     "formato": "lista",
-     "score": 0.7033333333333334,
-     "ajuste": 0.7033333333333334,
-     "con_metricas": false
-    },
-    {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=XJHpQiOWT5E",
-     "titulo": "Resumindo Livros Utilizando Inteligência Artificial com o Gemini e uma foto de capa",
-     "cuenta": "Jony Lan",
-     "publicado": 1791542093.0,
-     "via": "api",
-     "metrica": 10150.0,
-     "gancho": "promesa",
-     "formato": "tutorial",
-     "score": 0.6723575949367089,
-     "ajuste": 0.6675,
-     "con_metricas": true
-    },
-    {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=RZohEzS9W5I",
-     "titulo": "Integra el MCP de dropi con IA para tu negocio online",
-     "cuenta": "Dropi",
-     "publicado": 1791237865.0,
-     "via": "api",
-     "metrica": 6674.0,
-     "gancho": "promesa",
-     "formato": "tutorial",
-     "score": 0.672289029535865,
-     "ajuste": 0.7116666666666667,
-     "con_metricas": true
-    },
-    {
-     "red": "instagram",
-     "url": "https://www.instagram.com/reel/DeKn4wujDkd",
-     "titulo": "Instagram",
-     "cuenta": "",
-     "publicado": 1791317848.118,
-     "via": "busqueda_web",
-     "metrica": null,
-     "gancho": "contraste",
-     "formato": "opinion",
-     "score": 0.67,
-     "ajuste": 0.67,
-     "con_metricas": false
-    }
-   ],
-   "porque": "Las listas de herramientas gratuitas con promesas de ahorro de tiempo dominan en YouTube y TikTok para pymes.",
-   "rank_anterior": 14
+   "senal_temprana": false,
+   "porque": "YouTube lidera con tutoriales enfocados en monetización y promesas de ingresos, atrayendo a emprendedores que buscan ganar dinero con IA.",
+   "rank_anterior": 5
   },
   {
    "id": "ai_agent_development_platforms",
    "nombre": "Plataformas para agentes de IA",
-   "descripcion": "Tools, frameworks, sandboxes, and memory layers for building and running AI agents.",
-   "score": 0.5074,
+   "descripcion": "Tools, frameworks, and platforms for building and deploying AI agents, including low-code options and shared research labs.",
+   "score": 0.5251,
    "senales": {
-    "fuerza": 0.7598,
-    "aceleracion": 0.8333,
-    "temprano": 0.0463,
+    "fuerza": 0.7608,
+    "aceleracion": 0.8889,
+    "temprano": 0.0494,
     "multired": 0.4,
-    "frescura": 0.0556
+    "frescura": 0.1111
    },
    "aceleracion_estimada": false,
    "etapa": "creciendo",
    "volumen": 25,
-   "piezas_7d": 11,
-   "piezas_7d_previos": 14,
+   "piezas_7d": 10,
+   "piezas_7d_previos": 15,
    "redes": {
-    "hn": 12,
+    "hn": 13,
     "instagram": 1,
-    "youtube": 12
+    "youtube": 11
    },
    "rasgos": {
     "gancho": [
      {
       "valor": "promesa",
-      "pct": 0.72
+      "pct": 0.76
      },
      {
-      "valor": "pregunta",
-      "pct": 0.12
+      "valor": "dato",
+      "pct": 0.08
      }
     ],
     "formato": [
      {
       "valor": "demo",
-      "pct": 0.36
+      "pct": 0.4
      },
      {
       "valor": "noticia",
       "pct": 0.28
      }
     ],
-    "menciona_lanzamiento": 0.52
+    "menciona_lanzamiento": 0.56
    },
    "pieza_temprana": {
     "red": "youtube",
@@ -1209,8 +712,8 @@
     "metrica": 144093.0,
     "gancho": "polemica",
     "formato": "noticia",
-    "score": 0.6378691983122363,
-    "ajuste": 0.38333333333333336,
+    "score": 0.6366191983122362,
+    "ajuste": 0.38083333333333336,
     "con_metricas": true
    },
    "rastreo": {
@@ -1247,7 +750,7 @@
     "fuentes_externas": [
      {
       "dominio": "github.com",
-      "veces": 7,
+      "veces": 8,
       "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen"
      },
      {
@@ -1278,8 +781,8 @@
      "metrica": 167219.0,
      "gancho": "promesa",
      "formato": "noticia",
-     "score": 0.8351107594936709,
-     "ajuste": 0.7525,
+     "score": 0.8392774261603375,
+     "ajuste": 0.7608333333333334,
      "con_metricas": true
     },
     {
@@ -1292,8 +795,8 @@
      "metrica": 41048.0,
      "gancho": "promesa",
      "formato": "tutorial",
-     "score": 0.7253322784810127,
-     "ajuste": 0.6975,
+     "score": 0.724915611814346,
+     "ajuste": 0.6966666666666667,
      "con_metricas": true
     },
     {
@@ -1306,8 +809,8 @@
      "metrica": 93534.0,
      "gancho": "promesa",
      "formato": "tutorial",
-     "score": 0.7190506329113924,
-     "ajuste": 0.59,
+     "score": 0.7182172995780591,
+     "ajuste": 0.5883333333333334,
      "con_metricas": true
     },
     {
@@ -1320,8 +823,8 @@
      "metrica": 253273.0,
      "gancho": "promesa",
      "formato": "tutorial",
-     "score": 0.6846044303797468,
-     "ajuste": 0.4325,
+     "score": 0.6900210970464135,
+     "ajuste": 0.4433333333333333,
      "con_metricas": true
     },
     {
@@ -1334,8 +837,8 @@
      "metrica": 144093.0,
      "gancho": "polemica",
      "formato": "noticia",
-     "score": 0.6378691983122363,
-     "ajuste": 0.38333333333333336,
+     "score": 0.6366191983122362,
+     "ajuste": 0.38083333333333336,
      "con_metricas": true
     },
     {
@@ -1348,230 +851,223 @@
      "metrica": 232794.0,
      "gancho": "promesa",
      "formato": "tutorial",
-     "score": 0.6193618143459916,
-     "ajuste": 0.5741666666666667,
+     "score": 0.6218618143459915,
+     "ajuste": 0.5791666666666667,
      "con_metricas": true
     }
    ],
-   "porque": "Las demos de plataformas sin código en Hacker News y YouTube muestran un interés creciente por construir agentes.",
-   "rank_anterior": 3
+   "senal_temprana": false,
+   "porque": "Los lanzamientos frecuentes y demos dominan, con alta mención en Hacker News y YouTube, indicando interés por plataformas de agentes sin código.",
+   "rank_anterior": 7
   },
   {
-   "id": "ai_agent_security_risks",
-   "nombre": "Riesgos de seguridad de agentes IA",
-   "descripcion": "Agent hacking incidents, containment failures, rogue behavior, and safety concerns around autonomous agents.",
-   "score": 0.4778,
+   "id": "openai_governance_controversies",
+   "nombre": "Controversias de gobernanza en OpenAI",
+   "descripcion": "Controversies and incidents related to OpenAI's governance, including employee misconduct, security breaches, and internal turmoil.",
+   "score": 0.5083,
    "senales": {
-    "fuerza": 0.6453,
-    "aceleracion": 0.6111,
-    "temprano": 0.2377,
-    "multired": 0.4,
-    "frescura": 0.2222
+    "fuerza": 0.5633,
+    "aceleracion": 0.7222,
+    "temprano": 0.4614,
+    "multired": 0.2,
+    "frescura": 0.4444
    },
    "aceleracion_estimada": false,
    "etapa": "creciendo",
-   "volumen": 13,
-   "piezas_7d": 6,
-   "piezas_7d_previos": 7,
+   "volumen": 8,
+   "piezas_7d": 3,
+   "piezas_7d_previos": 5,
    "redes": {
-    "reddit": 4,
-    "hn": 6,
-    "youtube": 3
+    "hn": 7,
+    "youtube": 1
    },
    "rasgos": {
     "gancho": [
      {
       "valor": "polemica",
-      "pct": 0.69
+      "pct": 0.88
      },
      {
       "valor": "historia",
-      "pct": 0.15
+      "pct": 0.12
      }
     ],
     "formato": [
      {
       "valor": "noticia",
-      "pct": 0.69
+      "pct": 0.62
      },
      {
       "valor": "opinion",
-      "pct": 0.15
+      "pct": 0.25
      }
     ],
-    "menciona_lanzamiento": 0.54
+    "menciona_lanzamiento": 0.62
    },
    "pieza_temprana": {
-    "red": "hn",
-    "url": "https://news.ycombinator.com/item?id=49968105",
-    "titulo": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
-    "cuenta": "brokensegue",
-    "publicado": 1791222815.0,
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=egu3JPLZMMI",
+    "titulo": "El error que le costó ChatGPT a Elon Musk",
+    "cuenta": "Hammer Flex | Historias de Empresas",
+    "publicado": 1791149437.0,
     "via": "api",
-    "metrica": 307.0,
+    "metrica": 4953.0,
     "gancho": "polemica",
-    "formato": "noticia",
-    "score": 0.4616522988505747,
-    "ajuste": 0.19916666666666666,
+    "formato": "caso",
+    "score": 0.3729113924050633,
+    "ajuste": 0.48,
     "con_metricas": true
    },
    "rastreo": {
     "origen": {
-     "red": "hn",
-     "fecha": 1791222815.0,
-     "url": "https://news.ycombinator.com/item?id=49968105",
-     "titulo": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
-     "cuenta": "brokensegue"
+     "red": "youtube",
+     "fecha": 1791149437.0,
+     "url": "https://www.youtube.com/watch?v=egu3JPLZMMI",
+     "titulo": "El error que le costó ChatGPT a Elon Musk",
+     "cuenta": "Hammer Flex | Historias de Empresas"
     },
     "ruta": [
      {
-      "red": "hn",
-      "fecha": 1791222815.0,
-      "url": "https://news.ycombinator.com/item?id=49968105",
-      "titulo": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
-      "cuenta": "brokensegue"
-     },
-     {
       "red": "youtube",
-      "fecha": 1791332392.0,
-      "url": "https://www.youtube.com/watch?v=vOLTea22XUo",
-      "titulo": "ChatGPT se escapa y empieza a HACKEAR Empresas (SIN CENSURA)",
-      "cuenta": "Hackmind"
+      "fecha": 1791149437.0,
+      "url": "https://www.youtube.com/watch?v=egu3JPLZMMI",
+      "titulo": "El error que le costó ChatGPT a Elon Musk",
+      "cuenta": "Hammer Flex | Historias de Empresas"
      },
      {
-      "red": "reddit",
-      "fecha": 1791832330.0,
-      "url": "https://www.reddit.com/r/ChatGPT/comments/1x4az7m/update_i_asked_gpt_to_get_me_a_surprise_gift_this/",
-      "titulo": "[UPDATE] I asked GPT to get me a surprise gift. This is what it got me!",
-      "cuenta": "r/ChatGPT"
+      "red": "hn",
+      "fecha": 1791226706.0,
+      "url": "https://news.ycombinator.com/item?id=49968947",
+      "titulo": "A Series of Unfortunate Events for OpenAI Users",
+      "cuenta": "garo-pro"
      }
     ],
     "fuentes_externas": [
      {
-      "dominio": "swedenherald.com",
+      "dominio": "techcrunch.com",
       "veces": 1,
-      "url": "https://swedenherald.com/article/tv4-postpones-the-challenge-until-2027-after-technical-failure-erases-edited-footage"
+      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/"
      },
      {
-      "dominio": "reuters.com",
+      "dominio": "bsky.app",
       "veces": 1,
-      "url": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/"
+      "url": "https://bsky.app/profile/opinionhaver.bsky.social/post/3mxfo2mdjqs2z"
      },
      {
-      "dominio": "businessinsider.com",
+      "dominio": "insufferable.dev",
       "veces": 1,
-      "url": "https://www.businessinsider.com/personal-ai-agent-grok-bot-posted-bank-details-company-slack-2026-10"
+      "url": "https://insufferable.dev/posts/a-series-of-unfortunate-events-for-openai-users/"
      }
     ],
-    "dias_activo": 12.4,
+    "dias_activo": 13.3,
     "horas_entre_redes": [
-     30.4,
-     138.9
+     21.5
     ]
    },
    "top_piezas": [
     {
      "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=50091788",
-     "titulo": "Containment and monitoring failures are to blame for AI hacking reports: experts",
-     "cuenta": "latexr",
-     "publicado": 1791999923.0,
+     "url": "https://news.ycombinator.com/item?id=50018350",
+     "titulo": "OpenAI fires three safety researchers for \"mishandling research information\"",
+     "cuenta": "trakkstar",
+     "publicado": 1791540026.0,
      "via": "api",
-     "metrica": 948.0,
+     "metrica": 366.0,
      "gancho": "polemica",
      "formato": "noticia",
-     "score": 0.6980459770114942,
-     "ajuste": 0.41333333333333333,
+     "score": 0.6116666666666667,
+     "ajuste": 0.34,
      "con_metricas": true
     },
     {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=qDzg-xvkeXw",
-     "titulo": "AI Whistleblower: \"They Are Hiding What Is Really Happening\" | Jeffrey Ladish",
-     "cuenta": "The Diary Of A CEO",
-     "publicado": 1791442835.0,
+     "red": "hn",
+     "url": "https://news.ycombinator.com/item?id=50132502",
+     "titulo": "OpenAI discloses four more rogue incidents",
+     "cuenta": "DASD",
+     "publicado": 1792254672.0,
      "via": "api",
-     "metrica": 2411631.0,
-     "gancho": "pregunta",
+     "metrica": 122.0,
+     "gancho": "polemica",
+     "formato": "noticia",
+     "score": 0.6029166666666667,
+     "ajuste": 0.3725,
+     "con_metricas": true
+    },
+    {
+     "red": "hn",
+     "url": "https://news.ycombinator.com/item?id=50077703",
+     "titulo": "OpenAI finds recording device in one of their offices",
+     "cuenta": "jaredwiener",
+     "publicado": 1791921331.0,
+     "via": "api",
+     "metrica": 85.0,
+     "gancho": "polemica",
+     "formato": "noticia",
+     "score": 0.4754166666666667,
+     "ajuste": 0.33416666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "hn",
+     "url": "https://news.ycombinator.com/item?id=50021763",
+     "titulo": "The super intelligence shit is a humiliation ritual for OpenAI",
+     "cuenta": "doener",
+     "publicado": 1791559139.0,
+     "via": "api",
+     "metrica": 95.0,
+     "gancho": "polemica",
      "formato": "opinion",
-     "score": 0.6416877637130802,
-     "ajuste": 0.3466666666666667,
+     "score": 0.43,
+     "ajuste": 0.24333333333333332,
      "con_metricas": true
     },
     {
      "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=YZ6zokLdhP0",
-     "titulo": "The REAL Reason AI Is Already Escaping",
-     "cuenta": "The Diary Of A CEO Clips",
-     "publicado": 1791482426.0,
+     "url": "https://www.youtube.com/watch?v=egu3JPLZMMI",
+     "titulo": "El error que le costó ChatGPT a Elon Musk",
+     "cuenta": "Hammer Flex | Historias de Empresas",
+     "publicado": 1791149437.0,
      "via": "api",
-     "metrica": 3303054.0,
+     "metrica": 4953.0,
      "gancho": "polemica",
      "formato": "caso",
-     "score": 0.5962816455696203,
-     "ajuste": 0.28750000000000003,
+     "score": 0.3729113924050633,
+     "ajuste": 0.48,
      "con_metricas": true
     },
     {
      "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=50085323",
-     "titulo": "TV4 postpones show after AI agent erases edited material",
-     "cuenta": "tobr",
-     "publicado": 1791973706.0,
+     "url": "https://news.ycombinator.com/item?id=50091684",
+     "titulo": "OpenAI claims employee sent secret device information to Apple",
+     "cuenta": "rndsignals",
+     "publicado": 1791999577.0,
      "via": "api",
-     "metrica": 156.0,
+     "metrica": 29.0,
      "gancho": "polemica",
      "formato": "noticia",
-     "score": 0.5480603448275861,
-     "ajuste": 0.33749999999999997,
-     "con_metricas": true
-    },
-    {
-     "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=49968105",
-     "titulo": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
-     "cuenta": "brokensegue",
-     "publicado": 1791222815.0,
-     "via": "api",
-     "metrica": 307.0,
-     "gancho": "polemica",
-     "formato": "noticia",
-     "score": 0.4616522988505747,
-     "ajuste": 0.19916666666666666,
-     "con_metricas": true
-    },
-    {
-     "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=49985861",
-     "titulo": "South Korea says AI agents appear to have been used to hack the country's banks",
-     "cuenta": "thoughtpeddler",
-     "publicado": 1791330633.0,
-     "via": "api",
-     "metrica": 100.0,
-     "gancho": "polemica",
-     "formato": "noticia",
-     "score": 0.4419683908045977,
-     "ajuste": 0.3408333333333333,
+     "score": 0.32458333333333333,
+     "ajuste": 0.32416666666666666,
      "con_metricas": true
     }
    ],
-   "porque": "Las noticias sobre fallos de contención y monitoreo están alimentando el debate en Reddit y Hacker News.",
+   "senal_temprana": false,
+   "porque": "La polémica y las noticias sobre despidos e incidentes generan alta cobertura, especialmente en HN, captando atención por el escándalo.",
    "rank_anterior": 4
   },
   {
    "id": "openai_math_research_claims",
    "nombre": "OpenAI y matemáticas",
-   "descripcion": "OpenAI's disputed mathematical proofs, preprint releases, and the research community's reaction.",
-   "score": 0.4747,
+   "descripcion": "OpenAI's mathematical research claims, including proofs, withdrawals, and community reactions.",
+   "score": 0.466,
    "senales": {
-    "fuerza": 0.4329,
+    "fuerza": 0.4397,
     "aceleracion": 0.7778,
     "temprano": 0.4105,
     "multired": 0.2,
-    "frescura": 0.5556
+    "frescura": 0.4444
    },
    "aceleracion_estimada": false,
-   "etapa": "emergente",
+   "etapa": "creciendo",
    "volumen": 11,
    "piezas_7d": 3,
    "piezas_7d_previos": 8,
@@ -1612,8 +1108,8 @@
     "metrica": 45.0,
     "gancho": "dato",
     "formato": "noticia",
-    "score": 0.19181034482758622,
-    "ajuste": 0.125,
+    "score": 0.19041666666666668,
+    "ajuste": 0.11833333333333333,
     "con_metricas": true
    },
    "rastreo": {
@@ -1673,8 +1169,8 @@
      "metrica": 381.0,
      "gancho": "polemica",
      "formato": "noticia",
-     "score": 0.491867816091954,
-     "ajuste": 0.12166666666666667,
+     "score": 0.5004166666666666,
+     "ajuste": 0.1175,
      "con_metricas": true
     },
     {
@@ -1687,8 +1183,8 @@
      "metrica": 342.0,
      "gancho": "polemica",
      "formato": "noticia",
-     "score": 0.4632183908045977,
-     "ajuste": 0.13333333333333333,
+     "score": 0.47541666666666665,
+     "ajuste": 0.13416666666666666,
      "con_metricas": true
     },
     {
@@ -1701,7 +1197,7 @@
      "metrica": 25.0,
      "gancho": "polemica",
      "formato": "opinion",
-     "score": 0.3435488505747126,
+     "score": 0.3433333333333333,
      "ajuste": 0.17416666666666666,
      "con_metricas": true
     },
@@ -1715,8 +1211,8 @@
      "metrica": 29.0,
      "gancho": "polemica",
      "formato": "opinion",
-     "score": 0.3377586206896552,
-     "ajuste": 0.21000000000000002,
+     "score": 0.3416666666666667,
+     "ajuste": 0.20833333333333334,
      "con_metricas": true
     },
     {
@@ -1729,8 +1225,8 @@
      "metrica": 57.0,
      "gancho": "polemica",
      "formato": "noticia",
-     "score": 0.28508620689655173,
-     "ajuste": 0.165,
+     "score": 0.2845833333333333,
+     "ajuste": 0.15666666666666668,
      "con_metricas": true
     },
     {
@@ -1743,34 +1239,35 @@
      "metrica": 47.0,
      "gancho": "dato",
      "formato": "noticia",
-     "score": 0.22683908045977014,
-     "ajuste": 0.14333333333333334,
+     "score": 0.23291666666666666,
+     "ajuste": 0.14916666666666667,
      "con_metricas": true
     }
    ],
-   "porque": "La retirada de papers matemáticos por OpenAI es una polémica que resuena en comunidades técnicas como Hacker News.",
-   "rank_anterior": null
+   "senal_temprana": false,
+   "porque": "La polémica por retiro de papers y el formato noticia resuenan en Reddit y HN, atrayendo a audiencia técnica interesada en controversias.",
+   "rank_anterior": 9
   },
   {
    "id": "new_ai_model_releases",
    "nombre": "Lanzamientos y benchmarks de IA",
-   "descripcion": "New model announcements, capability comparisons, and benchmark results from major AI labs.",
-   "score": 0.4245,
+   "descripcion": "New AI model releases, benchmarks, and performance comparisons across different providers.",
+   "score": 0.4658,
    "senales": {
-    "fuerza": 0.6447,
-    "aceleracion": 0.5,
-    "temprano": 0.0833,
+    "fuerza": 0.6435,
+    "aceleracion": 0.6111,
+    "temprano": 0.1528,
     "multired": 0.4,
-    "frescura": 0.2222
+    "frescura": 0.2778
    },
    "aceleracion_estimada": false,
-   "etapa": "pico",
-   "volumen": 18,
-   "piezas_7d": 12,
+   "etapa": "creciendo",
+   "volumen": 15,
+   "piezas_7d": 9,
    "piezas_7d_previos": 6,
    "redes": {
     "hn": 2,
-    "reddit": 11,
+    "reddit": 8,
     "youtube": 5
    },
    "rasgos": {
@@ -1781,20 +1278,20 @@
      },
      {
       "valor": "polemica",
-      "pct": 0.28
+      "pct": 0.27
      }
     ],
     "formato": [
      {
       "valor": "noticia",
-      "pct": 0.5
+      "pct": 0.53
      },
      {
       "valor": "opinion",
-      "pct": 0.39
+      "pct": 0.33
      }
     ],
-    "menciona_lanzamiento": 0.78
+    "menciona_lanzamiento": 0.93
    },
    "pieza_temprana": {
     "red": "youtube",
@@ -1806,8 +1303,8 @@
     "metrica": 51011.0,
     "gancho": "pregunta",
     "formato": "noticia",
-    "score": 0.7178902953586498,
-    "ajuste": 0.6066666666666667,
+    "score": 0.7162236286919831,
+    "ajuste": 0.6033333333333333,
     "con_metricas": true
    },
    "rastreo": {
@@ -1870,8 +1367,8 @@
      "metrica": 51011.0,
      "gancho": "pregunta",
      "formato": "noticia",
-     "score": 0.7178902953586498,
-     "ajuste": 0.6066666666666667,
+     "score": 0.7162236286919831,
+     "ajuste": 0.6033333333333333,
      "con_metricas": true
     },
     {
@@ -1884,8 +1381,8 @@
      "metrica": 199686.0,
      "gancho": "polemica",
      "formato": "caso",
-     "score": 0.6261603375527426,
-     "ajuste": 0.7333333333333333,
+     "score": 0.630574894514768,
+     "ajuste": 0.7358333333333333,
      "con_metricas": true
     },
     {
@@ -1898,8 +1395,8 @@
      "metrica": 1049.0,
      "gancho": "dato",
      "formato": "noticia",
-     "score": 0.5899856321839081,
-     "ajuste": 0.20583333333333334,
+     "score": 0.58375,
+     "ajuste": 0.1925,
      "con_metricas": true
     },
     {
@@ -1912,8 +1409,8 @@
      "metrica": 7435.0,
      "gancho": "pregunta",
      "formato": "opinion",
-     "score": 0.5336181434599157,
-     "ajuste": 0.4216666666666667,
+     "score": 0.531951476793249,
+     "ajuste": 0.41833333333333333,
      "con_metricas": true
     },
     {
@@ -1926,8 +1423,8 @@
      "metrica": 1869.0,
      "gancho": "polemica",
      "formato": "lista",
-     "score": 0.47935654008438816,
-     "ajuste": 0.5283333333333333,
+     "score": 0.4850210970464135,
+     "ajuste": 0.5333333333333333,
      "con_metricas": true
     },
     {
@@ -1940,262 +1437,451 @@
      "metrica": null,
      "gancho": "dato",
      "formato": "noticia",
-     "score": 0.4458333333333333,
-     "ajuste": 0.4458333333333333,
+     "score": 0.44749999999999995,
+     "ajuste": 0.44749999999999995,
      "con_metricas": false
     }
    ],
-   "porque": "Los benchmarks y lanzamientos generan conversación en Reddit, donde los datos y la polémica conviven.",
-   "rank_anterior": 6
+   "senal_temprana": false,
+   "porque": "Los lanzamientos frecuentes y benchmarks dominan, con alta mención en Reddit y YouTube, señalando expectativa por novedades de modelos.",
+   "rank_anterior": 10
   },
   {
-   "id": "ai_coding_agents_developer_productivity",
-   "nombre": "Agentes de IA para programación",
-   "descripcion": "Coding agents, Claude Code workflows, and their effect on developer productivity and software quality.",
-   "score": 0.4212,
+   "id": "ai_agent_security_risks",
+   "nombre": "Riesgos de seguridad de agentes IA",
+   "descripcion": "Security incidents, vulnerabilities, and risks associated with AI agents, such as hacking, data leaks, and containment failures.",
+   "score": 0.4542,
    "senales": {
-    "fuerza": 0.6509,
-    "aceleracion": 0.6667,
-    "temprano": 0.0,
+    "fuerza": 0.6475,
+    "aceleracion": 0.5556,
+    "temprano": 0.1852,
     "multired": 0.4,
-    "frescura": 0.0
+    "frescura": 0.1944
    },
    "aceleracion_estimada": false,
-   "etapa": "creciendo",
-   "volumen": 27,
-   "piezas_7d": 19,
-   "piezas_7d_previos": 8,
+   "etapa": "pico",
+   "volumen": 14,
+   "piezas_7d": 7,
+   "piezas_7d_previos": 7,
    "redes": {
-    "reddit": 11,
-    "hn": 13,
-    "youtube": 3
+    "reddit": 4,
+    "hn": 6,
+    "youtube": 4
    },
    "rasgos": {
     "gancho": [
      {
-      "valor": "historia",
-      "pct": 0.3
+      "valor": "polemica",
+      "pct": 0.71
      },
      {
-      "valor": "promesa",
-      "pct": 0.26
+      "valor": "dato",
+      "pct": 0.14
      }
     ],
     "formato": [
      {
       "valor": "noticia",
-      "pct": 0.3
+      "pct": 0.71
      },
      {
       "valor": "caso",
-      "pct": 0.3
+      "pct": 0.14
      }
     ],
-    "menciona_lanzamiento": 0.26
+    "menciona_lanzamiento": 0.57
    },
    "pieza_temprana": {
     "red": "hn",
-    "url": "https://news.ycombinator.com/item?id=49971473",
-    "titulo": "Engineer says Claude Code has made his job \"soul-sucking\"",
-    "cuenta": "hefner1456",
-    "publicado": 1791237695.0,
+    "url": "https://news.ycombinator.com/item?id=49968105",
+    "titulo": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+    "cuenta": "brokensegue",
+    "publicado": 1791222815.0,
     "via": "api",
-    "metrica": 61.0,
+    "metrica": 307.0,
     "gancho": "polemica",
     "formato": "noticia",
-    "score": 0.29561781609195403,
-    "ajuste": 0.22916666666666669,
+    "score": 0.47833333333333333,
+    "ajuste": 0.20666666666666667,
     "con_metricas": true
    },
    "rastreo": {
     "origen": {
      "red": "hn",
-     "fecha": 1791237695.0,
-     "url": "https://news.ycombinator.com/item?id=49971473",
-     "titulo": "Engineer says Claude Code has made his job \"soul-sucking\"",
-     "cuenta": "hefner1456"
+     "fecha": 1791222815.0,
+     "url": "https://news.ycombinator.com/item?id=49968105",
+     "titulo": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+     "cuenta": "brokensegue"
     },
     "ruta": [
      {
       "red": "hn",
-      "fecha": 1791237695.0,
-      "url": "https://news.ycombinator.com/item?id=49971473",
-      "titulo": "Engineer says Claude Code has made his job \"soul-sucking\"",
-      "cuenta": "hefner1456"
+      "fecha": 1791222815.0,
+      "url": "https://news.ycombinator.com/item?id=49968105",
+      "titulo": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+      "cuenta": "brokensegue"
      },
      {
       "red": "youtube",
-      "fecha": 1791324004.0,
-      "url": "https://www.youtube.com/watch?v=jXYHqF2BT28",
-      "titulo": "OpenAI Dots: testei o assistente pessoal integrado ao Codex",
-      "cuenta": "Rafael Quintanilha – QuantBrasil"
+      "fecha": 1791332392.0,
+      "url": "https://www.youtube.com/watch?v=vOLTea22XUo",
+      "titulo": "ChatGPT se escapa y empieza a HACKEAR Empresas (SIN CENSURA)",
+      "cuenta": "Hackmind"
      },
      {
       "red": "reddit",
-      "fecha": 1791676663.0,
-      "url": "https://www.reddit.com/r/artificial/comments/1x2tq6s/claude_opus_55_decompiles_a_ps2era_game_overnight/",
-      "titulo": "Claude Opus 5.5 decompiles a PS2-era game overnight, and hundreds of them now run in browser tabs",
+      "fecha": 1791839588.0,
+      "url": "https://www.reddit.com/r/artificial/comments/1x4e58k/anthropic_ran_a_26b_model_across_15_offbrand/",
+      "titulo": "Anthropic ran a 26B model across 15 off-brand Android TV boxes worth $55 each — an AI worm with no central point to shut off",
       "cuenta": "r/artificial"
      }
     ],
     "fuentes_externas": [
      {
-      "dominio": "github.com",
-      "veces": 3,
-      "url": "https://github.com/awslabs/aidlc-workflows"
+      "dominio": "swedenherald.com",
+      "veces": 1,
+      "url": "https://swedenherald.com/article/tv4-postpones-the-challenge-until-2027-after-technical-failure-erases-edited-footage"
      },
      {
-      "dominio": "arstechnica.com",
+      "dominio": "reuters.com",
       "veces": 1,
-      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+      "url": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/"
      },
      {
-      "dominio": "momo5502.com",
+      "dominio": "businessinsider.com",
       "veces": 1,
-      "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/"
+      "url": "https://www.businessinsider.com/personal-ai-agent-grok-bot-posted-bank-details-company-slack-2026-10"
      }
     ],
-    "dias_activo": 12.3,
+    "dias_activo": 12.4,
     "horas_entre_redes": [
-     24.0,
-     98.0
+     30.4,
+     140.9
     ]
    },
    "top_piezas": [
     {
      "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=50122951",
-     "titulo": "How the Claude Code team does code review",
-     "cuenta": "pretext",
-     "publicado": 1792177487.0,
+     "url": "https://news.ycombinator.com/item?id=50091788",
+     "titulo": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+     "cuenta": "latexr",
+     "publicado": 1791999923.0,
      "via": "api",
-     "metrica": 456.0,
-     "gancho": "historia",
-     "formato": "caso",
-     "score": 0.6684626436781609,
-     "ajuste": 0.35416666666666663,
+     "metrica": 948.0,
+     "gancho": "polemica",
+     "formato": "noticia",
+     "score": 0.7041666666666666,
+     "ajuste": 0.425,
      "con_metricas": true
     },
     {
      "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=u5rWsxUVEk8",
-     "titulo": "Llevo meses programando con agentes de IA en mi empresa: estas son las cifras reales",
-     "cuenta": "El Rincón de Isma",
-     "publicado": 1791907227.0,
+     "url": "https://www.youtube.com/watch?v=qDzg-xvkeXw",
+     "titulo": "AI Whistleblower: \"They Are Hiding What Is Really Happening\" | Jeffrey Ladish",
+     "cuenta": "The Diary Of A CEO",
+     "publicado": 1791442835.0,
      "via": "api",
-     "metrica": 5062.0,
-     "gancho": "historia",
+     "metrica": 2411631.0,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.6450210970464135,
+     "ajuste": 0.35333333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=YZ6zokLdhP0",
+     "titulo": "The REAL Reason AI Is Already Escaping",
+     "cuenta": "The Diary Of A CEO Clips",
+     "publicado": 1791482426.0,
+     "via": "api",
+     "metrica": 3303054.0,
+     "gancho": "polemica",
      "formato": "caso",
-     "score": 0.665184599156118,
-     "ajuste": 0.6341666666666667,
+     "score": 0.5933649789029536,
+     "ajuste": 0.2816666666666667,
      "con_metricas": true
     },
     {
      "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=50059523",
-     "titulo": "AI coding agents generate more code, but not more software",
-     "cuenta": "gumby",
-     "publicado": 1791825241.0,
+     "url": "https://news.ycombinator.com/item?id=50085323",
+     "titulo": "TV4 postpones show after AI agent erases edited material",
+     "cuenta": "tobr",
+     "publicado": 1791973706.0,
      "via": "api",
-     "metrica": 364.0,
-     "gancho": "contraste",
+     "metrica": 156.0,
+     "gancho": "polemica",
      "formato": "noticia",
-     "score": 0.6189655172413793,
-     "ajuste": 0.35,
+     "score": 0.5595833333333333,
+     "ajuste": 0.3358333333333333,
      "con_metricas": true
     },
     {
-     "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=49981905",
-     "titulo": "Claude Code’s suggested message feature: I think the real customer is the model",
-     "cuenta": "zed_labs_dev",
-     "publicado": 1791309634.0,
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=zRHShBptQCw",
+     "titulo": "¡Cuidado al usar IA para VENDER! 🤖❌",
+     "cuenta": "Carlos D Silva",
+     "publicado": 1791903631.0,
      "via": "api",
-     "metrica": 269.0,
+     "metrica": 1594.0,
      "gancho": "polemica",
      "formato": "opinion",
-     "score": 0.46163793103448275,
-     "ajuste": 0.225,
+     "score": 0.5087025316455696,
+     "ajuste": 0.625,
      "con_metricas": true
     },
     {
      "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=50002665",
-     "titulo": "I think I found a planet nobody knew existed. I used Claude Code to find it",
-     "cuenta": "pyduan",
-     "publicado": 1791443254.0,
+     "url": "https://news.ycombinator.com/item?id=49968105",
+     "titulo": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+     "cuenta": "brokensegue",
+     "publicado": 1791222815.0,
      "via": "api",
-     "metrica": 301.0,
-     "gancho": "historia",
-     "formato": "opinion",
-     "score": 0.4606896551724138,
-     "ajuste": 0.18,
-     "con_metricas": true
-    },
-    {
-     "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=50039092",
-     "titulo": "500B tokens later: Letting AI agents decompile a first-person shooter",
-     "cuenta": "davikr",
-     "publicado": 1791684158.0,
-     "via": "api",
-     "metrica": 218.0,
-     "gancho": "dato",
-     "formato": "caso",
-     "score": 0.4316522988505747,
-     "ajuste": 0.13916666666666666,
+     "metrica": 307.0,
+     "gancho": "polemica",
+     "formato": "noticia",
+     "score": 0.47833333333333333,
+     "ajuste": 0.20666666666666667,
      "con_metricas": true
     }
    ],
-   "porque": null,
-   "rank_anterior": 11
+   "senal_temprana": false,
+   "porque": "La polémica sobre fallas de seguridad y formatos de noticia captan atención en Reddit y HN, evidenciando preocupación por riesgos de agentes.",
+   "rank_anterior": 8
+  },
+  {
+   "id": "ai_productivity_tools_smb",
+   "nombre": "Herramientas de IA para pymes",
+   "descripcion": "AI tools and productivity solutions for small and medium businesses, including free and low-cost options.",
+   "score": 0.4415,
+   "senales": {
+    "fuerza": 0.7027,
+    "aceleracion": 0.1667,
+    "temprano": 0.0417,
+    "multired": 0.6,
+    "frescura": 0.6389
+   },
+   "aceleracion_estimada": false,
+   "etapa": "pico",
+   "volumen": 15,
+   "piezas_7d": 2,
+   "piezas_7d_previos": 13,
+   "redes": {
+    "tiktok": 4,
+    "youtube": 9,
+    "instagram": 2
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.53
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.27
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 0.47
+     },
+     {
+      "valor": "tutorial",
+      "pct": 0.2
+     }
+    ],
+    "menciona_lanzamiento": 0.07
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=Vik28g3Avek",
+    "titulo": "Conheça Sólides Start: a gestão de pessoas que cabe no bolso",
+    "cuenta": "Sólides ",
+    "publicado": 1791201619.0,
+    "via": "api",
+    "metrica": 1684160.0,
+    "gancho": "pregunta",
+    "formato": "demo",
+    "score": 0.850337552742616,
+    "ajuste": 0.7133333333333334,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791201619.0,
+     "url": "https://www.youtube.com/watch?v=Vik28g3Avek",
+     "titulo": "Conheça Sólides Start: a gestão de pessoas que cabe no bolso",
+     "cuenta": "Sólides "
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791201619.0,
+      "url": "https://www.youtube.com/watch?v=Vik28g3Avek",
+      "titulo": "Conheça Sólides Start: a gestão de pessoas que cabe no bolso",
+      "cuenta": "Sólides "
+     },
+     {
+      "red": "instagram",
+      "fecha": 1791317848.118,
+      "url": "https://www.instagram.com/reel/DeKn4wujDkd",
+      "titulo": "Instagram",
+      "cuenta": ""
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791414110.0,
+      "url": "https://www.tiktok.com/@lucianomusellaa/video/7694065016777084180",
+      "titulo": "15 Herramientas de IA de Google Gratis: Guía Completa",
+      "cuenta": "@lucianomusellaa"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 12.7,
+    "horas_entre_redes": [
+     32.3,
+     26.7
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=Vik28g3Avek",
+     "titulo": "Conheça Sólides Start: a gestão de pessoas que cabe no bolso",
+     "cuenta": "Sólides ",
+     "publicado": 1791201619.0,
+     "via": "api",
+     "metrica": 1684160.0,
+     "gancho": "pregunta",
+     "formato": "demo",
+     "score": 0.850337552742616,
+     "ajuste": 0.7133333333333334,
+     "con_metricas": true
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@yoigoempresas/video/7694265707202202902",
+     "titulo": "5 Herramientas de IA para tu Negocio | Ahorra Tiempo",
+     "cuenta": "@yoigoempresas",
+     "publicado": 1791460837.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.7066666666666667,
+     "ajuste": 0.7066666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@lucianomusellaa/video/7694065016777084180",
+     "titulo": "15 Herramientas de IA de Google Gratis: Guía Completa",
+     "cuenta": "@lucianomusellaa",
+     "publicado": 1791414110.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.6866666666666666,
+     "ajuste": 0.6866666666666666,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=XJHpQiOWT5E",
+     "titulo": "Resumindo Livros Utilizando Inteligência Artificial com o Gemini e uma foto de capa",
+     "cuenta": "Jony Lan",
+     "publicado": 1791542093.0,
+     "via": "api",
+     "metrica": 10150.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6727742616033756,
+     "ajuste": 0.6683333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/DeKn4wujDkd",
+     "titulo": "Instagram",
+     "cuenta": "",
+     "publicado": 1791317848.118,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.6699999999999999,
+     "ajuste": 0.6699999999999999,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@dominio.digital93/video/7695150787495824661",
+     "titulo": "Herramientas de IA para tu Negocio: Claude, Veo 3 y Más",
+     "cuenta": "@dominio.digital93",
+     "publicado": 1791666910.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.6575,
+     "ajuste": 0.6575,
+     "con_metricas": false
+    }
+   ],
+   "senal_temprana": false,
+   "porque": "Las listas y tutoriales con promesas de ahorro de tiempo funcionan en TikTok y YouTube, atrayendo a pymes que buscan herramientas prácticas.",
+   "rank_anterior": 6
   },
   {
    "id": "ai_governance_responsible_adoption",
    "nombre": "Gobernanza y adopción responsable de IA",
-   "descripcion": "Corporate AI governance, responsible adoption frameworks, and risks of deploying AI without oversight.",
-   "score": 0.4133,
+   "descripcion": "Frameworks, policies, and practices for responsible AI adoption, including governance, ethics, and risk management.",
+   "score": 0.4311,
    "senales": {
-    "fuerza": 0.6106,
-    "aceleracion": 0.1667,
+    "fuerza": 0.6138,
+    "aceleracion": 0.2222,
     "temprano": 0.037,
     "multired": 0.8,
-    "frescura": 0.3889
+    "frescura": 0.4444
    },
    "aceleracion_estimada": false,
-   "etapa": "saturado",
-   "volumen": 16,
-   "piezas_7d": 6,
-   "piezas_7d_previos": 10,
+   "etapa": "pico",
+   "volumen": 17,
+   "piezas_7d": 5,
+   "piezas_7d_previos": 11,
    "redes": {
-    "hn": 5,
-    "linkedin": 3,
+    "hn": 6,
+    "linkedin": 4,
     "instagram": 2,
-    "youtube": 5,
+    "youtube": 4,
     "reddit": 1
    },
    "rasgos": {
     "gancho": [
      {
       "valor": "polemica",
-      "pct": 0.44
+      "pct": 0.41
      },
      {
       "valor": "contraste",
-      "pct": 0.31
+      "pct": 0.29
      }
     ],
     "formato": [
      {
       "valor": "opinion",
-      "pct": 0.62
+      "pct": 0.53
      },
      {
       "valor": "noticia",
-      "pct": 0.31
+      "pct": 0.35
      }
     ],
-    "menciona_lanzamiento": 0.31
+    "menciona_lanzamiento": 0.41
    },
    "pieza_temprana": {
     "red": "youtube",
@@ -2207,8 +1893,8 @@
     "metrica": 8430.0,
     "gancho": "polemica",
     "formato": "opinion",
-    "score": 0.5124419831223629,
-    "ajuste": 0.6008333333333333,
+    "score": 0.5201898734177215,
+    "ajuste": 0.61,
     "con_metricas": true
    },
    "rastreo": {
@@ -2292,8 +1978,8 @@
      "metrica": null,
      "gancho": "polemica",
      "formato": "opinion",
-     "score": 0.7291666666666666,
-     "ajuste": 0.7291666666666666,
+     "score": 0.7341666666666666,
+     "ajuste": 0.7341666666666666,
      "con_metricas": false
     },
     {
@@ -2306,8 +1992,8 @@
      "metrica": 6614.0,
      "gancho": "contraste",
      "formato": "demo",
-     "score": 0.6458966244725738,
-     "ajuste": 0.48166666666666663,
+     "score": 0.6442299578059072,
+     "ajuste": 0.47833333333333333,
      "con_metricas": true
     },
     {
@@ -2320,8 +2006,8 @@
      "metrica": 378.0,
      "gancho": "polemica",
      "formato": "noticia",
-     "score": 0.6150431034482758,
-     "ajuste": 0.40249999999999997,
+     "score": 0.6283333333333333,
+     "ajuste": 0.4066666666666667,
      "con_metricas": true
     },
     {
@@ -2333,9 +2019,9 @@
      "via": "busqueda_web",
      "metrica": null,
      "gancho": "historia",
-     "formato": "opinion",
-     "score": 0.595,
-     "ajuste": 0.595,
+     "formato": "caso",
+     "score": 0.59,
+     "ajuste": 0.59,
      "con_metricas": false
     },
     {
@@ -2348,8 +2034,8 @@
      "metrica": 29460.0,
      "gancho": "polemica",
      "formato": "opinion",
-     "score": 0.5707805907172996,
-     "ajuste": 0.48333333333333334,
+     "score": 0.5689451476793249,
+     "ajuste": 0.47333333333333333,
      "con_metricas": true
     },
     {
@@ -2362,146 +2048,438 @@
      "metrica": null,
      "gancho": "contraste",
      "formato": "opinion",
-     "score": 0.5225,
-     "ajuste": 0.5225,
+     "score": 0.525,
+     "ajuste": 0.525,
      "con_metricas": false
     }
    ],
-   "porque": null,
-   "rank_anterior": 7
+   "senal_temprana": false,
+   "porque": "La opinión sobre gobernanza y contraste de decisiones empresariales resuena en LinkedIn y HN, indicando preocupación por adopción responsable.",
+   "rank_anterior": 12
   },
   {
-   "id": "anthropic_business_strategy",
-   "nombre": "Estrategia de negocio de Anthropic",
-   "descripcion": "Anthropic's pricing, enterprise deals, competitive positioning, and customer strategy versus OpenAI.",
-   "score": 0.387,
+   "id": "ai_coding_agents_developer_productivity",
+   "nombre": "Agentes de IA para programación",
+   "descripcion": "Content about AI coding agents like Claude Code, their impact on developer workflows, code review, productivity, and engineering practices.",
+   "score": 0.4218,
    "senales": {
-    "fuerza": 0.4117,
-    "aceleracion": 0.3333,
-    "temprano": 0.3148,
-    "multired": 0.2,
-    "frescura": 0.8333
+    "fuerza": 0.6527,
+    "aceleracion": 0.6667,
+    "temprano": 0.0,
+    "multired": 0.4,
+    "frescura": 0.0
    },
    "aceleracion_estimada": false,
-   "etapa": "pico",
-   "volumen": 2,
-   "piezas_7d": 1,
-   "piezas_7d_previos": 1,
+   "etapa": "creciendo",
+   "volumen": 27,
+   "piezas_7d": 19,
+   "piezas_7d_previos": 8,
    "redes": {
-    "reddit": 1,
-    "hn": 1
+    "reddit": 11,
+    "hn": 13,
+    "youtube": 3
    },
    "rasgos": {
     "gancho": [
      {
+      "valor": "historia",
+      "pct": 0.33
+     },
+     {
       "valor": "dato",
-      "pct": 1.0
+      "pct": 0.26
      }
     ],
     "formato": [
      {
       "valor": "noticia",
-      "pct": 0.5
+      "pct": 0.33
      },
      {
-      "valor": "opinion",
-      "pct": 0.5
+      "valor": "caso",
+      "pct": 0.26
      }
     ],
-    "menciona_lanzamiento": 1.0
+    "menciona_lanzamiento": 0.26
    },
    "pieza_temprana": {
     "red": "hn",
-    "url": "https://news.ycombinator.com/item?id=49975345",
-    "titulo": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-    "cuenta": "nsoonhui",
-    "publicado": 1791271790.0,
+    "url": "https://news.ycombinator.com/item?id=49971473",
+    "titulo": "Engineer says Claude Code has made his job \"soul-sucking\"",
+    "cuenta": "hefner1456",
+    "publicado": 1791237695.0,
     "via": "api",
-    "metrica": 82.0,
-    "gancho": "dato",
-    "formato": "opinion",
-    "score": 0.41165229885057475,
-    "ajuste": 0.3491666666666667,
+    "metrica": 61.0,
+    "gancho": "polemica",
+    "formato": "noticia",
+    "score": 0.2995833333333333,
+    "ajuste": 0.22416666666666668,
     "con_metricas": true
    },
    "rastreo": {
     "origen": {
      "red": "hn",
-     "fecha": 1791271790.0,
-     "url": "https://news.ycombinator.com/item?id=49975345",
-     "titulo": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-     "cuenta": "nsoonhui"
+     "fecha": 1791237695.0,
+     "url": "https://news.ycombinator.com/item?id=49971473",
+     "titulo": "Engineer says Claude Code has made his job \"soul-sucking\"",
+     "cuenta": "hefner1456"
     },
     "ruta": [
      {
       "red": "hn",
-      "fecha": 1791271790.0,
-      "url": "https://news.ycombinator.com/item?id=49975345",
-      "titulo": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-      "cuenta": "nsoonhui"
+      "fecha": 1791237695.0,
+      "url": "https://news.ycombinator.com/item?id=49971473",
+      "titulo": "Engineer says Claude Code has made his job \"soul-sucking\"",
+      "cuenta": "hefner1456"
+     },
+     {
+      "red": "youtube",
+      "fecha": 1791324004.0,
+      "url": "https://www.youtube.com/watch?v=jXYHqF2BT28",
+      "titulo": "OpenAI Dots: testei o assistente pessoal integrado ao Codex",
+      "cuenta": "Rafael Quintanilha – QuantBrasil"
      },
      {
       "red": "reddit",
-      "fecha": 1792081025.0,
-      "url": "https://www.reddit.com/r/artificial/comments/1x6q0v3/anthropics_mythos_found_so_many_software_flaws/",
-      "titulo": "Anthropic's Mythos found so many software flaws, Bank of America hired 1,000 contractors to fix them",
+      "fecha": 1791676663.0,
+      "url": "https://www.reddit.com/r/artificial/comments/1x2tq6s/claude_opus_55_decompiles_a_ps2era_game_overnight/",
+      "titulo": "Claude Opus 5.5 decompiles a PS2-era game overnight, and hundreds of them now run in browser tabs",
       "cuenta": "r/artificial"
      }
     ],
     "fuentes_externas": [
      {
-      "dominio": "newsletter.semianalysis.com",
+      "dominio": "github.com",
+      "veces": 3,
+      "url": "https://github.com/awslabs/aidlc-workflows"
+     },
+     {
+      "dominio": "arstechnica.com",
       "veces": 1,
-      "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x"
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+     },
+     {
+      "dominio": "momo5502.com",
+      "veces": 1,
+      "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/"
      }
     ],
-    "dias_activo": 11.9,
+    "dias_activo": 12.3,
     "horas_entre_redes": [
-     224.8
+     24.0,
+     98.0
     ]
    },
    "top_piezas": [
     {
      "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=49975345",
-     "titulo": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-     "cuenta": "nsoonhui",
-     "publicado": 1791271790.0,
+     "url": "https://news.ycombinator.com/item?id=50122951",
+     "titulo": "How the Claude Code team does code review",
+     "cuenta": "pretext",
+     "publicado": 1792177487.0,
      "via": "api",
-     "metrica": 82.0,
-     "gancho": "dato",
-     "formato": "opinion",
-     "score": 0.41165229885057475,
+     "metrica": 456.0,
+     "gancho": "historia",
+     "formato": "caso",
+     "score": 0.66625,
      "ajuste": 0.3491666666666667,
      "con_metricas": true
     },
     {
-     "red": "reddit",
-     "url": "https://www.reddit.com/r/artificial/comments/1x6q0v3/anthropics_mythos_found_so_many_software_flaws/",
-     "titulo": "Anthropic's Mythos found so many software flaws, Bank of America hired 1,000 contractors to fix them",
-     "cuenta": "r/artificial",
-     "publicado": 1792081025.0,
-     "via": "rss",
-     "metrica": null,
-     "gancho": "dato",
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=u5rWsxUVEk8",
+     "titulo": "Llevo meses programando con agentes de IA en mi empresa: estas son las cifras reales",
+     "cuenta": "El Rincón de Isma",
+     "publicado": 1791907227.0,
+     "via": "api",
+     "metrica": 5062.0,
+     "gancho": "historia",
+     "formato": "caso",
+     "score": 0.6656012658227848,
+     "ajuste": 0.635,
+     "con_metricas": true
+    },
+    {
+     "red": "hn",
+     "url": "https://news.ycombinator.com/item?id=50059523",
+     "titulo": "AI coding agents generate more code, but not more software",
+     "cuenta": "gumby",
+     "publicado": 1791825241.0,
+     "via": "api",
+     "metrica": 364.0,
+     "gancho": "contraste",
      "formato": "noticia",
-     "score": 0.3133333333333333,
-     "ajuste": 0.3133333333333333,
-     "con_metricas": false
+     "score": 0.62625,
+     "ajuste": 0.3525,
+     "con_metricas": true
+    },
+    {
+     "red": "hn",
+     "url": "https://news.ycombinator.com/item?id=50002665",
+     "titulo": "I think I found a planet nobody knew existed. I used Claude Code to find it",
+     "cuenta": "pyduan",
+     "publicado": 1791443254.0,
+     "via": "api",
+     "metrica": 301.0,
+     "gancho": "historia",
+     "formato": "opinion",
+     "score": 0.4741666666666666,
+     "ajuste": 0.18166666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "hn",
+     "url": "https://news.ycombinator.com/item?id=49981905",
+     "titulo": "Claude Code’s suggested message feature: I think the real customer is the model",
+     "cuenta": "zed_labs_dev",
+     "publicado": 1791309634.0,
+     "via": "api",
+     "metrica": 269.0,
+     "gancho": "polemica",
+     "formato": "opinion",
+     "score": 0.4729166666666667,
+     "ajuste": 0.22083333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "hn",
+     "url": "https://news.ycombinator.com/item?id=50039092",
+     "titulo": "500B tokens later: Letting AI agents decompile a first-person shooter",
+     "cuenta": "davikr",
+     "publicado": 1791684158.0,
+     "via": "api",
+     "metrica": 218.0,
+     "gancho": "dato",
+     "formato": "caso",
+     "score": 0.4429166666666667,
+     "ajuste": 0.13583333333333333,
+     "con_metricas": true
     }
    ],
+   "senal_temprana": false,
    "porque": null,
-   "rank_anterior": 10
+   "rank_anterior": 11
+  },
+  {
+   "id": "ai_chatgpt_business_applications",
+   "nombre": "ChatGPT para negocios",
+   "descripcion": "Business applications of ChatGPT, including new features, use cases, and integration into workflows.",
+   "score": 0.4096,
+   "senales": {
+    "fuerza": 0.6352,
+    "aceleracion": 0.2778,
+    "temprano": 0.0309,
+    "multired": 0.8,
+    "frescura": 0.0556
+   },
+   "aceleracion_estimada": false,
+   "etapa": "saturado",
+   "volumen": 23,
+   "piezas_7d": 9,
+   "piezas_7d_previos": 14,
+   "redes": {
+    "hn": 1,
+    "reddit": 1,
+    "linkedin": 2,
+    "tiktok": 3,
+    "youtube": 16
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.57
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.22
+     }
+    ],
+    "formato": [
+     {
+      "valor": "tutorial",
+      "pct": 0.35
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.3
+     }
+    ],
+    "menciona_lanzamiento": 0.26
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=xX01RLu_xPA",
+    "titulo": "OpenAI launches Dots, always-on ChatGPT agents for managing AI tools and #AI #AITools #ChatGPT",
+    "cuenta": "Vlad @Joinee",
+    "publicado": 1791115070.0,
+    "via": "api",
+    "metrica": 2426.0,
+    "gancho": "promesa",
+    "formato": "noticia",
+    "score": 0.41132383966244723,
+    "ajuste": 0.5441666666666667,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791115070.0,
+     "url": "https://www.youtube.com/watch?v=xX01RLu_xPA",
+     "titulo": "OpenAI launches Dots, always-on ChatGPT agents for managing AI tools and #AI #AITools #ChatGPT",
+     "cuenta": "Vlad @Joinee"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791115070.0,
+      "url": "https://www.youtube.com/watch?v=xX01RLu_xPA",
+      "titulo": "OpenAI launches Dots, always-on ChatGPT agents for managing AI tools and #AI #AITools #ChatGPT",
+      "cuenta": "Vlad @Joinee"
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791160187.0,
+      "url": "https://www.tiktok.com/@melisaescobarta/video/7692974427914439956",
+      "titulo": "El truco para que ChatGPT deje de mentirte🧠✨ Te ...",
+      "cuenta": "@melisaescobarta"
+     },
+     {
+      "red": "linkedin",
+      "fecha": 1791211749.196,
+      "url": "https://es.linkedin.com/posts/john-morales-aguilar-06029a247_inteligenciaartificial-productividad-innovaciontecnologica-activity-7512886604500348929-EG9d",
+      "titulo": "Inteligencia artificial generativa: cómo optimiza la ...",
+      "cuenta": "john-morales-aguilar-06029a247"
+     },
+     {
+      "red": "hn",
+      "fecha": 1791886114.0,
+      "url": "https://news.ycombinator.com/item?id=50069337",
+      "titulo": "Show HN: Use your OpenAI subscription to create audiobooks",
+      "cuenta": "janpmz"
+     },
+     {
+      "red": "reddit",
+      "fecha": 1792016887.0,
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1x6528u/where_were_you_when_chatgpt_killed_big_pharma/",
+      "titulo": "Where were you when ChatGPT killed big pharma?",
+      "cuenta": "r/ChatGPT"
+     }
+    ],
+    "fuentes_externas": [
+     {
+      "dominio": "pdftomp3.com",
+      "veces": 1,
+      "url": "https://pdftomp3.com/connect-ai/"
+     }
+    ],
+    "dias_activo": 13.7,
+    "horas_entre_redes": [
+     12.5,
+     14.3,
+     187.3,
+     36.3
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=RZohEzS9W5I",
+     "titulo": "Integra el MCP de dropi con IA para tu negocio online",
+     "cuenta": "Dropi",
+     "publicado": 1791237865.0,
+     "via": "api",
+     "metrica": 6674.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.674620253164557,
+     "ajuste": 0.71,
+     "con_metricas": true
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@pasosalexito.360/video/7696210959752236301",
+     "titulo": "Agentes de inteligencia artificial para escuchar clientes y ...",
+     "cuenta": "@pasosalexito.360",
+     "publicado": 1791913751.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "opinion",
+     "score": 0.6741666666666667,
+     "ajuste": 0.6741666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "hn",
+     "url": "https://news.ycombinator.com/item?id=50069337",
+     "titulo": "Show HN: Use your OpenAI subscription to create audiobooks",
+     "cuenta": "janpmz",
+     "publicado": 1791886114.0,
+     "via": "api",
+     "metrica": 174.0,
+     "gancho": "promesa",
+     "formato": "demo",
+     "score": 0.6320833333333333,
+     "ajuste": 0.48916666666666664,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=fP-xha4aq1g",
+     "titulo": "El error más común al usar ChatGPT en tu club o empresa #Shorts",
+     "cuenta": "Pablo Sala - Especialista I.A.",
+     "publicado": 1791927740.0,
+     "via": "api",
+     "metrica": 390.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.598792194092827,
+     "ajuste": 0.8241666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=X_00d3kIy8o",
+     "titulo": "ChatGPT Mapas: A NOVA Forma de Encontrar Empresas Chegou!",
+     "cuenta": "Franscielle Souza",
+     "publicado": 1791410420.0,
+     "via": "api",
+     "metrica": 5520.0,
+     "gancho": "promesa",
+     "formato": "noticia",
+     "score": 0.5977267932489452,
+     "ajuste": 0.6258333333333334,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=9C5hLJ1bIzk",
+     "titulo": "I Tested ChatGPT's New Business Platform. Should You Switch?",
+     "cuenta": "Liam Ottley",
+     "publicado": 1791190899.0,
+     "via": "api",
+     "metrica": 34383.0,
+     "gancho": "pregunta",
+     "formato": "caso",
+     "score": 0.5840348101265822,
+     "ajuste": 0.5225,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": false,
+   "porque": null,
+   "rank_anterior": 15
   },
   {
    "id": "enterprise_ai_agent_adoption",
    "nombre": "Adopción empresarial de agentes IA",
-   "descripcion": "Why enterprises struggle to bring AI agents to production, agent sprawl, and governance of agent fleets.",
-   "score": 0.379,
+   "descripcion": "How enterprises are adopting AI agents, challenges in scaling, production deployment, and the agent sprawl problem.",
+   "score": 0.3615,
    "senales": {
-    "fuerza": 0.5675,
+    "fuerza": 0.5194,
     "aceleracion": 0.1111,
-    "temprano": 0.0741,
+    "temprano": 0.071,
     "multired": 0.4,
     "frescura": 0.8333
    },
@@ -2509,10 +2487,10 @@
    "etapa": "pico",
    "volumen": 8,
    "piezas_7d": 1,
-   "piezas_7d_previos": 2,
+   "piezas_7d_previos": 3,
    "redes": {
-    "linkedin": 6,
-    "youtube": 2
+    "linkedin": 5,
+    "youtube": 3
    },
    "rasgos": {
     "gancho": [
@@ -2522,7 +2500,7 @@
      },
      {
       "valor": "dato",
-      "pct": 0.38
+      "pct": 0.25
      }
     ],
     "formato": [
@@ -2543,8 +2521,8 @@
     "metrica": 7985.0,
     "gancho": "contraste",
     "formato": "opinion",
-    "score": 0.44070147679324895,
-    "ajuste": 0.48583333333333334,
+    "score": 0.44028481012658227,
+    "ajuste": 0.485,
     "con_metricas": true
    },
    "rastreo": {
@@ -2588,8 +2566,8 @@
      "metrica": 206909.0,
      "gancho": "contraste",
      "formato": "opinion",
-     "score": 0.6943565400843882,
-     "ajuste": 0.4583333333333333,
+     "score": 0.6922732067510549,
+     "ajuste": 0.45416666666666666,
      "con_metricas": true
     },
     {
@@ -2602,8 +2580,8 @@
      "metrica": 7985.0,
      "gancho": "contraste",
      "formato": "opinion",
-     "score": 0.44070147679324895,
-     "ajuste": 0.48583333333333334,
+     "score": 0.44028481012658227,
+     "ajuste": 0.485,
      "con_metricas": true
     },
     {
@@ -2616,9 +2594,23 @@
      "metrica": null,
      "gancho": "dato",
      "formato": "opinion",
-     "score": 0.43833333333333335,
-     "ajuste": 0.43833333333333335,
+     "score": 0.4341666666666667,
+     "ajuste": 0.4341666666666667,
      "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=2Iowzou0s8Q",
+     "titulo": "Equipo de Agentes IA en las operaciones de tu negocio #automatizacion #negocios #agenteia #claude",
+     "cuenta": "Lautaro Nievas",
+     "publicado": 1791312453.0,
+     "via": "api",
+     "metrica": 1871.0,
+     "gancho": "promesa",
+     "formato": "opinion",
+     "score": 0.42573839662447255,
+     "ajuste": 0.5666666666666667,
+     "con_metricas": true
     },
     {
      "red": "linkedin",
@@ -2630,22 +2622,8 @@
      "metrica": null,
      "gancho": "dato",
      "formato": "opinion",
-     "score": 0.41083333333333333,
-     "ajuste": 0.41083333333333333,
-     "con_metricas": false
-    },
-    {
-     "red": "linkedin",
-     "url": "https://www.linkedin.com/pulse/ai-agents-starting-deliver-value-now-enterprises-need-gopisetty-dhmoc",
-     "titulo": "AI Agents Are Starting to Deliver Value. Now Enterprises ...",
-     "cuenta": "",
-     "publicado": null,
-     "via": "busqueda_web",
-     "metrica": null,
-     "gancho": "dato",
-     "formato": "opinion",
-     "score": 0.4041666666666667,
-     "ajuste": 0.4041666666666667,
+     "score": 0.41250000000000003,
+     "ajuste": 0.41250000000000003,
      "con_metricas": false
     },
     {
@@ -2658,202 +2636,182 @@
      "metrica": null,
      "gancho": "contraste",
      "formato": "opinion",
-     "score": 0.3833333333333333,
-     "ajuste": 0.3833333333333333,
+     "score": 0.3883333333333333,
+     "ajuste": 0.3883333333333333,
      "con_metricas": false
     }
    ],
+   "senal_temprana": false,
    "porque": null,
-   "rank_anterior": 12
+   "rank_anterior": 14
   },
   {
-   "id": "ai_chatgpt_business_applications",
-   "nombre": "ChatGPT para negocios",
-   "descripcion": "ChatGPT features, plugins, and business use cases including lead generation and customer service.",
-   "score": 0.364,
+   "id": "ai_regulation_safety_debates",
+   "nombre": "Regulación y seguridad de IA",
+   "descripcion": "Debates and developments around AI regulation, safety, export controls, and policy.",
+   "score": 0.2903,
    "senales": {
-    "fuerza": 0.5918,
-    "aceleracion": 0.2222,
-    "temprano": 0.0679,
-    "multired": 0.4,
-    "frescura": 0.3889
+    "fuerza": 0.1537,
+    "aceleracion": 0.3889,
+    "temprano": 0.3241,
+    "multired": 0.2,
+    "frescura": 0.6389
    },
    "aceleracion_estimada": false,
-   "etapa": "saturado",
-   "volumen": 14,
-   "piezas_7d": 4,
-   "piezas_7d_previos": 10,
+   "etapa": "pico",
+   "volumen": 4,
+   "piezas_7d": 3,
+   "piezas_7d_previos": 1,
    "redes": {
-    "tiktok": 3,
-    "youtube": 11
+    "reddit": 3,
+    "hn": 1
    },
    "rasgos": {
     "gancho": [
      {
-      "valor": "promesa",
-      "pct": 0.57
+      "valor": "polemica",
+      "pct": 0.75
      },
      {
-      "valor": "polemica",
-      "pct": 0.14
+      "valor": "dato",
+      "pct": 0.25
      }
     ],
     "formato": [
      {
-      "valor": "tutorial",
-      "pct": 0.43
+      "valor": "noticia",
+      "pct": 0.5
      },
      {
       "valor": "opinion",
-      "pct": 0.21
+      "pct": 0.5
      }
     ],
-    "menciona_lanzamiento": 0.43
+    "menciona_lanzamiento": 0.5
    },
    "pieza_temprana": {
-    "red": "youtube",
-    "url": "https://www.youtube.com/watch?v=xX01RLu_xPA",
-    "titulo": "OpenAI launches Dots, always-on ChatGPT agents for managing AI tools and #AI #AITools #ChatGPT",
-    "cuenta": "Vlad @Joinee",
-    "publicado": 1791115070.0,
+    "red": "hn",
+    "url": "https://news.ycombinator.com/item?id=50010569",
+    "titulo": "OpenAI cannot make AI safe on its own [pdf]",
+    "cuenta": "Philpax",
+    "publicado": 1791486758.0,
     "via": "api",
-    "metrica": 2426.0,
-    "gancho": "promesa",
-    "formato": "noticia",
-    "score": 0.41507383966244726,
-    "ajuste": 0.5516666666666667,
+    "metrica": 23.0,
+    "gancho": "polemica",
+    "formato": "opinion",
+    "score": 0.15375,
+    "ajuste": 0.2658333333333333,
     "con_metricas": true
    },
    "rastreo": {
     "origen": {
-     "red": "youtube",
-     "fecha": 1791115070.0,
-     "url": "https://www.youtube.com/watch?v=xX01RLu_xPA",
-     "titulo": "OpenAI launches Dots, always-on ChatGPT agents for managing AI tools and #AI #AITools #ChatGPT",
-     "cuenta": "Vlad @Joinee"
+     "red": "hn",
+     "fecha": 1791486758.0,
+     "url": "https://news.ycombinator.com/item?id=50010569",
+     "titulo": "OpenAI cannot make AI safe on its own [pdf]",
+     "cuenta": "Philpax"
     },
     "ruta": [
      {
-      "red": "youtube",
-      "fecha": 1791115070.0,
-      "url": "https://www.youtube.com/watch?v=xX01RLu_xPA",
-      "titulo": "OpenAI launches Dots, always-on ChatGPT agents for managing AI tools and #AI #AITools #ChatGPT",
-      "cuenta": "Vlad @Joinee"
+      "red": "hn",
+      "fecha": 1791486758.0,
+      "url": "https://news.ycombinator.com/item?id=50010569",
+      "titulo": "OpenAI cannot make AI safe on its own [pdf]",
+      "cuenta": "Philpax"
      },
      {
-      "red": "tiktok",
-      "fecha": 1791160187.0,
-      "url": "https://www.tiktok.com/@melisaescobarta/video/7692974427914439956",
-      "titulo": "El truco para que ChatGPT deje de mentirte🧠✨ Te ...",
-      "cuenta": "@melisaescobarta"
+      "red": "reddit",
+      "fecha": 1791964536.0,
+      "url": "https://www.reddit.com/r/artificial/comments/1x5lboy/peter_thiel_you_know_who_else_wants_to_regulate/",
+      "titulo": "Peter Thiel: You Know Who Else Wants to Regulate AI? The Antichrist. Thiel's 'Antichrist' lecture series in Nashville is reportedly focused on casting AI regulation advocates as antichrist enablers.",
+      "cuenta": "r/artificial"
      }
     ],
-    "fuentes_externas": [],
-    "dias_activo": 13.7,
+    "fuentes_externas": [
+     {
+      "dominio": "mikitabalesni.com",
+      "veces": 1,
+      "url": "https://mikitabalesni.com/letter/letter.pdf"
+     }
+    ],
+    "dias_activo": 9.4,
     "horas_entre_redes": [
-     12.5
+     132.7
     ]
    },
    "top_piezas": [
     {
-     "red": "tiktok",
-     "url": "https://www.tiktok.com/@pasosalexito.360/video/7696210959752236301",
-     "titulo": "Agentes de inteligencia artificial para escuchar clientes y ...",
-     "cuenta": "@pasosalexito.360",
-     "publicado": 1791913751.0,
-     "via": "busqueda_web",
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/artificial/comments/1x5lboy/peter_thiel_you_know_who_else_wants_to_regulate/",
+     "titulo": "Peter Thiel: You Know Who Else Wants to Regulate AI? The Antichrist. Thiel's 'Antichrist' lecture series in Nashville is reportedly focused on casting AI regulation advocates as antichrist enablers.",
+     "cuenta": "r/artificial",
+     "publicado": 1791964536.0,
+     "via": "rss",
      "metrica": null,
-     "gancho": "promesa",
-     "formato": "opinion",
-     "score": 0.6766666666666666,
-     "ajuste": 0.6766666666666666,
-     "con_metricas": false
-    },
-    {
-     "red": "tiktok",
-     "url": "https://www.tiktok.com/@lucianomusellaa/video/7693693986917125384",
-     "titulo": "Implementar Inteligencia Artificial en tu Negocio",
-     "cuenta": "@lucianomusellaa",
-     "publicado": 1791327723.0,
-     "via": "busqueda_web",
-     "metrica": null,
-     "gancho": "promesa",
-     "formato": "opinion",
-     "score": 0.6066666666666667,
-     "ajuste": 0.6066666666666667,
-     "con_metricas": false
-    },
-    {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=fP-xha4aq1g",
-     "titulo": "El error más común al usar ChatGPT en tu club o empresa #Shorts",
-     "cuenta": "Pablo Sala - Especialista I.A.",
-     "publicado": 1791927740.0,
-     "via": "api",
-     "metrica": 390.0,
      "gancho": "polemica",
-     "formato": "tutorial",
-     "score": 0.5979588607594937,
-     "ajuste": 0.8225,
-     "con_metricas": true
-    },
-    {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=X_00d3kIy8o",
-     "titulo": "ChatGPT Mapas: A NOVA Forma de Encontrar Empresas Chegou!",
-     "cuenta": "Franscielle Souza",
-     "publicado": 1791410420.0,
-     "via": "api",
-     "metrica": 5520.0,
-     "gancho": "promesa",
      "formato": "noticia",
-     "score": 0.5953955696202532,
-     "ajuste": 0.6275000000000001,
-     "con_metricas": true
-    },
-    {
-     "red": "youtube",
-     "url": "https://www.youtube.com/watch?v=9C5hLJ1bIzk",
-     "titulo": "I Tested ChatGPT's New Business Platform. Should You Switch?",
-     "cuenta": "Liam Ottley",
-     "publicado": 1791190899.0,
-     "via": "api",
-     "metrica": 34383.0,
-     "gancho": "pregunta",
-     "formato": "opinion",
-     "score": 0.581951476793249,
-     "ajuste": 0.5183333333333333,
-     "con_metricas": true
-    },
-    {
-     "red": "tiktok",
-     "url": "https://www.tiktok.com/@melisaescobarta/video/7692974427914439956",
-     "titulo": "El truco para que ChatGPT deje de mentirte🧠✨ Te ...",
-     "cuenta": "@melisaescobarta",
-     "publicado": 1791160187.0,
-     "via": "busqueda_web",
-     "metrica": null,
-     "gancho": "promesa",
-     "formato": "tutorial",
-     "score": 0.5791666666666666,
-     "ajuste": 0.5791666666666666,
+     "score": 0.31416666666666665,
+     "ajuste": 0.31416666666666665,
      "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7g3zq/china_proposes_export_controls_on_23_ai/",
+     "titulo": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
+     "cuenta": "r/LocalLLaMA",
+     "publicado": 1792156968.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "dato",
+     "formato": "noticia",
+     "score": 0.2966666666666667,
+     "ajuste": 0.2966666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8e4wd/linux_creator_says_antiai_rules_are_idiotic/",
+     "titulo": "Linux creator says anti-AI rules are \"idiotic.\" (Absolute god-tier take.)",
+     "cuenta": "r/LocalLLaMA",
+     "publicado": 1792253593.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "polemica",
+     "formato": "opinion",
+     "score": 0.18833333333333332,
+     "ajuste": 0.18833333333333332,
+     "con_metricas": false
+    },
+    {
+     "red": "hn",
+     "url": "https://news.ycombinator.com/item?id=50010569",
+     "titulo": "OpenAI cannot make AI safe on its own [pdf]",
+     "cuenta": "Philpax",
+     "publicado": 1791486758.0,
+     "via": "api",
+     "metrica": 23.0,
+     "gancho": "polemica",
+     "formato": "opinion",
+     "score": 0.15375,
+     "ajuste": 0.2658333333333333,
+     "con_metricas": true
     }
    ],
+   "senal_temprana": false,
    "porque": null,
-   "rank_anterior": 15
+   "rank_anterior": 17
   },
   {
    "id": "local_on_device_ai_models",
    "nombre": "Modelos de IA locales",
-   "descripcion": "Running open-weight and local models on consumer hardware, VRAM rankings, and on-device AI.",
-   "score": 0.2801,
+   "descripcion": "Running AI models locally on devices, including on-device models, local LLMs, and hardware requirements.",
+   "score": 0.2873,
    "senales": {
-    "fuerza": 0.2225,
-    "aceleracion": 0.3333,
-    "temprano": 0.25,
+    "fuerza": 0.2192,
+    "aceleracion": 0.3889,
+    "temprano": 0.2917,
     "multired": 0.2,
-    "frescura": 0.5556
+    "frescura": 0.4444
    },
    "aceleracion_estimada": false,
    "etapa": "pico",
@@ -2871,7 +2829,7 @@
       "pct": 0.43
      },
      {
-      "valor": "promesa",
+      "valor": "contraste",
       "pct": 0.29
      }
     ],
@@ -2895,10 +2853,10 @@
     "publicado": 1791397143.0,
     "via": "api",
     "metrica": 52.0,
-    "gancho": "polemica",
+    "gancho": "contraste",
     "formato": "opinion",
-    "score": 0.29074712643678163,
-    "ajuste": 0.23666666666666666,
+    "score": 0.28708333333333336,
+    "ajuste": 0.22416666666666668,
     "con_metricas": true
    },
    "rastreo": {
@@ -2944,20 +2902,6 @@
    },
    "top_piezas": [
     {
-     "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=49996713",
-     "titulo": "I'm not paying $20 for ChatGPT or Claude because a free local LLM does",
-     "cuenta": "hsnewman",
-     "publicado": 1791397143.0,
-     "via": "api",
-     "metrica": 52.0,
-     "gancho": "polemica",
-     "formato": "opinion",
-     "score": 0.29074712643678163,
-     "ajuste": 0.23666666666666666,
-     "con_metricas": true
-    },
-    {
      "red": "reddit",
      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2z14s/qualcomm_ceo_reveals_ai_companies_want_phones/",
      "titulo": "Qualcomm CEO reveals AI companies want phones running 100-billion-parameter models continuously by 2028.",
@@ -2967,9 +2911,23 @@
      "metrica": null,
      "gancho": "dato",
      "formato": "noticia",
-     "score": 0.2866666666666667,
-     "ajuste": 0.2866666666666667,
+     "score": 0.29083333333333333,
+     "ajuste": 0.29083333333333333,
      "con_metricas": false
+    },
+    {
+     "red": "hn",
+     "url": "https://news.ycombinator.com/item?id=49996713",
+     "titulo": "I'm not paying $20 for ChatGPT or Claude because a free local LLM does",
+     "cuenta": "hsnewman",
+     "publicado": 1791397143.0,
+     "via": "api",
+     "metrica": 52.0,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.28708333333333336,
+     "ajuste": 0.22416666666666668,
+     "con_metricas": true
     },
     {
      "red": "reddit",
@@ -2981,8 +2939,8 @@
      "metrica": null,
      "gancho": "promesa",
      "formato": "opinion",
-     "score": 0.25916666666666666,
-     "ajuste": 0.25916666666666666,
+     "score": 0.25666666666666665,
+     "ajuste": 0.25666666666666665,
      "con_metricas": false
     },
     {
@@ -2995,8 +2953,8 @@
      "metrica": null,
      "gancho": "promesa",
      "formato": "lista",
-     "score": 0.22,
-     "ajuste": 0.22,
+     "score": 0.215,
+     "ajuste": 0.215,
      "con_metricas": false
     },
     {
@@ -3009,7 +2967,7 @@
      "metrica": 33.0,
      "gancho": "contraste",
      "formato": "demo",
-     "score": 0.15426724137931036,
+     "score": 0.15125,
      "ajuste": 0.1275,
      "con_metricas": true
     },
@@ -3023,208 +2981,26 @@
      "metrica": null,
      "gancho": "dato",
      "formato": "noticia",
-     "score": 0.10583333333333333,
-     "ajuste": 0.10583333333333333,
+     "score": 0.10666666666666667,
+     "ajuste": 0.10666666666666667,
      "con_metricas": false
     }
    ],
-   "porque": null,
-   "rank_anterior": 17
-  },
-  {
-   "id": "ai_regulation_safety_debates",
-   "nombre": "Regulación y seguridad de IA",
-   "descripcion": "Policy debates, export controls, and public figures' positions on AI regulation and safety.",
-   "score": 0.2439,
-   "senales": {
-    "fuerza": 0.1507,
-    "aceleracion": 0.3333,
-    "temprano": 0.2778,
-    "multired": 0.2,
-    "frescura": 0.3889
-   },
-   "aceleracion_estimada": false,
-   "etapa": "saturado",
-   "volumen": 6,
-   "piezas_7d": 5,
-   "piezas_7d_previos": 1,
-   "redes": {
-    "reddit": 5,
-    "hn": 1
-   },
-   "rasgos": {
-    "gancho": [
-     {
-      "valor": "polemica",
-      "pct": 0.83
-     },
-     {
-      "valor": "dato",
-      "pct": 0.17
-     }
-    ],
-    "formato": [
-     {
-      "valor": "opinion",
-      "pct": 0.67
-     },
-     {
-      "valor": "noticia",
-      "pct": 0.33
-     }
-    ],
-    "menciona_lanzamiento": 0.33
-   },
-   "pieza_temprana": {
-    "red": "hn",
-    "url": "https://news.ycombinator.com/item?id=50010569",
-    "titulo": "OpenAI cannot make AI safe on its own [pdf]",
-    "cuenta": "Philpax",
-    "publicado": 1791486758.0,
-    "via": "api",
-    "metrica": 23.0,
-    "gancho": "polemica",
-    "formato": "opinion",
-    "score": 0.1507183908045977,
-    "ajuste": 0.2583333333333333,
-    "con_metricas": true
-   },
-   "rastreo": {
-    "origen": {
-     "red": "hn",
-     "fecha": 1791486758.0,
-     "url": "https://news.ycombinator.com/item?id=50010569",
-     "titulo": "OpenAI cannot make AI safe on its own [pdf]",
-     "cuenta": "Philpax"
-    },
-    "ruta": [
-     {
-      "red": "hn",
-      "fecha": 1791486758.0,
-      "url": "https://news.ycombinator.com/item?id=50010569",
-      "titulo": "OpenAI cannot make AI safe on its own [pdf]",
-      "cuenta": "Philpax"
-     },
-     {
-      "red": "reddit",
-      "fecha": 1791964536.0,
-      "url": "https://www.reddit.com/r/artificial/comments/1x5lboy/peter_thiel_you_know_who_else_wants_to_regulate/",
-      "titulo": "Peter Thiel: You Know Who Else Wants to Regulate AI? The Antichrist. Thiel's 'Antichrist' lecture series in Nashville is reportedly focused on casting AI regulation advocates as antichrist enablers.",
-      "cuenta": "r/artificial"
-     }
-    ],
-    "fuentes_externas": [
-     {
-      "dominio": "mikitabalesni.com",
-      "veces": 1,
-      "url": "https://mikitabalesni.com/letter/letter.pdf"
-     }
-    ],
-    "dias_activo": 9.4,
-    "horas_entre_redes": [
-     132.7
-    ]
-   },
-   "top_piezas": [
-    {
-     "red": "reddit",
-     "url": "https://www.reddit.com/r/ChatGPT/comments/1x7ne6r/worlds_richest_man_the_only_escape_route_for/",
-     "titulo": "World's richest man: \"the only escape route for humans to avoid being eliminated by AI is to voluntarily merge with machines and become a new species.\" In other words, you will be assimilated into the Borg. Resistance is futile. How are any conservatives OK with this?",
-     "cuenta": "r/ChatGPT",
-     "publicado": 1792173915.0,
-     "via": "rss",
-     "metrica": null,
-     "gancho": "polemica",
-     "formato": "opinion",
-     "score": 0.36333333333333334,
-     "ajuste": 0.36333333333333334,
-     "con_metricas": false
-    },
-    {
-     "red": "reddit",
-     "url": "https://www.reddit.com/r/artificial/comments/1x5lboy/peter_thiel_you_know_who_else_wants_to_regulate/",
-     "titulo": "Peter Thiel: You Know Who Else Wants to Regulate AI? The Antichrist. Thiel's 'Antichrist' lecture series in Nashville is reportedly focused on casting AI regulation advocates as antichrist enablers.",
-     "cuenta": "r/artificial",
-     "publicado": 1791964536.0,
-     "via": "rss",
-     "metrica": null,
-     "gancho": "polemica",
-     "formato": "noticia",
-     "score": 0.32666666666666666,
-     "ajuste": 0.32666666666666666,
-     "con_metricas": false
-    },
-    {
-     "red": "reddit",
-     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7g3zq/china_proposes_export_controls_on_23_ai/",
-     "titulo": "China proposes export controls on 23 AI technologies (including large models, agents & clusters); already open-sourced tech is exempted",
-     "cuenta": "r/LocalLLaMA",
-     "publicado": 1792156968.0,
-     "via": "rss",
-     "metrica": null,
-     "gancho": "dato",
-     "formato": "noticia",
-     "score": 0.2875,
-     "ajuste": 0.2875,
-     "con_metricas": false
-    },
-    {
-     "red": "reddit",
-     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8e4wd/linux_creator_says_antiai_rules_are_idiotic/",
-     "titulo": "Linux creator says anti-AI rules are \"idiotic.\" (Absolute god-tier take.)",
-     "cuenta": "r/LocalLLaMA",
-     "publicado": 1792253593.0,
-     "via": "rss",
-     "metrica": null,
-     "gancho": "polemica",
-     "formato": "opinion",
-     "score": 0.18416666666666667,
-     "ajuste": 0.18416666666666667,
-     "con_metricas": false
-    },
-    {
-     "red": "reddit",
-     "url": "https://www.reddit.com/r/singularity/comments/1x79mwf/linus_speaks_on_ai/",
-     "titulo": "Linus speaks on Ai",
-     "cuenta": "r/singularity",
-     "publicado": 1792135165.0,
-     "via": "rss",
-     "metrica": null,
-     "gancho": "polemica",
-     "formato": "opinion",
-     "score": 0.1775,
-     "ajuste": 0.1775,
-     "con_metricas": false
-    },
-    {
-     "red": "hn",
-     "url": "https://news.ycombinator.com/item?id=50010569",
-     "titulo": "OpenAI cannot make AI safe on its own [pdf]",
-     "cuenta": "Philpax",
-     "publicado": 1791486758.0,
-     "via": "api",
-     "metrica": 23.0,
-     "gancho": "polemica",
-     "formato": "opinion",
-     "score": 0.1507183908045977,
-     "ajuste": 0.2583333333333333,
-     "con_metricas": true
-    }
-   ],
+   "senal_temprana": false,
    "porque": null,
    "rank_anterior": 16
   },
   {
    "id": "ai_impact_jobs_workforce",
    "nombre": "Impacto de IA en el empleo",
-   "descripcion": "Debates on AI-driven job cuts, future of work predictions, and workforce morale among engineers.",
-   "score": 0.1553,
+   "descripcion": "AI's impact on jobs, workforce, and employment trends, including job displacement and creation.",
+   "score": 0.1442,
    "senales": {
     "fuerza": 0.0,
     "aceleracion": 0.0278,
     "temprano": 0.0208,
     "multired": 0.6,
-    "frescura": 0.5556
+    "frescura": 0.4444
    },
    "aceleracion_estimada": true,
    "etapa": "pico",
@@ -3269,8 +3045,8 @@
     "metrica": null,
     "gancho": "contraste",
     "formato": "opinion",
-    "score": 0.5325,
-    "ajuste": 0.5325,
+    "score": 0.535,
+    "ajuste": 0.535,
     "con_metricas": false
    },
    "rastreo": {
@@ -3322,8 +3098,8 @@
      "metrica": null,
      "gancho": "dato",
      "formato": "opinion",
-     "score": 0.6258333333333334,
-     "ajuste": 0.6258333333333334,
+     "score": 0.625,
+     "ajuste": 0.625,
      "con_metricas": false
     },
     {
@@ -3336,8 +3112,8 @@
      "metrica": null,
      "gancho": "contraste",
      "formato": "opinion",
-     "score": 0.5675,
-     "ajuste": 0.5675,
+     "score": 0.5641666666666667,
+     "ajuste": 0.5641666666666667,
      "con_metricas": false
     },
     {
@@ -3350,8 +3126,8 @@
      "metrica": null,
      "gancho": "contraste",
      "formato": "opinion",
-     "score": 0.5325,
-     "ajuste": 0.5325,
+     "score": 0.535,
+     "ajuste": 0.535,
      "con_metricas": false
     },
     {
@@ -3364,8 +3140,8 @@
      "metrica": null,
      "gancho": "contraste",
      "formato": "noticia",
-     "score": 0.38666666666666666,
-     "ajuste": 0.38666666666666666,
+     "score": 0.39166666666666666,
+     "ajuste": 0.39166666666666666,
      "con_metricas": false
     },
     {
@@ -3378,8 +3154,8 @@
      "metrica": null,
      "gancho": "polemica",
      "formato": "opinion",
-     "score": 0.31166666666666665,
-     "ajuste": 0.31166666666666665,
+     "score": 0.30333333333333334,
+     "ajuste": 0.30333333333333334,
      "con_metricas": false
     },
     {
@@ -3392,18 +3168,251 @@
      "metrica": null,
      "gancho": "historia",
      "formato": "opinion",
-     "score": 0.24083333333333334,
-     "ajuste": 0.24083333333333334,
+     "score": 0.23916666666666667,
+     "ajuste": 0.23916666666666667,
      "con_metricas": false
     }
    ],
+   "senal_temprana": false,
    "porque": null,
    "rank_anterior": 18
   },
   {
+   "id": "latin_american_ai_case_studies",
+   "nombre": "Casos de IA en Latinoamérica",
+   "descripcion": "Real-world AI implementations and case studies from Latin American companies and organizations.",
+   "score": 0.7631,
+   "senales": {
+    "fuerza": 0.6977,
+    "aceleracion": 1.0,
+    "temprano": 0.9444,
+    "multired": 0.2,
+    "frescura": 1.0
+   },
+   "aceleracion_estimada": false,
+   "etapa": "emergente",
+   "volumen": 2,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 2,
+   "redes": {
+    "youtube": 2
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "dato",
+      "pct": 0.5
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.5
+     }
+    ],
+    "formato": [
+     {
+      "valor": "caso",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=r0Ek2pycj8Y",
+    "titulo": "¿Puede la IA cambiar un banco por completo? BCI responde",
+    "cuenta": "EvoAcademy",
+    "publicado": 1791117011.0,
+    "via": "api",
+    "metrica": 1960.0,
+    "gancho": "pregunta",
+    "formato": "caso",
+    "score": 0.6339293248945148,
+    "ajuste": 0.8058333333333333,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791117011.0,
+     "url": "https://www.youtube.com/watch?v=r0Ek2pycj8Y",
+     "titulo": "¿Puede la IA cambiar un banco por completo? BCI responde",
+     "cuenta": "EvoAcademy"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791117011.0,
+      "url": "https://www.youtube.com/watch?v=r0Ek2pycj8Y",
+      "titulo": "¿Puede la IA cambiar un banco por completo? BCI responde",
+      "cuenta": "EvoAcademy"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.7,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=TFQCWlE9V58",
+     "titulo": "Agentes de IA no WhatsApp: R$ 461 mil em 57 dias na Tendas Araguaia",
+     "cuenta": "Clint",
+     "publicado": 1791584905.0,
+     "via": "api",
+     "metrica": 4359.0,
+     "gancho": "dato",
+     "formato": "caso",
+     "score": 0.7615137130801688,
+     "ajuste": 0.8141666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=r0Ek2pycj8Y",
+     "titulo": "¿Puede la IA cambiar un banco por completo? BCI responde",
+     "cuenta": "EvoAcademy",
+     "publicado": 1791117011.0,
+     "via": "api",
+     "metrica": 1960.0,
+     "gancho": "pregunta",
+     "formato": "caso",
+     "score": 0.6339293248945148,
+     "ajuste": 0.8058333333333333,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": 1
+  },
+  {
+   "id": "anthropic_business_strategy",
+   "nombre": "Estrategia de negocio de Anthropic",
+   "descripcion": "Anthropic's business strategies, partnerships, pricing, and competitive positioning in the AI market.",
+   "score": 0.4082,
+   "senales": {
+    "fuerza": 0.4104,
+    "aceleracion": 0.3889,
+    "temprano": 0.3673,
+    "multired": 0.2,
+    "frescura": 0.8333
+   },
+   "aceleracion_estimada": false,
+   "etapa": "pico",
+   "volumen": 2,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "hn": 1,
+    "reddit": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "dato",
+      "pct": 0.5
+     },
+     {
+      "valor": "polemica",
+      "pct": 0.5
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 1.0
+   },
+   "pieza_temprana": {
+    "red": "hn",
+    "url": "https://news.ycombinator.com/item?id=49975345",
+    "titulo": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+    "cuenta": "nsoonhui",
+    "publicado": 1791271790.0,
+    "via": "api",
+    "metrica": 82.0,
+    "gancho": "dato",
+    "formato": "opinion",
+    "score": 0.41041666666666665,
+    "ajuste": 0.33749999999999997,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "hn",
+     "fecha": 1791271790.0,
+     "url": "https://news.ycombinator.com/item?id=49975345",
+     "titulo": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+     "cuenta": "nsoonhui"
+    },
+    "ruta": [
+     {
+      "red": "hn",
+      "fecha": 1791271790.0,
+      "url": "https://news.ycombinator.com/item?id=49975345",
+      "titulo": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+      "cuenta": "nsoonhui"
+     },
+     {
+      "red": "reddit",
+      "fecha": 1791851229.0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4ii8e/anthropic_is_doing_free_publicity_for_glm_again/",
+      "titulo": "Anthropic is doing free publicity for GLM again",
+      "cuenta": "r/LocalLLaMA"
+     }
+    ],
+    "fuentes_externas": [
+     {
+      "dominio": "newsletter.semianalysis.com",
+      "veces": 1,
+      "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x"
+     }
+    ],
+    "dias_activo": 11.9,
+    "horas_entre_redes": [
+     161.0
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "hn",
+     "url": "https://news.ycombinator.com/item?id=49975345",
+     "titulo": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+     "cuenta": "nsoonhui",
+     "publicado": 1791271790.0,
+     "via": "api",
+     "metrica": 82.0,
+     "gancho": "dato",
+     "formato": "opinion",
+     "score": 0.41041666666666665,
+     "ajuste": 0.33749999999999997,
+     "con_metricas": true
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4ii8e/anthropic_is_doing_free_publicity_for_glm_again/",
+     "titulo": "Anthropic is doing free publicity for GLM again",
+     "cuenta": "r/LocalLLaMA",
+     "publicado": 1791851229.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "polemica",
+     "formato": "opinion",
+     "score": 0.115,
+     "ajuste": 0.115,
+     "con_metricas": false
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": 13
+  },
+  {
    "id": "ai_hardware_infrastructure",
    "nombre": "Hardware e infraestructura para IA",
-   "descripcion": "GPU rigs, RAM prices, CUDA, and infrastructure builds for running AI workloads.",
+   "descripcion": "AI hardware and infrastructure developments, including GPUs, servers, and specialized AI chips.",
    "score": 0.1241,
    "senales": {
     "fuerza": 0.0,
@@ -3453,8 +3462,8 @@
     "metrica": null,
     "gancho": "dato",
     "formato": "caso",
-    "score": 0.16166666666666668,
-    "ajuste": 0.16166666666666668,
+    "score": 0.1575,
+    "ajuste": 0.1575,
     "con_metricas": false
    },
    "rastreo": {
@@ -3489,8 +3498,8 @@
      "metrica": null,
      "gancho": "dato",
      "formato": "caso",
-     "score": 0.16166666666666668,
-     "ajuste": 0.16166666666666668,
+     "score": 0.1575,
+     "ajuste": 0.1575,
      "con_metricas": false
     },
     {
@@ -3503,11 +3512,12 @@
      "metrica": null,
      "gancho": "pregunta",
      "formato": "opinion",
-     "score": 0.08416666666666667,
-     "ajuste": 0.08416666666666667,
+     "score": 0.08583333333333333,
+     "ajuste": 0.08583333333333333,
      "con_metricas": false
     }
    ],
+   "senal_temprana": true,
    "porque": null,
    "rank_anterior": 19
   }
@@ -3515,150 +3525,152 @@
  "ideas": [
   {
    "formato": "carrusel de Instagram",
-   "titulo": "3 casos de IA en LatAm que están facturando (y qué aprender)",
-   "gancho": "¿Puede un agente de WhatsApp generar 461 mil reales en 57 días?",
-   "desarrollo": "Carrusel de 6 diapositivas que presenta tres casos de estudio breves de empresas latinoamericanas que usan IA. Para cada caso: el desafío, la solución con IA y el resultado en métricas de negocio. Incluye una diapositiva final con lecciones accionables para líderes. Usa gráficos simples y colores corporativos de 30X. Termina con un llamado a seguir para más casos.",
+   "titulo": "3 pasos para implementar IA en tu pyme sin morir en el intento",
+   "gancho": "¿Pensando en usar IA pero no sabes por dónde empezar? Este carrusel es tu guía.",
+   "desarrollo": "Diapositiva 1: Define un proceso clave (atención al cliente, ventas o marketing). Diapositiva 2: Elige una herramienta simple (chatbot, generador de contenido). Diapositiva 3: Mide resultados con una métrica clara (tiempo ahorrado, leads). Cierra con un llamado a la acción para agendar una asesoría.",
    "jev": {
     "ajuste_audiencia": {
-     "score": 0.983,
-     "confianza": 0.94
+     "score": 0.932,
+     "confianza": 0.78
     },
     "fuerza_gancho": {
-     "score": 0.88,
-     "confianza": 0.61
+     "score": 0.593,
+     "confianza": 0.58
     }
    }
   },
   {
    "formato": "reel/TikTok",
-   "titulo": "El caso de la Tendas Araguaia: IA en WhatsApp",
-   "gancho": "Un agente de IA en WhatsApp generó R$461 mil en 57 días, ¿cómo?",
-   "desarrollo": "Video de 30 segundos con ritmo rápido. Comienza con el gancho y luego muestra una secuencia de capturas de pantalla reales del caso. Usa texto en pantalla para resaltar cifras clave. Incluye una breve entrevista o comentario del CEO de 30X sobre por qué este caso es relevante para otras empresas. Termina con un llamado a comentar 'IA' para recibir más información.",
+   "titulo": "La IA que le ahorra 10 horas semanales a un emprendedor",
+   "gancho": "Muestra en pantalla un cronómetro corriendo y luego se detiene al implementar IA.",
+   "desarrollo": "Primeros 3 segundos: '¿Cuánto tiempo pierdes en tareas repetitivas?' Luego, muestra tres ejemplos rápidos: responder correos con plantillas, generar reportes automáticos, agendar citas con un asistente virtual. Termina con 'Sígueme para más tips de IA para pymes'.",
    "jev": {
     "ajuste_audiencia": {
-     "score": 0.79,
-     "confianza": 0.73
+     "score": 0.69,
+     "confianza": 0.69
     },
     "fuerza_gancho": {
-     "score": 0.875,
-     "confianza": 0.59
+     "score": 0.752,
+     "confianza": 0.82
     }
    }
   },
   {
    "formato": "post de LinkedIn",
-   "titulo": "¿Puede la IA transformar un banco? El caso BCI",
-   "gancho": "BCI, uno de los bancos más grandes de Chile, respondió a esa pregunta con resultados.",
-   "desarrollo": "Post que narra la historia del banco BCI y su adopción de IA. Describe los desafíos iniciales, la implementación y los resultados en eficiencia y satisfacción del cliente. Incluye una cita de un ejecutivo del banco (ficticia pero realista) y una reflexión sobre cómo los líderes pueden aplicar estas lecciones. Finaliza con preguntas para generar debate en comentarios.",
+   "titulo": "Lecciones de implementar IA en 10 pymes latinoamericanas",
+   "gancho": "El 70% de las pymes que adoptan IA aumentan su productividad en el primer mes.",
+   "desarrollo": "Comparte aprendizajes clave: empezar con un piloto pequeño, capacitar al equipo, medir impacto en tiempo y ventas. Menciona un caso anónimo de éxito. Invita a los lectores a comentar sus dudas o experiencias. Incluye una llamada a descargar una guía gratuita.",
    "jev": {
     "ajuste_audiencia": {
-     "score": 0.907,
-     "confianza": 0.69
+     "score": 0.988,
+     "confianza": 0.96
     },
     "fuerza_gancho": {
-     "score": 0.623,
-     "confianza": 0.58
+     "score": 0.765,
+     "confianza": 0.87
     }
    }
   }
  ],
  "predicciones": [
   {
-   "nombre": "Agentes de IA en WhatsApp para pymes",
-   "tesis": "El caso de éxito de Tendas Araguaia en YouTube muestra cómo los agentes de IA en WhatsApp generan ingresos significativos. Es un tema emergente con alta aceleración y escaso volumen, ideal para líderes de pymes latinoamericanas que buscan soluciones prácticas de bajo costo.",
+   "nombre": "Agentes de IA en WhatsApp para pymes latinoamericanas",
+   "tesis": "La combinación de casos de éxito latinoamericanos con agentes de IA y la creciente adopción de WhatsApp como canal de negocios sugiere que esta aplicación práctica despegará. El tema de casos de IA en Latinoamérica es emergente con máxima aceleración y pocas publicaciones, y se conecta con el interés en negocios con agentes de IA.",
    "basado_en": [
     "latin_american_ai_case_studies",
-    "ai_agent_business_models_monetization"
+    "ai_agent_business_models_monetization",
+    "ai_agent_development_platforms"
    ],
-   "senal_a_vigilar": "Aumento de publicaciones en LinkedIn de agencias o consultores ofreciendo implementación de agentes de WhatsApp para pymes.",
+   "senal_a_vigilar": "Aumento de tutoriales en español sobre cómo crear agentes de WhatsApp sin código, o más casos de éxito con cifras en la región.",
    "ventana": "1-2 semanas",
-   "que_publicar_hoy": "Un mini-guía: 'Cómo un agente de IA en WhatsApp puede vender por ti: lecciones del caso Tendas Araguaia' con pasos concretos.",
-   "respaldo_datos": 0.649,
+   "que_publicar_hoy": "Un análisis paso a paso de un caso real de una pyme latinoamericana que usa un agente de IA en WhatsApp para ventas, con lecciones aplicables para cualquier líder.",
+   "respaldo_datos": 0.645,
    "jev": {
-    "interes_audiencia": 0.76,
-    "novedad": 0.738,
-    "concreta": 0.69
+    "interes_audiencia": 0.81,
+    "novedad": 0.745,
+    "concreta": 0.79
    },
-   "fuerza": 0.704
+   "fuerza": 0.729
   },
   {
-   "nombre": "Gobernanza de IA para pymes latinoamericanas",
-   "tesis": "Las controversias de OpenAI y los riesgos de seguridad de agentes están surgiendo en comunidades técnicas como Hacker News y Reddit, pero aún no llegan a audiencias de negocios en Latinoamérica. Los líderes necesitarán directrices prácticas para adoptar IA de forma responsable sin frenar la innovación.",
+   "nombre": "Automatización de flujos de trabajo con agentes de IA y n8n",
+   "tesis": "El interés por plataformas para crear agentes sin programar está creciendo rápidamente, y herramientas como n8n permiten integrar IA en procesos existentes. Este enfoque práctico resonará con líderes que buscan eficiencia sin depender de desarrolladores.",
+   "basado_en": [
+    "ai_agent_development_platforms",
+    "ai_productivity_tools_smb",
+    "generative_ai_content_marketing"
+   ],
+   "senal_a_vigilar": "Aparición de plantillas o tutoriales en español sobre automatizaciones con n8n y IA para tareas administrativas comunes.",
+   "ventana": "1-2 semanas",
+   "que_publicar_hoy": "Un video corto demostrando cómo automatizar la generación de reportes semanales usando n8n y ChatGPT, dirigido a gerentes de operaciones.",
+   "respaldo_datos": 0.465,
+   "jev": {
+    "interes_audiencia": 0.795,
+    "novedad": 0.642,
+    "concreta": 0.74
+   },
+   "fuerza": 0.627
+  },
+  {
+   "nombre": "Gobernanza de IA para líderes no técnicos: lecciones de los escándalos de OpenAI",
+   "tesis": "Las controversias de OpenAI están creciendo en foros técnicos y generarían dudas en ejecutivos sobre cómo gestionar riesgos. Este tema aún no se discute masivamente en redes profesionales, por lo que hay oportunidad de educar antes de que se vuelva tendencia.",
    "basado_en": [
     "openai_governance_controversies",
-    "ai_agent_security_risks",
     "ai_governance_responsible_adoption"
    ],
-   "senal_a_vigilar": "Publicaciones en LinkedIn en español sobre 'errores de seguridad al implementar IA en tu empresa' con alto engagement.",
-   "ventana": "2-3 semanas",
-   "que_publicar_hoy": "Checklist descargable: '5 riesgos de seguridad al usar agentes de IA en tu pyme y cómo mitigarlos'.",
-   "respaldo_datos": 0.395,
-   "jev": {
-    "interes_audiencia": 0.855,
-    "novedad": 0.698,
-    "concreta": 0.71
-   },
-   "fuerza": 0.625
-  },
-  {
-   "nombre": "Controversias de OpenAI como señal para líderes",
-   "tesis": "Las renuncias de investigadores de seguridad y la retirada de papers matemáticos son señales tempranas de inestabilidad en el líder del mercado. Los ejecutivos latinoamericanos necesitan entender cómo esto afecta su dependencia de un solo proveedor de IA.",
-   "basado_en": [
-    "openai_governance_controversies",
-    "openai_math_research_claims"
-   ],
-   "senal_a_vigilar": "Artículos en prensa de negocios latinoamericana (El Economista, Forbes México) mencionando el tema.",
+   "senal_a_vigilar": "Publicaciones en LinkedIn que conecten estos escándalos con prácticas de gobernanza para empresas no tecnológicas.",
    "ventana": "1-2 semanas",
-   "que_publicar_hoy": "Un análisis breve: '¿Deberías preocuparte por la salida de talento de OpenAI si tu empresa usa ChatGPT?'",
-   "respaldo_datos": 0.62,
+   "que_publicar_hoy": "Un artículo que traduzca las últimas controversias de OpenAI en 5 lecciones prácticas de gobernanza de IA para líderes empresariales latinoamericanos.",
+   "respaldo_datos": 0.383,
    "jev": {
-    "interes_audiencia": 0.652,
-    "novedad": 0.537,
-    "concreta": 0.6
+    "interes_audiencia": 0.725,
+    "novedad": 0.69,
+    "concreta": 0.78
    },
-   "fuerza": 0.611
+   "fuerza": 0.587
   },
   {
-   "nombre": "Riesgos legales de agentes de IA en empresas",
-   "tesis": "El tema de seguridad de agentes está creciendo en tech pero aún no se discute la responsabilidad legal en Latam. Con la rápida adopción de agentes para tareas empresariales, surgirán dudas sobre quién responde ante errores. Es un ángulo de nicho con alto potencial.",
+   "nombre": "Ética y regulación de IA en América Latina: lo que los líderes deben saber",
+   "tesis": "La regulación de IA es un tema candente en foros técnicos globales, pero aún no se aterriza al contexto latinoamericano. Con la aceleración de debates regulatorios y la creciente adopción empresarial, los líderes necesitarán orientación sobre cumplimiento y principios éticos.",
    "basado_en": [
-    "ai_agent_security_risks",
-    "enterprise_ai_agent_adoption"
+    "ai_regulation_safety_debates",
+    "ai_governance_responsible_adoption",
+    "openai_governance_controversies"
    ],
-   "senal_a_vigilar": "Webinars o eventos de despachos de abogados sobre 'responsabilidad legal de la IA en tu empresa'.",
+   "senal_a_vigilar": "Noticias sobre proyectos de ley de IA en países latinoamericanos o declaraciones de asociaciones empresariales regionales.",
    "ventana": "2-3 semanas",
-   "que_publicar_hoy": "Entrevista con un abogado tech: 'Si un agente de IA comete un error en tu empresa, ¿quién paga? Lo que dice la ley en Latam'.",
-   "respaldo_datos": 0.279,
+   "que_publicar_hoy": "Un resumen ejecutivo de las tendencias regulatorias globales en IA y su posible impacto en empresas de la región, con recomendaciones para prepararse.",
+   "respaldo_datos": 0.376,
    "jev": {
-    "interes_audiencia": 0.728,
-    "novedad": 0.688,
-    "concreta": 0.67
+    "interes_audiencia": 0.777,
+    "novedad": 0.578,
+    "concreta": 0.55
    },
-   "fuerza": 0.535
+   "fuerza": 0.554
   },
   {
-   "nombre": "Democratización de modelos de IA locales para empresas",
-   "tesis": "Los modelos locales están ganando tracción en Reddit y HN por su costo cero y privacidad, pero no se ha traducido para pymes latinoamericanas. Con aceleración moderada y volumen bajo, es una oportunidad para educar sobre alternativas a ChatGPT que protegen datos sensibles.",
+   "nombre": "Modelos de IA locales para autonomía y privacidad empresarial",
+   "tesis": "La discusión sobre modelos locales está activa en comunidades técnicas, con interés creciente en independencia de las grandes plataformas. A medida que mejoren los modelos open source, los líderes empresariales buscarán opciones para proteger datos y reducir costos.",
    "basado_en": [
     "local_on_device_ai_models",
     "new_ai_model_releases"
    ],
-   "senal_a_vigilar": "Tutoriales en YouTube en español sobre 'correr tu propia IA en tu computadora para tu negocio'.",
-   "ventana": "1-2 semanas",
-   "que_publicar_hoy": "Artículo: '¿Vale la pena usar una IA local en tu empresa en lugar de pagar ChatGPT? Lo que sabemos hoy'.",
-   "respaldo_datos": 0.317,
+   "senal_a_vigilar": "Lanzamiento de un modelo open source competitivo con GPT-4 o aumento de búsquedas en español sobre 'IA local para empresas'.",
+   "ventana": "2-3 semanas",
+   "que_publicar_hoy": "Una guía simple para evaluar si tu empresa debería considerar modelos de IA locales, con casos de uso y requisitos técnicos básicos.",
+   "respaldo_datos": 0.389,
    "jev": {
-    "interes_audiencia": 0.647,
-    "novedad": 0.665,
-    "concreta": 0.5
+    "interes_audiencia": 0.718,
+    "novedad": 0.588,
+    "concreta": 0.51
    },
-   "fuerza": 0.504
+   "fuerza": 0.54
   }
  ],
  "cobertura": {
   "reddit": {
    "recolectadas": 93,
-   "en_ranking": 47,
+   "en_ranking": 43,
    "con_metricas": 0,
    "vias": [
     "rss"
@@ -3666,15 +3678,15 @@
   },
   "hn": {
    "recolectadas": 75,
-   "en_ranking": 59,
-   "con_metricas": 59,
+   "en_ranking": 61,
+   "con_metricas": 61,
    "vias": [
     "api"
    ]
   },
   "linkedin": {
    "recolectadas": 15,
-   "en_ranking": 13,
+   "en_ranking": 14,
    "con_metricas": 0,
    "vias": [
     "busqueda_web"
@@ -3690,7 +3702,7 @@
   },
   "instagram": {
    "recolectadas": 15,
-   "en_ranking": 12,
+   "en_ranking": 9,
    "con_metricas": 0,
    "vias": [
     "busqueda_web"
@@ -3708,63 +3720,63 @@
  "conteos": {
   "recolectadas": 317,
   "clasificadas": 317,
-  "en_ranking": 226,
-  "fuera_de_sector": 27,
+  "en_ranking": 222,
+  "fuera_de_sector": 28,
   "baja_confianza": 27,
-  "sin_tema": 37
+  "sin_tema": 40
  },
  "costo": {
-  "total_usd": 0.0473,
-  "jev_usd": 0.02655,
-  "llm_usd": 0.0208,
+  "total_usd": 0.0484,
+  "jev_usd": 0.02683,
+  "llm_usd": 0.0216,
   "proveedor_llm": "DeepSeek",
   "modelos_sin_precio": [],
   "pasos": {
    "llm_temas": {
     "llamadas": 1,
-    "tokens_entrada": 6055,
-    "tokens_salida": 965,
+    "tokens_entrada": 6034,
+    "tokens_salida": 1102,
     "busquedas_web": 0,
-    "usd": 0.00297
+    "usd": 0.00313
    },
    "jev_piezas": {
     "llamadas": 317,
-    "tokens_entrada": 627575,
-    "tokens_salida": 159499,
+    "tokens_entrada": 634232,
+    "tokens_salida": 159476,
     "busquedas_web": 0,
-    "usd": 0.02636
+    "usd": 0.02664
    },
    "llm_redaccion": {
     "llamadas": 1,
-    "tokens_entrada": 3282,
-    "tokens_salida": 1023,
+    "tokens_entrada": 3347,
+    "tokens_salida": 1079,
     "busquedas_web": 0,
-    "usd": 0.00838
+    "usd": 0.00869
    },
    "jev_ideas": {
     "llamadas": 3,
-    "tokens_entrada": 1674,
+    "tokens_entrada": 1641,
     "tokens_salida": 120,
     "busquedas_web": 0,
     "usd": 7e-05
    },
    "llm_predicciones": {
     "llamadas": 1,
-    "tokens_entrada": 3968,
-    "tokens_salida": 1051,
+    "tokens_entrada": 3927,
+    "tokens_salida": 1152,
     "busquedas_web": 0,
-    "usd": 0.0094
+    "usd": 0.00975
    },
    "jev_predicciones": {
     "llamadas": 5,
-    "tokens_entrada": 2827,
+    "tokens_entrada": 2853,
     "tokens_salida": 275,
     "busquedas_web": 0,
     "usd": 0.00012
    }
   },
-  "por_tema_usd": 0.00473,
-  "por_pieza_usd": 0.000149,
+  "por_tema_usd": 0.00484,
+  "por_pieza_usd": 0.000153,
   "historial": [
    {
     "generado": "2026-10-17T17:44:04+00:00",
@@ -3805,6 +3817,11 @@
     "generado": "2026-10-18T04:08:58+00:00",
     "usd": 0.0473,
     "piezas": 317
+   },
+   {
+    "generado": "2026-10-18T04:16:18+00:00",
+    "usd": 0.0484,
+    "piezas": 317
    }
   ]
  },
@@ -3812,97 +3829,97 @@
   {
    "id": "ai_coding_agents_developer_productivity",
    "nombre": "Agentes de IA para programación",
-   "descripcion": "Coding agents, Claude Code workflows, and their effect on developer productivity and software quality."
+   "descripcion": "Content about AI coding agents like Claude Code, their impact on developer workflows, code review, productivity, and engineering practices."
   },
   {
    "id": "ai_agent_development_platforms",
    "nombre": "Plataformas para agentes de IA",
-   "descripcion": "Tools, frameworks, sandboxes, and memory layers for building and running AI agents."
+   "descripcion": "Tools, frameworks, and platforms for building and deploying AI agents, including low-code options and shared research labs."
   },
   {
    "id": "ai_agent_security_risks",
    "nombre": "Riesgos de seguridad de agentes IA",
-   "descripcion": "Agent hacking incidents, containment failures, rogue behavior, and safety concerns around autonomous agents."
+   "descripcion": "Security incidents, vulnerabilities, and risks associated with AI agents, such as hacking, data leaks, and containment failures."
   },
   {
    "id": "enterprise_ai_agent_adoption",
    "nombre": "Adopción empresarial de agentes IA",
-   "descripcion": "Why enterprises struggle to bring AI agents to production, agent sprawl, and governance of agent fleets."
+   "descripcion": "How enterprises are adopting AI agents, challenges in scaling, production deployment, and the agent sprawl problem."
   },
   {
    "id": "ai_governance_responsible_adoption",
    "nombre": "Gobernanza y adopción responsable de IA",
-   "descripcion": "Corporate AI governance, responsible adoption frameworks, and risks of deploying AI without oversight."
+   "descripcion": "Frameworks, policies, and practices for responsible AI adoption, including governance, ethics, and risk management."
   },
   {
    "id": "openai_governance_controversies",
    "nombre": "Controversias de gobernanza en OpenAI",
-   "descripcion": "OpenAI safety researcher firings, rogue incidents, revenue questions, and internal governance scandals."
+   "descripcion": "Controversies and incidents related to OpenAI's governance, including employee misconduct, security breaches, and internal turmoil."
   },
   {
    "id": "openai_math_research_claims",
    "nombre": "OpenAI y matemáticas",
-   "descripcion": "OpenAI's disputed mathematical proofs, preprint releases, and the research community's reaction."
+   "descripcion": "OpenAI's mathematical research claims, including proofs, withdrawals, and community reactions."
   },
   {
    "id": "anthropic_business_strategy",
    "nombre": "Estrategia de negocio de Anthropic",
-   "descripcion": "Anthropic's pricing, enterprise deals, competitive positioning, and customer strategy versus OpenAI."
+   "descripcion": "Anthropic's business strategies, partnerships, pricing, and competitive positioning in the AI market."
   },
   {
    "id": "new_ai_model_releases",
    "nombre": "Lanzamientos y benchmarks de IA",
-   "descripcion": "New model announcements, capability comparisons, and benchmark results from major AI labs."
+   "descripcion": "New AI model releases, benchmarks, and performance comparisons across different providers."
   },
   {
    "id": "local_on_device_ai_models",
    "nombre": "Modelos de IA locales",
-   "descripcion": "Running open-weight and local models on consumer hardware, VRAM rankings, and on-device AI."
+   "descripcion": "Running AI models locally on devices, including on-device models, local LLMs, and hardware requirements."
   },
   {
    "id": "ai_hardware_infrastructure",
    "nombre": "Hardware e infraestructura para IA",
-   "descripcion": "GPU rigs, RAM prices, CUDA, and infrastructure builds for running AI workloads."
+   "descripcion": "AI hardware and infrastructure developments, including GPUs, servers, and specialized AI chips."
   },
   {
    "id": "ai_regulation_safety_debates",
    "nombre": "Regulación y seguridad de IA",
-   "descripcion": "Policy debates, export controls, and public figures' positions on AI regulation and safety."
+   "descripcion": "Debates and developments around AI regulation, safety, export controls, and policy."
   },
   {
    "id": "ai_impact_jobs_workforce",
    "nombre": "Impacto de IA en el empleo",
-   "descripcion": "Debates on AI-driven job cuts, future of work predictions, and workforce morale among engineers."
+   "descripcion": "AI's impact on jobs, workforce, and employment trends, including job displacement and creation."
   },
   {
    "id": "ai_productivity_tools_smb",
    "nombre": "Herramientas de IA para pymes",
-   "descripcion": "Free and low-cost AI tools, productivity hacks, and practical guides for small businesses and teams."
+   "descripcion": "AI tools and productivity solutions for small and medium businesses, including free and low-cost options."
   },
   {
    "id": "ai_strategy_latam_smes",
    "nombre": "Estrategia de IA para pymes LATAM",
-   "descripcion": "Latin American guidance on AI leadership, adoption strategy, and implementation for SMEs."
+   "descripcion": "AI strategy and adoption guidance for small and medium enterprises in Latin America."
   },
   {
    "id": "latin_american_ai_case_studies",
    "nombre": "Casos de IA en Latinoamérica",
-   "descripcion": "Concrete Latin American company and bank examples of AI deployment and results."
+   "descripcion": "Real-world AI implementations and case studies from Latin American companies and organizations."
   },
   {
    "id": "generative_ai_content_marketing",
    "nombre": "IA generativa para contenido",
-   "descripcion": "Using generative AI for video, infographics, SEO, marketing content, and brand visibility."
+   "descripcion": "Using generative AI for content creation, marketing, video production, and creative workflows."
   },
   {
    "id": "ai_chatgpt_business_applications",
    "nombre": "ChatGPT para negocios",
-   "descripcion": "ChatGPT features, plugins, and business use cases including lead generation and customer service."
+   "descripcion": "Business applications of ChatGPT, including new features, use cases, and integration into workflows."
   },
   {
    "id": "ai_agent_business_models_monetization",
    "nombre": "Negocios con agentes de IA",
-   "descripcion": "Building, selling, and monetizing AI agent businesses and automated companies, especially in LATAM."
+   "descripcion": "Business models and monetization strategies for AI agents, including selling agent services and building agent-based companies."
   }
  ]
 }
