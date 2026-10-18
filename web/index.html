@@ -683,10 +683,11 @@ const sinMovimiento = () => window.matchMedia && window.matchMedia("(prefers-red
 function contar(el) {
   const v = parseFloat(el.dataset.contar), fmt = el.dataset.fmt || "int";
   const pinta = x => { el.textContent = fmt === "usd" ? usd(x) : Math.round(x).toLocaleString("es"); };
-  if (sinMovimiento() || isNaN(v)) return pinta(v);
+  if (sinMovimiento() || isNaN(v) || document.hidden) return pinta(v);
   const t0 = performance.now(), dur = 1300;
   const paso = t => { const k = Math.min(1, (t - t0) / dur); pinta(v * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(paso); };
   requestAnimationFrame(paso);
+  setTimeout(() => pinta(v), dur + 150);  // si el navegador pausa la animación, el valor final igual queda
 }
 let observador = null;
 function observarRevelados() {
