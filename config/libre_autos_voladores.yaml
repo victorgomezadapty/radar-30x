@@ -1,0 +1,85 @@
+nombre: Autos Voladores
+nicho_libre: Autos voladores
+marca: tu marca
+marca_descripcion: 'a creator or brand in this niche: Autos voladores'
+persona: Tech enthusiasts who are curious about emerging transportation technologies
+  and want to stay updated on the latest developments in flying cars, eVTOLs, and
+  urban air mobility.
+pista_temas: Topics related to flying cars, electric vertical takeoff and landing
+  (eVTOL) aircraft, personal air vehicles, urban air mobility, and related technologies
+  such as autonomous flight, battery innovations, and regulatory developments.
+pregunta_es_sector: The content is about flying cars, eVTOLs, personal air vehicles,
+  or urban air mobility (development, technology, regulation, or business).
+dias_ventana: 14
+max_piezas_por_red: 80
+redes:
+  youtube:
+    activa: true
+    consultas:
+    - autos voladores 2025
+    - vehículos voladores personales
+    - eVTOL pruebas de vuelo
+    - flying car future
+    - coches voladores España
+    - urban air mobility concept
+    canales_semilla: []
+    region: ES
+    idioma: es
+  reddit:
+    activa: true
+    subreddits:
+    - flyingcars
+    - UrbanAirMobility
+    - eVTOL
+    - electricvehicles
+    - technology
+  instagram:
+    activa: true
+    cuentas: []
+    hashtags:
+    - flyingcar
+    - evtol
+    - urbanairmobility
+    consultas_web:
+    - autos voladores
+    - vehículos aéreos personales
+    - movilidad aérea urbana
+  linkedin:
+    activa: true
+    consultas:
+    - autos voladores
+    - movilidad aérea urbana
+    - eVTOL aviación
+  tiktok:
+    activa: true
+    paises:
+    - MX
+    - CO
+    - AR
+    - CL
+    - PE
+    consultas_web:
+    - autos voladores
+    - coches voladores
+    - vehículos voladores
+  hn:
+    activa: true
+    consultas:
+    - flying car
+    - eVTOL
+    - urban air mobility
+pesos:
+  pieza:
+    crecimiento: 0.5
+    ajuste: 0.5
+  tema:
+    fuerza: 0.35
+    aceleracion: 0.2
+    temprano: 0.2
+    multired: 0.15
+    frescura: 0.1
+umbrales:
+  es_sector: 0.6
+  confianza_min: 0.6
+  min_piezas_top: 3
+sector: libre_autos_voladores

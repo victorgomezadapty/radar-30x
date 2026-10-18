@@ -1,0 +1,2823 @@
+{
+ "sector": "libre_autos_voladores",
+ "nombre": "Autos Voladores",
+ "redes_elegidas": [
+  "youtube",
+  "reddit",
+  "instagram",
+  "linkedin",
+  "tiktok",
+  "hn"
+ ],
+ "marca": "tu marca",
+ "nicho_libre": "Autos voladores",
+ "corrida_anterior": null,
+ "ganchos": [
+  {
+   "gancho": "polemica",
+   "piezas": 13,
+   "pct": 0.191,
+   "crecimiento_vs_media": 0.355,
+   "ejemplo": {
+    "titulo": "IN FULL | Tesla’s Flying Car Flips Mid-Air in Jaw-Dropping Elon Musk Reveal | APT",
+    "url": "https://www.youtube.com/watch?v=vmNHUSrTLLo",
+    "red": "youtube"
+   }
+  },
+  {
+   "gancho": "historia",
+   "piezas": 3,
+   "pct": 0.044,
+   "crecimiento_vs_media": 0.14,
+   "ejemplo": {
+    "titulo": "Un auto volador pasó por encima de un Tesla Roadster. ...",
+    "url": "https://www.tiktok.com/@eluniversalmx/video/7697400604859174164",
+    "red": "tiktok"
+   }
+  },
+  {
+   "gancho": "pregunta",
+   "piezas": 23,
+   "pct": 0.338,
+   "crecimiento_vs_media": 0.085,
+   "ejemplo": {
+    "titulo": "TESLA'S FLYING CAR IS REAL?! 🤯 | New Roadster Revealed",
+    "url": "https://www.youtube.com/watch?v=Otuqra_w57o",
+    "red": "youtube"
+   }
+  },
+  {
+   "gancho": "dato",
+   "piezas": 5,
+   "pct": 0.074,
+   "crecimiento_vs_media": 0.039,
+   "ejemplo": {
+    "titulo": "Tesla Roadster Flies, Drives Upside Down In Jaw-Dropping Demo; Elon Musk Teases Flying Car Future",
+    "url": "https://www.youtube.com/watch?v=yXmBke-EaUc",
+    "red": "youtube"
+   }
+  },
+  {
+   "gancho": "promesa",
+   "piezas": 16,
+   "pct": 0.235,
+   "crecimiento_vs_media": -0.293,
+   "ejemplo": {
+    "titulo": "Establecimiento Público Aeropuerto Olaya Herrera",
+    "url": "https://www.instagram.com/reel/Decb-DJh-dO",
+    "red": "instagram"
+   }
+  },
+  {
+   "gancho": "contraste",
+   "piezas": 8,
+   "pct": 0.118,
+   "crecimiento_vs_media": -0.389,
+   "ejemplo": {
+    "titulo": "No es inteligencia artificial: Tesla presenta su nuevo auto ‘volador’ | Noticias Telemundo",
+    "url": "https://www.youtube.com/watch?v=4RP-9PHX3LM",
+    "red": "youtube"
+   }
+  }
+ ],
+ "generado": "2026-10-18T04:25:15+00:00",
+ "duracion_s": 28.9,
+ "modelo_jev": "jev-1.13.0",
+ "modelos_llm": [
+  "deepseek-flash",
+  "deepseek-v4-pro"
+ ],
+ "pesos": {
+  "fuerza": 0.35,
+  "aceleracion": 0.2,
+  "temprano": 0.2,
+  "multired": 0.15,
+  "frescura": 0.1
+ },
+ "min_piezas_top": 3,
+ "temas": [
+  {
+   "id": "tesla_flying_roadster_reveal",
+   "nombre": "Tesla Roadster volador",
+   "descripcion": "News and reactions to Tesla's Roadster flying car demonstration and Elon Musk's claims.",
+   "score": 0.5285,
+   "senales": {
+    "fuerza": 0.7116,
+    "aceleracion": 0.9474,
+    "temprano": 0.0,
+    "multired": 0.6,
+    "frescura": 0.0
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 30,
+   "piezas_7d": 30,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "youtube": 19,
+    "instagram": 1,
+    "tiktok": 10
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "polemica",
+      "pct": 0.37
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.37
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 0.83
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.17
+     }
+    ],
+    "menciona_lanzamiento": 0.67
+   },
+   "pieza_temprana": {
+    "red": "tiktok",
+    "url": "https://www.tiktok.com/@tecnonautatv/video/7695853760412699926",
+    "titulo": "El jueves VAMOS a VOLAR!!! Tesla Roadster volador 🤯 ...",
+    "cuenta": "@tecnonautatv",
+    "publicado": 1791830584.0,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "promesa",
+    "formato": "noticia",
+    "score": 0.5041666666666667,
+    "ajuste": 0.5041666666666667,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "tiktok",
+     "fecha": 1791830584.0,
+     "url": "https://www.tiktok.com/@tecnonautatv/video/7695853760412699926",
+     "titulo": "El jueves VAMOS a VOLAR!!! Tesla Roadster volador 🤯 ...",
+     "cuenta": "@tecnonautatv"
+    },
+    "ruta": [
+     {
+      "red": "tiktok",
+      "fecha": 1791830584.0,
+      "url": "https://www.tiktok.com/@tecnonautatv/video/7695853760412699926",
+      "titulo": "El jueves VAMOS a VOLAR!!! Tesla Roadster volador 🤯 ...",
+      "cuenta": "@tecnonautatv"
+     },
+     {
+      "red": "youtube",
+      "fecha": 1792115351.0,
+      "url": "https://www.youtube.com/watch?v=DGFfbu2sUBo",
+      "titulo": "POV: You believe Elon Musk’s flying car claims 💀 #elonmusk #tesla #fail",
+      "cuenta": "Tech Bag Trey"
+     },
+     {
+      "red": "instagram",
+      "fecha": 1792125906.549,
+      "url": "https://www.instagram.com/p/DeitItOAkSY",
+      "titulo": "Instagram",
+      "cuenta": ""
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 5.4,
+    "horas_entre_redes": [
+     79.1,
+     2.9
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=Otuqra_w57o",
+     "titulo": "TESLA'S FLYING CAR IS REAL?! 🤯 | New Roadster Revealed",
+     "cuenta": "The Big Why ?",
+     "publicado": 1792136406.0,
+     "via": "api",
+     "metrica": 1888268.0,
+     "gancho": "pregunta",
+     "formato": "noticia",
+     "score": 0.7227729885057471,
+     "ajuste": 0.45416666666666666,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=-iRtWiHHfBQ",
+     "titulo": "¿El futuro del transporte? Elon Musk presenta el auto \"volador\" de Tesla",
+     "cuenta": "Meganoticias",
+     "publicado": 1792157084.0,
+     "via": "api",
+     "metrica": 116236.0,
+     "gancho": "pregunta",
+     "formato": "noticia",
+     "score": 0.7077873563218391,
+     "ajuste": 0.6483333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=vmNHUSrTLLo",
+     "titulo": "IN FULL | Tesla’s Flying Car Flips Mid-Air in Jaw-Dropping Elon Musk Reveal | APT",
+     "cuenta": "APT",
+     "publicado": 1792135768.0,
+     "via": "api",
+     "metrica": 421424.0,
+     "gancho": "polemica",
+     "formato": "noticia",
+     "score": 0.7042816091954023,
+     "ajuste": 0.45166666666666666,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=IKyDRywtsLI",
+     "titulo": "Tesla Roadster Goes FLYING? Elon Musk Teases the Future! #shorts | N18S",
+     "cuenta": "CNN-News18",
+     "publicado": 1792134321.0,
+     "via": "api",
+     "metrica": 1190212.0,
+     "gancho": "pregunta",
+     "formato": "noticia",
+     "score": 0.6976149425287357,
+     "ajuste": 0.43833333333333335,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=7QeLHYCjYxw",
+     "titulo": "TESLA'S FLYING CAR IS REAL ! 🤯   New Roadster Revealed",
+     "cuenta": "ABSTRACTION",
+     "publicado": 1792184954.0,
+     "via": "api",
+     "metrica": 159625.0,
+     "gancho": "polemica",
+     "formato": "noticia",
+     "score": 0.6810632183908045,
+     "ajuste": 0.44833333333333336,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=4wCGk5VaGmQ",
+     "titulo": "Tesla unveils its next generation 'flying' Roadster",
+     "cuenta": "NBC News",
+     "publicado": 1792186943.0,
+     "via": "api",
+     "metrica": 271265.0,
+     "gancho": "polemica",
+     "formato": "noticia",
+     "score": 0.6770258620689655,
+     "ajuste": 0.4575,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": false,
+   "porque": "El contenido sobre el Roadster volador está dominado por noticias y opiniones polémicas, con alta mención de lanzamiento y fuerte presencia en YouTube y TikTok.",
+   "rank_anterior": null
+  },
+  {
+   "id": "flying_vehicle_concept_roundups",
+   "nombre": "Listas de vehículos voladores",
+   "descripcion": "Roundup listicles ranking flying cars and personal aircraft currently available or coming soon.",
+   "score": 0.3869,
+   "senales": {
+    "fuerza": 0.5774,
+    "aceleracion": 0.7105,
+    "temprano": 0.0374,
+    "multired": 0.2,
+    "frescura": 0.0526
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 15,
+   "piezas_7d": 9,
+   "piezas_7d_previos": 6,
+   "redes": {
+    "youtube": 15
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.53
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.27
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 0.87
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.13
+     }
+    ],
+    "menciona_lanzamiento": 0.07
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=JlL7bMfx2KA",
+    "titulo": "Is This the End of Cars?! Top 3 Flying Machines 😱🚁",
+    "cuenta": "ContinKnews",
+    "publicado": 1791133213.0,
+    "via": "api",
+    "metrica": 26784.0,
+    "gancho": "pregunta",
+    "formato": "lista",
+    "score": 0.45010057471264364,
+    "ajuste": 0.4691666666666667,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791133213.0,
+     "url": "https://www.youtube.com/watch?v=JlL7bMfx2KA",
+     "titulo": "Is This the End of Cars?! Top 3 Flying Machines 😱🚁",
+     "cuenta": "ContinKnews"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791133213.0,
+      "url": "https://www.youtube.com/watch?v=JlL7bMfx2KA",
+      "titulo": "Is This the End of Cars?! Top 3 Flying Machines 😱🚁",
+      "cuenta": "ContinKnews"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.5,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=UwoR3b_kz3s",
+     "titulo": "El nuevo invento volador de España está impactando a todos",
+     "cuenta": "RADAR DEL MAÑANA",
+     "publicado": 1792213215.0,
+     "via": "api",
+     "metrica": 12512.0,
+     "gancho": "polemica",
+     "formato": "lista",
+     "score": 0.6115804597701149,
+     "ajuste": 0.6283333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=V3bUDTHB7dg",
+     "titulo": "Mobil Masa Depan yang bisa terbang coy #faktaunik #shorts #top3dunia",
+     "cuenta": "Top 3 Dunia",
+     "publicado": 1791795630.0,
+     "via": "api",
+     "metrica": 367567.0,
+     "gancho": "pregunta",
+     "formato": "lista",
+     "score": 0.597485632183908,
+     "ajuste": 0.4708333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=gJnkZPxoKgw",
+     "titulo": "El Nuevo Invento Volador de Japón Está Dejando a Todos Sin Palabras",
+     "cuenta": "Código Inventor",
+     "publicado": 1791644266.0,
+     "via": "api",
+     "metrica": 46859.0,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.5230890804597701,
+     "ajuste": 0.48583333333333334,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=W6ItRfbpZNA",
+     "titulo": "NEXT-LEVEL FLYING VEHICLES THAT WILL BLOW YOUR MIND",
+     "cuenta": "ALL TECH",
+     "publicado": 1791550810.0,
+     "via": "api",
+     "metrica": 5025.0,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.5036206896551725,
+     "ajuste": 0.49000000000000005,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=Xh_UsxVXlIc",
+     "titulo": "NEXT-LEVEL FLYING VEHICLES THAT WILL BLOW YOUR MIND",
+     "cuenta": "ALL TECH",
+     "publicado": 1792069220.0,
+     "via": "api",
+     "metrica": 3858.0,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.5019540229885058,
+     "ajuste": 0.4866666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=uAl9B6d_nUc",
+     "titulo": "What If Flying Cars Became Reality? 🤯 #shorts",
+     "cuenta": "Ai Magnet",
+     "publicado": 1792236624.0,
+     "via": "api",
+     "metrica": 354.0,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.48265804597701156,
+     "ajuste": 0.43083333333333335,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": false,
+   "porque": "Las listas de vehículos voladores funcionan porque prometen un vistazo al futuro y generan curiosidad, con formato de video corto en YouTube.",
+   "rank_anterior": null
+  },
+  {
+   "id": "elon_musk_flight_vision",
+   "nombre": "Visión de Musk aviación",
+   "descripcion": "Elon Musk's broader vision and statements about flying cars and the future of transportation.",
+   "score": 0.341,
+   "senales": {
+    "fuerza": 0.3876,
+    "aceleracion": 0.6316,
+    "temprano": 0.1662,
+    "multired": 0.2,
+    "frescura": 0.1579
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 3,
+   "piezas_7d": 3,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "youtube": 3
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 0.67
+     },
+     {
+      "valor": "contraste",
+      "pct": 0.33
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 0.67
+     },
+     {
+      "valor": "caso",
+      "pct": 0.33
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=zhxsZI4Rcwk",
+    "titulo": "Elon Musk’s Vision: Cars That Can Fly? #news #youthforce #youthgroup #automobile",
+    "cuenta": "The Growth Media",
+    "publicado": 1792138085.0,
+    "via": "api",
+    "metrica": 120838.0,
+    "gancho": "pregunta",
+    "formato": "noticia",
+    "score": 0.5998706896551724,
+    "ajuste": 0.4325,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1792138085.0,
+     "url": "https://www.youtube.com/watch?v=zhxsZI4Rcwk",
+     "titulo": "Elon Musk’s Vision: Cars That Can Fly? #news #youthforce #youthgroup #automobile",
+     "cuenta": "The Growth Media"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1792138085.0,
+      "url": "https://www.youtube.com/watch?v=zhxsZI4Rcwk",
+      "titulo": "Elon Musk’s Vision: Cars That Can Fly? #news #youthforce #youthgroup #automobile",
+      "cuenta": "The Growth Media"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 1.8,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=zhxsZI4Rcwk",
+     "titulo": "Elon Musk’s Vision: Cars That Can Fly? #news #youthforce #youthgroup #automobile",
+     "cuenta": "The Growth Media",
+     "publicado": 1792138085.0,
+     "via": "api",
+     "metrica": 120838.0,
+     "gancho": "pregunta",
+     "formato": "noticia",
+     "score": 0.5998706896551724,
+     "ajuste": 0.4325,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=Pn3m4Oxg8rA",
+     "titulo": "From online maps to flying cars Elon Musk’s biggest innovations",
+     "cuenta": "Game Time America",
+     "publicado": 1792261260.0,
+     "via": "api",
+     "metrica": 5.0,
+     "gancho": "contraste",
+     "formato": "noticia",
+     "score": 0.30120689655172417,
+     "ajuste": 0.43,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=e2kQDLTY1tI",
+     "titulo": "Elon Musk’s Flying Tesla: A Billion-Dollar Business? #elonmusk #tesla #teslaroadster",
+     "cuenta": "The Finance Teller",
+     "publicado": 1792174930.0,
+     "via": "api",
+     "metrica": 12.0,
+     "gancho": "pregunta",
+     "formato": "caso",
+     "score": 0.26170977011494256,
+     "ajuste": 0.44583333333333336,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": false,
+   "porque": "La visión de Musk sobre autos voladores atrae a la audiencia al conectar con su historial de innovación, usando preguntas y contrastes.",
+   "rank_anterior": null
+  },
+  {
+   "id": "evtol_startups_engineering",
+   "nombre": "Startups eVTOL e ingeniería",
+   "descripcion": "Engineering deep dives and design work from eVTOL startups like Eve, AMASYA, and Metroair.",
+   "score": 0.315,
+   "senales": {
+    "fuerza": 0.3516,
+    "aceleracion": 0.5263,
+    "temprano": 0.1385,
+    "multired": 0.2,
+    "frescura": 0.2895
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 3,
+   "piezas_7d": 2,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "youtube": 3
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "historia",
+      "pct": 0.33
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.33
+     }
+    ],
+    "formato": [
+     {
+      "valor": "caso",
+      "pct": 0.67
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.33
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=sNAK6ZH5c60",
+    "titulo": "Metroair Webinar Ep.1 Multicruiser Deep Dive",
+    "cuenta": "\bMetroAir 메트로에어",
+    "publicado": 1791428317.0,
+    "via": "api",
+    "metrica": 16.0,
+    "gancho": "promesa",
+    "formato": "opinion",
+    "score": 0.24045977011494252,
+    "ajuste": 0.4033333333333333,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791428317.0,
+     "url": "https://www.youtube.com/watch?v=sNAK6ZH5c60",
+     "titulo": "Metroair Webinar Ep.1 Multicruiser Deep Dive",
+     "cuenta": "\bMetroAir 메트로에어"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791428317.0,
+      "url": "https://www.youtube.com/watch?v=sNAK6ZH5c60",
+      "titulo": "Metroair Webinar Ep.1 Multicruiser Deep Dive",
+      "cuenta": "\bMetroAir 메트로에어"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 10.1,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=PSOeHOxCELg",
+     "titulo": "Eve Turns Six | An Engineer-to-Engineer Conversation About Our Journey",
+     "cuenta": "Eve Air Mobility",
+     "publicado": 1792102735.0,
+     "via": "api",
+     "metrica": 5186.0,
+     "gancho": "historia",
+     "formato": "caso",
+     "score": 0.4765948275862069,
+     "ajuste": 0.3325,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=aJc91CXQfkw",
+     "titulo": "AMASYA eVTOL | Future of Electric Aviation | CATIA 3DEXPERIENCE",
+     "cuenta": "OKCU ENGINEERING",
+     "publicado": 1792163046.0,
+     "via": "api",
+     "metrica": 37.0,
+     "gancho": "pregunta",
+     "formato": "caso",
+     "score": 0.33774425287356324,
+     "ajuste": 0.36083333333333334,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=sNAK6ZH5c60",
+     "titulo": "Metroair Webinar Ep.1 Multicruiser Deep Dive",
+     "cuenta": "\bMetroAir 메트로에어",
+     "publicado": 1791428317.0,
+     "via": "api",
+     "metrica": 16.0,
+     "gancho": "promesa",
+     "formato": "opinion",
+     "score": 0.24045977011494252,
+     "ajuste": 0.4033333333333333,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": false,
+   "porque": "El contenido de ingeniería de startups eVTOL destaca por historias y casos que humanizan la tecnología, aunque su alcance inicial sea limitado.",
+   "rank_anterior": null
+  },
+  {
+   "id": "tesla_vs_competitors",
+   "nombre": "Tesla vs rivales voladores",
+   "descripcion": "Comparisons between Tesla's flying vehicle concept and competing flying cars or eVTOLs such as Alef and Chinese models.",
+   "score": 0.2887,
+   "senales": {
+    "fuerza": 0.3099,
+    "aceleracion": 0.4737,
+    "temprano": 0.0748,
+    "multired": 0.4,
+    "frescura": 0.1053
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 4,
+   "piezas_7d": 4,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "youtube": 1,
+    "tiktok": 3
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 0.25
+     },
+     {
+      "valor": "contraste",
+      "pct": 0.25
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 0.75
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.25
+     }
+    ],
+    "menciona_lanzamiento": 0.75
+   },
+   "pieza_temprana": {
+    "red": "tiktok",
+    "url": "https://www.tiktok.com/@frontera.info/video/7697355124888423700",
+    "titulo": "️ ¡AUTO VOLADOR SOBREVUELA VEHÍCULOS TESLA Y ...",
+    "cuenta": "@frontera.info",
+    "publicado": 1792180148.0,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "polemica",
+    "formato": "noticia",
+    "score": 0.5458333333333333,
+    "ajuste": 0.5458333333333333,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "tiktok",
+     "fecha": 1792180148.0,
+     "url": "https://www.tiktok.com/@frontera.info/video/7697355124888423700",
+     "titulo": "️ ¡AUTO VOLADOR SOBREVUELA VEHÍCULOS TESLA Y ...",
+     "cuenta": "@frontera.info"
+    },
+    "ruta": [
+     {
+      "red": "tiktok",
+      "fecha": 1792180148.0,
+      "url": "https://www.tiktok.com/@frontera.info/video/7697355124888423700",
+      "titulo": "️ ¡AUTO VOLADOR SOBREVUELA VEHÍCULOS TESLA Y ...",
+      "cuenta": "@frontera.info"
+     },
+     {
+      "red": "youtube",
+      "fecha": 1792281126.0,
+      "url": "https://www.youtube.com/watch?v=VFNzVxJPDIs",
+      "titulo": "Tesla’s Flying Roadster vs China’s Flying Car — Which One Is Actually REAL?",
+      "cuenta": "Car World 360"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 1.4,
+    "horas_entre_redes": [
+     28.0
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@eluniversalmx/video/7697400604859174164",
+     "titulo": "Un auto volador pasó por encima de un Tesla Roadster. ...",
+     "cuenta": "@eluniversalmx",
+     "publicado": 1792190737.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "noticia",
+     "score": 0.6124999999999999,
+     "ajuste": 0.6124999999999999,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@frontera.info/video/7697355124888423700",
+     "titulo": "️ ¡AUTO VOLADOR SOBREVUELA VEHÍCULOS TESLA Y ...",
+     "cuenta": "@frontera.info",
+     "publicado": 1792180148.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "polemica",
+     "formato": "noticia",
+     "score": 0.5458333333333333,
+     "ajuste": 0.5458333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@razekben/video/7697701135980793106",
+     "titulo": "Tesla presumió su Roadster que salta… y Alef le pasó ...",
+     "cuenta": "@razekben",
+     "publicado": 1792260710.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "noticia",
+     "score": 0.47500000000000003,
+     "ajuste": 0.47500000000000003,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=VFNzVxJPDIs",
+     "titulo": "Tesla’s Flying Roadster vs China’s Flying Car — Which One Is Actually REAL?",
+     "cuenta": "Car World 360",
+     "publicado": 1792281126.0,
+     "via": "api",
+     "metrica": 11.0,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.3099425287356322,
+     "ajuste": 0.47333333333333333,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": false,
+   "porque": "Comparar a Tesla con rivales voladores genera debate y contraste, con noticias que capitalizan la rivalidad y el interés en lanzamientos.",
+   "rank_anterior": null
+  },
+  {
+   "id": "personal_single_seat_aircraft",
+   "nombre": "Aeronaves personales Jetson ONE",
+   "descripcion": "Personal single-seat flying vehicles like the Jetson ONE, their price, and flight duration.",
+   "score": 0.2877,
+   "senales": {
+    "fuerza": 0.3588,
+    "aceleracion": 0.2895,
+    "temprano": 0.0762,
+    "multired": 0.4,
+    "frescura": 0.2895
+   },
+   "aceleracion_estimada": true,
+   "etapa": "saturado",
+   "volumen": 3,
+   "piezas_7d": 3,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "youtube": 2,
+    "instagram": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "contraste",
+      "pct": 0.33
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.33
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.33
+   },
+   "pieza_temprana": {
+    "red": "instagram",
+    "url": "https://www.instagram.com/reel/DeZ-vHyge8-",
+    "titulo": "¡EL FUTURO YA SE PUEDE VOLAR! 😱🔥 El Jetson ONE, ...",
+    "cuenta": "",
+    "publicado": 1791833144.254,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "promesa",
+    "formato": "noticia",
+    "score": 0.61,
+    "ajuste": 0.61,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "instagram",
+     "fecha": 1791833144.254,
+     "url": "https://www.instagram.com/reel/DeZ-vHyge8-",
+     "titulo": "¡EL FUTURO YA SE PUEDE VOLAR! 😱🔥 El Jetson ONE, ...",
+     "cuenta": ""
+    },
+    "ruta": [
+     {
+      "red": "instagram",
+      "fecha": 1791833144.254,
+      "url": "https://www.instagram.com/reel/DeZ-vHyge8-",
+      "titulo": "¡EL FUTURO YA SE PUEDE VOLAR! 😱🔥 El Jetson ONE, ...",
+      "cuenta": ""
+     },
+     {
+      "red": "youtube",
+      "fecha": 1792198740.0,
+      "url": "https://www.youtube.com/watch?v=b5Rz25ZIUOA",
+      "titulo": "Real o IA, vehículo volador, Samantha nos muestra el futuro?✨🥰😃 #samanthaworldcrossover",
+      "cuenta": "Samantha World Crossover"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 5.4,
+    "horas_entre_redes": [
+     101.6
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/DeZ-vHyge8-",
+     "titulo": "¡EL FUTURO YA SE PUEDE VOLAR! 😱🔥 El Jetson ONE, ...",
+     "cuenta": "",
+     "publicado": 1791833144.254,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "noticia",
+     "score": 0.61,
+     "ajuste": 0.61,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=b5Rz25ZIUOA",
+     "titulo": "Real o IA, vehículo volador, Samantha nos muestra el futuro?✨🥰😃 #samanthaworldcrossover",
+     "cuenta": "Samantha World Crossover",
+     "publicado": 1792198740.0,
+     "via": "api",
+     "metrica": 540.0,
+     "gancho": "contraste",
+     "formato": "noticia",
+     "score": 0.4093390804597701,
+     "ajuste": 0.5083333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=Xl0Lej1fs1Y",
+     "titulo": "El AUTO VOLADOR de $148,000 que SOLO VUELA 20 MINUTOS (Jetson ONE)",
+     "cuenta": "Modo Imposible",
+     "publicado": 1792297137.0,
+     "via": "api",
+     "metrica": 0.0,
+     "gancho": "pregunta",
+     "formato": "noticia",
+     "score": 0.30833333333333335,
+     "ajuste": 0.6166666666666667,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": false,
+   "porque": "Las aeronaves personales como el Jetson ONE atraen por su espectacularidad visual, aunque el tema ya muestra signos de saturación.",
+   "rank_anterior": null
+  },
+  {
+   "id": "urban_air_mobility_airports",
+   "nombre": "Movilidad aérea urbana",
+   "descripcion": "Urban air mobility integration with airports, city planning, and public mobility forums.",
+   "score": 0.2279,
+   "senales": {
+    "fuerza": 0.2554,
+    "aceleracion": 0.1053,
+    "temprano": 0.0111,
+    "multired": 0.4,
+    "frescura": 0.5526
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 6,
+   "piezas_7d": 4,
+   "piezas_7d_previos": 2,
+   "redes": {
+    "youtube": 2,
+    "instagram": 4
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.33
+     },
+     {
+      "valor": "contraste",
+      "pct": 0.33
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 0.67
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.33
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "instagram",
+    "url": "https://www.instagram.com/p/DeFUr9-F2Dp",
+    "titulo": "la movilidad aérea está transformando las ciudades. Los ...",
+    "cuenta": "",
+    "publicado": 1791140009.685,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "contraste",
+    "formato": "noticia",
+    "score": 0.48583333333333334,
+    "ajuste": 0.48583333333333334,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "instagram",
+     "fecha": 1791140009.685,
+     "url": "https://www.instagram.com/p/DeFUr9-F2Dp",
+     "titulo": "la movilidad aérea está transformando las ciudades. Los ...",
+     "cuenta": ""
+    },
+    "ruta": [
+     {
+      "red": "instagram",
+      "fecha": 1791140009.685,
+      "url": "https://www.instagram.com/p/DeFUr9-F2Dp",
+      "titulo": "la movilidad aérea está transformando las ciudades. Los ...",
+      "cuenta": ""
+     },
+     {
+      "red": "youtube",
+      "fecha": 1791390796.0,
+      "url": "https://www.youtube.com/watch?v=QwciCTTKl64",
+      "titulo": "The eVTOL Revolution: A New Era in Transit",
+      "cuenta": "FutureFrame Docs"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.4,
+    "horas_entre_redes": [
+     69.7
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/Decb-DJh-dO",
+     "titulo": "Establecimiento Público Aeropuerto Olaya Herrera",
+     "cuenta": "",
+     "publicado": 1791915579.756,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "opinion",
+     "score": 0.6533333333333333,
+     "ajuste": 0.6533333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/p/Dejw4lbx9Yk",
+     "titulo": "¿Ves un dron sobrelando la ciudad? ¡No te asustes! ...",
+     "cuenta": "",
+     "publicado": 1792161426.064,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "noticia",
+     "score": 0.5525,
+     "ajuste": 0.5525,
+     "con_metricas": false
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/p/DeloZVbHHbV",
+     "titulo": "Este año no queremos quedarnos mirando desde fuera. ...",
+     "cuenta": "",
+     "publicado": 1792224084.623,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.5283333333333333,
+     "ajuste": 0.5283333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/p/DeFUr9-F2Dp",
+     "titulo": "la movilidad aérea está transformando las ciudades. Los ...",
+     "cuenta": "",
+     "publicado": 1791140009.685,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "noticia",
+     "score": 0.48583333333333334,
+     "ajuste": 0.48583333333333334,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=QwciCTTKl64",
+     "titulo": "The eVTOL Revolution: A New Era in Transit",
+     "cuenta": "FutureFrame Docs",
+     "publicado": 1791390796.0,
+     "via": "api",
+     "metrica": 28.0,
+     "gancho": "promesa",
+     "formato": "noticia",
+     "score": 0.29909482758620687,
+     "ajuste": 0.4775,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=PA2-GX1YIik",
+     "titulo": "[SK Aero 2026] V-CDM for Airport-Integrated UAM 2",
+     "cuenta": "International Scholar Alex",
+     "publicado": 1792162096.0,
+     "via": "api",
+     "metrica": 2.0,
+     "gancho": "dato",
+     "formato": "noticia",
+     "score": 0.21172413793103448,
+     "ajuste": 0.195,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": false,
+   "porque": "La movilidad aérea urbana se posiciona como una promesa de transformación de ciudades, con contenido informativo sobre infraestructura emergente.",
+   "rank_anterior": null
+  },
+  {
+   "id": "hybrid_long_range_evtol",
+   "nombre": "eVTOL híbrido largo alcance",
+   "descripcion": "Hybrid eVTOL designs aimed at extending flight range beyond battery-only aircraft.",
+   "score": 0.6367,
+   "senales": {
+    "fuerza": 0.5989,
+    "aceleracion": 0.8421,
+    "temprano": 0.7091,
+    "multired": 0.2,
+    "frescura": 0.8684
+   },
+   "aceleracion_estimada": true,
+   "etapa": "emergente",
+   "volumen": 1,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "youtube": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=eB9OKWmoPSw",
+    "titulo": "Finally, a hybrid eVTOL that can actually fly long distances is Here",
+    "cuenta": "Mostop",
+    "publicado": 1791644400.0,
+    "via": "api",
+    "metrica": 133272.0,
+    "gancho": "promesa",
+    "formato": "noticia",
+    "score": 0.5988936781609195,
+    "ajuste": 0.43916666666666665,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791644400.0,
+     "url": "https://www.youtube.com/watch?v=eB9OKWmoPSw",
+     "titulo": "Finally, a hybrid eVTOL that can actually fly long distances is Here",
+     "cuenta": "Mostop"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791644400.0,
+      "url": "https://www.youtube.com/watch?v=eB9OKWmoPSw",
+      "titulo": "Finally, a hybrid eVTOL that can actually fly long distances is Here",
+      "cuenta": "Mostop"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 7.6,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=eB9OKWmoPSw",
+     "titulo": "Finally, a hybrid eVTOL that can actually fly long distances is Here",
+     "cuenta": "Mostop",
+     "publicado": 1791644400.0,
+     "via": "api",
+     "metrica": 133272.0,
+     "gancho": "promesa",
+     "formato": "noticia",
+     "score": 0.5988936781609195,
+     "ajuste": 0.43916666666666665,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": true,
+   "porque": "Los eVTOL híbridos de largo alcance son un tema emergente que promete resolver limitaciones actuales, con formato de noticia.",
+   "rank_anterior": null
+  },
+  {
+   "id": "tesla_flying_roadster_skepticism",
+   "nombre": "Escepticismo Roadster volador",
+   "descripcion": "Critical takes questioning whether Tesla's flying Roadster is real, a stunt, or marketing hype.",
+   "score": 0.6181,
+   "senales": {
+    "fuerza": 0.6546,
+    "aceleracion": 1.0,
+    "temprano": 0.5,
+    "multired": 0.4,
+    "frescura": 0.2895
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 2,
+   "piezas_7d": 2,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "youtube": 1,
+    "tiktok": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 1.0
+   },
+   "pieza_temprana": {
+    "red": "tiktok",
+    "url": "https://www.tiktok.com/@eduardogoytiagr/video/7697402524051066133",
+    "titulo": "ya tenemos autos voladores? tesla roadster el nuevo ...",
+    "cuenta": "@eduardogoytiagr",
+    "publicado": 1792191184.0,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "pregunta",
+    "formato": "noticia",
+    "score": 0.5258333333333334,
+    "ajuste": 0.5258333333333334,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "tiktok",
+     "fecha": 1792191184.0,
+     "url": "https://www.tiktok.com/@eduardogoytiagr/video/7697402524051066133",
+     "titulo": "ya tenemos autos voladores? tesla roadster el nuevo ...",
+     "cuenta": "@eduardogoytiagr"
+    },
+    "ruta": [
+     {
+      "red": "tiktok",
+      "fecha": 1792191184.0,
+      "url": "https://www.tiktok.com/@eduardogoytiagr/video/7697402524051066133",
+      "titulo": "ya tenemos autos voladores? tesla roadster el nuevo ...",
+      "cuenta": "@eduardogoytiagr"
+     },
+     {
+      "red": "youtube",
+      "fecha": 1792228465.0,
+      "url": "https://www.youtube.com/watch?v=XZz0S-5xJvw",
+      "titulo": "Is Tesla’s new ‘flying car’ the future or just a stunt? | DW News",
+      "cuenta": "DW News"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 1.2,
+    "horas_entre_redes": [
+     10.4
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=XZz0S-5xJvw",
+     "titulo": "Is Tesla’s new ‘flying car’ the future or just a stunt? | DW News",
+     "cuenta": "DW News",
+     "publicado": 1792228465.0,
+     "via": "api",
+     "metrica": 102945.0,
+     "gancho": "pregunta",
+     "formato": "noticia",
+     "score": 0.6546264367816093,
+     "ajuste": 0.4816666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@eduardogoytiagr/video/7697402524051066133",
+     "titulo": "ya tenemos autos voladores? tesla roadster el nuevo ...",
+     "cuenta": "@eduardogoytiagr",
+     "publicado": 1792191184.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "noticia",
+     "score": 0.5258333333333334,
+     "ajuste": 0.5258333333333334,
+     "con_metricas": false
+    }
+   ],
+   "senal_temprana": true,
+   "porque": "El escepticismo sobre el Roadster volador refleja la demanda de análisis crítico, especialmente con un enfoque de pregunta y noticia.",
+   "rank_anterior": null
+  },
+  {
+   "id": "flying_car_stunts_challenges",
+   "nombre": "Retos y acrobacias voladoras",
+   "descripcion": "Stunt courses, obstacle challenges, and prize events involving flying car and drone vehicles.",
+   "score": 0.5918,
+   "senales": {
+    "fuerza": 0.5053,
+    "aceleracion": 0.8947,
+    "temprano": 0.7535,
+    "multired": 0.2,
+    "frescura": 0.5526
+   },
+   "aceleracion_estimada": true,
+   "etapa": "emergente",
+   "volumen": 1,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "youtube": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "historia",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "demo",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=KoxtTPjfldY",
+    "titulo": "I Built a Flying Car Obstacle Course and ‘Won’ $100K! SkySurfer Aircraft🚁 Flying Drone Vehicle",
+    "cuenta": "Hunter Kowald",
+    "publicado": 1792095329.0,
+    "via": "api",
+    "metrica": 106433.0,
+    "gancho": "historia",
+    "formato": "demo",
+    "score": 0.5053304597701149,
+    "ajuste": 0.41583333333333333,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1792095329.0,
+     "url": "https://www.youtube.com/watch?v=KoxtTPjfldY",
+     "titulo": "I Built a Flying Car Obstacle Course and ‘Won’ $100K! SkySurfer Aircraft🚁 Flying Drone Vehicle",
+     "cuenta": "Hunter Kowald"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1792095329.0,
+      "url": "https://www.youtube.com/watch?v=KoxtTPjfldY",
+      "titulo": "I Built a Flying Car Obstacle Course and ‘Won’ $100K! SkySurfer Aircraft🚁 Flying Drone Vehicle",
+      "cuenta": "Hunter Kowald"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 2.3,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=KoxtTPjfldY",
+     "titulo": "I Built a Flying Car Obstacle Course and ‘Won’ $100K! SkySurfer Aircraft🚁 Flying Drone Vehicle",
+     "cuenta": "Hunter Kowald",
+     "publicado": 1792095329.0,
+     "via": "api",
+     "metrica": 106433.0,
+     "gancho": "historia",
+     "formato": "demo",
+     "score": 0.5053304597701149,
+     "ajuste": 0.41583333333333333,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": true,
+   "porque": "Los retos y acrobacias con autos voladores funcionan por su valor de entretenimiento y demostración, aunque aún en etapa emergente.",
+   "rank_anterior": null
+  },
+  {
+   "id": "china_flying_cars",
+   "nombre": "Autos voladores de China",
+   "descripcion": "Chinese flying car development and how China is advancing ahead in the sector.",
+   "score": 0.5805,
+   "senales": {
+    "fuerza": 0.5623,
+    "aceleracion": 0.7895,
+    "temprano": 0.3947,
+    "multired": 0.4,
+    "frescura": 0.8684
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 2,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 2,
+   "redes": {
+    "youtube": 1,
+    "tiktok": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.5
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.5
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 0.5
+     },
+     {
+      "valor": "lista",
+      "pct": 0.5
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "tiktok",
+    "url": "https://www.tiktok.com/@lifestory01l/video/7694355662632996129",
+    "titulo": "China y sus autos voladores: ¿cómo nos adelanta al resto ...",
+    "cuenta": "@lifestory01l",
+    "publicado": 1791481781.0,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "pregunta",
+    "formato": "lista",
+    "score": 0.5075,
+    "ajuste": 0.5075,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "tiktok",
+     "fecha": 1791481781.0,
+     "url": "https://www.tiktok.com/@lifestory01l/video/7694355662632996129",
+     "titulo": "China y sus autos voladores: ¿cómo nos adelanta al resto ...",
+     "cuenta": "@lifestory01l"
+    },
+    "ruta": [
+     {
+      "red": "tiktok",
+      "fecha": 1791481781.0,
+      "url": "https://www.tiktok.com/@lifestory01l/video/7694355662632996129",
+      "titulo": "China y sus autos voladores: ¿cómo nos adelanta al resto ...",
+      "cuenta": "@lifestory01l"
+     },
+     {
+      "red": "youtube",
+      "fecha": 1791682875.0,
+      "url": "https://www.youtube.com/watch?v=kgn6wXr7nlA",
+      "titulo": "🚁 The Future Is Here! China's Amazing Flying Car Will Blow Your Mind! 🤯 # tranding # facts # yshort",
+      "cuenta": "facts sakil 6.0"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 9.4,
+    "horas_entre_redes": [
+     55.9
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=kgn6wXr7nlA",
+     "titulo": "🚁 The Future Is Here! China's Amazing Flying Car Will Blow Your Mind! 🤯 # tranding # facts # yshort",
+     "cuenta": "facts sakil 6.0",
+     "publicado": 1791682875.0,
+     "via": "api",
+     "metrica": 89918.0,
+     "gancho": "promesa",
+     "formato": "noticia",
+     "score": 0.5623132183908046,
+     "ajuste": 0.4608333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@lifestory01l/video/7694355662632996129",
+     "titulo": "China y sus autos voladores: ¿cómo nos adelanta al resto ...",
+     "cuenta": "@lifestory01l",
+     "publicado": 1791481781.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "lista",
+     "score": 0.5075,
+     "ajuste": 0.5075,
+     "con_metricas": false
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "joby_aviation_certification",
+   "nombre": "Joby certificación FAA",
+   "descripcion": "Joby Aviation's S4 aircraft, FAA conformity, TIA testing, and type certification progress.",
+   "score": 0.486,
+   "senales": {
+    "fuerza": 0.4456,
+    "aceleracion": 0.7105,
+    "temprano": 0.3553,
+    "multired": 0.2,
+    "frescura": 0.8684
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 2,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 2,
+   "redes": {
+    "youtube": 2
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.5
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.5
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 1.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=0x0FQRSTGJA",
+    "titulo": "Joby Aviation's First FAA-Conforming S4 Is Flying, Why That Unlocks Type Certification!",
+    "cuenta": "Let's Talk Joby",
+    "publicado": 1791581209.0,
+    "via": "api",
+    "metrica": 6508.0,
+    "gancho": "promesa",
+    "formato": "noticia",
+    "score": 0.481566091954023,
+    "ajuste": 0.39416666666666667,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791581209.0,
+     "url": "https://www.youtube.com/watch?v=0x0FQRSTGJA",
+     "titulo": "Joby Aviation's First FAA-Conforming S4 Is Flying, Why That Unlocks Type Certification!",
+     "cuenta": "Let's Talk Joby"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791581209.0,
+      "url": "https://www.youtube.com/watch?v=0x0FQRSTGJA",
+      "titulo": "Joby Aviation's First FAA-Conforming S4 Is Flying, Why That Unlocks Type Certification!",
+      "cuenta": "Let's Talk Joby"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 8.3,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=0x0FQRSTGJA",
+     "titulo": "Joby Aviation's First FAA-Conforming S4 Is Flying, Why That Unlocks Type Certification!",
+     "cuenta": "Let's Talk Joby",
+     "publicado": 1791581209.0,
+     "via": "api",
+     "metrica": 6508.0,
+     "gancho": "promesa",
+     "formato": "noticia",
+     "score": 0.481566091954023,
+     "ajuste": 0.39416666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=rPRinRNj1uE",
+     "titulo": "Joby Aviation's Just Unlocked TIA Testing, Now What's Next! #evtol #jobyaviaition #faa",
+     "cuenta": "Let's Talk Joby",
+     "publicado": 1791581270.0,
+     "via": "api",
+     "metrica": 2215.0,
+     "gancho": "pregunta",
+     "formato": "noticia",
+     "score": 0.40972701149425284,
+     "ajuste": 0.4358333333333333,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "archer_and_evtol_air_taxis",
+   "nombre": "Archer y air taxis eVTOL",
+   "descripcion": "Archer, Joby, and other operators developing eVTOL air taxi services and weekly industry updates.",
+   "score": 0.4261,
+   "senales": {
+    "fuerza": 0.4777,
+    "aceleracion": 0.5789,
+    "temprano": 0.2895,
+    "multired": 0.2,
+    "frescura": 0.5526
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 2,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "youtube": 2
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.5
+     },
+     {
+      "valor": "dato",
+      "pct": 0.5
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 1.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=Jbg6qkc3hRA",
+    "titulo": "JOBY. ARCHER. HOVR. BETA. VERTICAL.",
+    "cuenta": "The Hustle Brothers",
+    "publicado": 1791212937.0,
+    "via": "api",
+    "metrica": 601.0,
+    "gancho": "dato",
+    "formato": "noticia",
+    "score": 0.4378448275862069,
+    "ajuste": 0.505,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791212937.0,
+     "url": "https://www.youtube.com/watch?v=Jbg6qkc3hRA",
+     "titulo": "JOBY. ARCHER. HOVR. BETA. VERTICAL.",
+     "cuenta": "The Hustle Brothers"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791212937.0,
+      "url": "https://www.youtube.com/watch?v=Jbg6qkc3hRA",
+      "titulo": "JOBY. ARCHER. HOVR. BETA. VERTICAL.",
+      "cuenta": "The Hustle Brothers"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 12.6,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=lPzRPCt7h04",
+     "titulo": "Time to speak about Archer and Joby's Air Taxi | eVTOL Weekly",
+     "cuenta": "The Hustle Brothers",
+     "publicado": 1791818917.0,
+     "via": "api",
+     "metrica": 1608.0,
+     "gancho": "promesa",
+     "formato": "noticia",
+     "score": 0.517514367816092,
+     "ajuste": 0.5091666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=Jbg6qkc3hRA",
+     "titulo": "JOBY. ARCHER. HOVR. BETA. VERTICAL.",
+     "cuenta": "The Hustle Brothers",
+     "publicado": 1791212937.0,
+     "via": "api",
+     "metrica": 601.0,
+     "gancho": "dato",
+     "formato": "noticia",
+     "score": 0.4378448275862069,
+     "ajuste": 0.505,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "extreme_flying_machines",
+   "nombre": "Máquinas voladoras extremas",
+   "descripcion": "Spectacular or bizarre flying machines and experimental aircraft built for viral impact.",
+   "score": 0.3966,
+   "senales": {
+    "fuerza": 0.356,
+    "aceleracion": 0.4211,
+    "temprano": 0.3546,
+    "multired": 0.2,
+    "frescura": 0.8684
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 1,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "youtube": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=U0Dbff5rnjc",
+    "titulo": "The Craziest Flying Machines Ever Built!",
+    "cuenta": "Type Sphere",
+    "publicado": 1791542204.0,
+    "via": "api",
+    "metrica": 368.0,
+    "gancho": "pregunta",
+    "formato": "lista",
+    "score": 0.35597701149425287,
+    "ajuste": 0.45333333333333337,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791542204.0,
+     "url": "https://www.youtube.com/watch?v=U0Dbff5rnjc",
+     "titulo": "The Craziest Flying Machines Ever Built!",
+     "cuenta": "Type Sphere"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791542204.0,
+      "url": "https://www.youtube.com/watch?v=U0Dbff5rnjc",
+      "titulo": "The Craziest Flying Machines Ever Built!",
+      "cuenta": "Type Sphere"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 8.7,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=U0Dbff5rnjc",
+     "titulo": "The Craziest Flying Machines Ever Built!",
+     "cuenta": "Type Sphere",
+     "publicado": 1791542204.0,
+     "via": "api",
+     "metrica": 368.0,
+     "gancho": "pregunta",
+     "formato": "lista",
+     "score": 0.35597701149425287,
+     "ajuste": 0.45333333333333337,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "brazil_eve_evtol",
+   "nombre": "Eve eVTOL en Brasil",
+   "descripcion": "Eve's eVTOL prototype transition tests and progress in Brazil.",
+   "score": 0.3697,
+   "senales": {
+    "fuerza": 0.4248,
+    "aceleracion": 0.3684,
+    "temprano": 0.3102,
+    "multired": 0.2,
+    "frescura": 0.5526
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 1,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "youtube": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "dato",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 1.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=DJcPoTh4x60",
+    "titulo": "Brasil ya probó el eVTOL de Eve en transición — el prototipo acaba de cambiar de fase",
+    "cuenta": "Iberoamérica Construye",
+    "publicado": 1791697788.0,
+    "via": "api",
+    "metrica": 234.0,
+    "gancho": "dato",
+    "formato": "noticia",
+    "score": 0.42479885057471267,
+    "ajuste": 0.7116666666666667,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791697788.0,
+     "url": "https://www.youtube.com/watch?v=DJcPoTh4x60",
+     "titulo": "Brasil ya probó el eVTOL de Eve en transición — el prototipo acaba de cambiar de fase",
+     "cuenta": "Iberoamérica Construye"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791697788.0,
+      "url": "https://www.youtube.com/watch?v=DJcPoTh4x60",
+      "titulo": "Brasil ya probó el eVTOL de Eve en transición — el prototipo acaba de cambiar de fase",
+      "cuenta": "Iberoamérica Construye"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 6.9,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=DJcPoTh4x60",
+     "titulo": "Brasil ya probó el eVTOL de Eve en transición — el prototipo acaba de cambiar de fase",
+     "cuenta": "Iberoamérica Construye",
+     "publicado": 1791697788.0,
+     "via": "api",
+     "metrica": 234.0,
+     "gancho": "dato",
+     "formato": "noticia",
+     "score": 0.42479885057471267,
+     "ajuste": 0.7116666666666667,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "historical_flying_car_attempts",
+   "nombre": "Historia del auto volador",
+   "descripcion": "Historical attempts to build flying cars, including prototypes from the 1940s.",
+   "score": 0.2953,
+   "senales": {
+    "fuerza": 0.3436,
+    "aceleracion": 0.1579,
+    "temprano": 0.133,
+    "multired": 0.2,
+    "frescura": 0.8684
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 1,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "youtube": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "contraste",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "caso",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=VmPUwJYeiKc",
+    "titulo": "The Man Who Tried to Build a Flying Car in 1940! 🚗✈️",
+    "cuenta": "PASTHUB HISTORY",
+    "publicado": 1791216032.0,
+    "via": "api",
+    "metrica": 120.0,
+    "gancho": "contraste",
+    "formato": "caso",
+    "score": 0.34360632183908046,
+    "ajuste": 0.4458333333333333,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791216032.0,
+     "url": "https://www.youtube.com/watch?v=VmPUwJYeiKc",
+     "titulo": "The Man Who Tried to Build a Flying Car in 1940! 🚗✈️",
+     "cuenta": "PASTHUB HISTORY"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791216032.0,
+      "url": "https://www.youtube.com/watch?v=VmPUwJYeiKc",
+      "titulo": "The Man Who Tried to Build a Flying Car in 1940! 🚗✈️",
+      "cuenta": "PASTHUB HISTORY"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 12.5,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=VmPUwJYeiKc",
+     "titulo": "The Man Who Tried to Build a Flying Car in 1940! 🚗✈️",
+     "cuenta": "PASTHUB HISTORY",
+     "publicado": 1791216032.0,
+     "via": "api",
+     "metrica": 120.0,
+     "gancho": "contraste",
+     "formato": "caso",
+     "score": 0.34360632183908046,
+     "ajuste": 0.4458333333333333,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "horizon_aircraft_hovr",
+   "nombre": "Horizon Aircraft Cavorite X7",
+   "descripcion": "Horizon Aircraft's Cavorite X7 hybrid eVTOL and CEO interviews comparing it to helicopters.",
+   "score": 0.2885,
+   "senales": {
+    "fuerza": 0.3326,
+    "aceleracion": 0.2895,
+    "temprano": 0.1447,
+    "multired": 0.2,
+    "frescura": 0.5526
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 2,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "youtube": 2
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "contraste",
+      "pct": 0.5
+     },
+     {
+      "valor": "promesa",
+      "pct": 0.5
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 0.5
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.5
+     }
+    ],
+    "menciona_lanzamiento": 0.5
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=lQtOGZRHSQY",
+    "titulo": "HOVR CEO REVEALS ALL! | PART 4",
+    "cuenta": "The Hustle Brothers",
+    "publicado": 1791241131.0,
+    "via": "api",
+    "metrica": 78.0,
+    "gancho": "promesa",
+    "formato": "opinion",
+    "score": 0.23060344827586207,
+    "ajuste": 0.375,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791241131.0,
+     "url": "https://www.youtube.com/watch?v=lQtOGZRHSQY",
+     "titulo": "HOVR CEO REVEALS ALL! | PART 4",
+     "cuenta": "The Hustle Brothers"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791241131.0,
+      "url": "https://www.youtube.com/watch?v=lQtOGZRHSQY",
+      "titulo": "HOVR CEO REVEALS ALL! | PART 4",
+      "cuenta": "The Hustle Brothers"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 12.2,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=CVfamtQlK8s",
+     "titulo": "Horizon Aircraft (HOVR) CEO Brandon Robinson on how the Cavorite X7 compares with helicopters",
+     "cuenta": "RedChip Companies",
+     "publicado": 1791904294.0,
+     "via": "api",
+     "metrica": 686.0,
+     "gancho": "contraste",
+     "formato": "noticia",
+     "score": 0.4345833333333333,
+     "ajuste": 0.4941666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=lQtOGZRHSQY",
+     "titulo": "HOVR CEO REVEALS ALL! | PART 4",
+     "cuenta": "The Hustle Brothers",
+     "publicado": 1791241131.0,
+     "via": "api",
+     "metrica": 78.0,
+     "gancho": "promesa",
+     "formato": "opinion",
+     "score": 0.23060344827586207,
+     "ajuste": 0.375,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "africa_air_taxi_readiness",
+   "nombre": "Air taxis en África",
+   "descripcion": "Readiness and debate around self-flying air taxis and flying transport in African countries like Rwanda.",
+   "score": 0.2852,
+   "senales": {
+    "fuerza": 0.3497,
+    "aceleracion": 0.2105,
+    "temprano": 0.1773,
+    "multired": 0.2,
+    "frescura": 0.5526
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 1,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "youtube": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "contraste",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 1.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=ncEVKUNllcs",
+    "titulo": "Tesla Flying Car vs Rwanda’s Self-Flying Air Taxi: Is Africa Ready for Flying Transport?",
+    "cuenta": "DexyTech",
+    "publicado": 1792169322.0,
+    "via": "api",
+    "metrica": 27.0,
+    "gancho": "contraste",
+    "formato": "noticia",
+    "score": 0.349683908045977,
+    "ajuste": 0.3933333333333333,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1792169322.0,
+     "url": "https://www.youtube.com/watch?v=ncEVKUNllcs",
+     "titulo": "Tesla Flying Car vs Rwanda’s Self-Flying Air Taxi: Is Africa Ready for Flying Transport?",
+     "cuenta": "DexyTech"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1792169322.0,
+      "url": "https://www.youtube.com/watch?v=ncEVKUNllcs",
+      "titulo": "Tesla Flying Car vs Rwanda’s Self-Flying Air Taxi: Is Africa Ready for Flying Transport?",
+      "cuenta": "DexyTech"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 1.5,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=ncEVKUNllcs",
+     "titulo": "Tesla Flying Car vs Rwanda’s Self-Flying Air Taxi: Is Africa Ready for Flying Transport?",
+     "cuenta": "DexyTech",
+     "publicado": 1792169322.0,
+     "via": "api",
+     "metrica": 27.0,
+     "gancho": "contraste",
+     "formato": "noticia",
+     "score": 0.349683908045977,
+     "ajuste": 0.3933333333333333,
+     "con_metricas": true
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "spain_japan_innovations",
+   "nombre": "Innovaciones España y Japón",
+   "descripcion": "New flying vehicle inventions emerging from Spain and Japan.",
+   "score": 0.1265,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.0263,
+    "temprano": 0.0222,
+    "multired": 0.2,
+    "frescura": 0.8684
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 1,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "linkedin": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "noticia",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "linkedin",
+    "url": "https://www.linkedin.com/posts/activity-7513518661018681344-eRlv",
+    "titulo": "Centro de Innovación para la Logística y el Transporte ...",
+    "cuenta": "activity-7513518661018681344-eRlv",
+    "publicado": 1791362443.213,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "promesa",
+    "formato": "noticia",
+    "score": 0.6174999999999999,
+    "ajuste": 0.6174999999999999,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "linkedin",
+     "fecha": 1791362443.213,
+     "url": "https://www.linkedin.com/posts/activity-7513518661018681344-eRlv",
+     "titulo": "Centro de Innovación para la Logística y el Transporte ...",
+     "cuenta": "activity-7513518661018681344-eRlv"
+    },
+    "ruta": [
+     {
+      "red": "linkedin",
+      "fecha": 1791362443.213,
+      "url": "https://www.linkedin.com/posts/activity-7513518661018681344-eRlv",
+      "titulo": "Centro de Innovación para la Logística y el Transporte ...",
+      "cuenta": "activity-7513518661018681344-eRlv"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 10.8,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "linkedin",
+     "url": "https://www.linkedin.com/posts/activity-7513518661018681344-eRlv",
+     "titulo": "Centro de Innovación para la Logística y el Transporte ...",
+     "cuenta": "activity-7513518661018681344-eRlv",
+     "publicado": 1791362443.213,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "noticia",
+     "score": 0.6174999999999999,
+     "ajuste": 0.6174999999999999,
+     "con_metricas": false
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": null
+  },
+  {
+   "id": "viral_flying_car_humor",
+   "nombre": "Humor y virales voladores",
+   "descripcion": "Meme, comedy, and viral social reactions to flying cars and the idea of them becoming reality.",
+   "score": 0.0668,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.0263,
+    "temprano": 0.0132,
+    "multired": 0.2,
+    "frescura": 0.2895
+   },
+   "aceleracion_estimada": true,
+   "etapa": "saturado",
+   "volumen": 2,
+   "piezas_7d": 2,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "tiktok": 2
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "contraste",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "tiktok",
+    "url": "https://www.tiktok.com/@hipertextualcom/video/7697153143422995744",
+    "titulo": "\"En el futuro tendremos coches voladores\". Bueno ...",
+    "cuenta": "@hipertextualcom",
+    "publicado": 1792133120.0,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "contraste",
+    "formato": "opinion",
+    "score": 0.5549999999999999,
+    "ajuste": 0.5549999999999999,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "tiktok",
+     "fecha": 1792133120.0,
+     "url": "https://www.tiktok.com/@hipertextualcom/video/7697153143422995744",
+     "titulo": "\"En el futuro tendremos coches voladores\". Bueno ...",
+     "cuenta": "@hipertextualcom"
+    },
+    "ruta": [
+     {
+      "red": "tiktok",
+      "fecha": 1792133120.0,
+      "url": "https://www.tiktok.com/@hipertextualcom/video/7697153143422995744",
+      "titulo": "\"En el futuro tendremos coches voladores\". Bueno ...",
+      "cuenta": "@hipertextualcom"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 1.9,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@hipertextualcom/video/7697153143422995744",
+     "titulo": "\"En el futuro tendremos coches voladores\". Bueno ...",
+     "cuenta": "@hipertextualcom",
+     "publicado": 1792133120.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.5549999999999999,
+     "ajuste": 0.5549999999999999,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@nicosoyyo_/video/7697427020212456734",
+     "titulo": "Autos voladores decían... y lo cumplieron 😎👌🏻 #Tesla # ...",
+     "cuenta": "@nicosoyyo_",
+     "publicado": 1792196887.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.505,
+     "ajuste": 0.505,
+     "con_metricas": false
+    }
+   ],
+   "senal_temprana": true,
+   "porque": null,
+   "rank_anterior": null
+  }
+ ],
+ "ideas": [
+  {
+   "formato": "carrusel de Instagram",
+   "titulo": "5 Datos Clave sobre el Tesla Roadster Volador",
+   "gancho": "¿Realidad o hype? Esto es lo que realmente sabemos del Roadster volador de Tesla.",
+   "desarrollo": "Primera diapositiva con un titular impactante y una imagen del Roadster. Luego, 4-5 diapositivas con datos: 1) El Roadster de SpaceX con propulsores, 2) El anuncio de Musk y sus declaraciones, 3) Comparación con eVTOLs existentes, 4) Desafíos técnicos y regulatorios, 5) Fecha estimada de lanzamiento. Terminar con una pregunta para generar debate en comentarios.",
+   "jev": {
+    "ajuste_audiencia": {
+     "score": 0.983,
+     "confianza": 0.95
+    },
+    "fuerza_gancho": {
+     "score": 0.76,
+     "confianza": 0.89
+    }
+   }
+  },
+  {
+   "formato": "reel/TikTok",
+   "titulo": "¿Volará de verdad el Tesla Roadster? Análisis en 30 segundos",
+   "gancho": "¿Elon Musk enloqueció o esto es el futuro? Vamos a verlo.",
+   "desarrollo": "Video de 30 segundos con ritmo rápido: clips del Roadster y el anuncio, intercalados con texto en pantalla. Voz en off o subtítulos que plantean la promesa de vuelo y luego muestran los obstáculos. Terminar con una pregunta al espectador para fomentar comentarios. Usar música de tendencia.",
+   "jev": {
+    "ajuste_audiencia": {
+     "score": 0.88,
+     "confianza": 0.62
+    },
+    "fuerza_gancho": {
+     "score": 0.757,
+     "confianza": 0.83
+    }
+   }
+  },
+  {
+   "formato": "post de LinkedIn",
+   "titulo": "El Roadster volador de Tesla y el futuro de la movilidad urbana",
+   "gancho": "¿Qué significa realmente el anuncio del Roadster volador para la industria de la movilidad aérea?",
+   "desarrollo": "Post de texto con análisis profesional: contextualizar el anuncio dentro de la visión de Musk y de la industria eVTOL. Discutir implicaciones para startups, infraestructura y regulación. Incluir una pregunta para la comunidad profesional. Etiquetar a figuras relevantes.",
+   "jev": {
+    "ajuste_audiencia": {
+     "score": 0.985,
+     "confianza": 0.96
+    },
+    "fuerza_gancho": {
+     "score": 0.65,
+     "confianza": 0.64
+    }
+   }
+  }
+ ],
+ "predicciones": [
+  {
+   "nombre": "eVTOL híbrido de largo alcance",
+   "tesis": "Los vehículos eVTOL híbridos que combinan motores eléctricos y combustión para superar las limitaciones de batería están emergiendo con una aceleración sobresaliente y muy poca competencia de contenido. Dado que el único ejemplo ya genera gran interés, es probable que en las próximas semanas aparezcan más modelos y comparativas técnicas.",
+   "basado_en": [
+    "hybrid_long_range_evtol"
+   ],
+   "senal_a_vigilar": "Nuevos anuncios de startups o pruebas documentadas de eVTOLs híbridos con autonomías superiores a los eléctricos puros.",
+   "ventana": "1-2 semanas",
+   "que_publicar_hoy": "Un video explicativo de 1 minuto sobre por qué los eVTOL híbridos podrían ser la solución al problema de la autonomía, usando renders del concepto ya existente y comparándolo con eléctricos puros.",
+   "respaldo_datos": 0.789,
+   "jev": {
+    "interes_audiencia": 0.88,
+    "novedad": 0.755,
+    "concreta": 0.7
+   },
+   "fuerza": 0.801
+  },
+  {
+   "nombre": "Retos y acrobacias con autos voladores",
+   "tesis": "El contenido de retos extremos y acrobacias con vehículos voladores (como carreras de obstáculos) es un formato viral en ciernes, con una aceleración notable y cero saturación. Su naturaleza espectacular encaja perfectamente con el público tech que busca emoción y demostraciones prácticas.",
+   "basado_en": [
+    "flying_car_stunts_challenges"
+   ],
+   "senal_a_vigilar": "Más creadores publicando competencias o pruebas de destreza con drones o eVTOLs de juguete.",
+   "ventana": "1-3 semanas",
+   "que_publicar_hoy": "Un video corto estilo 'Top 3 acrobacias imposibles con autos voladores' recopilando los momentos más impactantes ya publicados y animando a la audiencia a proponer el siguiente reto.",
+   "respaldo_datos": 0.838,
+   "jev": {
+    "interes_audiencia": 0.565,
+    "novedad": 0.725,
+    "concreta": 0.73
+   },
+   "fuerza": 0.723
+  },
+  {
+   "nombre": "China acelera en autos voladores",
+   "tesis": "China está apareciendo en conversaciones sobre autos voladores con una aceleración superior a la media y en múltiples redes, pero aún con poco volumen. Es probable que en las próximas semanas veamos más cobertura de prototipos chinos y su impacto en la competencia global.",
+   "basado_en": [
+    "china_flying_cars"
+   ],
+   "senal_a_vigilar": "Noticias sobre nuevos vuelos de prueba o acuerdos de producción en China.",
+   "ventana": "1-3 semanas",
+   "que_publicar_hoy": "Una infografía comparativa: 'China vs EE.UU. en autos voladores: ¿quién va ganando?' destacando los modelos y avances recientes.",
+   "respaldo_datos": 0.632,
+   "jev": {
+    "interes_audiencia": 0.83,
+    "novedad": 0.723,
+    "concreta": 0.66
+   },
+   "fuerza": 0.712
+  },
+  {
+   "nombre": "Certificación FAA de Joby Aviation",
+   "tesis": "Los pasos de Joby Aviation hacia la certificación de tipo ante la FAA son un tema técnico que está pasando desapercibido, pero su aceleración es fuerte y su relevancia es enorme para el futuro de los air taxis. A medida que avance el proceso, será noticia inevitable.",
+   "basado_en": [
+    "joby_aviation_certification"
+   ],
+   "senal_a_vigilar": "Anuncio oficial de la FAA sobre el inicio de las pruebas de certificación de tipo para Joby.",
+   "ventana": "1-3 semanas",
+   "que_publicar_hoy": "Un artículo explicando en términos sencillos qué es la certificación de tipo y por qué el hito de Joby importa para que los eVTOLs vuelen comercialmente.",
+   "respaldo_datos": 0.568,
+   "jev": {
+    "interes_audiencia": 0.912,
+    "novedad": 0.552,
+    "concreta": 0.83
+   },
+   "fuerza": 0.694
+  },
+  {
+   "nombre": "Escepticismo ante el Tesla Roadster volador",
+   "tesis": "El tema del Roadster volador de Tesla ha explotado en redes mainstream, pero la reacción escéptica está creciendo aún más rápido y apenas comienza. Con la máxima aceleración posible y pocos contenidos, este ángulo crítico puede volverse dominante cuando el entusiasmo inicial pierda fuerza.",
+   "basado_en": [
+    "tesla_flying_roadster_skepticism",
+    "tesla_flying_roadster_reveal"
+   ],
+   "senal_a_vigilar": "Aparición de análisis técnicos que cuestionen la viabilidad del diseño, o cobertura negativa de medios especializados.",
+   "ventana": "1-2 semanas",
+   "que_publicar_hoy": "Un hilo en redes sociales titulado '5 razones por las que el Roadster volador de Tesla podría ser solo humo', citando datos de ingeniería y reacciones de expertos.",
+   "respaldo_datos": 0.684,
+   "jev": {
+    "interes_audiencia": 0.787,
+    "novedad": 0.25,
+    "concreta": 0.68
+   },
+   "fuerza": 0.628
+  }
+ ],
+ "cobertura": {
+  "youtube": {
+   "recolectadas": 69,
+   "en_ranking": 59,
+   "con_metricas": 59,
+   "vias": [
+    "api"
+   ]
+  },
+  "reddit": {
+   "recolectadas": 80,
+   "en_ranking": 0,
+   "con_metricas": 0,
+   "vias": [
+    "rss"
+   ]
+  },
+  "instagram": {
+   "recolectadas": 13,
+   "en_ranking": 6,
+   "con_metricas": 0,
+   "vias": [
+    "busqueda_web"
+   ]
+  },
+  "linkedin": {
+   "recolectadas": 1,
+   "en_ranking": 1,
+   "con_metricas": 0,
+   "vias": [
+    "busqueda_web"
+   ]
+  },
+  "tiktok": {
+   "recolectadas": 21,
+   "en_ranking": 17,
+   "con_metricas": 0,
+   "vias": [
+    "busqueda_web"
+   ]
+  },
+  "hn": {
+   "recolectadas": 2,
+   "en_ranking": 0,
+   "con_metricas": 0,
+   "vias": [
+    "api"
+   ]
+  }
+ },
+ "conteos": {
+  "recolectadas": 186,
+  "clasificadas": 186,
+  "en_ranking": 83,
+  "fuera_de_sector": 86,
+  "baja_confianza": 13,
+  "sin_tema": 4
+ },
+ "costo": {
+  "total_usd": 0.0359,
+  "jev_usd": 0.01586,
+  "llm_usd": 0.0201,
+  "proveedor_llm": "DeepSeek",
+  "modelos_sin_precio": [],
+  "pasos": {
+   "llm_temas": {
+    "llamadas": 1,
+    "tokens_entrada": 4125,
+    "tokens_salida": 1002,
+    "busquedas_web": 0,
+    "usd": 0.00244
+   },
+   "jev_piezas": {
+    "llamadas": 186,
+    "tokens_entrada": 373134,
+    "tokens_salida": 97721,
+    "busquedas_web": 0,
+    "usd": 0.01567
+   },
+   "llm_redaccion": {
+    "llamadas": 1,
+    "tokens_entrada": 3074,
+    "tokens_salida": 1068,
+    "busquedas_web": 0,
+    "usd": 0.00829
+   },
+   "jev_ideas": {
+    "llamadas": 3,
+    "tokens_entrada": 1663,
+    "tokens_salida": 120,
+    "busquedas_web": 0,
+    "usd": 7e-05
+   },
+   "llm_predicciones": {
+    "llamadas": 1,
+    "tokens_entrada": 3883,
+    "tokens_salida": 1063,
+    "busquedas_web": 0,
+    "usd": 0.00934
+   },
+   "jev_predicciones": {
+    "llamadas": 5,
+    "tokens_entrada": 2839,
+    "tokens_salida": 275,
+    "busquedas_web": 0,
+    "usd": 0.00012
+   }
+  },
+  "por_tema_usd": 0.00359,
+  "por_pieza_usd": 0.000193,
+  "historial": [
+   {
+    "generado": "2026-10-18T04:25:15+00:00",
+    "usd": 0.0359,
+    "piezas": 186
+   }
+  ]
+ },
+ "temas_corrida": [
+  {
+   "id": "tesla_flying_roadster_reveal",
+   "nombre": "Tesla Roadster volador",
+   "descripcion": "News and reactions to Tesla's Roadster flying car demonstration and Elon Musk's claims."
+  },
+  {
+   "id": "tesla_flying_roadster_skepticism",
+   "nombre": "Escepticismo Roadster volador",
+   "descripcion": "Critical takes questioning whether Tesla's flying Roadster is real, a stunt, or marketing hype."
+  },
+  {
+   "id": "tesla_vs_competitors",
+   "nombre": "Tesla vs rivales voladores",
+   "descripcion": "Comparisons between Tesla's flying vehicle concept and competing flying cars or eVTOLs such as Alef and Chinese models."
+  },
+  {
+   "id": "elon_musk_flight_vision",
+   "nombre": "Visión de Musk aviación",
+   "descripcion": "Elon Musk's broader vision and statements about flying cars and the future of transportation."
+  },
+  {
+   "id": "joby_aviation_certification",
+   "nombre": "Joby certificación FAA",
+   "descripcion": "Joby Aviation's S4 aircraft, FAA conformity, TIA testing, and type certification progress."
+  },
+  {
+   "id": "archer_and_evtol_air_taxis",
+   "nombre": "Archer y air taxis eVTOL",
+   "descripcion": "Archer, Joby, and other operators developing eVTOL air taxi services and weekly industry updates."
+  },
+  {
+   "id": "brazil_eve_evtol",
+   "nombre": "Eve eVTOL en Brasil",
+   "descripcion": "Eve's eVTOL prototype transition tests and progress in Brazil."
+  },
+  {
+   "id": "horizon_aircraft_hovr",
+   "nombre": "Horizon Aircraft Cavorite X7",
+   "descripcion": "Horizon Aircraft's Cavorite X7 hybrid eVTOL and CEO interviews comparing it to helicopters."
+  },
+  {
+   "id": "hybrid_long_range_evtol",
+   "nombre": "eVTOL híbrido largo alcance",
+   "descripcion": "Hybrid eVTOL designs aimed at extending flight range beyond battery-only aircraft."
+  },
+  {
+   "id": "urban_air_mobility_airports",
+   "nombre": "Movilidad aérea urbana",
+   "descripcion": "Urban air mobility integration with airports, city planning, and public mobility forums."
+  },
+  {
+   "id": "personal_single_seat_aircraft",
+   "nombre": "Aeronaves personales Jetson ONE",
+   "descripcion": "Personal single-seat flying vehicles like the Jetson ONE, their price, and flight duration."
+  },
+  {
+   "id": "flying_vehicle_concept_roundups",
+   "nombre": "Listas de vehículos voladores",
+   "descripcion": "Roundup listicles ranking flying cars and personal aircraft currently available or coming soon."
+  },
+  {
+   "id": "extreme_flying_machines",
+   "nombre": "Máquinas voladoras extremas",
+   "descripcion": "Spectacular or bizarre flying machines and experimental aircraft built for viral impact."
+  },
+  {
+   "id": "china_flying_cars",
+   "nombre": "Autos voladores de China",
+   "descripcion": "Chinese flying car development and how China is advancing ahead in the sector."
+  },
+  {
+   "id": "spain_japan_innovations",
+   "nombre": "Innovaciones España y Japón",
+   "descripcion": "New flying vehicle inventions emerging from Spain and Japan."
+  },
+  {
+   "id": "historical_flying_car_attempts",
+   "nombre": "Historia del auto volador",
+   "descripcion": "Historical attempts to build flying cars, including prototypes from the 1940s."
+  },
+  {
+   "id": "africa_air_taxi_readiness",
+   "nombre": "Air taxis en África",
+   "descripcion": "Readiness and debate around self-flying air taxis and flying transport in African countries like Rwanda."
+  },
+  {
+   "id": "flying_car_stunts_challenges",
+   "nombre": "Retos y acrobacias voladoras",
+   "descripcion": "Stunt courses, obstacle challenges, and prize events involving flying car and drone vehicles."
+  },
+  {
+   "id": "evtol_startups_engineering",
+   "nombre": "Startups eVTOL e ingeniería",
+   "descripcion": "Engineering deep dives and design work from eVTOL startups like Eve, AMASYA, and Metroair."
+  },
+  {
+   "id": "viral_flying_car_humor",
+   "nombre": "Humor y virales voladores",
+   "descripcion": "Meme, comedy, and viral social reactions to flying cars and the idea of them becoming reality."
+  }
+ ]
+}
