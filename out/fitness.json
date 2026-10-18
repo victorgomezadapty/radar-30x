@@ -1,0 +1,3519 @@
+{
+ "sector": "fitness",
+ "nombre": "Fitness y entrenamiento en Latinoamérica",
+ "redes_elegidas": [
+  "youtube",
+  "reddit",
+  "instagram",
+  "linkedin",
+  "tiktok"
+ ],
+ "generado": "2026-10-18T00:05:14+00:00",
+ "duracion_s": 39.5,
+ "modelo_jev": "jev-1.13.0",
+ "modelos_llm": [
+  "deepseek-flash",
+  "deepseek-v4-pro"
+ ],
+ "pesos": {
+  "fuerza": 0.35,
+  "aceleracion": 0.2,
+  "temprano": 0.2,
+  "multired": 0.15,
+  "frescura": 0.1
+ },
+ "temas": [
+  {
+   "id": "creatine_supplementation",
+   "nombre": "Creatina y suplementación",
+   "descripcion": "Information on creatine use, benefits, risks, and best practices, including for people over 40.",
+   "score": 0.6571,
+   "senales": {
+    "fuerza": 0.7314,
+    "aceleracion": 1.0,
+    "temprano": 0.6053,
+    "multired": 0.2,
+    "frescura": 0.5
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 6,
+   "piezas_7d": 2,
+   "piezas_7d_previos": 4,
+   "redes": {
+    "youtube": 6
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.5
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.33
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 0.5
+     },
+     {
+      "valor": "noticia",
+      "pct": 0.17
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=Y2r3hAvQ2Sk",
+    "titulo": "Clasificamos cada Suplemento para Ganar Músculo de PEOR a MEJOR",
+    "cuenta": "Fit Generation",
+    "publicado": 1791129639.0,
+    "via": "api",
+    "metrica": 58867.0,
+    "gancho": "contraste",
+    "formato": "lista",
+    "score": 0.7316609589041096,
+    "ajuste": 0.6825,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791129639.0,
+     "url": "https://www.youtube.com/watch?v=Y2r3hAvQ2Sk",
+     "titulo": "Clasificamos cada Suplemento para Ganar Músculo de PEOR a MEJOR",
+     "cuenta": "Fit Generation"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791129639.0,
+      "url": "https://www.youtube.com/watch?v=Y2r3hAvQ2Sk",
+      "titulo": "Clasificamos cada Suplemento para Ganar Músculo de PEOR a MEJOR",
+      "cuenta": "Fit Generation"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.3,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=_uvqThl9jNE",
+     "titulo": "11 Grandes Erros Ao Tomar CREATINA que Você NUNCA Deve Cometer",
+     "cuenta": "Laércio Refundini",
+     "publicado": 1791925219.0,
+     "via": "api",
+     "metrica": 36292.0,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.7388869863013698,
+     "ajuste": 0.7175,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=Y2r3hAvQ2Sk",
+     "titulo": "Clasificamos cada Suplemento para Ganar Músculo de PEOR a MEJOR",
+     "cuenta": "Fit Generation",
+     "publicado": 1791129639.0,
+     "via": "api",
+     "metrica": 58867.0,
+     "gancho": "contraste",
+     "formato": "lista",
+     "score": 0.7316609589041096,
+     "ajuste": 0.6825,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=nNqEjBCipw4",
+     "titulo": "7 FORMAS DE TOMAR CREATINA #coachmadroking #creatina",
+     "cuenta": "Coach Madroking ",
+     "publicado": 1791582080.0,
+     "via": "api",
+     "metrica": 71963.0,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.7236244292237444,
+     "ajuste": 0.7691666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=f58kedLHHjc",
+     "titulo": "What Creatine Actually Does After 40 (Surgeon Explains)",
+     "cuenta": "Dr. Ethan Kellum",
+     "publicado": 1791759618.0,
+     "via": "api",
+     "metrica": 167160.0,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.7190981735159817,
+     "ajuste": 0.5683333333333334,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=hOVN-hs3e7o",
+     "titulo": "¿La creatina da cáncer? Dos estudios con conclusiones opuestas",
+     "cuenta": "La Traumatóloga Geek",
+     "publicado": 1791563448.0,
+     "via": "api",
+     "metrica": 299560.0,
+     "gancho": "pregunta",
+     "formato": "noticia",
+     "score": 0.5216495433789954,
+     "ajuste": 0.45083333333333336,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=WOrM8heSX4s",
+     "titulo": "CREATINA: Depois dos 40 é OBRIGATÓRIA #saúde #prevenção #creatina #drmoacirrosa",
+     "cuenta": "Dr. Moacir Rosa",
+     "publicado": 1791397394.0,
+     "via": "api",
+     "metrica": 36036.0,
+     "gancho": "promesa",
+     "formato": "opinion",
+     "score": 0.4303538812785388,
+     "ajuste": 0.5216666666666667,
+     "con_metricas": true
+    }
+   ],
+   "porque": "Los videos que prometen listas de errores o clasificaciones están dominando YouTube, sin menciones de lanzamientos, lo que indica interés en contenido educativo directo."
+  },
+  {
+   "id": "senior_fitness_60plus",
+   "nombre": "Fitness para mayores de 60",
+   "descripcion": "Exercise routines and nutrition tips for maintaining strength and muscle after age 60, including osteoporosis-safe workouts.",
+   "score": 0.6413,
+   "senales": {
+    "fuerza": 0.7553,
+    "aceleracion": 0.8421,
+    "temprano": 0.6427,
+    "multired": 0.2,
+    "frescura": 0.5
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 5,
+   "piezas_7d": 2,
+   "piezas_7d_previos": 3,
+   "redes": {
+    "youtube": 5
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.6
+     },
+     {
+      "valor": "dato",
+      "pct": 0.2
+     }
+    ],
+    "formato": [
+     {
+      "valor": "tutorial",
+      "pct": 0.4
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.4
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=uz873ha_x7k",
+    "titulo": "Rutina de entrenamiento con 68 años!!",
+    "cuenta": "Mattyzandolo",
+    "publicado": 1791219633.0,
+    "via": "api",
+    "metrica": 221764.0,
+    "gancho": "dato",
+    "formato": "opinion",
+    "score": 0.7895947488584475,
+    "ajuste": 0.6408333333333334,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791219633.0,
+     "url": "https://www.youtube.com/watch?v=uz873ha_x7k",
+     "titulo": "Rutina de entrenamiento con 68 años!!",
+     "cuenta": "Mattyzandolo"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791219633.0,
+      "url": "https://www.youtube.com/watch?v=uz873ha_x7k",
+      "titulo": "Rutina de entrenamiento con 68 años!!",
+      "cuenta": "Mattyzandolo"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 12.3,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=uz873ha_x7k",
+     "titulo": "Rutina de entrenamiento con 68 años!!",
+     "cuenta": "Mattyzandolo",
+     "publicado": 1791219633.0,
+     "via": "api",
+     "metrica": 221764.0,
+     "gancho": "dato",
+     "formato": "opinion",
+     "score": 0.7895947488584475,
+     "ajuste": 0.6408333333333334,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=rqyCOtduHPs",
+     "titulo": "Se puede ganar músculo a los 70 años? La doctora Paloma de la Fuente responde | EN FIN W",
+     "cuenta": "W Radio México",
+     "publicado": 1791766810.0,
+     "via": "api",
+     "metrica": 37378.0,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.7704109589041096,
+     "ajuste": 0.76,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=zc5G6Rcxp5s",
+     "titulo": "7 HÁBITOS PARA CUIDAR TUS MÚSCULOS CON LA EDAD 💪🥚 ¡MANTÉN TU FUERZA DESPUÉS DE LOS 60!",
+     "cuenta": "health diet",
+     "publicado": 1791730838.0,
+     "via": "api",
+     "metrica": 39926.0,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.7060216894977169,
+     "ajuste": 0.6791666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=ubQpFEWUgwI",
+     "titulo": "60+ Fuerza en piernas, glúteos y abdomen | Rutina en casa",
+     "cuenta": "Julio Palacios | Fisioterapia Latina",
+     "publicado": 1791388351.0,
+     "via": "api",
+     "metrica": 33660.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6222888127853881,
+     "ajuste": 0.8541666666666666,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=69a_rZza7no",
+     "titulo": "Ejercicios para OSTEOPOROSIS: la rutina completa de 25 minutos en casa (hazla conmigo)",
+     "cuenta": "Tu Fisio Te Mueve | Osteoporosis",
+     "publicado": 1791316829.0,
+     "via": "api",
+     "metrica": 35818.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6222146118721461,
+     "ajuste": 0.7033333333333334,
+     "con_metricas": true
+    }
+   ],
+   "porque": "En YouTube, los tutoriales y opiniones con promesas claras sobre fuerza y hábitos después de los 60 están resonando, sin depender de lanzamientos."
+  },
+  {
+   "id": "strength_training_after_40",
+   "nombre": "Entrenamiento después de los 40",
+   "descripcion": "Strength training and fitness advice tailored for adults over 40, including menopause and bone health considerations.",
+   "score": 0.6283,
+   "senales": {
+    "fuerza": 0.5894,
+    "aceleracion": 0.7368,
+    "temprano": 0.6787,
+    "multired": 0.4,
+    "frescura": 0.7895
+   },
+   "aceleracion_estimada": true,
+   "etapa": "emergente",
+   "volumen": 2,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "youtube": 1,
+    "tiktok": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 0.5
+     },
+     {
+      "valor": "promesa",
+      "pct": 0.5
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 0.5
+     },
+     {
+      "valor": "lista",
+      "pct": 0.5
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=p3IuZVaivM8",
+    "titulo": "Ejercicios básicos para eliminar grasa y tonificar después de los 40 #menopausia #tonificar",
+    "cuenta": "Mujer Fit más 40 | Noelia Rodríguez",
+    "publicado": 1791399690.0,
+    "via": "api",
+    "metrica": 40030.0,
+    "gancho": "pregunta",
+    "formato": "opinion",
+    "score": 0.5894292237442922,
+    "ajuste": 0.5966666666666667,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791399690.0,
+     "url": "https://www.youtube.com/watch?v=p3IuZVaivM8",
+     "titulo": "Ejercicios básicos para eliminar grasa y tonificar después de los 40 #menopausia #tonificar",
+     "cuenta": "Mujer Fit más 40 | Noelia Rodríguez"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791399690.0,
+      "url": "https://www.youtube.com/watch?v=p3IuZVaivM8",
+      "titulo": "Ejercicios básicos para eliminar grasa y tonificar después de los 40 #menopausia #tonificar",
+      "cuenta": "Mujer Fit más 40 | Noelia Rodríguez"
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791897763.0,
+      "url": "https://www.tiktok.com/@marianoentrenador/video/7696142290888199447",
+      "titulo": "Cómo perder grasa después de los 40: guía práctica y ...",
+      "cuenta": "@marianoentrenador"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 10.2,
+    "horas_entre_redes": [
+     138.4
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@marianoentrenador/video/7696142290888199447",
+     "titulo": "Cómo perder grasa después de los 40: guía práctica y ...",
+     "cuenta": "@marianoentrenador",
+     "publicado": 1791897763.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.7366666666666667,
+     "ajuste": 0.7366666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=p3IuZVaivM8",
+     "titulo": "Ejercicios básicos para eliminar grasa y tonificar después de los 40 #menopausia #tonificar",
+     "cuenta": "Mujer Fit más 40 | Noelia Rodríguez",
+     "publicado": 1791399690.0,
+     "via": "api",
+     "metrica": 40030.0,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5894292237442922,
+     "ajuste": 0.5966666666666667,
+     "con_metricas": true
+    }
+   ],
+   "porque": "En YouTube y TikTok, las preguntas y promesas sobre perder grasa o tonificar después de los 40 están ganando tracción, con formatos de opinión y lista."
+  },
+  {
+   "id": "home_upper_arm_abs_routines",
+   "nombre": "Brazos, espalda y abdomen en casa",
+   "descripcion": "Home workouts targeting arms, back, torso, and abs, often combined for toning and fat loss.",
+   "score": 0.5628,
+   "senales": {
+    "fuerza": 0.7281,
+    "aceleracion": 0.8947,
+    "temprano": 0.3767,
+    "multired": 0.2,
+    "frescura": 0.2368
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 7,
+   "piezas_7d": 3,
+   "piezas_7d_previos": 4,
+   "redes": {
+    "youtube": 7
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.71
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.29
+     }
+    ],
+    "formato": [
+     {
+      "valor": "tutorial",
+      "pct": 0.86
+     },
+     {
+      "valor": "noticia",
+      "pct": 0.14
+     }
+    ],
+    "menciona_lanzamiento": 0.29
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=rl92ZVmbje8",
+    "titulo": "RUTINA DE BRAZOS Y ABDOMEN EN CASA | CLASE SORPRESA CON PROFE MIGUEL",
+    "cuenta": "BAJA DE PESO CON MIGUEL",
+    "publicado": 1791253727.0,
+    "via": "api",
+    "metrica": 127913.0,
+    "gancho": "promesa",
+    "formato": "noticia",
+    "score": 0.7465924657534246,
+    "ajuste": 0.8425,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791253727.0,
+     "url": "https://www.youtube.com/watch?v=rl92ZVmbje8",
+     "titulo": "RUTINA DE BRAZOS Y ABDOMEN EN CASA | CLASE SORPRESA CON PROFE MIGUEL",
+     "cuenta": "BAJA DE PESO CON MIGUEL"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791253727.0,
+      "url": "https://www.youtube.com/watch?v=rl92ZVmbje8",
+      "titulo": "RUTINA DE BRAZOS Y ABDOMEN EN CASA | CLASE SORPRESA CON PROFE MIGUEL",
+      "cuenta": "BAJA DE PESO CON MIGUEL"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 11.9,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=QYR3HcwLNHE",
+     "titulo": "Ejercicio para el abdomen #ejercicio #abdomen #salud",
+     "cuenta": "BAJA DE PESO CON MIGUEL",
+     "publicado": 1791810930.0,
+     "via": "api",
+     "metrica": 542082.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.7571061643835616,
+     "ajuste": 0.6375,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=rl92ZVmbje8",
+     "titulo": "RUTINA DE BRAZOS Y ABDOMEN EN CASA | CLASE SORPRESA CON PROFE MIGUEL",
+     "cuenta": "BAJA DE PESO CON MIGUEL",
+     "publicado": 1791253727.0,
+     "via": "api",
+     "metrica": 127913.0,
+     "gancho": "promesa",
+     "formato": "noticia",
+     "score": 0.7465924657534246,
+     "ajuste": 0.8425,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=3TsCdNQ-Tf0",
+     "titulo": "1 Solo Ejercicio para Tonificar Brazos y Torso #CuerpoActivoTV #youtubeshorts #tonificar",
+     "cuenta": "CUERPO ACTIVO TV",
+     "publicado": 1791764235.0,
+     "via": "api",
+     "metrica": 25878.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6804965753424658,
+     "ajuste": 0.7925,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=bAHsMwRaSQg",
+     "titulo": "Abdomen definido en casa: 5 ejercicios sin equipo #abs #fitness #rutina",
+     "cuenta": "Proyect Fitness ",
+     "publicado": 1791500424.0,
+     "via": "api",
+     "metrica": 62072.0,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.6778824200913243,
+     "ajuste": 0.6708333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=BRyJ0E_xKqc",
+     "titulo": "Rutina para Adelgazar y Tonificar Brazos y Espalda en 30 minutos",
+     "cuenta": "Fitness by Vivi",
+     "publicado": 1791464453.0,
+     "via": "api",
+     "metrica": 43086.0,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.6473573059360731,
+     "ajuste": 0.7741666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=vqbsR5Y3xic",
+     "titulo": "💪🏻Elimina Grasa y Tonifica BRAZOS, ESPALDA Y ABDOMEN | Rutina En Casa🔥",
+     "cuenta": "Susana Fit",
+     "publicado": 1791383407.0,
+     "via": "api",
+     "metrica": 22868.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6294920091324201,
+     "ajuste": 0.7658333333333334,
+     "con_metricas": true
+    }
+   ],
+   "porque": "YouTube favorece tutoriales con promesas de tonificar brazos, espalda y abdomen en casa, y casi un tercio de los videos menciona lanzamientos, sugiriendo un vacío de contenido evergreen."
+  },
+  {
+   "id": "weight_loss_nutrition",
+   "nombre": "Nutrición para perder grasa",
+   "descripcion": "Dietary strategies, meal ideas, and tips for sustainable fat loss, including high-protein recipes and calorie deficits.",
+   "score": 0.5601,
+   "senales": {
+    "fuerza": 0.6727,
+    "aceleracion": 0.9474,
+    "temprano": 0.1994,
+    "multired": 0.6,
+    "frescura": 0.0526
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 10,
+   "piezas_7d": 9,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "youtube": 2,
+    "reddit": 5,
+    "tiktok": 3
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.5
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.2
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 0.6
+     },
+     {
+      "valor": "lista",
+      "pct": 0.2
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=-hP8O05k1r8",
+    "titulo": "Todo lo que como para perder Grasa",
+    "cuenta": "Hermes Onori",
+    "publicado": 1791385748.0,
+    "via": "api",
+    "metrica": 52749.0,
+    "gancho": "promesa",
+    "formato": "lista",
+    "score": 0.5727853881278538,
+    "ajuste": 0.6866666666666666,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791385748.0,
+     "url": "https://www.youtube.com/watch?v=-hP8O05k1r8",
+     "titulo": "Todo lo que como para perder Grasa",
+     "cuenta": "Hermes Onori"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791385748.0,
+      "url": "https://www.youtube.com/watch?v=-hP8O05k1r8",
+      "titulo": "Todo lo que como para perder Grasa",
+      "cuenta": "Hermes Onori"
+     },
+     {
+      "red": "reddit",
+      "fecha": 1791747558.0,
+      "url": "https://www.reddit.com/r/loseit/comments/1x3hds3/just_a_friendly_reminder_to_measure_out_your/",
+      "titulo": "Just a friendly reminder to measure out your creamer, whipped cream, etc. if you have never done so yet",
+      "cuenta": "r/loseit"
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791800143.0,
+      "url": "https://www.tiktok.com/@ugar90/video/7695723017774714134",
+      "titulo": "CENA FÁCIL Y SACIANTE PARA PERDER GRASA ...",
+      "cuenta": "@ugar90"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 10.4,
+    "horas_entre_redes": [
+     100.5,
+     14.6
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=MRCYp9r52DQ",
+     "titulo": "Todo Esto Quema tu Grasa Visceral más Rápido que Cualquier Dieta",
+     "cuenta": "ENFAF | Fitness, Entrenamiento y Nutrición",
+     "publicado": 1791738014.0,
+     "via": "api",
+     "metrica": 91678.0,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.7725627853881278,
+     "ajuste": 0.6341666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@ugar90/video/7695723017774714134",
+     "titulo": "CENA FÁCIL Y SACIANTE PARA PERDER GRASA ...",
+     "cuenta": "@ugar90",
+     "publicado": 1791800143.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.7150000000000001,
+     "ajuste": 0.7150000000000001,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x3hds3/just_a_friendly_reminder_to_measure_out_your/",
+     "titulo": "Just a friendly reminder to measure out your creamer, whipped cream, etc. if you have never done so yet",
+     "cuenta": "r/loseit",
+     "publicado": 1791747558.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "opinion",
+     "score": 0.6625,
+     "ajuste": 0.6625,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@imsamueldelgado/video/7696855999784701217",
+     "titulo": "Si volviera a empezar a perder grasa abdominal, lo haría ...",
+     "cuenta": "@imsamueldelgado",
+     "publicado": 1792063936.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6616666666666666,
+     "ajuste": 0.6616666666666666,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=-hP8O05k1r8",
+     "titulo": "Todo lo que como para perder Grasa",
+     "cuenta": "Hermes Onori",
+     "publicado": 1791385748.0,
+     "via": "api",
+     "metrica": 52749.0,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.5727853881278538,
+     "ajuste": 0.6866666666666666,
+     "con_metricas": true
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x5wvj2/weight_loss_rule_of_thumb_100_calorie_deficit_10/",
+     "titulo": "Weight Loss Rule of Thumb: 100 Calorie Deficit = 10 Pounds Per Year",
+     "cuenta": "r/loseit",
+     "publicado": 1791997632.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "opinion",
+     "score": 0.5625,
+     "ajuste": 0.5625,
+     "con_metricas": false
+    }
+   ],
+   "porque": "En Reddit y TikTok, las opiniones y listas con promesas sobre quemar grasa visceral o cenas saciantes están generando conversación, sin menciones de lanzamientos."
+  },
+  {
+   "id": "visceral_fat_loss_challenges",
+   "nombre": "Retos para grasa visceral",
+   "descripcion": "Multi-day challenges and routines specifically targeting visceral fat loss, often using taichi or walking.",
+   "score": 0.5504,
+   "senales": {
+    "fuerza": 0.6367,
+    "aceleracion": 0.6316,
+    "temprano": 0.3823,
+    "multired": 0.2,
+    "frescura": 0.9474
+   },
+   "aceleracion_estimada": true,
+   "etapa": "emergente",
+   "volumen": 6,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 6,
+   "redes": {
+    "youtube": 6
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "tutorial",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=9QnpOQ9dnVs",
+    "titulo": "14-Day Visceral Fat Loss Challenge[Day 10]🔥Burn Fat & Support Healthy Internal Organs|25-Min Tai Chi",
+    "cuenta": "Tai Chi for Health Daily",
+    "publicado": 1791108724.0,
+    "via": "api",
+    "metrica": 33462.0,
+    "gancho": "promesa",
+    "formato": "tutorial",
+    "score": 0.5989212328767124,
+    "ajuste": 0.6225,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791108724.0,
+     "url": "https://www.youtube.com/watch?v=9QnpOQ9dnVs",
+     "titulo": "14-Day Visceral Fat Loss Challenge[Day 10]🔥Burn Fat & Support Healthy Internal Organs|25-Min Tai Chi",
+     "cuenta": "Tai Chi for Health Daily"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791108724.0,
+      "url": "https://www.youtube.com/watch?v=9QnpOQ9dnVs",
+      "titulo": "14-Day Visceral Fat Loss Challenge[Day 10]🔥Burn Fat & Support Healthy Internal Organs|25-Min Tai Chi",
+      "cuenta": "Tai Chi for Health Daily"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.6,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=ZlxwFb5aA0w",
+     "titulo": "14-Day Visceral Fat Loss Challenge [Day 11] 🔥 Burn Belly Fat & Relieve Neck Pain | 30-Minute Tai Chi",
+     "cuenta": "Tai Chi for Health Daily",
+     "publicado": 1791195061.0,
+     "via": "api",
+     "metrica": 41643.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6429337899543379,
+     "ajuste": 0.6283333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=_VyAS7xzJXU",
+     "titulo": "14-Day Visceral Fat Loss Challenge [Day 14] 🔥 Lose Weight & Burn Belly Fat | 30-Min Tai Chi Walking",
+     "cuenta": "Tai Chi for Health Daily",
+     "publicado": 1791454284.0,
+     "via": "api",
+     "metrica": 31779.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6384931506849315,
+     "ajuste": 0.64,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=3dEjMFVY464",
+     "titulo": "14-Day Visceral Fat Loss Challenge [Day 13] 🔥 Melt Belly Fat & Ease Back Pain | 35-Min Tai Chi",
+     "cuenta": "Tai Chi for Health Daily",
+     "publicado": 1791367807.0,
+     "via": "api",
+     "metrica": 33495.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6287271689497717,
+     "ajuste": 0.6341666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=E-8qqroSK8k",
+     "titulo": "The 14 Day Plan To Lose Visceral Fat (works everytime)",
+     "cuenta": "Josh Bridgman",
+     "publicado": 1791392430.0,
+     "via": "api",
+     "metrica": 104711.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6040981735159817,
+     "ajuste": 0.3383333333333334,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=9QnpOQ9dnVs",
+     "titulo": "14-Day Visceral Fat Loss Challenge[Day 10]🔥Burn Fat & Support Healthy Internal Organs|25-Min Tai Chi",
+     "cuenta": "Tai Chi for Health Daily",
+     "publicado": 1791108724.0,
+     "via": "api",
+     "metrica": 33462.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.5989212328767124,
+     "ajuste": 0.6225,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=r2WAJvZj2vw",
+     "titulo": "The Laziest Way to Lose Visceral Fat (That Actually Works)",
+     "cuenta": "Sean OMara, MD JD, Health & Performance Optimizing",
+     "publicado": 1791151209.0,
+     "via": "api",
+     "metrica": 54229.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.5256906392694064,
+     "ajuste": 0.5308333333333334,
+     "con_metricas": true
+    }
+   ],
+   "porque": "Los tutoriales con promesas de retos de 14 días para perder grasa visceral están dominando YouTube, sin menciones de lanzamientos, lo que indica alta demanda de planes estructurados."
+  },
+  {
+   "id": "fat_loss_home_cardio",
+   "nombre": "Cardio y quema de grasa en casa",
+   "descripcion": "Home cardio workouts like dance, boxing, and taichi designed to burn calories and fat without equipment.",
+   "score": 0.5396,
+   "senales": {
+    "fuerza": 0.7434,
+    "aceleracion": 0.7895,
+    "temprano": 0.2078,
+    "multired": 0.2,
+    "frescura": 0.5
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 9,
+   "piezas_7d": 2,
+   "piezas_7d_previos": 7,
+   "redes": {
+    "youtube": 9
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "tutorial",
+      "pct": 0.89
+     },
+     {
+      "valor": "noticia",
+      "pct": 0.11
+     }
+    ],
+    "menciona_lanzamiento": 0.11
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=SmlT8Jw9Kk8",
+    "titulo": "DESAFIO ASIÁTICO PARA QUEMAR GRASA | 35 MINUTOS",
+    "cuenta": "Entrena con Rosa Fitness",
+    "publicado": 1791133207.0,
+    "via": "api",
+    "metrica": 52235.0,
+    "gancho": "promesa",
+    "formato": "tutorial",
+    "score": 0.7447831050228311,
+    "ajuste": 0.8183333333333334,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791133207.0,
+     "url": "https://www.youtube.com/watch?v=SmlT8Jw9Kk8",
+     "titulo": "DESAFIO ASIÁTICO PARA QUEMAR GRASA | 35 MINUTOS",
+     "cuenta": "Entrena con Rosa Fitness"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791133207.0,
+      "url": "https://www.youtube.com/watch?v=SmlT8Jw9Kk8",
+      "titulo": "DESAFIO ASIÁTICO PARA QUEMAR GRASA | 35 MINUTOS",
+      "cuenta": "Entrena con Rosa Fitness"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.3,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=hrJ-LOq199U",
+     "titulo": "💃 CLASE DE BAILE PARA QUEMAR GRASA Y BAJAR DE PESO | SALSA, BACHATA, MERENGUE Y MÁS…",
+     "cuenta": "BAJA DE PESO CON MIGUEL",
+     "publicado": 1791340705.0,
+     "via": "api",
+     "metrica": 160325.0,
+     "gancho": "promesa",
+     "formato": "noticia",
+     "score": 0.7713070776255708,
+     "ajuste": 0.8508333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=SmlT8Jw9Kk8",
+     "titulo": "DESAFIO ASIÁTICO PARA QUEMAR GRASA | 35 MINUTOS",
+     "cuenta": "Entrena con Rosa Fitness",
+     "publicado": 1791133207.0,
+     "via": "api",
+     "metrica": 52235.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.7447831050228311,
+     "ajuste": 0.8183333333333334,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=dfO-DTu4kJ4",
+     "titulo": "30 Min de Tai Chi: Ayuda a Reducir Grasa Abdominal y Adelgazar | Quema Calorías, Abdomen Más Plano",
+     "cuenta": "Tai Chi Salud",
+     "publicado": 1791633617.0,
+     "via": "api",
+     "metrica": 68260.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.7140011415525114,
+     "ajuste": 0.7841666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=11j6XWiyFwQ",
+     "titulo": "30 Min Tai Chi para Adelgazar y Quemar Grasa Abdominal | Cuerpo Firme y Cintura Delgada – Sin Saltos",
+     "cuenta": "Tai Chi Salud",
+     "publicado": 1791720022.0,
+     "via": "api",
+     "metrica": 46090.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6723972602739726,
+     "ajuste": 0.79,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=IEejp0Kjnls",
+     "titulo": "Haz Esto y QUEMA 500 CALORÍAS con Cardio Boxeo | Pierde Peso | Adelgaza De Pie, Sin Saltos",
+     "cuenta": "Rebelde-Mente: Bienestar Inteligente",
+     "publicado": 1791808239.0,
+     "via": "api",
+     "metrica": 119152.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6340753424657535,
+     "ajuste": 0.775,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=V5cbH3A1XQA",
+     "titulo": "Haz Tai Chi 30 Min para Quemar Grasa Abdominal, Reducir el Estrés y Dormir Mejor",
+     "cuenta": "Tai Chi Salud",
+     "publicado": 1791201607.0,
+     "via": "api",
+     "metrica": 32190.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.5214269406392693,
+     "ajuste": 0.7483333333333333,
+     "con_metricas": true
+    }
+   ],
+   "porque": "YouTube está saturado de tutoriales con promesas de quemar grasa con cardio en casa, con un pequeño porcentaje mencionando lanzamientos, lo que sugiere una oportunidad para destacar con ángulos únicos."
+  },
+  {
+   "id": "protein_intake_guidance",
+   "nombre": "Ingesta de proteína",
+   "descripcion": "Guidance and debates on protein requirements for muscle gain and health, including myths and practical tips.",
+   "score": 0.5315,
+   "senales": {
+    "fuerza": 0.5123,
+    "aceleracion": 0.5789,
+    "temprano": 0.4875,
+    "multired": 0.4,
+    "frescura": 0.7895
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 3,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 2,
+   "redes": {
+    "youtube": 2,
+    "reddit": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "contraste",
+      "pct": 0.33
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.33
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=etkGWazS64U",
+    "titulo": "La MENTIRA más repetida sobre ganar MÚSCULO",
+    "cuenta": "Escuela Culturismo Natural",
+    "publicado": 1791150103.0,
+    "via": "api",
+    "metrica": 90985.0,
+    "gancho": "contraste",
+    "formato": "opinion",
+    "score": 0.6797716894977169,
+    "ajuste": 0.6266666666666667,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791150103.0,
+     "url": "https://www.youtube.com/watch?v=etkGWazS64U",
+     "titulo": "La MENTIRA más repetida sobre ganar MÚSCULO",
+     "cuenta": "Escuela Culturismo Natural"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791150103.0,
+      "url": "https://www.youtube.com/watch?v=etkGWazS64U",
+      "titulo": "La MENTIRA más repetida sobre ganar MÚSCULO",
+      "cuenta": "Escuela Culturismo Natural"
+     },
+     {
+      "red": "reddit",
+      "fecha": 1791720520.0,
+      "url": "https://www.reddit.com/r/nutrition/comments/1x36lob/just_learned_that_95_of_americans_dont_get_our/",
+      "titulo": "Just learned that 95% of Americans don't get our recommended amount of fiber, while almost all of us get more protein than we need. What's with our society's obsession with protein? What are some easy swaps to get more fiber while still hitting our protein goals?",
+      "cuenta": "r/nutrition"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.1,
+    "horas_entre_redes": [
+     158.4
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=etkGWazS64U",
+     "titulo": "La MENTIRA más repetida sobre ganar MÚSCULO",
+     "cuenta": "Escuela Culturismo Natural",
+     "publicado": 1791150103.0,
+     "via": "api",
+     "metrica": 90985.0,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.6797716894977169,
+     "ajuste": 0.6266666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/nutrition/comments/1x36lob/just_learned_that_95_of_americans_dont_get_our/",
+     "titulo": "Just learned that 95% of Americans don't get our recommended amount of fiber, while almost all of us get more protein than we need. What's with our society's obsession with protein? What are some easy swaps to get more fiber while still hitting our protein goals?",
+     "cuenta": "r/nutrition",
+     "publicado": 1791720520.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "dato",
+     "formato": "opinion",
+     "score": 0.5258333333333334,
+     "ajuste": 0.5258333333333334,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=1cONKHxZPaE",
+     "titulo": "¿0,8 g/kg de PROTEÍNA para GANAR MÚSCULO? SE NOS VA DE LAS MANOS",
+     "cuenta": "Benlliure Reacciona",
+     "publicado": 1791290580.0,
+     "via": "api",
+     "metrica": 20150.0,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.34473173515981737,
+     "ajuste": 0.49083333333333334,
+     "con_metricas": true
+    }
+   ],
+   "porque": "El pico de interés en YouTube y Reddit se centra en opiniones controversiales sobre la cantidad de proteína, usando contraste y preguntas, sin menciones de lanzamientos."
+  },
+  {
+   "id": "home_leg_glute_routines",
+   "nombre": "Piernas y glúteos en casa",
+   "descripcion": "Home routines focused on legs, glutes, and lower body toning, including GAP and no-weight options.",
+   "score": 0.4705,
+   "senales": {
+    "fuerza": 0.6883,
+    "aceleracion": 0.5263,
+    "temprano": 0.2216,
+    "multired": 0.2,
+    "frescura": 0.5
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 7,
+   "piezas_7d": 2,
+   "piezas_7d_previos": 5,
+   "redes": {
+    "youtube": 7
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.86
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.14
+     }
+    ],
+    "formato": [
+     {
+      "valor": "tutorial",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=R6-xZfQZzkk",
+    "titulo": "Rutina express de 12 ejercicios para PIERNAS, GLÚTEOS, ABDOMEN Y CINTURA en casa para mujeres",
+    "cuenta": "NAYLA Vlogs",
+    "publicado": 1791158073.0,
+    "via": "api",
+    "metrica": 76112.0,
+    "gancho": "promesa",
+    "formato": "tutorial",
+    "score": 0.6224600456621004,
+    "ajuste": 0.7791666666666667,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791158073.0,
+     "url": "https://www.youtube.com/watch?v=R6-xZfQZzkk",
+     "titulo": "Rutina express de 12 ejercicios para PIERNAS, GLÚTEOS, ABDOMEN Y CINTURA en casa para mujeres",
+     "cuenta": "NAYLA Vlogs"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791158073.0,
+      "url": "https://www.youtube.com/watch?v=R6-xZfQZzkk",
+      "titulo": "Rutina express de 12 ejercicios para PIERNAS, GLÚTEOS, ABDOMEN Y CINTURA en casa para mujeres",
+      "cuenta": "NAYLA Vlogs"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.0,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=BE6Lg21x400",
+     "titulo": "Rutina de Piernas y Glúteos en Casa | 30 MIN para Aumentar y Tonificar",
+     "cuenta": "Fitness by Vivi",
+     "publicado": 1791205210.0,
+     "via": "api",
+     "metrica": 87498.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.7257077625570776,
+     "ajuste": 0.7733333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=Mx7z34p54ps",
+     "titulo": "PIERNAS TONIFICADAS Y GLÚTEOS GRANDES | RUTINA DE EJERCICIOS EN CASA SIN PESAS | NatyGlossGym",
+     "cuenta": "NatyGloss Gym",
+     "publicado": 1791828029.0,
+     "via": "api",
+     "metrica": 37543.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.7165924657534246,
+     "ajuste": 0.7825,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=R6-xZfQZzkk",
+     "titulo": "Rutina express de 12 ejercicios para PIERNAS, GLÚTEOS, ABDOMEN Y CINTURA en casa para mujeres",
+     "cuenta": "NAYLA Vlogs",
+     "publicado": 1791158073.0,
+     "via": "api",
+     "metrica": 76112.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6224600456621004,
+     "ajuste": 0.7791666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=hv84Fcf67Rw",
+     "titulo": "RUTINA GAP: glúteos, abdomen y piernas 30 minutos en casa ",
+     "cuenta": "By Carolinafit",
+     "publicado": 1791825984.0,
+     "via": "api",
+     "metrica": 18093.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6036301369863013,
+     "ajuste": 0.8099999999999999,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=x85V_0LTQU4",
+     "titulo": "PIERNAS TONIFICADAS Y GLÚTEOS GRANDES | RUTINA DE EJERCICIOS EN CASA | NatyGlossGym",
+     "cuenta": "NatyGloss Gym",
+     "publicado": 1791223216.0,
+     "via": "api",
+     "metrica": 23230.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.5535502283105023,
+     "ajuste": 0.7783333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=M9G0-Ka3ePo",
+     "titulo": "Entrenamiento de piernas en casa: ¿Lo intentas conmigo? Rutina 1957",
+     "cuenta": "Dey Palencia Reyes",
+     "publicado": 1791378009.0,
+     "via": "api",
+     "metrica": 10575.0,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.5079223744292237,
+     "ajuste": 0.7966666666666666,
+     "con_metricas": true
+    }
+   ],
+   "porque": "YouTube está dominado por tutoriales con promesas de rutinas de piernas y glúteos en casa, sin menciones de lanzamientos, lo que indica una demanda constante de contenido práctico."
+  },
+  {
+   "id": "dumbbell_home_training",
+   "nombre": "Entrenamiento con mancuernas en casa",
+   "descripcion": "Home routines using dumbbells for strength and toning, including upper/lower splits and full-body sessions.",
+   "score": 0.4695,
+   "senales": {
+    "fuerza": 0.5805,
+    "aceleracion": 0.3684,
+    "temprano": 0.3393,
+    "multired": 0.2,
+    "frescura": 0.9474
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 2,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 2,
+   "redes": {
+    "youtube": 2
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "tutorial",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=TAi2ppRrne0",
+    "titulo": "35 MIN | Full Body con Mancuernas | Rutina Completa para tonificar todo el cuerpo | No REPEAT",
+    "cuenta": "Cocco Fitness 🌸",
+    "publicado": 1791210014.0,
+    "via": "api",
+    "metrica": 48512.0,
+    "gancho": "promesa",
+    "formato": "tutorial",
+    "score": 0.6487899543378994,
+    "ajuste": 0.7633333333333333,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791210014.0,
+     "url": "https://www.youtube.com/watch?v=TAi2ppRrne0",
+     "titulo": "35 MIN | Full Body con Mancuernas | Rutina Completa para tonificar todo el cuerpo | No REPEAT",
+     "cuenta": "Cocco Fitness 🌸"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791210014.0,
+      "url": "https://www.youtube.com/watch?v=TAi2ppRrne0",
+      "titulo": "35 MIN | Full Body con Mancuernas | Rutina Completa para tonificar todo el cuerpo | No REPEAT",
+      "cuenta": "Cocco Fitness 🌸"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 12.4,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=TAi2ppRrne0",
+     "titulo": "35 MIN | Full Body con Mancuernas | Rutina Completa para tonificar todo el cuerpo | No REPEAT",
+     "cuenta": "Cocco Fitness 🌸",
+     "publicado": 1791210014.0,
+     "via": "api",
+     "metrica": 48512.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6487899543378994,
+     "ajuste": 0.7633333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=4BjkS-Mkr_s",
+     "titulo": "5 Días para GANAR FUERZA y MÚSCULO en Casa: Día 1 - Rutina de 30 Minutos | Cuerpo Activo TV",
+     "cuenta": "CUERPO ACTIVO TV",
+     "publicado": 1791219611.0,
+     "via": "api",
+     "metrica": 9598.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.5121404109589041,
+     "ajuste": 0.8325,
+     "con_metricas": true
+    }
+   ],
+   "porque": "Los tutoriales con promesas de rutinas completas con mancuernas en casa están en su punto máximo en YouTube, sin menciones de lanzamientos, mostrando un interés estable en entrenamiento estructurado."
+  },
+  {
+   "id": "body_recomposition",
+   "nombre": "Recomposición corporal",
+   "descripcion": "Guidance on losing fat and gaining muscle simultaneously, including training and nutrition approaches.",
+   "score": 0.4419,
+   "senales": {
+    "fuerza": 0.6755,
+    "aceleracion": 0.4737,
+    "temprano": 0.0249,
+    "multired": 0.6,
+    "frescura": 0.1579
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 16,
+   "piezas_7d": 7,
+   "piezas_7d_previos": 9,
+   "redes": {
+    "youtube": 9,
+    "reddit": 4,
+    "tiktok": 3
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.38
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.31
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 0.44
+     },
+     {
+      "valor": "tutorial",
+      "pct": 0.38
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=8lKLGBvWui8",
+    "titulo": "How to Know If You're Building Muscle and Losing Fat (Even If the Scale Says You’re Not)",
+    "cuenta": "Liftwsarah",
+    "publicado": 1791129628.0,
+    "via": "api",
+    "metrica": 89113.0,
+    "gancho": "pregunta",
+    "formato": "tutorial",
+    "score": 0.5726198630136986,
+    "ajuste": 0.5425,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791129628.0,
+     "url": "https://www.youtube.com/watch?v=8lKLGBvWui8",
+     "titulo": "How to Know If You're Building Muscle and Losing Fat (Even If the Scale Says You’re Not)",
+     "cuenta": "Liftwsarah"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791129628.0,
+      "url": "https://www.youtube.com/watch?v=8lKLGBvWui8",
+      "titulo": "How to Know If You're Building Muscle and Losing Fat (Even If the Scale Says You’re Not)",
+      "cuenta": "Liftwsarah"
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791212675.0,
+      "url": "https://www.tiktok.com/@bluegym.animation/video/7693199860580846870",
+      "titulo": "Mejores fuentes de grasas saludables para perder ...",
+      "cuenta": "@bluegym.animation"
+     },
+     {
+      "red": "reddit",
+      "fecha": 1791755987.0,
+      "url": "https://www.reddit.com/r/loseit/comments/1x3krdz/just_endlessly_chasing_losing_weight_while/",
+      "titulo": "Just endlessly chasing losing weight while neglecting resistance training will not get you the dream physique",
+      "cuenta": "r/loseit"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.3,
+    "horas_entre_redes": [
+     23.1,
+     150.9
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=zyznfcjm7iA",
+     "titulo": "Tem dificuldade de perder gordura? Veja esse video (Passo a passo)",
+     "cuenta": "Luiz Dutkas",
+     "publicado": 1791327606.0,
+     "via": "api",
+     "metrica": 89255.0,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.7069349315068494,
+     "ajuste": 0.6125,
+     "con_metricas": true
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@bluegym.animation/video/7693199860580846870",
+     "titulo": "Mejores fuentes de grasas saludables para perder ...",
+     "cuenta": "@bluegym.animation",
+     "publicado": 1791212675.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.7041666666666667,
+     "ajuste": 0.7041666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=VYH15-uUArg",
+     "titulo": "¿Qué le pasa a tu cuerpo cuando combinas caminatas y entrenamiento de fuerza?",
+     "cuenta": "Biología del Cuerpo",
+     "publicado": 1791369921.0,
+     "via": "api",
+     "metrica": 48888.0,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.6850856164383562,
+     "ajuste": 0.5825,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=tHp8tacBn8E",
+     "titulo": "SOLO PESAS? #gym #motivacion #perdergrasa #déficitcalórico #entrenamiento #masamuscular",
+     "cuenta": "Ion Wallace | Experto en Pérdida de Grasa",
+     "publicado": 1791472716.0,
+     "via": "api",
+     "metrica": 44276.0,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.6343949771689497,
+     "ajuste": 0.5016666666666666,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=8lKLGBvWui8",
+     "titulo": "How to Know If You're Building Muscle and Losing Fat (Even If the Scale Says You’re Not)",
+     "cuenta": "Liftwsarah",
+     "publicado": 1791129628.0,
+     "via": "api",
+     "metrica": 89113.0,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.5726198630136986,
+     "ajuste": 0.5425,
+     "con_metricas": true
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@cienciaychandal/video/7697297515971906849",
+     "titulo": "Perder Grasa y Ganar Musculo a la vez? ...",
+     "cuenta": "@cienciaychandal",
+     "publicado": 1792166735.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5625,
+     "ajuste": 0.5625,
+     "con_metricas": false
+    }
+   ],
+   "porque": null
+  },
+  {
+   "id": "home_workout_full_body",
+   "nombre": "Rutinas full body en casa",
+   "descripcion": "Full-body home workout routines with and without equipment, including 5-day strength plans and quick sessions.",
+   "score": 0.4265,
+   "senales": {
+    "fuerza": 0.6177,
+    "aceleracion": 0.3158,
+    "temprano": 0.1911,
+    "multired": 0.2,
+    "frescura": 0.7895
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 6,
+   "piezas_7d": 1,
+   "piezas_7d_previos": 5,
+   "redes": {
+    "youtube": 6
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.83
+     },
+     {
+      "valor": "contraste",
+      "pct": 0.17
+     }
+    ],
+    "formato": [
+     {
+      "valor": "tutorial",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=14ak-YXDJYA",
+    "titulo": "No vayas al gimnasio mejor haz esto en casa #ejercicio #rutina #salud",
+    "cuenta": "BAJA DE PESO CON MIGUEL",
+    "publicado": 1791245292.0,
+    "via": "api",
+    "metrica": 124983.0,
+    "gancho": "contraste",
+    "formato": "tutorial",
+    "score": 0.6484931506849315,
+    "ajuste": 0.66,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791245292.0,
+     "url": "https://www.youtube.com/watch?v=14ak-YXDJYA",
+     "titulo": "No vayas al gimnasio mejor haz esto en casa #ejercicio #rutina #salud",
+     "cuenta": "BAJA DE PESO CON MIGUEL"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791245292.0,
+      "url": "https://www.youtube.com/watch?v=14ak-YXDJYA",
+      "titulo": "No vayas al gimnasio mejor haz esto en casa #ejercicio #rutina #salud",
+      "cuenta": "BAJA DE PESO CON MIGUEL"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 12.0,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=mzpRSY8RfAg",
+     "titulo": "Cómo arrancar el día con energía: rutina simple en casa",
+     "cuenta": "Ciudadano news",
+     "publicado": 1791822395.0,
+     "via": "api",
+     "metrica": 14491.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.7195719178082192,
+     "ajuste": 0.8775000000000001,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=14ak-YXDJYA",
+     "titulo": "No vayas al gimnasio mejor haz esto en casa #ejercicio #rutina #salud",
+     "cuenta": "BAJA DE PESO CON MIGUEL",
+     "publicado": 1791245292.0,
+     "via": "api",
+     "metrica": 124983.0,
+     "gancho": "contraste",
+     "formato": "tutorial",
+     "score": 0.6484931506849315,
+     "ajuste": 0.66,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=_ewwvfWXrAo",
+     "titulo": "5 Días para GANAR FUERZA y MÚSCULO en Casa: Día 2 - Rutina de 30 Minutos | Cuerpo Activo TV",
+     "cuenta": "CUERPO ACTIVO TV",
+     "publicado": 1791306007.0,
+     "via": "api",
+     "metrica": 7249.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.4851598173515982,
+     "ajuste": 0.8333333333333334,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=TlJpdBF3Nx4",
+     "titulo": "5 Días para GANAR FUERZA y MÚSCULO en Casa: Día 5 - Rutina de 30 Minutos | Cuerpo Activo TV",
+     "cuenta": "CUERPO ACTIVO TV",
+     "publicado": 1791565207.0,
+     "via": "api",
+     "metrica": 6817.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.45265981735159816,
+     "ajuste": 0.7683333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=ThsiPaY_5aw",
+     "titulo": "5 Días para GANAR FUERZA y MÚSCULO en Casa: Día 4 - Rutina de 25 Minutos | Cuerpo Activo TV",
+     "cuenta": "CUERPO ACTIVO TV",
+     "publicado": 1791478808.0,
+     "via": "api",
+     "metrica": 5626.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.45151255707762555,
+     "ajuste": 0.8208333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=vUEScc0rmqQ",
+     "titulo": "5 Días para GANAR FUERZA y MÚSCULO en Casa: Día 3 - Rutina de 25 Minutos | Cuerpo Activo TV",
+     "cuenta": "CUERPO ACTIVO TV",
+     "publicado": 1791392408.0,
+     "via": "api",
+     "metrica": 5455.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.4404965753424658,
+     "ajuste": 0.8125,
+     "con_metricas": true
+    }
+   ],
+   "porque": null
+  },
+  {
+   "id": "gym_routines_for_muscle",
+   "nombre": "Rutinas de gimnasio para músculo",
+   "descripcion": "Gym-based routines and splits focused on building muscle, including 5-day plans and torso-leg splits.",
+   "score": 0.4265,
+   "senales": {
+    "fuerza": 0.4286,
+    "aceleracion": 0.6842,
+    "temprano": 0.072,
+    "multired": 0.8,
+    "frescura": 0.0526
+   },
+   "aceleracion_estimada": true,
+   "etapa": "creciendo",
+   "volumen": 13,
+   "piezas_7d": 8,
+   "piezas_7d_previos": 5,
+   "redes": {
+    "youtube": 3,
+    "reddit": 1,
+    "instagram": 6,
+    "tiktok": 3
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.85
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.15
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 0.46
+     },
+     {
+      "valor": "tutorial",
+      "pct": 0.23
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "tiktok",
+    "url": "https://www.tiktok.com/@ikertrophy/video/7693217062008687895",
+    "titulo": "Comenta VOLUMEN y te envío gratis una guía completa ...",
+    "cuenta": "@ikertrophy",
+    "publicado": 1791216680.0,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "promesa",
+    "formato": "tutorial",
+    "score": 0.5116666666666667,
+    "ajuste": 0.5116666666666667,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "tiktok",
+     "fecha": 1791216680.0,
+     "url": "https://www.tiktok.com/@ikertrophy/video/7693217062008687895",
+     "titulo": "Comenta VOLUMEN y te envío gratis una guía completa ...",
+     "cuenta": "@ikertrophy"
+    },
+    "ruta": [
+     {
+      "red": "tiktok",
+      "fecha": 1791216680.0,
+      "url": "https://www.tiktok.com/@ikertrophy/video/7693217062008687895",
+      "titulo": "Comenta VOLUMEN y te envío gratis una guía completa ...",
+      "cuenta": "@ikertrophy"
+     },
+     {
+      "red": "youtube",
+      "fecha": 1791248404.0,
+      "url": "https://www.youtube.com/watch?v=IyuAHfaClfA",
+      "titulo": "Um lutador de mma",
+      "cuenta": "Adaptogen"
+     },
+     {
+      "red": "instagram",
+      "fecha": 1791463743.134,
+      "url": "https://www.instagram.com/reel/DeO-KNis3JD",
+      "titulo": "RUTINA dentro del gimnasio para un día que no tengas ...",
+      "cuenta": ""
+     },
+     {
+      "red": "reddit",
+      "fecha": 1791952224.0,
+      "url": "https://www.reddit.com/r/naturalbodybuilding/comments/1x5i16m/favorite_back_exercise_and_why/",
+      "titulo": "Favorite back exercise, and why",
+      "cuenta": "r/naturalbodybuilding"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 12.3,
+    "horas_entre_redes": [
+     8.8,
+     59.8,
+     135.7
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/DeO-KNis3JD",
+     "titulo": "RUTINA dentro del gimnasio para un día que no tengas ...",
+     "cuenta": "",
+     "publicado": 1791463743.134,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.7141666666666666,
+     "ajuste": 0.7141666666666666,
+     "con_metricas": false
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/DeSNL5HIEOf",
+     "titulo": "Esta es la MEJOR RUTINA DE 5 DÍAS que puedes hacer ...",
+     "cuenta": "",
+     "publicado": 1791572284.519,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.7058333333333333,
+     "ajuste": 0.7058333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/Dehc3YCOTOn",
+     "titulo": "🎁 Comenta RUTINA si quieres que te envíe algo ...",
+     "cuenta": "",
+     "publicado": 1792083821.533,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.6725,
+     "ajuste": 0.6725,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@imsamueldelgado/video/7695767288879779074",
+     "titulo": "Rutina Torso-Pierna de 4 Días: La Mejor para Ganar Músculo",
+     "cuenta": "@imsamueldelgado",
+     "publicado": 1791810451.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6308333333333334,
+     "ajuste": 0.6308333333333334,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@raulteentrena/video/7696167486458301718",
+     "titulo": "Ganar músculo en el gimnasio: rutina y consejos rápidos",
+     "cuenta": "@raulteentrena",
+     "publicado": 1791903629.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.6116666666666667,
+     "ajuste": 0.6116666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "instagram",
+     "url": "https://www.instagram.com/reel/DeWyK4jOMZr",
+     "titulo": "¡Entrenamiento rápido e intenso de hombros! 🔥 👉🏻 ...",
+     "cuenta": "",
+     "publicado": 1791725892.639,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6025,
+     "ajuste": 0.6025,
+     "con_metricas": false
+    }
+   ],
+   "porque": null
+  },
+  {
+   "id": "muscle_gain_nutrition",
+   "nombre": "Nutrición para ganar músculo",
+   "descripcion": "Nutrition advice and high-protein recipes aimed at building muscle mass, including for older adults.",
+   "score": 0.3914,
+   "senales": {
+    "fuerza": 0.6532,
+    "aceleracion": 0.4211,
+    "temprano": 0.0665,
+    "multired": 0.4,
+    "frescura": 0.0526
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 12,
+   "piezas_7d": 5,
+   "piezas_7d_previos": 7,
+   "redes": {
+    "youtube": 9,
+    "tiktok": 3
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 0.83
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.17
+     }
+    ],
+    "formato": [
+     {
+      "valor": "tutorial",
+      "pct": 0.5
+     },
+     {
+      "valor": "opinion",
+      "pct": 0.25
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "youtube",
+    "url": "https://www.youtube.com/watch?v=r5MPeuqolzs",
+    "titulo": "BEST FOODS FOR BUILDING MUSCLE",
+    "cuenta": "Eric Roberts",
+    "publicado": 1791151226.0,
+    "via": "api",
+    "metrica": 13085.0,
+    "gancho": "promesa",
+    "formato": "lista",
+    "score": 0.42312214611872145,
+    "ajuste": 0.4558333333333333,
+    "con_metricas": true
+   },
+   "rastreo": {
+    "origen": {
+     "red": "youtube",
+     "fecha": 1791151226.0,
+     "url": "https://www.youtube.com/watch?v=r5MPeuqolzs",
+     "titulo": "BEST FOODS FOR BUILDING MUSCLE",
+     "cuenta": "Eric Roberts"
+    },
+    "ruta": [
+     {
+      "red": "youtube",
+      "fecha": 1791151226.0,
+      "url": "https://www.youtube.com/watch?v=r5MPeuqolzs",
+      "titulo": "BEST FOODS FOR BUILDING MUSCLE",
+      "cuenta": "Eric Roberts"
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791836425.0,
+      "url": "https://www.tiktok.com/@elydamm/video/7695878845953527061",
+      "titulo": "Qué Como en un Día para Aumentar Músculo",
+      "cuenta": "@elydamm"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 13.1,
+    "horas_entre_redes": [
+     190.3
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=Yt9vvRdZQ3o",
+     "titulo": "¿MAYOR DE 60? AÑADE ESTE PODEROSO ALIMENTO A TU DESAYUNO PARA AYUDAR A FORTALECER TUS MÚSCULOS |",
+     "cuenta": "Prime Sabiduría de Salud",
+     "publicado": 1791209001.0,
+     "via": "api",
+     "metrica": 33282.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6916324200913242,
+     "ajuste": 0.6983333333333333,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=pZzzty3TcHw",
+     "titulo": "Experto en Musculación: Cómo Comer para Aumentar tu Masa Muscular de Forma Natural",
+     "cuenta": "Fit Generation Nutrición",
+     "publicado": 1791216042.0,
+     "via": "api",
+     "metrica": 31503.0,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.6484417808219178,
+     "ajuste": 0.6325,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=Sug9V5PVzqU",
+     "titulo": "¡Después de los 75: ESTA semilla aporta proteína y ayuda a ganar músculo mucho más rápido!",
+     "cuenta": "Nutrition Secrets",
+     "publicado": 1791232222.0,
+     "via": "api",
+     "metrica": 26090.0,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.6193778538812785,
+     "ajuste": 0.6291666666666667,
+     "con_metricas": true
+    },
+    {
+     "red": "youtube",
+     "url": "https://www.youtube.com/watch?v=81iIHPbWA3U",
+     "titulo": "¿Comés suficiente para ganar músculo?",
+     "cuenta": "DR LA ROSA",
+     "publicado": 1791930682.0,
+     "via": "api",
+     "metrica": 66673.0,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.6078424657534246,
+     "ajuste": 0.565,
+     "con_metricas": true
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@pilarrubio_oficial/video/7696802225645014294",
+     "titulo": "Adapta tu Alimentación al Entrenamiento para Ganar ...",
+     "cuenta": "@pilarrubio_oficial",
+     "publicado": 1792051416.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "opinion",
+     "score": 0.535,
+     "ajuste": 0.535,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@franchuplayas/video/7696508034004159766",
+     "titulo": "Qué como para ganar músculo: dieta práctica y ejemplo ...",
+     "cuenta": "@franchuplayas",
+     "publicado": 1791982919.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "tutorial",
+     "score": 0.5333333333333333,
+     "ajuste": 0.5333333333333333,
+     "con_metricas": false
+    }
+   ],
+   "porque": null
+  },
+  {
+   "id": "beginner_home_workout_plans",
+   "nombre": "Planes de entrenamiento para principiantes",
+   "descripcion": "Structured multi-day home workout plans aimed at beginners, including 4-day splits and first-month guides.",
+   "score": 0.1774,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1316,
+    "temprano": 0.1316,
+    "multired": 0.2,
+    "frescura": 0.9474
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 1,
+   "piezas_7d": 0,
+   "piezas_7d_previos": 1,
+   "redes": {
+    "tiktok": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "promesa",
+      "pct": 1.0
+     }
+    ],
+    "formato": [
+     {
+      "valor": "lista",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "tiktok",
+    "url": "https://www.tiktok.com/@entrenayaprendeconjuanmi/video/7695059904385617174",
+    "titulo": "Entrenamiento 4 días para principiantes: primer mes ...",
+    "cuenta": "@entrenayaprendeconjuanmi",
+    "publicado": 1791645750.0,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "promesa",
+    "formato": "lista",
+    "score": 0.6525000000000001,
+    "ajuste": 0.6525000000000001,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "tiktok",
+     "fecha": 1791645750.0,
+     "url": "https://www.tiktok.com/@entrenayaprendeconjuanmi/video/7695059904385617174",
+     "titulo": "Entrenamiento 4 días para principiantes: primer mes ...",
+     "cuenta": "@entrenayaprendeconjuanmi"
+    },
+    "ruta": [
+     {
+      "red": "tiktok",
+      "fecha": 1791645750.0,
+      "url": "https://www.tiktok.com/@entrenayaprendeconjuanmi/video/7695059904385617174",
+      "titulo": "Entrenamiento 4 días para principiantes: primer mes ...",
+      "cuenta": "@entrenayaprendeconjuanmi"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 7.4,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@entrenayaprendeconjuanmi/video/7695059904385617174",
+     "titulo": "Entrenamiento 4 días para principiantes: primer mes ...",
+     "cuenta": "@entrenayaprendeconjuanmi",
+     "publicado": 1791645750.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "lista",
+     "score": 0.6525000000000001,
+     "ajuste": 0.6525000000000001,
+     "con_metricas": false
+    }
+   ],
+   "porque": null
+  },
+  {
+   "id": "weight_loss_mindset_habits",
+   "nombre": "Mentalidad y hábitos para adelgazar",
+   "descripcion": "Habit-building, mindset shifts, and psychological strategies for sustainable weight loss and consistency.",
+   "score": 0.1564,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1316,
+    "temprano": 0.1004,
+    "multired": 0.4,
+    "frescura": 0.5
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 5,
+   "piezas_7d": 5,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "reddit": 4,
+    "tiktok": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 0.4
+     },
+     {
+      "valor": "historia",
+      "pct": 0.2
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 0.8
+     },
+     {
+      "valor": "tutorial",
+      "pct": 0.2
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "reddit",
+    "url": "https://www.reddit.com/r/loseit/comments/1x4j3wv/how_do_you_handle_social_events_while_dieting/",
+    "titulo": "How do you handle social events while dieting?",
+    "cuenta": "r/loseit",
+    "publicado": 1791853012.0,
+    "via": "rss",
+    "metrica": null,
+    "gancho": "pregunta",
+    "formato": "opinion",
+    "score": 0.5766666666666667,
+    "ajuste": 0.5766666666666667,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "reddit",
+     "fecha": 1791853012.0,
+     "url": "https://www.reddit.com/r/loseit/comments/1x4j3wv/how_do_you_handle_social_events_while_dieting/",
+     "titulo": "How do you handle social events while dieting?",
+     "cuenta": "r/loseit"
+    },
+    "ruta": [
+     {
+      "red": "reddit",
+      "fecha": 1791853012.0,
+      "url": "https://www.reddit.com/r/loseit/comments/1x4j3wv/how_do_you_handle_social_events_while_dieting/",
+      "titulo": "How do you handle social events while dieting?",
+      "cuenta": "r/loseit"
+     },
+     {
+      "red": "tiktok",
+      "fecha": 1791992196.0,
+      "url": "https://www.tiktok.com/@lucisuarez___/video/7696547879774604551",
+      "titulo": "Perder grasa de forma sostenible: cómo bajar peso paso a ...",
+      "cuenta": "@lucisuarez___"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 5.0,
+    "horas_entre_redes": [
+     38.7
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x4j3wv/how_do_you_handle_social_events_while_dieting/",
+     "titulo": "How do you handle social events while dieting?",
+     "cuenta": "r/loseit",
+     "publicado": 1791853012.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5766666666666667,
+     "ajuste": 0.5766666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@lucisuarez___/video/7696547879774604551",
+     "titulo": "Perder grasa de forma sostenible: cómo bajar peso paso a ...",
+     "cuenta": "@lucisuarez___",
+     "publicado": 1791992196.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.5758333333333333,
+     "ajuste": 0.5758333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x5x9vj/not_every_meal_needs_to_be_the_best_meal_of_your/",
+     "titulo": "Not every meal needs to be the best meal of your life",
+     "cuenta": "r/loseit",
+     "publicado": 1791998530.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.5641666666666667,
+     "ajuste": 0.5641666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x6g2ag/how_do_you_deal_with_knowing_you_have_a_long_way/",
+     "titulo": "How do you deal with knowing you have a long way to go and you need to be nearly perfectly consistent the entire time?",
+     "cuenta": "r/loseit",
+     "publicado": 1792052516.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.4658333333333333,
+     "ajuste": 0.4658333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x4xhhq/finally_got_abs_lost_it_and_now_i_have_an_ed/",
+     "titulo": "Finally got abs, lost it and now I have an ED",
+     "cuenta": "r/loseit",
+     "publicado": 1791900137.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "opinion",
+     "score": 0.3875,
+     "ajuste": 0.3875,
+     "con_metricas": false
+    }
+   ],
+   "porque": null
+  },
+  {
+   "id": "food_cravings_appetite",
+   "nombre": "Antojos y control del apetito",
+   "descripcion": "Strategies and discussions around managing hunger, cravings, emotional eating, and food noise.",
+   "score": 0.1522,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1316,
+    "temprano": 0.0796,
+    "multired": 0.4,
+    "frescura": 0.5
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 6,
+   "piezas_7d": 6,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "reddit": 5,
+    "tiktok": 1
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 0.5
+     },
+     {
+      "valor": "polemica",
+      "pct": 0.17
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 0.67
+     },
+     {
+      "valor": "caso",
+      "pct": 0.17
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "tiktok",
+    "url": "https://www.tiktok.com/@doctorarrietam/video/7695395026276273429",
+    "titulo": "Cómo interpretar antojos para perder grasa sin sufrir",
+    "cuenta": "@doctorarrietam",
+    "publicado": 1791723777.0,
+    "via": "busqueda_web",
+    "metrica": null,
+    "gancho": "promesa",
+    "formato": "tutorial",
+    "score": 0.7291666666666666,
+    "ajuste": 0.7291666666666666,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "tiktok",
+     "fecha": 1791723777.0,
+     "url": "https://www.tiktok.com/@doctorarrietam/video/7695395026276273429",
+     "titulo": "Cómo interpretar antojos para perder grasa sin sufrir",
+     "cuenta": "@doctorarrietam"
+    },
+    "ruta": [
+     {
+      "red": "tiktok",
+      "fecha": 1791723777.0,
+      "url": "https://www.tiktok.com/@doctorarrietam/video/7695395026276273429",
+      "titulo": "Cómo interpretar antojos para perder grasa sin sufrir",
+      "cuenta": "@doctorarrietam"
+     },
+     {
+      "red": "reddit",
+      "fecha": 1791801852.0,
+      "url": "https://www.reddit.com/r/loseit/comments/1x3ykvf/theres_no_such_thing_as_moderation_with_chocolate/",
+      "titulo": "There’s no such thing as moderation with chocolate",
+      "cuenta": "r/loseit"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 6.5,
+    "horas_entre_redes": [
+     21.7
+    ]
+   },
+   "top_piezas": [
+    {
+     "red": "tiktok",
+     "url": "https://www.tiktok.com/@doctorarrietam/video/7695395026276273429",
+     "titulo": "Cómo interpretar antojos para perder grasa sin sufrir",
+     "cuenta": "@doctorarrietam",
+     "publicado": 1791723777.0,
+     "via": "busqueda_web",
+     "metrica": null,
+     "gancho": "promesa",
+     "formato": "tutorial",
+     "score": 0.7291666666666666,
+     "ajuste": 0.7291666666666666,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x6x424/i_drink_so_much_zero_cal_bullshit_i_swear_it_works/",
+     "titulo": "I drink so much zero cal bullshit i swear it works",
+     "cuenta": "r/loseit",
+     "publicado": 1792097158.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "polemica",
+     "formato": "opinion",
+     "score": 0.5975,
+     "ajuste": 0.5975,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x5jtb4/is_there_anything_that_works_nearly_as_well_as/",
+     "titulo": "Is there anything that works nearly as well as black coffee for hunger suppression?",
+     "cuenta": "r/loseit",
+     "publicado": 1791958669.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5875,
+     "ajuste": 0.5875,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x3ykvf/theres_no_such_thing_as_moderation_with_chocolate/",
+     "titulo": "There’s no such thing as moderation with chocolate",
+     "cuenta": "r/loseit",
+     "publicado": 1791801852.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "opinion",
+     "score": 0.57,
+     "ajuste": 0.57,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x7ydow/how_do_you_guys_deal_with_hunger_and_the_urge_to/",
+     "titulo": "How do you guys deal with hunger and the urge to binge after being in a deficit for a while?",
+     "cuenta": "r/loseit",
+     "publicado": 1792202611.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.515,
+     "ajuste": 0.515,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x4yh7e/how_do_i_stop_snacking_every_day/",
+     "titulo": "How do I stop snacking every day?",
+     "cuenta": "r/loseit",
+     "publicado": 1791902473.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "caso",
+     "score": 0.5125,
+     "ajuste": 0.5125,
+     "con_metricas": false
+    }
+   ],
+   "porque": null
+  },
+  {
+   "id": "running_training_races",
+   "nombre": "Entrenamiento para correr y carreras",
+   "descripcion": "Running training advice, race reports, and tips for runners, including strength training for runners and race etiquette.",
+   "score": 0.1174,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1316,
+    "temprano": 0.0554,
+    "multired": 0.2,
+    "frescura": 0.5
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 7,
+   "piezas_7d": 7,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "reddit": 7
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "historia",
+      "pct": 0.57
+     },
+     {
+      "valor": "pregunta",
+      "pct": 0.43
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 0.57
+     },
+     {
+      "valor": "caso",
+      "pct": 0.43
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "reddit",
+    "url": "https://www.reddit.com/r/loseit/comments/1x3o0p6/ran_the_5k/",
+    "titulo": "Ran the 5k!",
+    "cuenta": "r/loseit",
+    "publicado": 1791765254.0,
+    "via": "rss",
+    "metrica": null,
+    "gancho": "historia",
+    "formato": "caso",
+    "score": 0.43583333333333335,
+    "ajuste": 0.43583333333333335,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "reddit",
+     "fecha": 1791765254.0,
+     "url": "https://www.reddit.com/r/loseit/comments/1x3o0p6/ran_the_5k/",
+     "titulo": "Ran the 5k!",
+     "cuenta": "r/loseit"
+    },
+    "ruta": [
+     {
+      "red": "reddit",
+      "fecha": 1791765254.0,
+      "url": "https://www.reddit.com/r/loseit/comments/1x3o0p6/ran_the_5k/",
+      "titulo": "Ran the 5k!",
+      "cuenta": "r/loseit"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 6.0,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/running/comments/1x439ym/winter_running/",
+     "titulo": "Winter Running",
+     "cuenta": "r/running",
+     "publicado": 1791815148.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "opinion",
+     "score": 0.5066666666666667,
+     "ajuste": 0.5066666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/running/comments/1x57rpo/is_splitting_lowerbody_strength_training_across/",
+     "titulo": "Is splitting lower-body strength training across multiple days as effective for runners as doing dedicated leg workouts?",
+     "cuenta": "r/running",
+     "publicado": 1791923187.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.44,
+     "ajuste": 0.44,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x3o0p6/ran_the_5k/",
+     "titulo": "Ran the 5k!",
+     "cuenta": "r/loseit",
+     "publicado": 1791765254.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "caso",
+     "score": 0.43583333333333335,
+     "ajuste": 0.43583333333333335,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/running/comments/1x6kc5h/is_it_worth_doing_a_major_marathon/",
+     "titulo": "Is it worth doing a Major Marathon?",
+     "cuenta": "r/running",
+     "publicado": 1792067385.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.35083333333333333,
+     "ajuste": 0.35083333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/running/comments/1x5bak4/is_it_just_me_or_have_races_gotten_worse/",
+     "titulo": "Is it just me or have races gotten worse?",
+     "cuenta": "r/running",
+     "publicado": 1791932055.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.33916666666666667,
+     "ajuste": 0.33916666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/running/comments/1x4e95g/road_racing_etiquette_question/",
+     "titulo": "Road Racing Etiquette Question",
+     "cuenta": "r/running",
+     "publicado": 1791839837.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "caso",
+     "score": 0.3208333333333333,
+     "ajuste": 0.3208333333333333,
+     "con_metricas": false
+    }
+   ],
+   "porque": null
+  },
+  {
+   "id": "weight_loss_journeys",
+   "nombre": "Historias de pérdida de peso",
+   "descripcion": "Personal weight loss journeys, progress updates, and lessons learned from significant fat loss.",
+   "score": 0.1063,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1316,
+    "temprano": 0.0,
+    "multired": 0.2,
+    "frescura": 0.5
+   },
+   "aceleracion_estimada": true,
+   "etapa": "pico",
+   "volumen": 19,
+   "piezas_7d": 19,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "reddit": 19
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 0.37
+     },
+     {
+      "valor": "contraste",
+      "pct": 0.21
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 0.89
+     },
+     {
+      "valor": "caso",
+      "pct": 0.11
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "reddit",
+    "url": "https://www.reddit.com/r/loseit/comments/1x2yhla/feeling_proud/",
+    "titulo": "Feeling proud",
+    "cuenta": "r/loseit",
+    "publicado": 1791691607.0,
+    "via": "rss",
+    "metrica": null,
+    "gancho": "historia",
+    "formato": "opinion",
+    "score": 0.41083333333333333,
+    "ajuste": 0.41083333333333333,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "reddit",
+     "fecha": 1791691607.0,
+     "url": "https://www.reddit.com/r/loseit/comments/1x2yhla/feeling_proud/",
+     "titulo": "Feeling proud",
+     "cuenta": "r/loseit"
+    },
+    "ruta": [
+     {
+      "red": "reddit",
+      "fecha": 1791691607.0,
+      "url": "https://www.reddit.com/r/loseit/comments/1x2yhla/feeling_proud/",
+      "titulo": "Feeling proud",
+      "cuenta": "r/loseit"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 6.8,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x5t062/holy_cowi_did_it/",
+     "titulo": "Holy cow....I did it",
+     "cuenta": "r/loseit",
+     "publicado": 1791988834.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "caso",
+     "score": 0.5725,
+     "ajuste": 0.5725,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x884s4/just_got_below_100kg_today/",
+     "titulo": "Just got below 100kg today",
+     "cuenta": "r/loseit",
+     "publicado": 1792237234.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "dato",
+     "formato": "caso",
+     "score": 0.5599999999999999,
+     "ajuste": 0.5599999999999999,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x3qonv/what_were_the_best_nsvs/",
+     "titulo": "What were the best NSVs?",
+     "cuenta": "r/loseit",
+     "publicado": 1791773510.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5075000000000001,
+     "ajuste": 0.5075000000000001,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x7gmao/finally_reached_a_healthy_bmi_after_being/",
+     "titulo": "Finally reached a healthy BMI after being overweight for over a DECADE!!!",
+     "cuenta": "r/loseit",
+     "publicado": 1792158259.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.4816666666666667,
+     "ajuste": 0.4816666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x5knuh/ive_lost_around_15kg_30_pounds_and_i_look_the_same/",
+     "titulo": "I've lost around 15kg (30 pounds) and I look the same",
+     "cuenta": "r/loseit",
+     "publicado": 1791961880.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "contraste",
+     "formato": "opinion",
+     "score": 0.4666666666666667,
+     "ajuste": 0.4666666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x4s0vg/has_anyone_here_manage_to_lose_man_boobs/",
+     "titulo": "Has anyone here manage to lose man boobs?",
+     "cuenta": "r/loseit",
+     "publicado": 1791883521.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.46499999999999997,
+     "ajuste": 0.46499999999999997,
+     "con_metricas": false
+    }
+   ],
+   "porque": null
+  },
+  {
+   "id": "fitness_motivation_consistency",
+   "nombre": "Motivación y constancia en el fitness",
+   "descripcion": "Tips, stories, and discussions on staying motivated, building consistency, and overcoming gym intimidation.",
+   "score": 0.0883,
+   "senales": {
+    "fuerza": 0.0,
+    "aceleracion": 0.1316,
+    "temprano": 0.0416,
+    "multired": 0.2,
+    "frescura": 0.2368
+   },
+   "aceleracion_estimada": true,
+   "etapa": "saturado",
+   "volumen": 8,
+   "piezas_7d": 8,
+   "piezas_7d_previos": 0,
+   "redes": {
+    "reddit": 8
+   },
+   "rasgos": {
+    "gancho": [
+     {
+      "valor": "pregunta",
+      "pct": 0.75
+     },
+     {
+      "valor": "historia",
+      "pct": 0.25
+     }
+    ],
+    "formato": [
+     {
+      "valor": "opinion",
+      "pct": 1.0
+     }
+    ],
+    "menciona_lanzamiento": 0.0
+   },
+   "pieza_temprana": {
+    "red": "reddit",
+    "url": "https://www.reddit.com/r/Fitness/comments/1x33dm1/victory_sunday/",
+    "titulo": "Victory Sunday",
+    "cuenta": "r/Fitness",
+    "publicado": 1791709224.0,
+    "via": "rss",
+    "metrica": null,
+    "gancho": "pregunta",
+    "formato": "opinion",
+    "score": 0.4058333333333333,
+    "ajuste": 0.4058333333333333,
+    "con_metricas": false
+   },
+   "rastreo": {
+    "origen": {
+     "red": "reddit",
+     "fecha": 1791709224.0,
+     "url": "https://www.reddit.com/r/Fitness/comments/1x33dm1/victory_sunday/",
+     "titulo": "Victory Sunday",
+     "cuenta": "r/Fitness"
+    },
+    "ruta": [
+     {
+      "red": "reddit",
+      "fecha": 1791709224.0,
+      "url": "https://www.reddit.com/r/Fitness/comments/1x33dm1/victory_sunday/",
+      "titulo": "Victory Sunday",
+      "cuenta": "r/Fitness"
+     }
+    ],
+    "fuentes_externas": [],
+    "dias_activo": 6.6,
+    "horas_entre_redes": []
+   },
+   "top_piezas": [
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x5aqqj/is_walking_good_enough/",
+     "titulo": "Is walking good enough?",
+     "cuenta": "r/loseit",
+     "publicado": 1791930545.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5733333333333334,
+     "ajuste": 0.5733333333333334,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x52t17/which_was_easier_for_you_to_stick_to_going_to_the/",
+     "titulo": "Which was easier for you to stick to: going to the gym in the morning before work, or going after work?",
+     "cuenta": "r/loseit",
+     "publicado": 1791912169.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5208333333333334,
+     "ajuste": 0.5208333333333334,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x677mw/for_people_that_managed_to_destroy_the_part_of/",
+     "titulo": "For people that managed to destroy the part of their brain telling them not to go to the gym or a workout, what did it take for you to go from \"i dont wanna go\" to \"i dont have a choice but to go\" mind set?",
+     "cuenta": "r/loseit",
+     "publicado": 1792022807.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5116666666666667,
+     "ajuste": 0.5116666666666667,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/bodyweightfitness/comments/1x5vrfk/how_do_you_stay_consistent_when_working_out_feels/",
+     "titulo": "How do you stay consistent when working out feels boring and isn't really necessary for your lifestyle?",
+     "cuenta": "r/bodyweightfitness",
+     "publicado": 1791995128.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.5083333333333333,
+     "ajuste": 0.5083333333333333,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/loseit/comments/1x43ulg/comment_from_trainer_at_gym_made_me_uncomfortable/",
+     "titulo": "Comment from trainer at gym made me uncomfortable",
+     "cuenta": "r/loseit",
+     "publicado": 1791816506.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "historia",
+     "formato": "opinion",
+     "score": 0.4375,
+     "ajuste": 0.4375,
+     "con_metricas": false
+    },
+    {
+     "red": "reddit",
+     "url": "https://www.reddit.com/r/bodyweightfitness/comments/1x7ffd1/why_progress/",
+     "titulo": "Why progress?",
+     "cuenta": "r/bodyweightfitness",
+     "publicado": 1792155195.0,
+     "via": "rss",
+     "metrica": null,
+     "gancho": "pregunta",
+     "formato": "opinion",
+     "score": 0.43333333333333335,
+     "ajuste": 0.43333333333333335,
+     "con_metricas": false
+    }
+   ],
+   "porque": null
+  }
+ ],
+ "ideas": [
+  {
+   "formato": "carrusel de Instagram",
+   "titulo": "5 errores con creatina que te impiden ganar músculo (y cómo evitarlos)",
+   "gancho": "¿Tomas creatina pero no ves resultados? Probablemente estás cometiendo uno de estos errores.",
+   "desarrollo": "Diapositiva 1: Portada con el título y una imagen de creatina en polvo. Diapositiva 2: Error 1: No tomar la dosis adecuada (explicar 3-5 g diarios). Diapositiva 3: Error 2: No ser constante (la creatina requiere uso diario). Diapositiva 4: Error 3: Esperar resultados inmediatos (la saturación toma semanas). Diapositiva 5: Error 4: Creer que solo sirve para fisicoculturistas (beneficios cognitivos y para adultos ocupados). Diapositiva 6: Error 5: Comprar formas caras (monohidrato es suficiente). Diapositiva 7: Llamado a la acción: Guarda este carrusel y comparte con alguien que tome creatina.",
+   "jev": {
+    "ajuste_audiencia": {
+     "score": 0.925,
+     "confianza": 0.76
+    },
+    "fuerza_gancho": {
+     "score": 0.745,
+     "confianza": 0.89
+    }
+   }
+  },
+  {
+   "formato": "reel/TikTok",
+   "titulo": "Creatina en 60 segundos: lo que todo líder ocupado debe saber",
+   "gancho": "¿Creatina? Sí, ese suplemento que solo toman los gym rats... o no.",
+   "desarrollo": "Clip de 60 segundos con ritmo rápido y texto en pantalla. Primeros 3 segundos: pregunta provocadora. Luego, cortes rápidos mostrando los beneficios clave: mejora fuerza, ayuda a ganar músculo, apoya la función cerebral, dosis simple (una cucharadita al día), segura y barata. Final: 'No necesitas ser atleta para beneficiarte. Empieza hoy.' Usar música de fondo enérgica y subtítulos.",
+   "jev": {
+    "ajuste_audiencia": {
+     "score": 0.902,
+     "confianza": 0.68
+    },
+    "fuerza_gancho": {
+     "score": 0.792,
+     "confianza": 0.82
+    }
+   }
+  },
+  {
+   "formato": "post de LinkedIn",
+   "titulo": "La creatina no es solo para músculo: el suplemento que todo profesional debería considerar",
+   "gancho": "Dato poco conocido: la creatina puede mejorar tu rendimiento cognitivo, no solo tu físico.",
+   "desarrollo": "Texto de 150-200 palabras que inicia con una pregunta para enganchar: '¿Sabías que la creatina, famosa por ayudar a ganar músculo, también puede potenciar tu cerebro?' Explicar brevemente la evidencia: estudios sugieren mejoras en memoria y reducción de fatiga mental, especialmente en personas con sueño insuficiente o estrés. Mencionar que es segura, barata y fácil de tomar (3-5 g al día). Terminar con un llamado a la acción: 'Si buscas una ventaja simple y basada en ciencia para tu rendimiento diario, vale la pena investigar. ¿La has probado? Cuéntame en comentarios.' Incluir una imagen atractiva de creatina en polvo o infografía simple.",
+   "jev": {
+    "ajuste_audiencia": {
+     "score": 0.757,
+     "confianza": 0.65
+    },
+    "fuerza_gancho": {
+     "score": 0.755,
+     "confianza": 0.87
+    }
+   }
+  }
+ ],
+ "predicciones": [
+  {
+   "nombre": "Creatina para mujeres ocupadas",
+   "tesis": "La creatina está creciendo fuertemente y ya es tema en YouTube, pero aún no se habla específicamente para mujeres adultas con agendas llenas, un nicho desatendido. Su alta aceleración y origen en YouTube sugieren que pronto se expandirá a otras plataformas y segmentos.",
+   "basado_en": [
+    "creatine_supplementation"
+   ],
+   "senal_a_vigilar": "Aparición de videos o posts en Instagram/TikTok de influencers femeninas hablando de creatina para energía y músculo sin inflamación.",
+   "ventana": "1-2 semanas",
+   "que_publicar_hoy": "Publicar un reel o carrusel: 'Creatina para mujeres con poco tiempo: dosis, mitos y cómo integrarla en tu rutina' con enfoque en seguridad y practicidad.",
+   "respaldo_datos": 0.842,
+   "jev": {
+    "interes_audiencia": 0.757,
+    "novedad": 0.667,
+    "concreta": 0.79
+   },
+   "fuerza": 0.776
+  },
+  {
+   "nombre": "Fuerza funcional para mayores de 60",
+   "tesis": "El fitness para mayores de 60 está creciendo, y dentro de ese tema, el entrenamiento de fuerza funcional (levantarse del suelo, cargar bolsas) es una subcategoría con potencial, especialmente para adultos latinoamericanos que cuidan a sus padres. Combina alta aceleración con volumen moderado.",
+   "basado_en": [
+    "senior_fitness_60plus",
+    "strength_training_after_40"
+   ],
+   "senal_a_vigilar": "Videos de ejercicios funcionales para seniors en canales latinoamericanos de YouTube superan 100k vistas en una semana.",
+   "ventana": "2-3 semanas",
+   "que_publicar_hoy": "Crear un video corto: '3 ejercicios de fuerza que todo adulto mayor debería hacer para mantener independencia' demostrando movimientos seguros en casa.",
+   "respaldo_datos": 0.738,
+   "jev": {
+    "interes_audiencia": 0.605,
+    "novedad": 0.56,
+    "concreta": 0.77
+   },
+   "fuerza": 0.666
+  },
+  {
+   "nombre": "Retos de 10 minutos anti-grasa visceral",
+   "tesis": "Los retos para grasa visceral están emergiendo con alta aceleración y bajo volumen, y la audiencia ocupada necesita soluciones cortas. Un reto de 10 minutos diarios es la combinación perfecta entre el tema creciente y la practicidad demandada.",
+   "basado_en": [
+    "visceral_fat_loss_challenges",
+    "fat_loss_home_cardio"
+   ],
+   "senal_a_vigilar": "Comentarios en redes pidiendo rutinas más cortas o adaptaciones para principiantes en los videos de retos existentes.",
+   "ventana": "1-2 semanas",
+   "que_publicar_hoy": "Lanzar un mini reto de 7 días con videos de 10 minutos enfocados en reducir grasa abdominal, promocionándolo como 'para los que no tienen tiempo'.",
+   "respaldo_datos": 0.544,
+   "jev": {
+    "interes_audiencia": 0.815,
+    "novedad": 0.593,
+    "concreta": 0.85
+   },
+   "fuerza": 0.666
+  },
+  {
+   "nombre": "Proteína vegetal para ganar músculo",
+   "tesis": "La ingesta de proteína está en pico y hay debate sobre fuentes, pero la proteína vegetal para ganar músculo es un ángulo emergente, impulsado por la conversación en Reddit sobre fibra y salud. Aún no ha llegado a Instagram en español, lo que representa una oportunidad.",
+   "basado_en": [
+    "protein_intake_guidance"
+   ],
+   "senal_a_vigilar": "Publicaciones en español sobre combinar legumbres y cereales para proteína completa aparecen en Instagram con alto engagement.",
+   "ventana": "1-3 semanas",
+   "que_publicar_hoy": "Infografía: 'Cómo alcanzar tu proteína diaria con alimentos vegetales (sin batidos caros)' para adultos con poco tiempo y presupuesto limitado.",
+   "respaldo_datos": 0.542,
+   "jev": {
+    "interes_audiencia": 0.662,
+    "novedad": 0.718,
+    "concreta": 0.7
+   },
+   "fuerza": 0.629
+  },
+  {
+   "nombre": "Mini bandas para glúteos en casa",
+   "tesis": "Las rutinas de piernas y glúteos en casa están en pico, pero el uso de mini bandas de resistencia es un accesorio barato y portátil que aún no es tendencia específica. Su origen en YouTube y alta visibilidad sugieren que puede despegar como variante efectiva.",
+   "basado_en": [
+    "home_leg_glute_routines",
+    "dumbbell_home_training"
+   ],
+   "senal_a_vigilar": "Aumento de búsquedas de 'mini bandas ejercicios' en Google Trends para países latinoamericanos.",
+   "ventana": "2-4 semanas",
+   "que_publicar_hoy": "Video demostrativo: 'Rutina de glúteos con mini banda en 20 minutos: efectiva y sin pesas' mostrando progresiones para todos los niveles.",
+   "respaldo_datos": 0.381,
+   "jev": {
+    "interes_audiencia": 0.69,
+    "novedad": 0.65,
+    "concreta": 0.83
+   },
+   "fuerza": 0.572
+  }
+ ],
+ "cobertura": {
+  "youtube": {
+   "recolectadas": 80,
+   "en_ranking": 74,
+   "con_metricas": 74,
+   "vias": [
+    "api"
+   ]
+  },
+  "reddit": {
+   "recolectadas": 78,
+   "en_ranking": 54,
+   "con_metricas": 0,
+   "vias": [
+    "rss"
+   ]
+  },
+  "instagram": {
+   "recolectadas": 11,
+   "en_ranking": 6,
+   "con_metricas": 0,
+   "vias": [
+    "busqueda_web"
+   ]
+  },
+  "linkedin": {
+   "recolectadas": 3,
+   "en_ranking": 0,
+   "con_metricas": 0,
+   "vias": [
+    "busqueda_web"
+   ]
+  },
+  "tiktok": {
+   "recolectadas": 17,
+   "en_ranking": 16,
+   "con_metricas": 0,
+   "vias": [
+    "busqueda_web"
+   ]
+  }
+ },
+ "conteos": {
+  "recolectadas": 189,
+  "clasificadas": 189,
+  "en_ranking": 150,
+  "fuera_de_sector": 7,
+  "baja_confianza": 8,
+  "sin_tema": 24
+ },
+ "costo": {
+  "total_usd": 0.0397,
+  "jev_usd": 0.0171,
+  "llm_usd": 0.0226,
+  "proveedor_llm": "DeepSeek",
+  "modelos_sin_precio": [],
+  "pasos": {
+   "llm_temas": {
+    "llamadas": 1,
+    "tokens_entrada": 4158,
+    "tokens_salida": 1159,
+    "busquedas_web": 0,
+    "usd": 0.00264
+   },
+   "jev_piezas": {
+    "llamadas": 189,
+    "tokens_entrada": 402491,
+    "tokens_salida": 93188,
+    "busquedas_web": 0,
+    "usd": 0.0169
+   },
+   "llm_redaccion": {
+    "llamadas": 1,
+    "tokens_entrada": 3402,
+    "tokens_salida": 1387,
+    "busquedas_web": 0,
+    "usd": 0.00998
+   },
+   "jev_ideas": {
+    "llamadas": 3,
+    "tokens_entrada": 1902,
+    "tokens_salida": 120,
+    "busquedas_web": 0,
+    "usd": 8e-05
+   },
+   "llm_predicciones": {
+    "llamadas": 1,
+    "tokens_entrada": 4413,
+    "tokens_salida": 1052,
+    "busquedas_web": 0,
+    "usd": 0.00999
+   },
+   "jev_predicciones": {
+    "llamadas": 5,
+    "tokens_entrada": 2859,
+    "tokens_salida": 275,
+    "busquedas_web": 0,
+    "usd": 0.00012
+   }
+  },
+  "por_tema_usd": 0.00397,
+  "por_pieza_usd": 0.00021,
+  "historial": [
+   {
+    "generado": "2026-10-18T00:05:14+00:00",
+    "usd": 0.0397,
+    "piezas": 189
+   }
+  ]
+ },
+ "temas_corrida": [
+  {
+   "id": "home_workout_full_body",
+   "nombre": "Rutinas full body en casa",
+   "descripcion": "Full-body home workout routines with and without equipment, including 5-day strength plans and quick sessions."
+  },
+  {
+   "id": "home_leg_glute_routines",
+   "nombre": "Piernas y glúteos en casa",
+   "descripcion": "Home routines focused on legs, glutes, and lower body toning, including GAP and no-weight options."
+  },
+  {
+   "id": "home_upper_arm_abs_routines",
+   "nombre": "Brazos, espalda y abdomen en casa",
+   "descripcion": "Home workouts targeting arms, back, torso, and abs, often combined for toning and fat loss."
+  },
+  {
+   "id": "dumbbell_home_training",
+   "nombre": "Entrenamiento con mancuernas en casa",
+   "descripcion": "Home routines using dumbbells for strength and toning, including upper/lower splits and full-body sessions."
+  },
+  {
+   "id": "beginner_home_workout_plans",
+   "nombre": "Planes de entrenamiento para principiantes",
+   "descripcion": "Structured multi-day home workout plans aimed at beginners, including 4-day splits and first-month guides."
+  },
+  {
+   "id": "gym_routines_for_muscle",
+   "nombre": "Rutinas de gimnasio para músculo",
+   "descripcion": "Gym-based routines and splits focused on building muscle, including 5-day plans and torso-leg splits."
+  },
+  {
+   "id": "fat_loss_home_cardio",
+   "nombre": "Cardio y quema de grasa en casa",
+   "descripcion": "Home cardio workouts like dance, boxing, and taichi designed to burn calories and fat without equipment."
+  },
+  {
+   "id": "visceral_fat_loss_challenges",
+   "nombre": "Retos para grasa visceral",
+   "descripcion": "Multi-day challenges and routines specifically targeting visceral fat loss, often using taichi or walking."
+  },
+  {
+   "id": "weight_loss_nutrition",
+   "nombre": "Nutrición para perder grasa",
+   "descripcion": "Dietary strategies, meal ideas, and tips for sustainable fat loss, including high-protein recipes and calorie deficits."
+  },
+  {
+   "id": "muscle_gain_nutrition",
+   "nombre": "Nutrición para ganar músculo",
+   "descripcion": "Nutrition advice and high-protein recipes aimed at building muscle mass, including for older adults."
+  },
+  {
+   "id": "protein_intake_guidance",
+   "nombre": "Ingesta de proteína",
+   "descripcion": "Guidance and debates on protein requirements for muscle gain and health, including myths and practical tips."
+  },
+  {
+   "id": "creatine_supplementation",
+   "nombre": "Creatina y suplementación",
+   "descripcion": "Information on creatine use, benefits, risks, and best practices, including for people over 40."
+  },
+  {
+   "id": "strength_training_after_40",
+   "nombre": "Entrenamiento después de los 40",
+   "descripcion": "Strength training and fitness advice tailored for adults over 40, including menopause and bone health considerations."
+  },
+  {
+   "id": "senior_fitness_60plus",
+   "nombre": "Fitness para mayores de 60",
+   "descripcion": "Exercise routines and nutrition tips for maintaining strength and muscle after age 60, including osteoporosis-safe workouts."
+  },
+  {
+   "id": "running_training_races",
+   "nombre": "Entrenamiento para correr y carreras",
+   "descripcion": "Running training advice, race reports, and tips for runners, including strength training for runners and race etiquette."
+  },
+  {
+   "id": "weight_loss_journeys",
+   "nombre": "Historias de pérdida de peso",
+   "descripcion": "Personal weight loss journeys, progress updates, and lessons learned from significant fat loss."
+  },
+  {
+   "id": "weight_loss_mindset_habits",
+   "nombre": "Mentalidad y hábitos para adelgazar",
+   "descripcion": "Habit-building, mindset shifts, and psychological strategies for sustainable weight loss and consistency."
+  },
+  {
+   "id": "food_cravings_appetite",
+   "nombre": "Antojos y control del apetito",
+   "descripcion": "Strategies and discussions around managing hunger, cravings, emotional eating, and food noise."
+  },
+  {
+   "id": "body_recomposition",
+   "nombre": "Recomposición corporal",
+   "descripcion": "Guidance on losing fat and gaining muscle simultaneously, including training and nutrition approaches."
+  },
+  {
+   "id": "fitness_motivation_consistency",
+   "nombre": "Motivación y constancia en el fitness",
+   "descripcion": "Tips, stories, and discussions on staying motivated, building consistency, and overcoming gym intimidation."
+  }
+ ]
+}
