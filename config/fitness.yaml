@@ -50,3 +50,4 @@ pesos:
 umbrales:
   es_sector: 0.6
   confianza_min: 0.6
+  min_piezas_top: 3       # un tema necesita al menos 3 piezas para entrar al top 10
