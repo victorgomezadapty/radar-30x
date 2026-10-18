@@ -689,8 +689,18 @@ function contar(el) {
   requestAnimationFrame(paso);
   setTimeout(() => pinta(v), dur + 150);  // si el navegador pausa la animación, el valor final igual queda
 }
-let observador = null;
+let observador = null, revisor = null;
+function revisarRevelados() {  // respaldo del observador: revisa a mano qué ya está en pantalla
+  const pend = document.querySelectorAll(".revelar:not(.visto)");
+  pend.forEach(e => {
+    const r = e.getBoundingClientRect();
+    if (r.height > 0 && r.top < innerHeight - 40 && r.bottom > 0) { e.classList.add("visto"); e.querySelectorAll("[data-contar]").forEach(contar); }
+  });
+  if (!document.querySelectorAll(".revelar:not(.visto)").length) { clearInterval(revisor); revisor = null; }
+}
 function observarRevelados() {
+  if (!revisor) revisor = setInterval(revisarRevelados, 500);
+  addEventListener("scroll", revisarRevelados, { passive: true });
   const els = document.querySelectorAll(".revelar:not(.visto)");
   if (!("IntersectionObserver" in window)) { els.forEach(e => { e.classList.add("visto"); e.querySelectorAll("[data-contar]").forEach(contar); }); return; }
   observador = observador || new IntersectionObserver(entradas => entradas.forEach(en => {
