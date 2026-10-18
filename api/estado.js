@@ -24,7 +24,7 @@ module.exports = async (req, res) => {
       ...pasos.filter(p => p.estado !== "pendiente" && p.estado !== "omitido").map(p => `${{ hecho: "✓", activo: "…", omitido: "–", error: "✗" }[p.estado]} ${p.nombre}`),
     ];
     res.json({
-      ...base, corriendo, pasos: pasos.filter(p => p.estado !== "omitido" || p.nombre !== PASOS[0]), log, url: run.html_url,
+      ...base, corriendo, pasos: pasos.filter(p => p.nombre !== PASOS[0] || ["activo", "hecho", "error"].includes(p.estado)), log, url: run.html_url,
       sector: (run.display_title.match(/Radar ([a-z0-9_]+)/) || [])[1] || null,
       inicio: Date.parse(run.run_started_at || run.created_at) / 1000,
       fin: corriendo ? null : Date.parse(run.updated_at) / 1000,
