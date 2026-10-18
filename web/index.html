@@ -260,6 +260,47 @@ details.mas > summary { cursor: pointer; font-weight: 600; color: var(--accent);
 .vacio { padding: 40px; text-align: center; color: var(--muted); }
 .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--hero); color: #fff; padding: 10px 16px; border-radius: 10px; font-size: 14px; z-index: 60; }
 footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
+
+/* movimiento */
+@keyframes subir { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes crecer { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes girar { to { transform: rotate(360deg); } }
+@keyframes latido { 0% { box-shadow: 0 0 0 0 rgba(217, 249, 157, .7); } 100% { box-shadow: 0 0 0 20px rgba(217, 249, 157, 0); } }
+@keyframes latido-verde { 0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, .55); } 100% { box-shadow: 0 0 0 10px rgba(22, 163, 74, 0); } }
+.hero { position: relative; overflow: hidden; }
+.hero > .wrap { position: relative; z-index: 1; }
+.radar { position: absolute; right: -160px; top: 50%; width: 680px; height: 680px; transform: translateY(-50%); pointer-events: none; opacity: .6; z-index: 0; }
+.radar .anillo { position: absolute; border: 2px solid rgba(165, 180, 252, .16); border-radius: 50%; }
+.radar .barrido { position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 0deg, rgba(165,180,252,0) 0deg, rgba(165,180,252,0) 290deg, rgba(165,180,252,.32) 360deg); animation: girar 5s linear infinite; }
+.radar .punto { position: absolute; width: 14px; height: 14px; border-radius: 50%; background: #d9f99d; animation: latido 2.2s ease-out infinite; }
+@media (max-width: 900px) { .radar { right: -260px; opacity: .35; } }
+.hero h1, .hero p.lead, .hero .cta { animation: subir .7s ease-out both; }
+.hero p.lead { animation-delay: .12s; } .hero .cta { animation-delay: .24s; }
+.hcard { animation: subir .6s ease-out both; animation-delay: calc(var(--i, 0) * 120ms + 300ms); backdrop-filter: blur(6px); background: rgba(11, 16, 32, .55); }
+.revelar { opacity: 0; transform: translateY(24px); transition: opacity .7s ease-out, transform .7s ease-out; }
+.revelar.visto { opacity: 1; transform: none; }
+.barra i { transform-origin: left center; }
+.animar .barra i { animation: crecer 1s cubic-bezier(.2, .8, .2, 1) both; }
+.animar .tema, .animar .pred, .animar .idea, .animar .kpi, .animar .ganchos-fila, .animar .fila { animation: subir .5s ease-out both; animation-delay: calc(var(--i, 0) * 70ms); }
+.etapa.vivo { animation: latido-verde 1.8s ease-out infinite; }
+.demo { padding: 24px; display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 32px; align-items: center; }
+@media (max-width: 860px) { .demo { grid-template-columns: 1fr; } }
+.demo-kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 16px; }
+.demo-kpis .v { font-size: 34px; font-weight: 800; letter-spacing: -.02em; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.demo-kpis .l { color: var(--muted); font-size: 13px; }
+.demo-barras { display: grid; gap: 14px; }
+.demo-fila { display: grid; grid-template-columns: minmax(0, 1fr) 46px; gap: 6px 12px; align-items: center; font-size: 14px; }
+.demo-fila .nom { display: flex; gap: 8px; align-items: center; min-width: 0; }
+.demo-fila .nom b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.demo-fila .barra { grid-column: 1 / 3; width: 100%; height: 10px; }
+.demo-fila .val { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+.revelar .barra i { transform: scaleX(0); }
+.revelar.visto .barra i { transform: none; animation: crecer 1.2s cubic-bezier(.2, .8, .2, 1) both; animation-delay: calc(var(--i, 0) * 130ms + 200ms); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .revelar { opacity: 1; transform: none; }
+  .revelar .barra i { transform: none; }
+}
 </style>
 </head>
 <body>
@@ -287,6 +328,14 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
 <!-- LANDING -->
 <section id="vista-landing">
   <div class="hero">
+    <div class="radar" aria-hidden="true">
+      <div class="anillo" style="inset:0"></div><div class="anillo" style="inset:115px"></div><div class="anillo" style="inset:230px"></div>
+      <div class="barrido"></div>
+      <div class="punto" style="left:470px;top:170px"></div>
+      <div class="punto" style="left:200px;top:430px;animation-delay:.8s;background:#a5b4fc"></div>
+      <div class="punto" style="left:410px;top:500px;animation-delay:1.5s;background:#a5b4fc"></div>
+      <div class="punto" style="left:150px;top:230px;animation-delay:.3s;background:#a5b4fc;width:10px;height:10px"></div>
+    </div>
     <div class="wrap hero-grid">
       <div>
         <h1>Descubre qué está <em>creciendo hoy</em> en redes, antes que todos.</h1>
@@ -297,10 +346,25 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
         </div>
       </div>
       <div class="hero-cards">
-        <div class="hcard"><div class="ibox"><svg class="ico"><use href="#i-radar"/></svg></div><b>Detecta temprano</b><span>Mide velocidad y saltos entre redes.</span></div>
-        <div class="hcard"><div class="ibox"><svg class="ico"><use href="#i-bulb"/></svg></div><b>Explica el porqué</b><span>Gancho, formato y origen de cada tema.</span></div>
-        <div class="hcard"><div class="ibox"><svg class="ico"><use href="#i-target"/></svg></div><b>Filtra por audiencia</b><span>Solo lo que le sirve a tu público.</span></div>
-        <div class="hcard"><div class="ibox"><svg class="ico"><use href="#i-spark"/></svg></div><b>Predice lo que viene</b><span>Temas que pueden explotar pronto.</span></div>
+        <div class="hcard" style="--i:0"><div class="ibox"><svg class="ico"><use href="#i-radar"/></svg></div><b>Detecta temprano</b><span>Mide velocidad y saltos entre redes.</span></div>
+        <div class="hcard" style="--i:1"><div class="ibox"><svg class="ico"><use href="#i-bulb"/></svg></div><b>Explica el porqué</b><span>Gancho, formato y origen de cada tema.</span></div>
+        <div class="hcard" style="--i:2"><div class="ibox"><svg class="ico"><use href="#i-target"/></svg></div><b>Filtra por audiencia</b><span>Solo lo que le sirve a tu público.</span></div>
+        <div class="hcard" style="--i:3"><div class="ibox"><svg class="ico"><use href="#i-spark"/></svg></div><b>Predice lo que viene</b><span>Temas que pueden explotar pronto.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion oculto" id="sec-demo">
+    <div class="wrap">
+      <h2>Una corrida real</h2>
+      <p class="nota" id="demo-sub"></p>
+      <div class="card demo revelar" id="demo">
+        <div class="demo-kpis" id="demo-kpis"></div>
+        <div>
+          <h3 class="sec">Top 5 por score</h3>
+          <div class="demo-barras" id="demo-barras"></div>
+          <button class="btn chico" id="demo-ver" style="margin-top:14px">Ver los resultados completos</button>
+        </div>
       </div>
     </div>
   </div>
@@ -309,7 +373,7 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
     <div class="wrap">
       <h2>Cómo funciona</h2>
       <p class="nota">Tú eliges el tema y las redes; el radar hace el resto.</p>
-      <div class="pasos-como">
+      <div class="pasos-como revelar">
         <div class="card paso-como"><div class="num">1</div><b>Elige tema y redes</b><span class="nota">IA, fitness o cualquier temática libre. YouTube, Reddit, Instagram, LinkedIn, TikTok y Hacker News.</span></div>
         <div class="card paso-como"><div class="num">2</div><b>El radar recolecta</b><span class="nota">Trae las piezas públicas de las últimas semanas y mide qué tan rápido crece cada una.</span></div>
         <div class="card paso-como"><div class="num">3</div><b>JEV clasifica</b><span class="nota">Cada pieza recibe tema, gancho, formato y ajuste a tu audiencia, por fracciones de centavo.</span></div>
@@ -322,7 +386,7 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
     <div class="wrap">
       <h2>Cómo leer los resultados</h2>
       <p class="nota">Tres conceptos para entender el ranking.</p>
-      <div class="leer">
+      <div class="leer revelar">
         <div class="card">
           <h4><svg class="ico" style="color:var(--accent)"><use href="#i-trend"/></svg>Etapas de una tendencia</h4>
           <ul class="lista-def">
@@ -601,6 +665,8 @@ async function init() {
   $("pago-actual").oninput = pintarAhorro;
   $("carga-cerrar").onclick = cerrarCarga;
   $("cta-ultima").classList.toggle("oculto", !Object.keys(DATA).length);
+  pintarDemo();
+  observarRevelados();
   pintarCorrer();
   const h = location.hash;
   if (h.startsWith("#resultados") && DATA[sectorInicio]) {  // #resultados/viene abre esa pestaña directo
@@ -610,6 +676,53 @@ async function init() {
   }
   else if (h === "#correr") mostrar("correr");
   if (servidor) seguirProgreso(true);
+}
+
+/* ---------- movimiento ---------- */
+const sinMovimiento = () => window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function contar(el) {
+  const v = parseFloat(el.dataset.contar), fmt = el.dataset.fmt || "int";
+  const pinta = x => { el.textContent = fmt === "usd" ? usd(x) : Math.round(x).toLocaleString("es"); };
+  if (sinMovimiento() || isNaN(v)) return pinta(v);
+  const t0 = performance.now(), dur = 1300;
+  const paso = t => { const k = Math.min(1, (t - t0) / dur); pinta(v * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(paso); };
+  requestAnimationFrame(paso);
+}
+let observador = null;
+function observarRevelados() {
+  const els = document.querySelectorAll(".revelar:not(.visto)");
+  if (!("IntersectionObserver" in window)) { els.forEach(e => { e.classList.add("visto"); e.querySelectorAll("[data-contar]").forEach(contar); }); return; }
+  observador = observador || new IntersectionObserver(entradas => entradas.forEach(en => {
+    if (!en.isIntersecting) return;
+    en.target.classList.add("visto");
+    en.target.querySelectorAll("[data-contar]").forEach(contar);
+    observador.unobserve(en.target);
+  }), { threshold: .2 });
+  els.forEach(e => observador.observe(e));
+}
+function animarTab(t) {
+  const el = $("t-" + t); if (!el || sinMovimiento()) return;
+  el.classList.remove("animar"); void el.offsetWidth; el.classList.add("animar");
+  el.querySelectorAll("[data-contar]").forEach(contar);
+  clearTimeout(el._animar); el._animar = setTimeout(() => el.classList.remove("animar"), 1800);
+}
+function pintarDemo() {
+  const id = DATA.ia_latam ? "ia_latam" : Object.keys(DATA)[0], d = DATA[id];
+  $("sec-demo").classList.toggle("oculto", !d);
+  if (!d) return;
+  $("demo-sub").textContent = `${d.nombre} · ${new Date(d.generado).toLocaleString("es", { dateStyle: "medium", timeStyle: "short" })}. Datos reales, no un ejemplo.`;
+  $("demo-kpis").innerHTML = [[d.conteos.recolectadas, "int", "piezas analizadas"], [Object.keys(d.cobertura).length, "int", "fuentes revisadas"],
+    [d.temas.length, "int", "temas detectados"], [d.costo.total_usd, "usd", "costo de la corrida"]]
+    .map(([v, f, l]) => `<div><div class="v" data-contar="${v}" data-fmt="${f}">0</div><div class="l">${l}</div></div>`).join("");
+  const minimo = d.min_piezas_top || 3;
+  const top = d.temas.map(t => ({ ...t, s: Object.keys(SENALES).reduce((a, k) => a + (d.pesos[k] || 0) * (t.senales[k] || 0), 0) }))
+    .sort((a, b) => ((b.volumen >= minimo) - (a.volumen >= minimo)) || (b.s - a.s)).slice(0, 5);
+  const max = Math.max(...top.map(t => t.s), 0.0001);
+  $("demo-barras").innerHTML = top.map((t, i) => `<div class="demo-fila">
+    <div class="nom"><span class="etapa ${t.etapa === "emergente" ? "vivo" : ""}" style="background:var(--${t.etapa})">${esc(t.etapa)}</span><b title="${esc(t.nombre)}">${esc(t.nombre)}</b></div>
+    <div class="val">${pct(t.s)}</div>
+    <div class="barra" style="--i:${i}"><i style="width:${t.s / max * 100}%"></i></div></div>`).join("");
+  $("demo-ver").onclick = () => abrirResultados(id);
 }
 
 function mostrar(v) {
@@ -814,6 +927,7 @@ function cambiarTab(t) {
   ["tendencias", "viene", "ideas", "origen", "costo"].forEach(x => $("t-" + x).classList.toggle("oculto", x !== t));
   if (!$("vista-res").classList.contains("oculto")) history.replaceState(null, "", "#resultados" + (t !== "tendencias" ? "/" + t : ""));
   window.scrollTo(0, 0);
+  animarTab(t);
 }
 
 function pintarPesos() {
@@ -880,9 +994,9 @@ function pintarTendencias() {
     const senales = Object.entries(SENALES).map(([k, [n]]) => `<div>${n} ${pct(t.senales[k])}<div class="barra"><i style="width:${Math.min(100, pct(t.senales[k]))}%"></i></div></div>`).join("");
     const piezas = t.top_piezas.map(p => `<li><a href="${esc(enlace(p.url))}" target="_blank" rel="noopener">${esc(p.titulo || p.url)}</a>
       <span class="red-t">${esc(REDES[p.red] || p.red)}${p.cuenta ? " · " + esc(p.cuenta) : ""}${p.con_metricas ? "" : " · sin métricas"}</span></li>`).join("");
-    return `<div class="card tema ${abiertos.has(t.id) ? "abierto" : ""}" data-id="${esc(t.id)}">
+    return `<div class="card tema ${abiertos.has(t.id) ? "abierto" : ""}" data-id="${esc(t.id)}" style="--i:${i}">
       <div class="rank">${i + 1}<div>${movHtml(t, i, d)}</div></div>
-      <div><h4>${esc(t.nombre)}<span class="etapa" style="background:var(--${t.etapa})">${esc(t.etapa)}</span></h4></div>
+      <div><h4>${esc(t.nombre)}<span class="etapa ${t.etapa === "emergente" ? "vivo" : ""}" style="background:var(--${t.etapa})">${esc(t.etapa)}</span></h4></div>
       <div class="score"><b>${pct(t.s)}</b><small>score</small><div class="barra"><i style="width:${t.s / max * 100}%"></i></div>${cambiados && antes !== i + 1 ? `<small>con pesos originales: #${antes}</small>` : ""}</div>
       <div class="full">
         <p class="porque">${esc(t.porque || "")}</p>
@@ -908,7 +1022,7 @@ function pintarPredicciones() {
   const d = DATA[sector], nombres = Object.fromEntries(d.temas.map(t => [t.id, t.nombre]));
   const ps = d.predicciones || [];
   if (!ps.length) { $("preds").innerHTML = '<div class="card vacio">Esta corrida no tiene predicciones. Vuelve a correr el radar.</div>'; return; }
-  $("preds").innerHTML = ps.map((p, i) => `<div class="card pred">
+  $("preds").innerHTML = ps.map((p, i) => `<div class="card pred" style="--i:${i}">
     <div class="n">${i + 1}</div>
     <div>
       <h4>${esc(p.nombre)} <span class="chip gris">${esc(p.ventana)}</span></h4>
@@ -948,7 +1062,7 @@ function pintarIdeas() {
   const d = DATA[sector];
   $("ideas-tema").textContent = d.temas[0] ? `Adaptación del tema número 1: «${d.temas[0].nombre}». Copia el texto o el prompt y pégalo en ChatGPT, Claude o Canva para generar la pieza.` : "";
   const ideas = d.ideas || [];
-  $("ideas").innerHTML = ideas.map((i, n) => `<div class="card idea">
+  $("ideas").innerHTML = ideas.map((i, n) => `<div class="card idea" style="--i:${n}">
     <div class="etq">${esc(i.formato)}</div><h4>${esc(i.titulo)}</h4>
     <p class="gancho">“${esc(i.gancho)}”</p><div style="font-size:14px">${esc(i.desarrollo)}</div>
     ${i.jev ? `<div class="mini"><span>Ajuste a la audiencia (JEV) <b>${pct(i.jev.ajuste_audiencia.score)}</b></span><span>Fuerza del gancho <b>${pct(i.jev.fuerza_gancho.score)}</b></span></div>` : ""}
@@ -984,8 +1098,8 @@ function pintarOrigen() {
 function pintarCosto() {
   const d = DATA[sector], c = d.costo, mensual = c.total_usd * 8 * 30;
   $("costo-resumen").textContent = `Esta corrida costó ${usd(c.total_usd)} y analizó ${d.conteos.recolectadas} piezas. Corriendo cada 3 horas serían unos ${usd(mensual)} al mes.`;
-  $("kpis").innerHTML = [[usd(c.total_usd), "esta corrida"], [usd(c.por_tema_usd), "por tema del top 10"], [usd(mensual), "al mes, cada 3 horas"]]
-    .map(([v, l]) => `<div class="card kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+  $("kpis").innerHTML = [[c.total_usd, "esta corrida"], [c.por_tema_usd, "por tema del top 10"], [mensual, "al mes, cada 3 horas"]]
+    .map(([v, l], i) => `<div class="card kpi" style="--i:${i}"><div class="v" data-contar="${v}" data-fmt="usd">${usd(v)}</div><div class="l">${l}</div></div>`).join("");
   const nombres = { jev_piezas: "JEV: clasificar piezas", jev_ideas: "JEV: puntuar ideas", jev_predicciones: "JEV: puntuar predicciones",
     llm_temas: "DeepSeek: proponer temas", llm_redaccion: "DeepSeek: redactar", llm_predicciones: "DeepSeek: lo que viene", llm_sector: "DeepSeek: crear temática" };
   const filas = Object.entries(c.pasos).sort((a, b) => b[1].usd - a[1].usd).map(([k, v]) => `<tr><td>${esc(nombres[k] || k.replace("busqueda_", "Búsqueda web: ").replaceAll("_", " "))}</td>
