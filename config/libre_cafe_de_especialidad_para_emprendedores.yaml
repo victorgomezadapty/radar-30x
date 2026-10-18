@@ -1,0 +1,79 @@
+nombre: Café de especialidad para emprendedores
+nicho_libre: café de especialidad para emprendedores
+marca: tu marca
+marca_descripcion: 'a creator or brand in this niche: café de especialidad para emprendedores'
+persona: Small coffee shop owners in Colombia who want to improve their specialty
+  coffee offerings, attract customers, and grow their business.
+pista_temas: Topics should focus on specialty coffee business, brewing techniques,
+  sourcing beans, marketing, and cafe management.
+pregunta_es_sector: The content is about specialty coffee (brewing, beans, cafés,
+  coffee business).
+dias_ventana: 14
+max_piezas_por_red: 80
+redes:
+  youtube:
+    activa: true
+    consultas:
+    - café de especialidad para emprendedores
+    - cómo montar una cafetería de especialidad
+    - tendencias café de especialidad Colombia
+    - specialty coffee business tips
+    - métodos de preparación café especialidad
+    - rentabilidad cafetería pequeña
+    canales_semilla: []
+    region: CO
+    idioma: es
+  reddit:
+    activa: true
+    subreddits:
+    - Coffee
+    - specialtycoffee
+    - barista
+    - smallbusiness
+    - entrepreneur
+  instagram:
+    activa: true
+    cuentas: []
+    hashtags:
+    - cafedeespecialidad
+    - coffeebusiness
+    - emprendimientocafetero
+    consultas_web:
+    - café de especialidad
+    - emprendedores café
+    - cafetería Colombia
+  linkedin:
+    activa: true
+    consultas:
+    - café de especialidad
+    - negocio cafetero
+    - emprendimiento café
+  tiktok:
+    activa: true
+    paises:
+    - MX
+    - CO
+    - AR
+    - CL
+    - PE
+    consultas_web:
+    - café de especialidad
+    - tips cafetería
+    - emprender café
+  hn:
+    activa: false
+    consultas: []
+pesos:
+  pieza:
+    crecimiento: 0.5
+    ajuste: 0.5
+  tema:
+    fuerza: 0.35
+    aceleracion: 0.2
+    temprano: 0.2
+    multired: 0.15
+    frescura: 0.1
+umbrales:
+  es_sector: 0.6
+  confianza_min: 0.6
+sector: libre_cafe_de_especialidad_para_emprendedores

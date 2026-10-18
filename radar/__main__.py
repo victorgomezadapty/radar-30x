@@ -5,6 +5,7 @@
   python -m radar correr --sector ia_latam [--sin-recolectar]
   python -m radar panel                        # regenera web/data.js con las corridas guardadas
   python -m radar servir [--puerto 8765]       # app web: inicio, elegir redes, correr y ver resultados
+  python -m radar sector-nuevo --sector libre_cafe --nicho "café de especialidad" [--audiencia "..."]
   Opcional en correr/recolectar: --redes youtube,reddit,linkedin
 """
 import argparse
@@ -73,12 +74,14 @@ def main():
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser(prog="radar")
-    ap.add_argument("comando", choices=["probar", "recolectar", "capturar", "correr", "panel", "servir"])
+    ap.add_argument("comando", choices=["probar", "recolectar", "capturar", "correr", "panel", "servir", "sector-nuevo"])
     ap.add_argument("--sector", default="ia_latam")
     ap.add_argument("--cada", type=float, default=0, help="horas entre capturas (bucle)")
     ap.add_argument("--sin-recolectar", action="store_true")
     ap.add_argument("--redes", default="", help="lista separada por comas; vacío = todas las activas")
     ap.add_argument("--puerto", type=int, default=8765)
+    ap.add_argument("--nicho", default="", help="temática libre para sector-nuevo")
+    ap.add_argument("--audiencia", default="")
     a = ap.parse_args()
     redes = [r.strip() for r in a.redes.split(",") if r.strip()] or None
     if a.comando == "probar":
@@ -96,6 +99,10 @@ def main():
     elif a.comando == "servir":
         from .servidor import servir
         servir(a.puerto)
+    elif a.comando == "sector-nuevo":
+        if not a.nicho.strip():
+            raise SystemExit("Falta --nicho")
+        pipeline.crear_sector(a.sector, a.nicho.strip(), a.audiencia.strip())
     elif a.comando == "panel":
         pipeline.publicar_panel()
         print("web/data.js actualizado")

@@ -119,7 +119,8 @@ def redactar(gcfg: dict, contador, cfg: dict, top: list[dict]) -> dict:
             "pct_menciona_lanzamiento": t["rasgos"]["menciona_lanzamiento"],
             "ejemplos": [p["titulo"] for p in t["top_piezas"][:4]],
         })
-    prompt = f"""You write for 30X, a Latin American company that teaches AI and business skills to leaders.
+    marca = cfg.get("marca_descripcion", "30X, a Latin American company that teaches AI and business skills to leaders")
+    prompt = f"""You write content for {marca}.
 Audience: {cfg['persona']}
 
 These are this week's top trending topics, already ranked by code. For each, data says which hooks,
@@ -128,9 +129,9 @@ formats and networks it is working on. Write in Spanish (neutral Latin American)
 1. explicaciones: for each topic, one line (max 25 words) explaining WHY it is working, based only on
    the data given (stage, hooks, formats, networks, launch mentions). No hype, no raw decimal numbers, and do
    not start with the stage name; lead with the insight a content strategist would act on.
-2. ideas: exactly 3 content ideas for 30X about the #1 topic ("{top[0]['nombre']}"): one carrusel de
+2. ideas: exactly 3 content ideas about the #1 topic ("{top[0]['nombre']}"): one carrusel de
    Instagram, one reel/TikTok, one post de LinkedIn. Each with titulo, gancho (first line or first 3
-   seconds) and desarrollo (3-5 sentences describing the content), adapted to Latin American leaders.
+   seconds) and desarrollo (3-5 sentences describing the content), adapted to the audience above.
 
 Return JSON like {{"explicaciones": [{{"tema_id": "...", "porque": "..."}}], "ideas": [{{"formato": "...", "titulo": "...", "gancho": "...", "desarrollo": "..."}}]}}
 
@@ -168,15 +169,16 @@ def predecir(gcfg: dict, contador, cfg: dict, temas: list[dict]) -> list[dict]:
             "origen": (t.get("rastreo") or {}).get("origen", {}).get("red") if t.get("rastreo") else None,
             "ejemplos": [p["titulo"] for p in t["top_piezas"][:3]],
         })
-    prompt = f"""You are a trend analyst for 30X, which creates content for this audience: {cfg['persona']}
+    prompt = f"""You are a trend analyst for {cfg.get("marca", "30X")}, which creates content for this audience: {cfg['persona']}
 Sector: {cfg['nombre']}
 
 Below are this week's topics with signals computed by code (stage, acceleration, early-signal score,
 volume, networks, where each topic first appeared). Propose exactly 5 topics that are NOT yet a big trend
 but are likely to become one in the next 1-3 weeks for this audience. Good predictions:
 - combine or extend current trends (e.g. a niche angle of a growing topic, or the business consequence of a tech trend),
-- lean on topics with high acceleration and low volume ("emergente"), or topics that started in technical
-  communities (Hacker News, Reddit) and have not reached LinkedIn or Instagram yet,
+- lean on topics with high acceleration and low volume ("emergente"), or topics that started in niche or
+  technical communities (Hacker News, Reddit) and have not reached LinkedIn or Instagram yet. YouTube, TikTok,
+  Instagram and LinkedIn are mainstream networks, never call them technical communities,
 - are specific enough to make a post about.
 Write in Spanish (neutral Latin American). Never quote raw decimal numbers from the data; describe signals in
 words (e.g. "acelera más que la mayoría de los temas", "todavía con pocas publicaciones"). For each:
@@ -199,3 +201,74 @@ Data:
         d["basado_en"] = [b for b in d["basado_en"] if b in validos]  # solo temas reales de la corrida
         out.append(d)
     return out
+
+
+
+# ---------- temática libre: generar la configuración de un sector nuevo ----------
+
+class ConfigRedes(BaseModel):
+    youtube_consultas: list[str]
+    youtube_region: str
+    subreddits: list[str]
+    instagram_hashtags: list[str]
+    instagram_consultas: list[str]
+    linkedin_consultas: list[str]
+    tiktok_consultas: list[str]
+    es_tecnologico: bool
+    hn_consultas: list[str]
+
+
+class ConfigSector(BaseModel):
+    nombre: str
+    persona: str
+    pista_temas: str
+    pregunta_es_sector: str
+    redes: ConfigRedes
+
+
+def generar_sector(gcfg: dict, contador, nicho: str, audiencia: str = "") -> dict:
+    """Arma la configuración de un sector a partir de un nicho libre escrito por el usuario."""
+    prompt = f"""A user wants to monitor social media trends for this niche: "{nicho}".
+Target audience (may be empty): "{audiencia or 'Latin American adults interested in this niche'}".
+Build a configuration for a trend radar that searches YouTube, Reddit, Instagram, LinkedIn, TikTok and Hacker News.
+
+- nombre: short Spanish name for the niche (max 6 words)
+- persona: one or two English sentences describing the target audience (who they are, what they want)
+- pista_temas: one English sentence on which kinds of topics matter for this audience
+- pregunta_es_sector: an English statement JEV will judge as true/false for each post, like
+  "The content is about specialty coffee (brewing, beans, cafés, coffee business)."
+- redes.youtube_consultas: 6 search queries, mostly in Spanish, 1-2 in English, specific to the niche
+- redes.youtube_region: ISO country code that best matches the audience (e.g. MX, CO, AR, ES, US)
+- redes.subreddits: 5 existing, active subreddit names without "r/" (prefer large well-known ones)
+- redes.instagram_hashtags: 3 popular hashtags without "#"
+- redes.instagram_consultas, redes.linkedin_consultas, redes.tiktok_consultas: 3 short search queries each, in Spanish
+- redes.es_tecnologico: true only if Hacker News (a tech community) is relevant to this niche
+- redes.hn_consultas: 3 English queries if es_tecnologico, else an empty list
+
+Return JSON with exactly these fields."""
+    c = _json(gcfg, contador, "llm_sector", gcfg["llm"]["modelo_pequeno"], prompt, ConfigSector)
+    r = c.redes
+    return {
+        "nombre": c.nombre.strip(),
+        "nicho_libre": nicho,
+        "marca": "tu marca",
+        "marca_descripcion": f"a creator or brand in this niche: {nicho}",
+        "persona": c.persona.strip(),
+        "pista_temas": c.pista_temas.strip(),
+        "pregunta_es_sector": c.pregunta_es_sector.strip(),
+        "dias_ventana": 14,
+        "max_piezas_por_red": 80,
+        "redes": {
+            "youtube": {"activa": True, "consultas": r.youtube_consultas[:8], "canales_semilla": [],
+                        "region": (r.youtube_region or "MX").upper()[:2], "idioma": "es"},
+            "reddit": {"activa": True, "subreddits": [s.replace("r/", "").strip("/ ") for s in r.subreddits][:6]},
+            "instagram": {"activa": True, "cuentas": [], "hashtags": [h.lstrip("#") for h in r.instagram_hashtags][:3],
+                          "consultas_web": r.instagram_consultas[:3]},
+            "linkedin": {"activa": True, "consultas": r.linkedin_consultas[:4]},
+            "tiktok": {"activa": True, "paises": ["MX", "CO", "AR", "CL", "PE"], "consultas_web": r.tiktok_consultas[:3]},
+            "hn": {"activa": bool(r.es_tecnologico and r.hn_consultas), "consultas": r.hn_consultas[:4]},
+        },
+        "pesos": {"pieza": {"crecimiento": 0.5, "ajuste": 0.5},
+                  "tema": {"fuerza": 0.35, "aceleracion": 0.20, "temprano": 0.20, "multired": 0.15, "frescura": 0.10}},
+        "umbrales": {"es_sector": 0.6, "confianza_min": 0.6},
+    }

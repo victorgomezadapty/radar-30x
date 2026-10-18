@@ -84,12 +84,22 @@ def correr(sector: str, con_recoleccion: bool = True, redes: list[str] | None = 
             print(f"  aviso: predicciones fallaron: {e}")
     for t in res["temas"]:
         t["porque"] = redaccion["porque"].get(t["id"])
+    # posición en la corrida anterior, para mostrar si el tema sube, baja o es nuevo
+    anterior = {}
+    if previo:
+        for i, t in enumerate(previo.get("temas", [])[:20], 1):
+            anterior.setdefault(t["id"], i)
+            anterior.setdefault(t["nombre"].strip().lower(), i)
+    for t in res["temas"]:
+        t["rank_anterior"] = anterior.get(t["id"]) or anterior.get(t["nombre"].strip().lower())
 
     costo = contador.resumen()
     if costo["modelos_sin_precio"]:
         print(f"  aviso: sin precio en config/global.yaml para {costo['modelos_sin_precio']}; su costo no se sumó")
     salida = {
         "sector": sector, "nombre": cfg["nombre"], "redes_elegidas": elegidas,
+        "marca": cfg.get("marca", "30X"), "nicho_libre": cfg.get("nicho_libre"),
+        "corrida_anterior": previo.get("generado") if previo else None, "ganchos": res.get("ganchos", []),
         "generado": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "duracion_s": round(time.time() - inicio, 1),
         "modelo_jev": gcfg["jev"]["modelo"],
@@ -108,6 +118,19 @@ def correr(sector: str, con_recoleccion: bool = True, redes: list[str] | None = 
     for i, t in enumerate(top, 1):
         print(f"  {i:2}. [{t['etapa']:9}] {t['nombre']}  score={t['score']:.3f}  redes={','.join(t['redes'])}")
     return salida
+
+
+def crear_sector(sector: str, nicho: str, audiencia: str = "") -> dict:
+    """Temática libre: genera la configuración con el LLM y la guarda como config/<sector>.yaml."""
+    import yaml
+    gcfg = cargar_global()
+    cfg = llm.generar_sector(gcfg, Contador(gcfg), nicho, audiencia)
+    cfg["sector"] = sector
+    (DIR_CONFIG / f"{sector}.yaml").write_text(yaml.safe_dump(cfg, allow_unicode=True, sort_keys=False), encoding="utf-8")
+    print(f"Sector '{sector}' creado para el nicho: {nicho}")
+    print(f"  YouTube: {cfg['redes']['youtube']['consultas']}")
+    print(f"  Reddit: {cfg['redes']['reddit']['subreddits']}")
+    return cfg
 
 
 def historial_costos(sector: str) -> list[dict]:

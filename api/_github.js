@@ -7,6 +7,17 @@ function config() {
   return { repo, token, ref: process.env.GH_REF || "main" };
 }
 
+// se ignoran espacios y comillas sobrantes, que suelen colarse al copiar y pegar
+const limpiar = v => String(v || "").trim().replace(/^["']+|["']+$/g, "").trim();
+
+// Código de acceso opcional: si RADAR_CLAVE_ACCESO está vacía, cualquiera puede correr (con límite diario).
+const claveRequerida = () => limpiar(process.env.RADAR_CLAVE_ACCESO);
+
+const LIMITES = {
+  completas: parseInt(process.env.LIMITE_DIARIO || "8", 10),        // con datos nuevos (gastan cuota de YouTube y Tavily)
+  reanalisis: parseInt(process.env.LIMITE_REANALISIS || "30", 10),  // sin recolectar (solo JEV + DeepSeek)
+};
+
 async function gh(ruta, opciones = {}) {
   const { repo, token } = config();
   const r = await fetch(`https://api.github.com/repos/${repo}${ruta}`, {
@@ -23,4 +34,13 @@ async function ultimaCorrida() {
   return d.workflow_runs[0] || null;
 }
 
-module.exports = { WORKFLOW, config, gh, ultimaCorrida };
+// Corridas lanzadas hoy (UTC), separadas entre completas y reanálisis (el título lo indica).
+async function usoHoy() {
+  const hoy = new Date().toISOString().slice(0, 10);
+  const d = await gh(`/actions/workflows/${WORKFLOW}/runs?event=workflow_dispatch&created=%3E%3D${hoy}&per_page=100`);
+  const runs = d.workflow_runs || [];
+  const reanalisis = runs.filter(r => /reanálisis/.test(r.display_title)).length;
+  return { completas: runs.length - reanalisis, reanalisis, limites: LIMITES };
+}
+
+module.exports = { WORKFLOW, config, gh, ultimaCorrida, usoHoy, limpiar, claveRequerida, LIMITES };

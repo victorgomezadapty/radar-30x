@@ -55,8 +55,14 @@ def recolectar(cfg: dict, con) -> list[Pieza]:
     if not token:  # RSS: un solo pedido con todos los subreddits juntos, para no chocar con el límite
         try:
             piezas = _rss(subs, min(100, limite * len(subs)))
-        except Exception as e:
-            print(f"    aviso: RSS de Reddit falló: {e}")
+        except Exception as e:  # un subreddit inexistente puede tumbar el pedido combinado: se prueba uno por uno
+            print(f"    aviso: RSS combinado de Reddit falló ({type(e).__name__}); pruebo subreddit por subreddit")
+            for sub in subs:
+                try:
+                    piezas += _rss([sub], limite)
+                except Exception:
+                    print(f"    aviso: r/{sub} no disponible")
+                time.sleep(3)
         print(f"  Reddit: {len(piezas)} posts (RSS, sin métricas)")
         return piezas
     for sub in subs:
