@@ -1,89 +1,89 @@
-# Radar 30X con JEV
+# Radar 30X with JEV
 
-**Pruébalo:** https://radar-30x-three.vercel.app
+**Try it:** https://radar-30x-three.vercel.app
 
-Responde en una corrida, en 1 a 3 minutos y por unos 5 centavos de dólar:
+It answers in one run, in 1 to 3 minutes, and for about 5 cents:
 
-> **¿Cuáles son los 10 temas que más están creciendo esta semana, por qué funcionan y cómo los adapta 30X para líderes de Latinoamérica?**
+> **What are the 10 topics growing the most this week, why they work, and how 30X adapts them for leaders in Latin America?**
 
-Funciona para IA (la demo principal), fitness o **cualquier temática libre** que escriba el usuario.
+It works for AI (the main demo), fitness, or **any open topic** the user writes.
 
-## Qué hace
+## What it does
 
-1. **Detecta temprano.** Recolecta piezas públicas de YouTube, Reddit, Instagram, LinkedIn, TikTok y Hacker News, y mide la velocidad, la aceleración (con capturas cada 3 horas), el *outlier ratio* frente al canal, la saturación y en cuántas redes aparece cada tema.
-2. **Explica por qué funciona.** JEV clasifica cada pieza (tema, gancho, formato, si menciona un lanzamiento) y el radar calcula qué gancho crece más, en qué red nació cada tema y cómo saltó entre redes.
-3. **Filtra por audiencia.** JEV puntúa el ajuste a la audiencia (aplicabilidad, nivel técnico, relevancia para LatAm) y el código combina todo en un score con pesos visibles y ajustables.
-4. **Adapta y anticipa.** Propone tres piezas listas para copiar (carrusel, reel y post de LinkedIn) y una lista de **lo que viene**: temas que todavía no son tendencia pero las señales apuntan a que lo serán.
+1. **Detects early.** It collects public pieces from YouTube, Reddit, Instagram, LinkedIn, TikTok, and Hacker News, and measures velocity, acceleration (with snapshots every 3 hours), the *outlier ratio* versus the channel, saturation, and how many networks each topic appears on.
+2. **Explains why it works.** JEV classifies each piece (topic, hook, format, whether it mentions a launch) and the radar calculates which hook is growing the most, on which network each topic originated, and how it jumped between networks.
+3. **Filters by audience.** JEV scores audience fit (applicability, technical level, relevance for LatAm) and the code combines everything into a score with visible and adjustable weights.
+4. **Adapts and anticipates.** It proposes three ready-to-copy pieces (carousel, reel, and LinkedIn post) and a list of **what is coming**: topics that are not yet a trend, but the signals point to them becoming one.
 
-## Cómo se reparten el trabajo
+## How the work is divided
 
-| Quién | Qué hace | Por qué |
+| Who | What it does | Why |
 | --- | --- | --- |
-| **Código** | Recolecta, mide y **decide el ranking** | Reproducible y auditable: la IA no decide el orden |
-| **JEV** (TypeSafe, `jev-1.13.0`) | Clasifica cada pieza con 8 preguntas tipadas en una sola llamada (fan-out); puntúa ideas y predicciones | Respuestas estructuradas con probabilidad y confianza, por fracciones de centavo |
-| **DeepSeek** | Nombra los temas de la corrida, redacta el porqué y las ideas, y crea la configuración de una temática libre | Solo redacta; no toca el ranking |
-| **Tavily** | Búsqueda web de posts públicos de LinkedIn, TikTok e Instagram | Las URLs vienen de la búsqueda; ningún modelo las inventa |
+| **Code** | Collects, measures, and **decides the ranking** | Reproducible and auditable: the AI does not decide the order |
+| **JEV** (TypeSafe, `jev-1.13.0`) | Classifies each piece with 8 typed questions in a single call (fan-out); scores ideas and predictions | Structured responses with probability and confidence, for fractions of a cent |
+| **DeepSeek** | Names the topics of the run, writes the why and the ideas, and creates the configuration for an open topic | It only writes; it does not touch the ranking |
+| **Tavily** | Web search for public posts on LinkedIn, TikTok, and Instagram | The URLs come from the search; no model invents them |
 
-Cada respuesta con confianza baja de JEV se excluye del ranking. Los temas con menos de 3 piezas quedan como señal temprana y no entran al top 10.
+Each low-confidence response from JEV is excluded from the ranking. Topics with fewer than 3 pieces remain as an early signal and do not enter the top 10.
 
-## Costo real por corrida
+## Real cost per run
 
-Medido con el campo `usage` de cada respuesta, no estimado. Una corrida típica de IA (unas 300 piezas):
+Measured with the `usage` field of each response, not estimated. A typical AI run (about 300 pieces):
 
-| Paso | Costo |
+| Step | Cost |
 | --- | --- |
-| JEV: clasificar unas 300 piezas | ~0,025 USD |
-| DeepSeek: temas, redacción y predicciones | ~0,02 USD |
-| YouTube, Reddit (RSS), Hacker News y Tavily | 0 USD (cuotas gratuitas) |
-| **Total** | **~0,05 USD** |
+| JEV: classify about 300 pieces | ~0.025 USD |
+| DeepSeek: topics, writing, and predictions | ~0.02 USD |
+| YouTube, Reddit (RSS), Hacker News, and Tavily | 0 USD (free quotas) |
+| **Total** | **~0.05 USD** |
 
-La app muestra el costo exacto de cada corrida, su desglose y el historial.
+The app shows the exact cost of each run, its breakdown, and the history.
 
-## Arquitectura
+## Architecture
 
 ```
-Navegador ──► Vercel (web/ + api/)
+Browser ──► Vercel (web/ + api/)
                  │  POST /api/correr  ──►  GitHub Actions (radar.yml)
-                 │  GET  /api/estado  ◄──  pasos de la corrida
+                 │  GET  /api/estado  ◄──  steps of the run
                  │                           │  python -m radar recolectar / correr
                  │                           │  JEV + DeepSeek + Tavily + YouTube API
-                 ◄── Vercel se redespliega ◄─┘  commit de resultados (out/, web/datos.json)
+                 ◄── Vercel redeploys ◄─┘  commit of results (out/, web/datos.json)
 
-Cada 3 horas, GitHub Actions toma una captura nueva de métricas para medir la aceleración real.
+Every 3 hours, GitHub Actions takes a new metrics snapshot to measure real acceleration.
 ```
 
-- `radar/`: motor en Python (conectores por red, cliente JEV, scoring, LLM y servidor local).
-- `api/`: funciones de Vercel que lanzan la corrida y leen su progreso.
-- `web/index.html`: la app (landing, configuración de la corrida y resultados).
-- `config/`: un archivo YAML por sector (palabras clave, persona, pesos y umbrales).
-- `.github/workflows/radar.yml`: ejecución en la nube y capturas programadas.
+- `radar/`: Python engine (connectors per network, JEV client, scoring, LLM, and local server).
+- `api/`: Vercel functions that start the run and read its progress.
+- `web/index.html`: the app (landing, run configuration, and results).
+- `config/`: one YAML file per sector (keywords, persona, weights, and thresholds).
+- `.github/workflows/radar.yml`: cloud execution and scheduled snapshots.
 
-## Correrlo en local
+## Run it locally
 
 ```bash
 uv venv .venv
 uv pip install --python .venv -r requirements.txt
-cp .env.example .env        # y completa TYPESAFE_API_KEY, YOUTUBE_API_KEY, DEEPSEEK_API_KEY, TAVILY_API_KEY
-.venv/Scripts/python -m radar probar     # verifica cada clave
-.venv/Scripts/python -m radar servir     # app en http://localhost:8765
+cp .env.example .env        # and fill in TYPESAFE_API_KEY, YOUTUBE_API_KEY, DEEPSEEK_API_KEY, TAVILY_API_KEY
+.venv/Scripts/python -m radar probar     # checks each key
+.venv/Scripts/python -m radar servir     # app at http://localhost:8765
 ```
 
-Desde la terminal:
+From the terminal:
 
 ```bash
 .venv/Scripts/python -m radar correr --sector ia_latam
 .venv/Scripts/python -m radar sector-nuevo --sector libre_cafe --nicho "café de especialidad"
 ```
 
-## Fuentes y reglas
+## Sources and rules
 
-| Red | Vía | Métricas de crecimiento |
+| Network | Via | Growth metrics |
 | --- | --- | --- |
-| YouTube | Data API v3 (oficial) | Sí: vistas, likes y comentarios |
-| Reddit | RSS público (o API oficial con claves) | Con API sí; con RSS, presencia y ajuste |
-| Instagram | Búsqueda web (o Graph API con cuenta profesional) | Con Graph API sí |
-| LinkedIn | Búsqueda web de posts indexados | Presencia y ajuste |
-| TikTok | Búsqueda web + ranking de hashtags del Creative Center | Aceleración por hashtag |
-| Hacker News | API de Algolia | Sí: puntos |
+| YouTube | Data API v3 (official) | Yes: views, likes, and comments |
+| Reddit | Public RSS (or official API with keys) | With the API, yes; with RSS, presence and fit |
+| Instagram | Web search (or Graph API with a professional account) | With the Graph API, yes |
+| LinkedIn | Web search of indexed posts | Presence and fit |
+| TikTok | Web search + Creative Center hashtag ranking | Acceleration by hashtag |
+| Hacker News | Algolia API | Yes: points |
 
-Nada detrás de login de terceros ni scraping que viole términos de uso, y solo datos de piezas públicas, nunca de personas. Las claves viven en `.env` (local) o en los secretos de GitHub; nunca en el repositorio.
+Nothing is collected from behind a third-party login or by scraping that violates terms of use, and only data from public pieces is used, never from people. Keys live in `.env` (local) or in GitHub secrets; never in the repository.
