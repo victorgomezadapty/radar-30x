@@ -2,5 +2,10 @@
   "buildCommand": "echo sin build",
   "installCommand": "echo sin dependencias",
   "outputDirectory": "web",
-  "ignoreCommand": "sh ignorar-build.sh"
+  "ignoreCommand": "sh ignorar-build.sh",
+  "redirects": [
+    { "source": "/en", "destination": "/", "permanent": false },
+    { "source": "/en/", "destination": "/", "permanent": false },
+    { "source": "/es", "destination": "/es/", "permanent": false }
+  ]
 }

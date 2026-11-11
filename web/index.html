@@ -1,10 +1,31 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Radar 30X</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="description" content="What are the 10 topics growing the most this week, why they work, and how 30X adapts them for leaders in Latin America?">
+<link rel="canonical" href="https://radar-30x-three.vercel.app/">
+<link rel="alternate" hreflang="en" href="https://radar-30x-three.vercel.app/">
+<link rel="alternate" hreflang="es" href="https://radar-30x-three.vercel.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://radar-30x-three.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Radar 30X">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_419">
+<meta property="og:title" content="Radar 30X">
+<meta property="og:description" content="What are the 10 topics growing the most this week, why they work, and how 30X adapts them for leaders in Latin America?">
+<meta property="og:url" content="https://radar-30x-three.vercel.app/">
+<meta property="og:image" content="https://radar-30x-three.vercel.app/og/en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Radar 30X. What are the 10 topics growing the most this week?">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Radar 30X">
+<meta name="twitter:description" content="What are the 10 topics growing the most this week, why they work, and how 30X adapts them for leaders in Latin America?">
+<meta name="twitter:image" content="https://radar-30x-three.vercel.app/og/en.png">
+<meta name="twitter:image:alt" content="Radar 30X. What are the 10 topics growing the most this week?">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <style>
@@ -47,13 +68,19 @@ h3.sec { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; colo
 
 /* barra superior */
 .top { background: var(--hero); color: var(--hero-ink); position: sticky; top: 0; z-index: 20; }
-.top .wrap { display: flex; align-items: center; gap: 12px; height: 60px; }
-@media (max-width: 480px) { .top nav button { padding: 8px 8px; font-size: 14px; } }
+.top .wrap { display: flex; align-items: center; gap: 12px; min-height: 60px; }
 .logo { font-weight: 800; font-size: 18px; letter-spacing: -.02em; color: #fff; cursor: pointer; display: flex; align-items: center; gap: 8px; }
 .logo span { color: #a5b4fc; }
 .top nav { margin-left: auto; display: flex; gap: 4px; }
 .top nav button { background: transparent; border: 0; color: var(--hero-muted); padding: 8px 12px; border-radius: 8px; cursor: pointer; }
 .top nav button.on, .top nav button:hover { color: #fff; background: rgba(255,255,255,.08); }
+.top nav a { color: var(--hero-muted); text-decoration: none; padding: 8px 10px; border-radius: 8px; font-weight: 700; font-size: 13px; letter-spacing: .04em; }
+.top nav a.on, .top nav a:hover { color: #fff; background: rgba(255,255,255,.08); text-decoration: none; }
+@media (max-width: 700px) {
+  .top .wrap { flex-wrap: wrap; gap: 4px 8px; padding-top: 8px; padding-bottom: 8px; }
+  .top nav { width: 100%; margin-left: 0; gap: 0; }
+  .top nav button, .top nav a { padding: 8px 6px; font-size: 13px; letter-spacing: 0; }
+}
 
 /* landing */
 .hero { background: var(--hero); color: var(--hero-ink); padding: 64px 0 72px; }
@@ -321,7 +348,7 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
 <div class="top">
   <div class="wrap">
     <div class="logo" id="ir-landing"><svg class="ico" style="color:#a5b4fc"><use href="#i-radar"/></svg>Radar <span>30X</span></div>
-    <nav><button id="nav-landing" class="on">Inicio</button><button id="nav-correr">Correr</button><button id="nav-res">Resultados</button></nav>
+    <nav aria-label="Sections"><button id="nav-landing" class="on">Home</button><button id="nav-correr">Run</button><button id="nav-res">Results</button><a id="lang-en" class="lang-link on" href="/" hreflang="en" lang="en">EN</a><a id="lang-es" class="lang-link" href="/es/" hreflang="es" lang="es">ES</a></nav>
   </div>
 </div>
 
@@ -338,32 +365,32 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
     </div>
     <div class="wrap hero-grid">
       <div>
-        <h1>Descubre qué está <em>creciendo hoy</em> en redes, antes que todos.</h1>
-        <p class="lead">Cinco redes, un ranking hecho con datos y las ideas listas para tu audiencia. En unos minutos y por centavos.</p>
+        <h1>What are the 10 topics <em>growing the most</em> this week?</h1>
+        <p class="lead">Why they work, and how 30X adapts them for leaders in Latin America. It answers in one run, in 1 to 3 minutes, and for about 5 cents.</p>
         <div class="cta">
-          <button class="btn primario grande" id="cta-probar"><svg class="ico"><use href="#i-play"/></svg>Probar ahora</button>
-          <button class="btn fantasma" id="cta-ultima">Ver la última corrida</button>
+          <button class="btn primario grande" id="cta-probar"><svg class="ico"><use href="#i-play"/></svg>Try it now</button>
+          <button class="btn fantasma" id="cta-ultima">See the latest run</button>
         </div>
       </div>
       <div class="hero-cards">
-        <div class="hcard" style="--i:0"><div class="ibox"><svg class="ico"><use href="#i-radar"/></svg></div><b>Detecta temprano</b><span>Mide velocidad y saltos entre redes.</span></div>
-        <div class="hcard" style="--i:1"><div class="ibox"><svg class="ico"><use href="#i-bulb"/></svg></div><b>Explica el porqué</b><span>Gancho, formato y origen de cada tema.</span></div>
-        <div class="hcard" style="--i:2"><div class="ibox"><svg class="ico"><use href="#i-target"/></svg></div><b>Filtra por audiencia</b><span>Solo lo que le sirve a tu público.</span></div>
-        <div class="hcard" style="--i:3"><div class="ibox"><svg class="ico"><use href="#i-spark"/></svg></div><b>Predice lo que viene</b><span>Temas que pueden explotar pronto.</span></div>
+        <div class="hcard" style="--i:0"><div class="ibox"><svg class="ico"><use href="#i-radar"/></svg></div><b>Detects early</b><span>It collects public pieces from YouTube, Reddit, Instagram, LinkedIn, TikTok, and Hacker News.</span></div>
+        <div class="hcard" style="--i:1"><div class="ibox"><svg class="ico"><use href="#i-bulb"/></svg></div><b>Explains why it works</b><span>JEV classifies each piece (topic, hook, format, whether it mentions a launch).</span></div>
+        <div class="hcard" style="--i:2"><div class="ibox"><svg class="ico"><use href="#i-target"/></svg></div><b>Filters by audience</b><span>JEV scores audience fit (applicability, technical level, relevance for LatAm).</span></div>
+        <div class="hcard" style="--i:3"><div class="ibox"><svg class="ico"><use href="#i-spark"/></svg></div><b>Adapts and anticipates</b><span>It proposes three ready-to-copy pieces (carousel, reel, and LinkedIn post) and a list of what is coming.</span></div>
       </div>
     </div>
   </div>
 
   <div class="seccion oculto" id="sec-demo">
     <div class="wrap">
-      <h2>Una corrida real</h2>
+      <h2>A real run</h2>
       <p class="nota" id="demo-sub"></p>
       <div class="card demo revelar" id="demo">
         <div class="demo-kpis" id="demo-kpis"></div>
         <div>
-          <h3 class="sec">Top 5 por score</h3>
+          <h3 class="sec">Top 5 by score</h3>
           <div class="demo-barras" id="demo-barras"></div>
-          <button class="btn chico" id="demo-ver" style="margin-top:14px">Ver los resultados completos</button>
+          <button class="btn chico" id="demo-ver" style="margin-top:14px">See the full results</button>
         </div>
       </div>
     </div>
@@ -371,75 +398,75 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
 
   <div class="seccion">
     <div class="wrap">
-      <h2>Cómo funciona</h2>
-      <p class="nota">Tú eliges el tema y las redes; el radar hace el resto.</p>
+      <h2>How it works</h2>
+      <p class="nota">You choose the topic and the networks. The radar does the rest.</p>
       <div class="pasos-como revelar">
-        <div class="card paso-como"><div class="num">1</div><b>Elige tema y redes</b><span class="nota">IA, fitness o cualquier temática libre. YouTube, Reddit, Instagram, LinkedIn, TikTok y Hacker News.</span></div>
-        <div class="card paso-como"><div class="num">2</div><b>El radar recolecta</b><span class="nota">Trae las piezas públicas de las últimas semanas y mide qué tan rápido crece cada una.</span></div>
-        <div class="card paso-como"><div class="num">3</div><b>JEV clasifica</b><span class="nota">Cada pieza recibe tema, gancho, formato y ajuste a tu audiencia, por fracciones de centavo.</span></div>
-        <div class="card paso-como"><div class="num">4</div><b>Recibes el top 10</b><span class="nota">Con su etapa, por qué funciona, de dónde salió, ideas listas para copiar y lo que viene.</span></div>
+        <div class="card paso-como"><div class="num">1</div><b>Choose a topic and networks</b><span class="nota">It works for AI (the main demo), fitness, or any open topic the user writes. YouTube, Reddit, Instagram, LinkedIn, TikTok, and Hacker News.</span></div>
+        <div class="card paso-como"><div class="num">2</div><b>The radar collects</b><span class="nota">It brings in the public pieces from the last few weeks and measures how fast each one grows.</span></div>
+        <div class="card paso-como"><div class="num">3</div><b>JEV classifies</b><span class="nota">Each piece gets a topic, a hook, a format, and an audience fit, for fractions of a cent.</span></div>
+        <div class="card paso-como"><div class="num">4</div><b>You get the top 10</b><span class="nota">With its stage, why it works, where it came from, ideas ready to copy, and what is coming.</span></div>
       </div>
     </div>
   </div>
 
   <div class="seccion">
     <div class="wrap">
-      <h2>Cómo leer los resultados</h2>
-      <p class="nota">Tres conceptos para entender el ranking.</p>
+      <h2>How to read the results</h2>
+      <p class="nota">Three ideas for understanding the ranking.</p>
       <div class="leer revelar">
         <div class="card">
-          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-trend"/></svg>Etapas de una tendencia</h4>
+          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-trend"/></svg>Stages of a trend</h4>
           <ul class="lista-def">
-            <li><span class="etapa" style="background:var(--emergente)">emergente</span> <span class="nota">Acelera rápido y todavía pocos hablan de ella. Es el mejor momento para entrar.</span></li>
-            <li><span class="etapa" style="background:var(--creciendo)">creciendo</span> <span class="nota">Acelera y ya tiene volumen. Todavía hay espacio.</span></li>
-            <li><span class="etapa" style="background:var(--pico)">pico</span> <span class="nota">Mucho volumen, pero ya no acelera. Entra con un ángulo propio.</span></li>
-            <li><span class="etapa" style="background:var(--saturado)">saturado</span> <span class="nota">Muchas cuentas y frenando. Mejor buscar otro tema.</span></li>
+            <li><span class="etapa" style="background:var(--emergente)">emerging</span> <span class="nota">It accelerates fast and few people are talking about it yet. This is the best moment to enter.</span></li>
+            <li><span class="etapa" style="background:var(--creciendo)">growing</span> <span class="nota">It accelerates and already has volume. There is still room.</span></li>
+            <li><span class="etapa" style="background:var(--pico)">peak</span> <span class="nota">A lot of volume, but it is no longer accelerating. Enter with your own angle.</span></li>
+            <li><span class="etapa" style="background:var(--saturado)">saturated</span> <span class="nota">Many accounts and slowing down. Better to look for another topic.</span></li>
           </ul>
         </div>
         <div class="card">
-          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-target"/></svg>Pesos del score</h4>
-          <p class="nota" style="margin:6px 0 0">El score (0 a 100) combina cinco señales. En resultados puedes mover cuánto pesa cada una y el ranking se reordena al instante: si subes "Temprano", ganan los temas que recién empiezan; si subes "Multired", los que ya están en varias redes.</p>
+          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-target"/></svg>Score weights</h4>
+          <p class="nota" style="margin:6px 0 0">The score (0 to 100) combines five signals. In the results you can change how much each one weighs and the ranking reorders immediately: if you raise Early, topics that are just starting win; if you raise Several networks, the ones already on several networks win.</p>
           <ul class="lista-def">
-            <li><b>Fuerza</b><span class="nota">Qué tan rápido crecen sus mejores piezas y cuánto le sirven a tu audiencia.</span></li>
-            <li><b>Aceleración</b><span class="nota">Si está creciendo más rápido que los demás temas.</span></li>
-            <li><b>Temprano</b><span class="nota">Acelera pero todavía tiene poco volumen: oportunidad.</span></li>
-            <li><b>Multired</b><span class="nota">En cuántas redes aparece a la vez.</span></li>
-            <li><b>Frescura</b><span class="nota">Pocas cuentas cubriéndolo: no está saturado.</span></li>
+            <li><b>Strength</b><span class="nota">How fast its best pieces grow and how useful they are for your audience.</span></li>
+            <li><b>Acceleration</b><span class="nota">Whether it is growing faster than the other topics.</span></li>
+            <li><b>Early</b><span class="nota">It accelerates but still has little volume: an opportunity.</span></li>
+            <li><b>Several networks</b><span class="nota">How many networks it appears on at once.</span></li>
+            <li><b>Freshness</b><span class="nota">Few accounts are covering it: it is not saturated.</span></li>
           </ul>
         </div>
         <div class="card">
-          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-bulb"/></svg>Ganchos</h4>
-          <p class="nota" style="margin:6px 0 0">El gancho es cómo una pieza atrapa la atención en el título o los primeros segundos. JEV lo detecta en cada pieza y el radar mide cuál crece más.</p>
+          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-bulb"/></svg>Hooks</h4>
+          <p class="nota" style="margin:6px 0 0">The hook is how a piece catches attention in the title or the first seconds. JEV detects it on each piece and the radar measures which one is growing the most.</p>
           <ul class="lista-def" id="glosario-ganchos"></ul>
         </div>
       </div>
-      <div style="text-align:center; margin:32px 0 8px"><button class="btn primario grande" id="cta-probar-2"><svg class="ico"><use href="#i-play"/></svg>Probar ahora</button></div>
+      <div style="text-align:center; margin:32px 0 8px"><button class="btn primario grande" id="cta-probar-2"><svg class="ico"><use href="#i-play"/></svg>Try it now</button></div>
     </div>
   </div>
-  <footer><div class="wrap">Radar 30X · JEV (TypeSafe) para clasificar, DeepSeek para redactar, código para decidir. Solo datos públicos de piezas, nunca de personas.</div></footer>
+  <footer><div class="wrap">Radar 30X. Collects, measures, and decides the ranking. It only writes; it does not touch the ranking. Nothing is collected from behind a third-party login or by scraping that violates terms of use, and only data from public pieces is used, never from people.</div></footer>
 </section>
 
 <!-- CORRER -->
 <section id="vista-correr" class="oculto">
   <div class="wrap">
     <div class="correr-cab">
-      <h2>Configura tu corrida</h2>
-      <p class="nota" style="font-size:15px;margin:0">Elige el tema y las redes, y pulsa "Correr radar". Los resultados se abren solos al terminar.</p>
+      <h2>Set up your run</h2>
+      <p class="nota" style="font-size:15px;margin:0">Choose the topic and the networks, then press &quot;Run radar&quot;. The results open on their own when it finishes.</p>
     </div>
     <div class="card config">
-      <div id="aviso-estatico" class="aviso-modo oculto">Modo de solo lectura: esta versión muestra la última corrida guardada.</div>
-      <p class="paso-t">1. Elige el tema</p>
+      <div id="aviso-estatico" class="aviso-modo oculto">Read-only mode: this version shows the latest saved run.</div>
+      <p class="paso-t">1. Choose the topic</p>
       <div class="sectores" id="sectores"></div>
       <div class="libre-campos oculto" id="libre-campos">
-        <div><label class="paso-t" for="nicho">Tu temática</label><input class="campo-txt" id="nicho" maxlength="140" placeholder="Ej.: café de especialidad para emprendedores"></div>
-        <div><label class="paso-t" for="audiencia">¿Para quién? (opcional)</label><input class="campo-txt" id="audiencia" maxlength="140" placeholder="Ej.: dueños de cafeterías en Colombia"></div>
+        <div><label class="paso-t" for="nicho">Your topic</label><input class="campo-txt" id="nicho" maxlength="140" placeholder="Example: specialty coffee for entrepreneurs"></div>
+        <div><label class="paso-t" for="audiencia">Who is it for? (optional)</label><input class="campo-txt" id="audiencia" maxlength="140" placeholder="Example: cafe owners in Colombia"></div>
       </div>
-      <p class="paso-t" style="margin-top:12px">2. Elige las redes</p>
+      <p class="paso-t" style="margin-top:12px">2. Choose the networks</p>
       <div class="redes" id="redes"></div>
       <div class="acciones">
-        <input type="password" id="clave-acceso" class="campo-txt oculto" style="width:200px" placeholder="Código de acceso" autocomplete="off">
-        <button class="btn primario grande" id="correr"><svg class="ico"><use href="#i-play"/></svg>Correr radar</button>
-        <label class="check"><input type="checkbox" id="recolectar" checked> Traer datos nuevos de las redes</label>
+        <input type="password" id="clave-acceso" class="campo-txt oculto" style="width:200px" placeholder="Access code" autocomplete="off">
+        <button class="btn primario grande" id="correr"><svg class="ico"><use href="#i-play"/></svg>Run radar</button>
+        <label class="check"><input type="checkbox" id="recolectar" checked> Bring in new data from the networks</label>
       </div>
       <p class="nota" id="nota-correr" style="margin:12px 0 0"></p>
     </div>
@@ -453,108 +480,108 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
       <div class="card">
         <h2 id="r-titulo"></h2>
         <div class="meta" id="r-meta"></div>
-        <div class="costo" id="r-costo" title="Ver costo"></div>
+        <div class="costo" id="r-costo" title="See the cost"></div>
       </div>
       <div class="card">
         <nav id="tabs">
-          <button data-t="tendencias" class="on"><svg class="ico"><use href="#i-trend"/></svg>Tendencias hoy</button>
-          <button data-t="viene"><svg class="ico"><use href="#i-spark"/></svg>Lo que viene</button>
-          <button data-t="ideas"><svg class="ico"><use href="#i-pen"/></svg><span id="tab-ideas">Ideas para 30X</span></button>
-          <button data-t="origen"><svg class="ico"><use href="#i-route"/></svg>Origen</button>
-          <button data-t="costo"><svg class="ico"><use href="#i-coin"/></svg>Costo y cobertura</button>
+          <button data-t="tendencias" class="on"><svg class="ico"><use href="#i-trend"/></svg>Trends today</button>
+          <button data-t="viene"><svg class="ico"><use href="#i-spark"/></svg>What is coming</button>
+          <button data-t="ideas"><svg class="ico"><use href="#i-pen"/></svg><span id="tab-ideas">Ideas for 30X</span></button>
+          <button data-t="origen"><svg class="ico"><use href="#i-route"/></svg>Origin</button>
+          <button data-t="costo"><svg class="ico"><use href="#i-coin"/></svg>Cost and coverage</button>
         </nav>
       </div>
-      <button class="btn" id="nueva-corrida"><svg class="ico"><use href="#i-play"/></svg>Nueva corrida</button>
+      <button class="btn" id="nueva-corrida"><svg class="ico"><use href="#i-play"/></svg>New run</button>
     </aside>
 
     <main>
       <div id="t-tendencias">
-        <h3 class="res-titulo">Tendencias de hoy</h3>
+        <h3 class="res-titulo">Trends today</h3>
         <p class="res-sub" id="r-pregunta"></p>
         <details class="card ajustes" id="ajustes">
-          <summary><svg class="ico" style="color:var(--accent)"><use href="#i-target"/></svg>Ajustar el ranking <span class="nota">Mueve cuánto pesa cada señal; el orden cambia al instante</span></summary>
+          <summary><svg class="ico" style="color:var(--accent)"><use href="#i-target"/></svg>Adjust the ranking <span class="nota">Change how much each signal weighs. The order updates immediately</span></summary>
           <div class="cuerpo">
             <div class="pesos" id="pesos"></div>
             <div style="margin-top:10px; display:flex; gap:10px; align-items:center; flex-wrap:wrap">
-              <button class="btn chico" id="reset">Restaurar pesos</button>
-              <span class="nota">El ranking lo calcula el código con estos pesos; la IA no decide el orden.</span>
+              <button class="btn chico" id="reset">Restore weights</button>
+              <span class="nota">The code calculates the ranking with these weights. The AI does not decide the order.</span>
             </div>
           </div>
         </details>
         <div class="leyenda-fila">
-          <span><span class="etapa" style="background:var(--emergente)">emergente</span>acelera con poco volumen</span>
-          <span><span class="etapa" style="background:var(--creciendo)">creciendo</span>acelera con volumen</span>
-          <span><span class="etapa" style="background:var(--pico)">pico</span>ya no acelera</span>
-          <span><span class="etapa" style="background:var(--saturado)">saturado</span>frenando</span>
+          <span><span class="etapa" style="background:var(--emergente)">emerging</span>accelerates with little volume</span>
+          <span><span class="etapa" style="background:var(--creciendo)">growing</span>accelerates with volume</span>
+          <span><span class="etapa" style="background:var(--pico)">peak</span>no longer accelerating</span>
+          <span><span class="etapa" style="background:var(--saturado)">saturated</span>slowing down</span>
         </div>
         <div class="leyenda-fila" id="leyenda-mov">
-          <span><span class="mov up">▲ 2</span> subió 2 puestos desde la corrida anterior</span>
-          <span><span class="mov down">▼ 1</span> bajó 1 puesto</span>
-          <span><span class="mov nuevo">NUEVO</span> no estaba en el top de la corrida anterior</span>
+          <span><span class="mov up">▲ 2</span> up 2 places since the previous run</span>
+          <span><span class="mov down">▼ 1</span> down 1 place</span>
+          <span><span class="mov nuevo">NEW</span> it was not in the top of the previous run</span>
         </div>
         <div class="card ganchos" id="ganchos"></div>
         <div id="lista"></div>
       </div>
 
       <div id="t-viene" class="oculto">
-        <h3 class="res-titulo">Lo que viene</h3>
-        <p class="res-sub">Hipótesis, no hechos: temas que todavía no son tendencia pero las señales de hoy apuntan a que pueden serlo. La fuerza combina los datos (aceleración de los temas en que se basa) con la evaluación de JEV.</p>
+        <h3 class="res-titulo">What is coming</h3>
+        <p class="res-sub">Hypotheses, not facts: topics that are not a trend yet, but today&#x27;s signals point to them becoming one. Strength combines the data (acceleration of the topics it is based on) with the JEV evaluation.</p>
         <div class="preds" id="preds"></div>
       </div>
 
       <div id="t-ideas" class="oculto">
-        <h3 class="res-titulo" id="ideas-titulo">Ideas para 30X</h3>
+        <h3 class="res-titulo" id="ideas-titulo">Ideas for 30X</h3>
         <p class="res-sub" id="ideas-tema"></p>
         <div class="cards" id="ideas"></div>
       </div>
 
       <div id="t-origen" class="oculto">
-        <h3 class="res-titulo">Origen de las tendencias</h3>
-        <p class="res-sub">Dónde apareció primero cada tema y cómo saltó de una red a otra.</p>
+        <h3 class="res-titulo">Where trends start</h3>
+        <p class="res-sub">Where each topic showed up first and how it jumped from one network to another.</p>
         <div class="grid2">
           <div class="card" style="padding:18px">
-            <h3 class="sec">Dónde nacen</h3>
+            <h3 class="sec">Where they start</h3>
             <div class="barras-origen" id="origen-barras"></div>
             <p class="nota" id="origen-nota"></p>
           </div>
           <div class="card" style="padding:18px">
-            <h3 class="sec">Fuentes externas más citadas</h3>
+            <h3 class="sec">Most cited external sources</h3>
             <div id="fuentes"></div>
           </div>
         </div>
         <div class="card" style="padding:18px; margin-top:16px">
-          <h3 class="sec">Ruta de cada tendencia</h3>
+          <h3 class="sec">Route of each trend</h3>
           <div id="rutas"></div>
         </div>
       </div>
 
       <div id="t-costo" class="oculto">
-        <h3 class="res-titulo">Costo y cobertura</h3>
+        <h3 class="res-titulo">Cost and coverage</h3>
         <p class="res-sub" id="costo-resumen"></p>
         <div class="kpis" id="kpis"></div>
         <div class="card" style="padding:18px">
-          <h3 class="sec">Cobertura por red</h3>
+          <h3 class="sec">Coverage by network</h3>
           <table id="cobertura"></table>
           <p class="nota" id="conteos"></p>
         </div>
         <details class="mas">
-          <summary>Ver desglose del costo, historial y comparación</summary>
+          <summary>See the cost breakdown, history, and comparison</summary>
           <div class="grid2" style="margin-top:8px">
             <div class="card" style="padding:18px">
-              <h3 class="sec">Costo por paso</h3>
+              <h3 class="sec">Cost by step</h3>
               <table id="costo-tabla"></table>
-              <p class="nota">Medido con el campo <code>usage</code> de cada respuesta de JEV y DeepSeek, no estimado.</p>
+              <p class="nota">Measured with the usage field of each JEV and DeepSeek response, not estimated.</p>
             </div>
             <div>
               <div class="card" style="padding:18px; margin-bottom:16px">
-                <h3 class="sec">Historial de corridas</h3>
+                <h3 class="sec">Run history</h3>
                 <div class="hist" id="hist"></div>
                 <p class="nota" id="hist-nota"></p>
               </div>
               <div class="card" style="padding:18px">
-                <h3 class="sec">Comparación</h3>
-                <div class="nota">¿Cuánto pagas hoy al mes por datos de tendencias?</div>
-                <div class="ahorro"><span>USD</span><input class="campo-txt" type="number" min="0" step="10" id="pago-actual" placeholder="ej. 300"></div>
+                <h3 class="sec">Comparison</h3>
+                <div class="nota">How much do you pay per month today for trend data?</div>
+                <div class="ahorro"><span>USD</span><input class="campo-txt" type="number" min="0" step="10" id="pago-actual" placeholder="e.g. 300"></div>
                 <p id="ahorro-res" class="nota"></p>
               </div>
             </div>
@@ -570,572 +597,23 @@ footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
     <div class="carga-cab">
       <div class="spinner" id="carga-spin"></div>
       <div>
-        <h3 id="carga-titulo">Lanzando la corrida…</h3>
-        <p id="carga-sub" class="nota">Esto tarda entre 2 y 5 minutos. Puedes dejar esta pestaña abierta.</p>
+        <h3 id="carga-titulo">Starting the run…</h3>
+        <p id="carga-sub" class="nota">This takes 2 to 5 minutes. You can leave this tab open.</p>
       </div>
       <div class="carga-reloj" id="carga-reloj">0:00</div>
     </div>
     <ul class="pasos" id="pasos"></ul>
     <div class="carga-error oculto" id="carga-error"></div>
-    <details class="carga-det"><summary>Ver detalle técnico</summary><div class="log" id="log"></div></details>
+    <details class="carga-det"><summary>See the technical detail</summary><div class="log" id="log"></div></details>
     <div class="carga-acc">
-      <a class="btn chico oculto" id="carga-gh" target="_blank" rel="noopener">Ver en GitHub Actions</a>
-      <button class="btn chico oculto" id="carga-cerrar">Cerrar</button>
+      <a class="btn chico oculto" id="carga-gh" target="_blank" rel="noopener">View on GitHub Actions</a>
+      <button class="btn chico oculto" id="carga-cerrar">Close</button>
     </div>
   </div>
 </div>
 
-<script src="data.js"></script>
-<script>
-const SENALES = {
-  fuerza: ["Fuerza", "Qué tan rápido crecen sus mejores piezas y cuánto sirven a tu audiencia"],
-  aceleracion: ["Aceleración", "Crece más rápido que los demás temas"],
-  temprano: ["Temprano", "Acelera con poco volumen: oportunidad"],
-  multired: ["Multired", "Aparece en varias redes a la vez"],
-  frescura: ["Frescura", "Pocas cuentas lo cubren: no está saturado"],
-};
-const REDES = { youtube: "YouTube", reddit: "Reddit", instagram: "Instagram", linkedin: "LinkedIn", tiktok: "TikTok", hn: "Hacker News" };
-const VIAS = { api: "API", rss: "RSS", busqueda_web: "búsqueda web", manual: "manual", comunidad: "comunidad" };
-const GANCHOS = {
-  pregunta: ["Pregunta", "Abre con una pregunta al público", "«¿Tu equipo ya usa agentes de IA?»"],
-  dato: ["Dato sorprendente", "Abre con una cifra o hecho que sorprende", "«El 80% de las pymes no mide su ROI en IA»"],
-  contraste: ["Contraste", "Antes y después, mito y realidad", "«Lo que crees de la IA vs. lo que realmente pasa»"],
-  promesa: ["Promesa", "Promete un beneficio o resultado concreto", "«Automatiza tus reportes en 10 minutos»"],
-  historia: ["Historia", "Cuenta un caso o experiencia personal", "«Así cambió mi empresa en 3 meses»"],
-  polemica: ["Polémica", "Afirmación provocadora o alarmante", "«La IA va a reemplazar a tu gerente»"],
-};
-const FORMATOS = { tutorial: "tutorial", opinion: "opinión", noticia: "noticia", caso: "caso", demo: "demo", lista: "lista" };
-const PASOS = ["Recolección de las redes", "Temas de la corrida (DeepSeek)", "Clasificación con JEV", "Score, etapas y rastreo (código)", "Explicaciones e ideas", "Lo que viene"];
-
-let DATA = window.RADAR_DATA || {}, SECTORES = [], servidor = false, MODO = "estatico", REQUIERE_CLAVE = false, USO = null;
-let sectorInicio = null, libre = false, sector = null, pesos = {}, abiertos = new Set(), tab = "tendencias";
-
-const $ = id => document.getElementById(id);
-const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const usd = v => v == null ? "—" : "$" + (v === 0 ? "0" : v < 0.01 ? v.toFixed(4) : v < 1 ? v.toFixed(3) : v.toFixed(2));
-const fecha = t => t ? new Date(t * 1000).toLocaleDateString("es", { day: "numeric", month: "short" }) : "s/f";
-const pct = v => Math.round((v || 0) * 100);
-function guardar(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-function leer(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
-// Instagram manda a su página de inicio si no hay sesión; la versión "embed" del post se ve sin iniciar sesión
-function enlace(url) {
-  const m = String(url || "").match(/^(https?:\/\/(?:www\.)?instagram\.com\/(?:p|reel|reels)\/[A-Za-z0-9_-]+)/);
-  return m ? m[1] + "/embed/captioned/" : url;
-}
-const slug = t => t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "").slice(0, 40);
-function toast(t) { const d = document.createElement("div"); d.className = "toast"; d.textContent = t; document.body.appendChild(d); setTimeout(() => d.remove(), 1800); }
-async function copiar(texto) {
-  try { await navigator.clipboard.writeText(texto); }
-  catch (e) { const t = document.createElement("textarea"); t.value = texto; document.body.appendChild(t); t.select(); document.execCommand("copy"); t.remove(); }
-  toast("Copiado al portapapeles");
-}
-
-async function cargarDatos() {
-  if (MODO === "local") { const d = await fetch("/api/datos", { cache: "no-store" }); if (d.ok) DATA = await d.json(); }
-  else if (MODO === "remoto") { const d = await fetch("datos.json?t=" + Date.now(), { cache: "no-store" }); if (d.ok) DATA = await d.json(); }
-}
-
-async function init() {
-  try {
-    const r = await fetch("/api/estado", { cache: "no-store" });
-    const e = r.ok || r.status === 500 ? await r.json() : null;
-    if (e && e.modo === "local") MODO = "local";
-    else if (e && e.modo === "remoto" && !(e.error || "").startsWith("Faltan")) MODO = "remoto";
-    if (e) { REQUIERE_CLAVE = !!e.requiereClave; USO = e.uso || null; }
-  } catch (e) {}
-  try {
-    if (MODO === "local") SECTORES = await (await fetch("/api/sectores", { cache: "no-store" })).json();
-    else if (MODO === "remoto") SECTORES = await (await fetch("sectores.json?t=" + Date.now(), { cache: "no-store" })).json();
-  } catch (e) { SECTORES = []; }
-  await cargarDatos().catch(() => {});
-  if (!SECTORES.length) SECTORES = Object.keys(DATA).map(id => ({ id, nombre: DATA[id].nombre, redes: Object.keys(REDES).map(r => ({
-    id: r, nombre: REDES[r], activa: true, disponible: (DATA[id].redes_elegidas || []).includes(r), con_metricas: ["youtube", "hn"].includes(r), via: "" })) }));
-  servidor = MODO !== "estatico";
-  SECTORES.sort((a, b) => (b.id === "ia_latam") - (a.id === "ia_latam") || (b.id === "fitness") - (a.id === "fitness"));
-  sectorInicio = SECTORES.find(s => s.id === leer("radar-sector"))?.id || SECTORES[0]?.id;
-
-  $("glosario-ganchos").innerHTML = Object.values(GANCHOS).map(([n, d, ej]) => `<li><b>${n}</b><span class="nota">${d}. ${ej}</span></li>`).join("");
-  $("ir-landing").onclick = $("nav-landing").onclick = () => mostrar("landing");
-  $("nav-correr").onclick = $("cta-probar").onclick = $("cta-probar-2").onclick = $("nueva-corrida").onclick = () => mostrar("correr");
-  $("nav-res").onclick = $("cta-ultima").onclick = () => abrirResultados(sector || sectorInicio);
-  $("correr").onclick = correr;
-  $("tabs").onclick = e => { const b = e.target.closest("button"); if (b) cambiarTab(b.dataset.t); };
-  $("r-costo").onclick = () => cambiarTab("costo");
-  $("reset").onclick = () => { pesos = { ...DATA[sector].pesos }; pintarPesos(); pintarTendencias(); };
-  $("pago-actual").oninput = pintarAhorro;
-  $("carga-cerrar").onclick = cerrarCarga;
-  $("cta-ultima").classList.toggle("oculto", !Object.keys(DATA).length);
-  pintarDemo();
-  observarRevelados();
-  pintarCorrer();
-  const h = location.hash;
-  if (h.startsWith("#resultados") && DATA[sectorInicio]) {  // #resultados/viene abre esa pestaña directo
-    const t = h.split("/")[1];
-    if (["tendencias", "viene", "ideas", "origen", "costo"].includes(t)) tab = t;
-    abrirResultados(sectorInicio);
-  }
-  else if (h === "#correr") mostrar("correr");
-  if (servidor) seguirProgreso(true);
-}
-
-/* ---------- movimiento ---------- */
-const sinMovimiento = () => window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-function contar(el) {
-  const v = parseFloat(el.dataset.contar), fmt = el.dataset.fmt || "int";
-  const pinta = x => { el.textContent = fmt === "usd" ? usd(x) : Math.round(x).toLocaleString("es"); };
-  if (sinMovimiento() || isNaN(v) || document.hidden) return pinta(v);
-  const t0 = performance.now(), dur = 1300;
-  const paso = t => { const k = Math.min(1, (t - t0) / dur); pinta(v * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(paso); };
-  requestAnimationFrame(paso);
-  setTimeout(() => pinta(v), dur + 150);  // si el navegador pausa la animación, el valor final igual queda
-}
-let observador = null, revisor = null;
-function revisarRevelados() {  // respaldo del observador: revisa a mano qué ya está en pantalla
-  const pend = document.querySelectorAll(".revelar:not(.visto)");
-  pend.forEach(e => {
-    const r = e.getBoundingClientRect();
-    if (r.height > 0 && r.top < innerHeight - 40 && r.bottom > 0) { e.classList.add("visto"); e.querySelectorAll("[data-contar]").forEach(contar); }
-  });
-  if (!document.querySelectorAll(".revelar:not(.visto)").length) { clearInterval(revisor); revisor = null; }
-}
-function observarRevelados() {
-  if (!revisor) revisor = setInterval(revisarRevelados, 500);
-  addEventListener("scroll", revisarRevelados, { passive: true });
-  const els = document.querySelectorAll(".revelar:not(.visto)");
-  if (!("IntersectionObserver" in window)) { els.forEach(e => { e.classList.add("visto"); e.querySelectorAll("[data-contar]").forEach(contar); }); return; }
-  observador = observador || new IntersectionObserver(entradas => entradas.forEach(en => {
-    if (!en.isIntersecting) return;
-    en.target.classList.add("visto");
-    en.target.querySelectorAll("[data-contar]").forEach(contar);
-    observador.unobserve(en.target);
-  }), { threshold: 0, rootMargin: "0px 0px -40px 0px" });  // arranca apenas asoma, aunque el elemento sea más alto que la pantalla
-  els.forEach(e => observador.observe(e));
-}
-function animarTab(t) {
-  const el = $("t-" + t); if (!el || sinMovimiento()) return;
-  el.classList.remove("animar"); void el.offsetWidth; el.classList.add("animar");
-  el.querySelectorAll("[data-contar]").forEach(contar);
-  clearTimeout(el._animar); el._animar = setTimeout(() => el.classList.remove("animar"), 1800);
-}
-function pintarDemo() {
-  const id = DATA.ia_latam ? "ia_latam" : Object.keys(DATA)[0], d = DATA[id];
-  $("sec-demo").classList.toggle("oculto", !d);
-  if (!d) return;
-  $("demo-sub").textContent = `${d.nombre} · ${new Date(d.generado).toLocaleString("es", { dateStyle: "medium", timeStyle: "short" })}. Datos reales, no un ejemplo.`;
-  $("demo-kpis").innerHTML = [[d.conteos.recolectadas, "int", "piezas analizadas"], [Object.keys(d.cobertura).length, "int", "fuentes revisadas"],
-    [d.temas.length, "int", "temas detectados"], [d.costo.total_usd, "usd", "costo de la corrida"]]
-    .map(([v, f, l]) => `<div><div class="v" data-contar="${v}" data-fmt="${f}">0</div><div class="l">${l}</div></div>`).join("");
-  const minimo = d.min_piezas_top || 3;
-  const top = d.temas.map(t => ({ ...t, s: Object.keys(SENALES).reduce((a, k) => a + (d.pesos[k] || 0) * (t.senales[k] || 0), 0) }))
-    .sort((a, b) => ((b.volumen >= minimo) - (a.volumen >= minimo)) || (b.s - a.s)).slice(0, 5);
-  const max = Math.max(...top.map(t => t.s), 0.0001);
-  $("demo-barras").innerHTML = top.map((t, i) => `<div class="demo-fila">
-    <div class="nom"><span class="etapa ${t.etapa === "emergente" ? "vivo" : ""}" style="background:var(--${t.etapa})">${esc(t.etapa)}</span><b title="${esc(t.nombre)}">${esc(t.nombre)}</b></div>
-    <div class="val">${pct(t.s)}</div>
-    <div class="barra" style="--i:${i}"><i style="width:${t.s / max * 100}%"></i></div></div>`).join("");
-  $("demo-ver").onclick = () => abrirResultados(id);
-}
-
-function mostrar(v) {
-  ["landing", "correr", "res"].forEach(x => { $("vista-" + x).classList.toggle("oculto", x !== v); });
-  $("nav-landing").classList.toggle("on", v === "landing");
-  $("nav-correr").classList.toggle("on", v === "correr");
-  $("nav-res").classList.toggle("on", v === "res");
-  history.replaceState(null, "", v === "res" ? "#resultados" + (tab !== "tendencias" ? "/" + tab : "") : v === "correr" ? "#correr" : "#");
-  window.scrollTo(0, 0);
-}
-
-/* ---------- correr ---------- */
-function pintarCorrer() {
-  $("aviso-estatico").classList.toggle("oculto", servidor);
-  $("clave-acceso").classList.toggle("oculto", !(MODO === "remoto" && REQUIERE_CLAVE));
-  $("clave-acceso").value = leer("radar-clave") || "";
-  $("correr").disabled = !servidor;
-  const tarjetas = SECTORES.map(s => `<button class="opcion ${!libre && s.id === sectorInicio ? "on" : ""}" data-s="${esc(s.id)}">
-    <b>${esc(s.nombre)}</b><small>${DATA[s.id] ? "Última corrida: " + new Date(DATA[s.id].generado).toLocaleString("es", { dateStyle: "short", timeStyle: "short" }) : "Sin corridas todavía"}</small></button>`);
-  tarjetas.push(`<button class="opcion libre ${libre ? "on" : ""}" data-s="__libre"><b>＋ Otra temática (libre)</b><small>Escribe cualquier nicho</small></button>`);
-  $("sectores").innerHTML = tarjetas.join("");
-  $("sectores").onclick = e => {
-    const b = e.target.closest(".opcion"); if (!b) return;
-    if (b.dataset.s === "__libre") libre = true; else { libre = false; sectorInicio = b.dataset.s; guardar("radar-sector", sectorInicio); }
-    pintarCorrer(); if (libre) $("nicho").focus();
-  };
-  $("libre-campos").classList.toggle("oculto", !libre);
-  const s = libre ? { redes: (SECTORES[0]?.redes || []).map(r => ({ ...r, activa: true })) } : SECTORES.find(x => x.id === sectorInicio);
-  const elegidas = JSON.parse(leer("radar-redes-" + (libre ? "__libre" : sectorInicio)) || "null");
-  $("redes").innerHTML = (s?.redes || []).filter(r => r.activa).map(r => {
-    const on = r.disponible && (!elegidas || elegidas.includes(r.id));
-    return `<label class="opcion red-op ${r.disponible ? "" : "off"}">
-      <input type="checkbox" value="${r.id}" ${on ? "checked" : ""} ${r.disponible ? "" : "disabled"}>
-      <span><b>${esc(r.nombre)}</b>${r.via ? `<small>${esc(r.via)}</small>` : ""}
-      <span class="badge ${r.con_metricas ? "si" : "no"}">${r.con_metricas ? "con métricas" : "presencia y ajuste"}</span></span></label>`;
-  }).join("");
-  $("redes").onchange = () => guardar("radar-redes-" + (libre ? "__libre" : sectorInicio), JSON.stringify(redesElegidas()));
-  $("recolectar").disabled = libre; if (libre) $("recolectar").checked = true;
-  let nota = MODO === "remoto" ? "Tarda entre 2 y 5 minutos." : MODO === "local" ? "Tarda entre 1 y 3 minutos." : "";
-  if (libre) nota += " Una temática nueva se analiza desde cero: la primera vez la aceleración sale estimada.";
-  if (USO && USO.limites) nota += ` Hoy: ${USO.completas} de ${USO.limites.completas} corridas con datos nuevos.`;
-  $("nota-correr").textContent = nota.trim();
-}
-const redesElegidas = () => [...document.querySelectorAll("#redes input:checked")].map(i => i.value);
-
-let generadoAntes = null, relojInicio = null, relojTimer = null, sectorCorrida = null;
-
-function abrirCarga(titulo, sub) {
-  $("carga").classList.remove("oculto");
-  $("carga-spin").className = "spinner";
-  $("carga-error").classList.add("oculto");
-  $("carga-cerrar").classList.add("oculto");
-  estadoCarga(titulo, sub);
-  if (!relojTimer) {
-    relojInicio = relojInicio || Date.now() / 1000;
-    relojTimer = setInterval(() => {
-      const s = Math.max(0, Math.round(Date.now() / 1000 - relojInicio));
-      $("carga-reloj").textContent = `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
-    }, 500);
-  }
-}
-function estadoCarga(titulo, sub) { if (titulo) $("carga-titulo").textContent = titulo; if (sub !== undefined) $("carga-sub").textContent = sub; }
-function pararReloj() { clearInterval(relojTimer); relojTimer = null; }
-function errorCarga(msg, url) {
-  pararReloj();
-  $("carga").classList.remove("oculto");
-  $("carga-spin").className = "spinner mal";
-  estadoCarga("No se pudo completar la corrida", "");
-  $("carga-error").textContent = msg;
-  $("carga-error").classList.remove("oculto");
-  $("carga-cerrar").classList.remove("oculto");
-  if (url) { $("carga-gh").href = url; $("carga-gh").classList.remove("oculto"); }
-  $("correr").disabled = false;
-}
-function cerrarCarga() { pararReloj(); relojInicio = null; $("carga").classList.add("oculto"); }
-
-async function correr() {
-  const redes = redesElegidas();
-  if (!redes.length) { $("nota-correr").textContent = "Elige al menos una red."; return; }
-  const nicho = $("nicho").value.trim(), audiencia = $("audiencia").value.trim();
-  if (libre && nicho.length < 3) { $("nota-correr").textContent = "Escribe tu temática (por ejemplo: café de especialidad)."; $("nicho").focus(); return; }
-  const clave = $("clave-acceso").value.trim();
-  if (MODO === "remoto" && REQUIERE_CLAVE && !clave) { $("nota-correr").textContent = "Escribe el código de acceso."; $("clave-acceso").focus(); return; }
-  sectorCorrida = libre ? "libre_" + (slug(nicho) || "tema") : sectorInicio;
-  $("correr").disabled = true;
-  generadoAntes = DATA[sectorCorrida]?.generado || null;
-  relojInicio = Date.now() / 1000;
-  $("pasos").innerHTML = ""; $("log").textContent = ""; $("carga-gh").classList.add("oculto");
-  abrirCarga("Lanzando la corrida…", MODO === "remoto" ? "Enviando la orden a GitHub Actions." : "Preparando el radar.");
-  const r = await fetch("/api/correr", { method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ sector: sectorCorrida, redes, recolectar: $("recolectar").checked, clave, nicho: libre ? nicho : "", audiencia: libre ? audiencia : "" }) }).catch(() => null);
-  if (!r || !r.ok) {
-    const e = r ? await r.json().catch(() => ({})) : {};
-    if (r && r.status === 401) { guardar("radar-clave", ""); $("clave-acceso").value = ""; }
-    errorCarga(r && r.status === 401 ? "El código de acceso no es correcto. Revísalo y vuelve a intentarlo."
-      : r && r.status === 409 ? "Ya hay una corrida en curso. Espera a que termine; abajo puedes seguirla."
-      : (e.error || "No se pudo lanzar la corrida. Revisa tu conexión e inténtalo de nuevo."));
-    if (r && r.status === 409) seguirProgreso(false);
-    return;
-  }
-  if (MODO === "remoto" && clave) guardar("radar-clave", clave);
-  if (libre) guardar("radar-sector", sectorCorrida);
-  estadoCarga("Corrida en cola", MODO === "remoto" ? "GitHub Actions está preparando una máquina para correr el radar (unos 20 a 40 segundos)." : "");
-  setTimeout(() => seguirProgreso(false), MODO === "remoto" ? 4000 : 800);
-}
-
-function pintarPasos(e) {
-  if (e.pasos) {
-    const cls = { hecho: "hecho", activo: "activo", omitido: "hecho", error: "", pendiente: "" };
-    $("pasos").innerHTML = e.pasos.map(p => `<li class="${cls[p.estado]}"><span class="dot"></span>${esc(p.nombre)}${p.estado === "omitido" ? " (omitido)" : ""}${p.estado === "error" ? " (falló)" : ""}</li>`).join("")
-      + `<li class="${e.corriendo ? "" : "activo"}"><span class="dot"></span>Mostrar resultados en esta página</li>`;
-    return;
-  }
-  const actual = Math.max(0, ...e.log.map(l => (l.match(/^PASO (\d)\/6/) || [0, 0])[1] * 1));
-  const terminado = !e.corriendo && e.fin;
-  $("pasos").innerHTML = PASOS.map((p, i) => {
-    const n = i + 1, cls = terminado && !e.error ? "hecho" : n < actual ? "hecho" : n === actual ? "activo" : "";
-    return `<li class="${cls}"><span class="dot"></span>${p}</li>`;
-  }).join("");
-}
-
-function textoEstado(e) {
-  if (e.pasos) {
-    const activo = e.pasos.find(p => p.estado === "activo");
-    if (!activo) return ["Preparando la máquina en GitHub Actions…", "Instalando Python y las dependencias."];
-    return {
-      "Crear sector para el nicho": ["Preparando tu temática…", "DeepSeek arma las búsquedas para cada red."],
-      "Recolectar redes": ["Recolectando las redes…", "YouTube, Reddit, Instagram, LinkedIn, TikTok y Hacker News."],
-      "Analizar con JEV y DeepSeek": ["Analizando con JEV y DeepSeek…", "Clasificando cada pieza, calculando el ranking y redactando ideas."],
-      "Guardar y publicar resultados": ["Guardando resultados…", "Subiendo la corrida para publicarla."],
-    }[activo.nombre] || [activo.nombre, ""];
-  }
-  const ult = [...(e.log || [])].reverse().find(l => /^PASO/.test(l));
-  return [ult ? ult.replace(/^PASO \d\/6 /, "") + "…" : "Corriendo el radar…", ""];
-}
-
-async function seguirProgreso(soloSiCorre) {
-  const r = await fetch("/api/estado", { cache: "no-store" }).catch(() => null);
-  if (!r || !r.ok) { if (!soloSiCorre) setTimeout(() => seguirProgreso(false), 4000); return; }
-  const e = await r.json();
-  if (e.uso) USO = e.uso;
-  if (soloSiCorre && !e.corriendo) return;
-  if (e.inicio && (!relojInicio || soloSiCorre)) relojInicio = e.inicio;
-  abrirCarga();
-  $("correr").disabled = e.corriendo;
-  if (e.url) { $("carga-gh").href = e.url; $("carga-gh").classList.remove("oculto"); }
-  pintarPasos(e);
-  $("log").textContent = (e.log || []).slice(-60).join("\n");
-  $("log").scrollTop = 1e9;
-  if (e.corriendo) {
-    const [t, sub] = textoEstado(e); estadoCarga(t, sub);
-    setTimeout(() => seguirProgreso(false), MODO === "remoto" ? 4000 : 1500); return;
-  }
-  if (e.error) return errorCarga(e.error, e.url);
-  const s = e.sector || sectorCorrida || sectorInicio;
-  if (MODO === "remoto") return esperarPublicacion(s, 0);
-  await cargarDatos();
-  terminarCarga(s);
-}
-
-async function terminarCarga(s) {
-  pararReloj();
-  $("carga-spin").className = "spinner ok";
-  estadoCarga("¡Listo!", "Abriendo los resultados…");
-  $("correr").disabled = false;
-  try {
-    if (MODO === "local") SECTORES = await (await fetch("/api/sectores", { cache: "no-store" })).json();
-    else if (MODO === "remoto") SECTORES = await (await fetch("sectores.json?t=" + Date.now(), { cache: "no-store" })).json();
-  } catch (e) {}
-  libre = false; sectorInicio = s; pintarCorrer();
-  setTimeout(() => { cerrarCarga(); abrirResultados(s); }, 900);
-}
-
-async function esperarPublicacion(s, intento) {
-  estadoCarga("Publicando los resultados…", "La corrida terminó. Vercel está publicando la versión nueva (unos 30 a 60 segundos).");
-  await cargarDatos().catch(() => {});
-  if (DATA[s] && (!generadoAntes || DATA[s].generado !== generadoAntes)) return terminarCarga(s);
-  if (intento > 45) return errorCarga("La corrida terminó, pero la publicación está tardando más de lo normal. Recarga la página en un minuto.");
-  setTimeout(() => esperarPublicacion(s, intento + 1), 4000);
-}
-
-/* ---------- resultados ---------- */
-function abrirResultados(s) {
-  if (!DATA[s]) { mostrar("correr"); return; }
-  sector = s; const d = DATA[s];
-  pesos = { ...d.pesos }; abiertos = new Set();
-  const es30x = !d.marca || d.marca === "30X";
-  $("r-titulo").textContent = d.nombre;
-  $("r-meta").textContent = `${new Date(d.generado).toLocaleString("es", { dateStyle: "medium", timeStyle: "short" })} · ${Math.round(d.duracion_s)} s · ${(d.redes_elegidas || Object.keys(d.cobertura)).length} redes`;
-  $("r-costo").innerHTML = `${usd(d.costo.total_usd)} <span>costo de esta corrida</span>`;
-  $("r-pregunta").textContent = `Los 10 temas de ${s === "ia_latam" ? "IA" : d.nombre.toLowerCase()} que más crecen esta semana, por qué funcionan y de dónde salieron.`;
-  $("tab-ideas").textContent = es30x ? "Ideas para 30X" : "Ideas de contenido";
-  $("ideas-titulo").textContent = es30x ? "Ideas para 30X" : "Ideas de contenido";
-  $("leyenda-mov").classList.toggle("oculto", !d.corrida_anterior);
-  pintarPesos(); pintarGanchos(); pintarTendencias(); pintarPredicciones(); pintarIdeas(); pintarOrigen(); pintarCosto();
-  mostrar("res"); cambiarTab(tab);
-}
-
-function cambiarTab(t) {
-  tab = t;
-  document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.t === t));
-  ["tendencias", "viene", "ideas", "origen", "costo"].forEach(x => $("t-" + x).classList.toggle("oculto", x !== t));
-  if (!$("vista-res").classList.contains("oculto")) history.replaceState(null, "", "#resultados" + (t !== "tendencias" ? "/" + t : ""));
-  window.scrollTo(0, 0);
-  animarTab(t);
-}
-
-function pintarPesos() {
-  $("pesos").innerHTML = Object.entries(SENALES).map(([k, [n, ayuda]]) => `<div class="peso"><label><span>${n}</span><span id="v-${k}">${(pesos[k] ?? 0).toFixed(2)}</span></label>
-    <input type="range" min="0" max="1" step="0.05" value="${pesos[k] ?? 0}" data-k="${k}" aria-label="${n}"><small>${ayuda}</small></div>`).join("");
-  $("pesos").oninput = e => { const k = e.target.dataset.k; if (!k) return; pesos[k] = parseFloat(e.target.value); $("v-" + k).textContent = pesos[k].toFixed(2); pintarTendencias(); };
-}
-
-// los temas con menos de N piezas (señales tempranas) van siempre detrás de los que tienen respaldo, con cualquier peso
-const respaldo = t => (t.volumen || 0) >= (DATA[sector]?.min_piezas_top || 3);
-const ranking = (temas, w) => temas.map(t => ({ ...t, s: Object.keys(SENALES).reduce((a, k) => a + (w[k] || 0) * (t.senales[k] || 0), 0) }))
-  .sort((a, b) => (respaldo(b) - respaldo(a)) || (b.s - a.s));
-
-function rutaHtml(r) {
-  if (!r || !r.ruta || !r.ruta.length) return "";
-  return `<div class="ruta">${r.ruta.map((n, i) => `${i ? `<span class="flecha">→ ${r.horas_entre_redes[i - 1] < 48 ? Math.round(r.horas_entre_redes[i - 1]) + " h" : Math.round(r.horas_entre_redes[i - 1] / 24) + " d"} →</span>` : ""}
-    <a class="nodo ${i === 0 ? "origen" : ""}" href="${esc(enlace(n.url))}" target="_blank" rel="noopener" title="${esc(n.titulo)}"><b>${esc(REDES[n.red] || n.red)}</b> ${fecha(n.fecha)}</a>`).join("")}</div>`;
-}
-
-function movHtml(t, i, d) {
-  if (!d.corrida_anterior) return "";
-  if (!t.rank_anterior) return `<span class="mov nuevo" title="No estaba en el top de la corrida anterior">NUEVO</span>`;
-  const delta = t.rank_anterior - (i + 1);
-  if (delta > 0) return `<span class="mov up" title="Subió ${delta} puestos desde la corrida anterior (#${t.rank_anterior})">▲ ${delta}</span>`;
-  if (delta < 0) return `<span class="mov down" title="Bajó ${-delta} puestos desde la corrida anterior (#${t.rank_anterior})">▼ ${-delta}</span>`;
-  return `<span class="mov igual" title="Mismo puesto que en la corrida anterior">=</span>`;
-}
-
-const nombreGancho = g => (GANCHOS[g] || [g])[0];
-
-function pintarGanchos() {
-  const d = DATA[sector], g = d.ganchos || [];
-  if (!g.length) { $("ganchos").classList.add("oculto"); return; }
-  $("ganchos").classList.remove("oculto");
-  const mejor = g.find(x => x.crecimiento_vs_media != null && x.crecimiento_vs_media > 0) || g[0];
-  const top = d.temas[0], ganchoTop = top && top.rasgos.gancho[0];
-  const fila = x => {
-    const c = x.crecimiento_vs_media;
-    return `<div class="ganchos-fila"><b title="${esc((GANCHOS[x.gancho] || [])[1] || "")}">${esc(nombreGancho(x.gancho))}</b>
-      <div><div class="barra"><i style="width:${pct(x.pct)}%"></i></div><span class="nota">${pct(x.pct)}% de las piezas</span></div>
-      <span class="crec ${c == null ? "" : c >= 0 ? "pos" : "neg"}">${c == null ? "sin métricas" : (c >= 0 ? "+" : "") + Math.round(c * 100) + "% crec."}</span></div>`;
-  };
-  $("ganchos").innerHTML = `<h3 class="sec">¿Qué gancho atrae más?</h3>
-    <div class="insight">Las piezas que abren con un gancho de <b>${esc(nombreGancho(mejor.gancho).toLowerCase())}</b> ${mejor.crecimiento_vs_media != null ? `crecen <b>${Math.round(mejor.crecimiento_vs_media * 100)}% más</b> que el promedio` : "son las más usadas"} en el top 10.${ganchoTop ? ` En el tema número 1, «${esc(top.nombre)}», el ${pct(ganchoTop.pct)}% de las piezas usa un gancho de <b>${esc(nombreGancho(ganchoTop.valor).toLowerCase())}</b>.` : ""}
-    <span class="nota">Ejemplo: <a href="${esc(enlace(mejor.ejemplo.url))}" target="_blank" rel="noopener">${esc(mejor.ejemplo.titulo)}</a></span></div>
-    <details><summary class="nota" style="cursor:pointer;color:var(--accent);font-weight:600">Ver todos los ganchos</summary>
-    ${g.slice(0, 6).map(fila).join("")}
-    <p class="nota" style="margin:8px 0 0">"Crec." compara la velocidad de crecimiento de las piezas con ese gancho contra el promedio del top 10 (solo redes con métricas).</p></details>`;
-}
-
-function pintarTendencias() {
-  const d = DATA[sector];
-  const original = ranking(d.temas, d.pesos).map(t => t.id);
-  const actual = ranking(d.temas, pesos).slice(0, 10);
-  const cambiados = JSON.stringify(pesos) !== JSON.stringify(d.pesos);
-  const max = Math.max(...actual.map(t => t.s), 0.0001);
-  if (!actual.length) { $("lista").innerHTML = '<div class="card vacio">Sin temas en esta corrida.</div>'; return; }
-  $("lista").innerHTML = actual.map((t, i) => {
-    const antes = original.indexOf(t.id) + 1;
-    const redes = Object.entries(t.redes).sort((a, b) => b[1] - a[1]).map(([r, n]) => `<span class="chip">${esc(REDES[r] || r)} · ${n}</span>`).join("");
-    const g = t.rasgos.gancho.map(x => `${nombreGancho(x.valor).toLowerCase()} ${pct(x.pct)}%`).join(", ");
-    const f = t.rasgos.formato.map(x => `${FORMATOS[x.valor] || x.valor} ${pct(x.pct)}%`).join(", ");
-    const fuentes = (t.rastreo?.fuentes_externas || []).map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.dominio)}</a> (${x.veces})`).join(", ");
-    const senales = Object.entries(SENALES).map(([k, [n]]) => `<div>${n} ${pct(t.senales[k])}<div class="barra"><i style="width:${Math.min(100, pct(t.senales[k]))}%"></i></div></div>`).join("");
-    const piezas = t.top_piezas.map(p => `<li><a href="${esc(enlace(p.url))}" target="_blank" rel="noopener">${esc(p.titulo || p.url)}</a>
-      <span class="red-t">${esc(REDES[p.red] || p.red)}${p.cuenta ? " · " + esc(p.cuenta) : ""}${p.con_metricas ? "" : " · sin métricas"}</span></li>`).join("");
-    return `<div class="card tema ${abiertos.has(t.id) ? "abierto" : ""}" data-id="${esc(t.id)}" style="--i:${i}">
-      <div class="rank">${i + 1}<div>${movHtml(t, i, d)}</div></div>
-      <div><h4>${esc(t.nombre)}<span class="etapa ${t.etapa === "emergente" ? "vivo" : ""}" style="background:var(--${t.etapa})">${esc(t.etapa)}</span></h4></div>
-      <div class="score"><b>${pct(t.s)}</b><small>score</small><div class="barra"><i style="width:${t.s / max * 100}%"></i></div>${cambiados && antes !== i + 1 ? `<small>con pesos originales: #${antes}</small>` : ""}</div>
-      <div class="full">
-        <p class="porque">${esc(t.porque || "")}</p>
-        <div class="chips">${redes}<span class="chip gris">${t.volumen} piezas · ${t.piezas_7d} esta semana</span>${t.aceleracion_estimada ? '<span class="chip gris" title="Hace falta más de una captura de métricas para medir la aceleración">aceleración estimada</span>' : ""}</div>
-        ${rutaHtml(t.rastreo)}
-        <div class="detalle">
-          <div class="senales">${senales}</div>
-          <div>Ganchos: ${esc(g)} · Formatos: ${esc(f)} · Menciona un lanzamiento: ${pct(t.rasgos.menciona_lanzamiento)}%</div>
-          ${fuentes ? `<div style="margin-top:6px">Fuentes externas citadas: ${fuentes}</div>` : ""}
-          <ul class="piezas">${piezas}</ul>
-        </div>
-        <button class="btn chico ver">${abiertos.has(t.id) ? "Ocultar detalle" : "Ver piezas y señales"}</button>
-      </div></div>`;
-  }).join("");
-  $("lista").onclick = e => {
-    if (!e.target.classList.contains("ver")) return;
-    const id = e.target.closest(".tema").dataset.id;
-    abiertos.has(id) ? abiertos.delete(id) : abiertos.add(id); pintarTendencias();
-  };
-}
-
-function pintarPredicciones() {
-  const d = DATA[sector], nombres = Object.fromEntries(d.temas.map(t => [t.id, t.nombre]));
-  const ps = d.predicciones || [];
-  if (!ps.length) { $("preds").innerHTML = '<div class="card vacio">Esta corrida no tiene predicciones. Vuelve a correr el radar.</div>'; return; }
-  $("preds").innerHTML = ps.map((p, i) => `<div class="card pred" style="--i:${i}">
-    <div class="n">${i + 1}</div>
-    <div>
-      <h4>${esc(p.nombre)} <span class="chip gris">${esc(p.ventana)}</span></h4>
-      <div class="medidor"><span>Fuerza</span><div class="barra"><i style="width:${pct(p.fuerza)}%"></i></div><b>${pct(p.fuerza)}</b></div>
-      <ul class="puntos">
-        <li><svg class="ico"><use href="#i-bulb"/></svg><div><b>Por qué</b>${esc(p.tesis)}</div></li>
-        <li><svg class="ico"><use href="#i-eye"/></svg><div><b>Señal a vigilar</b>${esc(p.senal_a_vigilar)}</div></li>
-        <li><svg class="ico"><use href="#i-pen"/></svg><div><b>Qué publicar hoy</b>${esc(p.que_publicar_hoy)} <button class="btn chico" data-copiar-pred="${i}" style="margin-left:6px"><svg class="ico" style="width:14px;height:14px"><use href="#i-copy"/></svg>Copiar</button></div></li>
-      </ul>
-      ${p.basado_en.length ? `<div class="chips"><span class="nota">Basado en:</span>${p.basado_en.map(b => `<span class="chip">${esc(nombres[b] || b)}</span>`).join("")}</div>` : ""}
-      <div class="mini"><span>Respaldo de datos <b>${pct(p.respaldo_datos)}</b></span>${p.jev ? `<span>Interés de la audiencia (JEV) <b>${pct(p.jev.interes_audiencia)}</b></span><span>Novedad (JEV) <b>${pct(p.jev.novedad)}</b></span>` : ""}</div>
-    </div>
-  </div>`).join("");
-  $("preds").onclick = e => { const b = e.target.closest("[data-copiar-pred]"); if (b) copiar(ps[+b.dataset.copiarPred].que_publicar_hoy); };
-}
-
-function textoIdea(i) { return `${i.formato}: ${i.titulo}\n\nGancho: ${i.gancho}\n\n${i.desarrollo}`; }
-function promptIdea(i, d) {
-  const t = d.temas[0];
-  const entrega = /carrusel/i.test(i.formato) ? "el texto de cada lámina (7 a 9 láminas), el caption y 5 hashtags"
-    : /reel|tiktok|video/i.test(i.formato) ? "un guion de 30 a 45 segundos con tiempos, el texto en pantalla y el caption"
-    : "un post de 150 a 250 palabras con una llamada a la acción al final";
-  const marca = !d.marca || d.marca === "30X" ? " para 30X, una empresa latinoamericana que enseña IA y negocios a líderes" : "";
-  return `Actúa como estratega y creador de contenido${marca}.
-Temática: ${d.nombre}.
-Tema en tendencia: «${t ? t.nombre : ""}» (etapa: ${t ? t.etapa : ""}).${t && t.porque ? " Por qué funciona: " + t.porque : ""}
-
-Crea ${i.formato.toLowerCase()} con esta idea:
-- Título: ${i.titulo}
-- Gancho inicial: ${i.gancho}
-- Desarrollo: ${i.desarrollo}
-
-Escribe en español neutro latinoamericano, tono cercano y práctico. Entrega ${entrega}.`;
-}
-
-function pintarIdeas() {
-  const d = DATA[sector];
-  $("ideas-tema").textContent = d.temas[0] ? `Adaptación del tema número 1: «${d.temas[0].nombre}». Copia el texto o el prompt y pégalo en ChatGPT, Claude o Canva para generar la pieza.` : "";
-  const ideas = d.ideas || [];
-  $("ideas").innerHTML = ideas.map((i, n) => `<div class="card idea" style="--i:${n}">
-    <div class="etq">${esc(i.formato)}</div><h4>${esc(i.titulo)}</h4>
-    <p class="gancho">“${esc(i.gancho)}”</p><div style="font-size:14px">${esc(i.desarrollo)}</div>
-    ${i.jev ? `<div class="mini"><span>Ajuste a la audiencia (JEV) <b>${pct(i.jev.ajuste_audiencia.score)}</b></span><span>Fuerza del gancho <b>${pct(i.jev.fuerza_gancho.score)}</b></span></div>` : ""}
-    <div class="acc">
-      <button class="btn chico" data-texto="${n}"><svg class="ico" style="width:14px;height:14px"><use href="#i-copy"/></svg>Copiar texto</button>
-      <button class="btn chico primario" data-prompt="${n}"><svg class="ico" style="width:14px;height:14px"><use href="#i-copy"/></svg>Copiar prompt para IA</button>
-    </div>
-  </div>`).join("") || '<div class="card vacio">Sin ideas en esta corrida.</div>';
-  $("ideas").onclick = e => {
-    const t = e.target.closest("[data-texto]"), p = e.target.closest("[data-prompt]");
-    if (t) copiar(textoIdea(ideas[+t.dataset.texto]));
-    if (p) copiar(promptIdea(ideas[+p.dataset.prompt], d));
-  };
-}
-
-function pintarOrigen() {
-  const d = DATA[sector], top = d.temas.slice(0, 10);
-  const conteo = {};
-  top.forEach(t => { const o = t.rastreo?.origen?.red; if (o) conteo[o] = (conteo[o] || 0) + 1; });
-  const total = Object.values(conteo).reduce((a, b) => a + b, 0) || 1;
-  $("origen-barras").innerHTML = Object.entries(conteo).sort((a, b) => b[1] - a[1]).map(([r, n]) =>
-    `<div class="fila"><span>${esc(REDES[r] || r)}</span><div class="barra"><i style="width:${n / total * 100}%"></i></div><b>${n}</b></div>`).join("") || '<p class="nota">Sin fechas suficientes.</p>';
-  const saltos = top.flatMap(t => t.rastreo?.horas_entre_redes || []);
-  $("origen-nota").textContent = saltos.length ? `Primera aparición detectada entre los 10 temas principales. En promedio, un tema tarda ${Math.round(saltos.reduce((a, b) => a + b, 0) / saltos.length / 24 * 10) / 10} días en saltar a la siguiente red.` : "";
-  const fuentes = {};
-  top.forEach(t => (t.rastreo?.fuentes_externas || []).forEach(f => { fuentes[f.dominio] = fuentes[f.dominio] || { ...f, veces: 0 }; fuentes[f.dominio].veces += f.veces; }));
-  const lf = Object.values(fuentes).sort((a, b) => b.veces - a.veces).slice(0, 8);
-  $("fuentes").innerHTML = lf.length ? `<table><tr><th>Fuente</th><th class="n">Citas</th></tr>${lf.map(f => `<tr><td><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.dominio)}</a></td><td class="n">${f.veces}</td></tr>`).join("")}</table>`
-    : '<p class="nota">Las fuentes externas salen de los links que comparten los hilos de Hacker News y Reddit.</p>';
-  $("rutas").innerHTML = top.map(t => `<div style="margin-bottom:14px"><b>${esc(t.nombre)}</b> <span class="nota">· activo hace ${t.rastreo?.dias_activo ?? "?"} días</span>${rutaHtml(t.rastreo)}</div>`).join("");
-}
-
-function pintarCosto() {
-  const d = DATA[sector], c = d.costo, mensual = c.total_usd * 8 * 30;
-  $("costo-resumen").textContent = `Esta corrida costó ${usd(c.total_usd)} y analizó ${d.conteos.recolectadas} piezas. Corriendo cada 3 horas serían unos ${usd(mensual)} al mes.`;
-  $("kpis").innerHTML = [[c.total_usd, "esta corrida"], [c.por_tema_usd, "por tema del top 10"], [mensual, "al mes, cada 3 horas"]]
-    .map(([v, l], i) => `<div class="card kpi" style="--i:${i}"><div class="v" data-contar="${v}" data-fmt="usd">${usd(v)}</div><div class="l">${l}</div></div>`).join("");
-  const nombres = { jev_piezas: "JEV: clasificar piezas", jev_ideas: "JEV: puntuar ideas", jev_predicciones: "JEV: puntuar predicciones",
-    llm_temas: "DeepSeek: proponer temas", llm_redaccion: "DeepSeek: redactar", llm_predicciones: "DeepSeek: lo que viene", llm_sector: "DeepSeek: crear temática" };
-  const filas = Object.entries(c.pasos).sort((a, b) => b[1].usd - a[1].usd).map(([k, v]) => `<tr><td>${esc(nombres[k] || k.replace("busqueda_", "Búsqueda web: ").replaceAll("_", " "))}</td>
-    <td class="n">${v.llamadas}</td><td class="n">${usd(v.usd)}</td></tr>`).join("");
-  $("costo-tabla").innerHTML = `<tr><th>Paso</th><th class="n">Llamadas</th><th class="n">USD</th></tr>${filas}<tr><td><b>Total</b></td><td></td><td class="n"><b>${usd(c.total_usd)}</b></td></tr>`;
-  $("cobertura").innerHTML = `<tr><th>Red</th><th class="n">Piezas</th><th class="n">En ranking</th><th class="n">Con métricas</th><th>Vía</th></tr>` +
-    Object.entries(d.cobertura).map(([r, v]) => `<tr><td>${esc(REDES[r] || r)}</td><td class="n">${v.recolectadas}</td><td class="n">${v.en_ranking}</td><td class="n">${v.con_metricas}</td><td>${esc(v.vias.map(x => VIAS[x] || x).join(", "))}</td></tr>`).join("");
-  const n = d.conteos;
-  $("conteos").textContent = `${n.recolectadas} piezas analizadas · ${n.en_ranking} en el ranking · ${n.fuera_de_sector} fuera del tema · ${n.sin_tema ?? 0} sin tema · ${n.baja_confianza} excluidas por baja confianza de JEV.`;
-  const h = c.historial || [], hmax = Math.max(...h.map(x => x.usd), 0.0001);
-  $("hist").innerHTML = h.slice(-30).map(x => `<i style="height:${x.usd / hmax * 100}%" title="${esc(new Date(x.generado).toLocaleString("es"))}: ${usd(x.usd)}"></i>`).join("");
-  $("hist-nota").textContent = h.length ? `${h.length} corridas · gasto acumulado ${usd(h.reduce((a, x) => a + x.usd, 0))}` : "";
-  const g = leer("radar-pago"); if (g) $("pago-actual").value = g;
-  pintarAhorro();
-}
-
-function pintarAhorro() {
-  const v = parseFloat($("pago-actual").value), c = DATA[sector]?.costo; if (!c) return;
-  const mensual = c.total_usd * 8 * 30;
-  if (!isNaN(v)) guardar("radar-pago", v);
-  $("ahorro-res").textContent = isNaN(v) || v <= 0 ? `Corriendo cada 3 horas, el radar cuesta unos ${usd(mensual)} al mes.`
-    : `Hoy: ${usd(v)} al mes. Radar cada 3 horas: ${usd(mensual)} al mes (${Math.round(mensual / v * 1000) / 10}% de lo que pagas hoy).`;
-}
-
-init();
-</script>
+<script src="/i18n.js"></script>
+<script src="/data.js"></script>
+<script src="/app.js"></script>
 </body>
 </html>

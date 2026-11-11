@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar 30X</title>
+<meta name="description" content="Descubre qué está creciendo hoy en redes, antes que todos. Cinco redes, un ranking hecho con datos y las ideas listas para tu audiencia. En unos minutos y por centavos.">
+<link rel="canonical" href="https://radar-30x-three.vercel.app/es/">
+<link rel="alternate" hreflang="en" href="https://radar-30x-three.vercel.app/">
+<link rel="alternate" hreflang="es" href="https://radar-30x-three.vercel.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://radar-30x-three.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Radar 30X">
+<meta property="og:locale" content="es_419">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Radar 30X">
+<meta property="og:description" content="Descubre qué está creciendo hoy en redes, antes que todos. Cinco redes, un ranking hecho con datos y las ideas listas para tu audiencia. En unos minutos y por centavos.">
+<meta property="og:url" content="https://radar-30x-three.vercel.app/es/">
+<meta property="og:image" content="https://radar-30x-three.vercel.app/og/es.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Radar 30X. Descubre qué está creciendo hoy en redes, antes que todos.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Radar 30X">
+<meta name="twitter:description" content="Descubre qué está creciendo hoy en redes, antes que todos. Cinco redes, un ranking hecho con datos y las ideas listas para tu audiencia. En unos minutos y por centavos.">
+<meta name="twitter:image" content="https://radar-30x-three.vercel.app/og/es.png">
+<meta name="twitter:image:alt" content="Radar 30X. Descubre qué está creciendo hoy en redes, antes que todos.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root {
+  --bg: #f5f6fa; --panel: #ffffff; --panel-2: #f0f2f8; --ink: #0f172a; --muted: #64748b; --line: #e2e8f0;
+  --accent: #4f46e5; --accent-ink: #ffffff; --accent-soft: #eef2ff;
+  --hero: #0b1020; --hero-ink: #e2e8f0; --hero-muted: #94a3b8;
+  --emergente: #16a34a; --creciendo: #4f46e5; --pico: #d97706; --saturado: #94a3b8;
+  --up: #16a34a; --down: #dc2626; --nuevo: #0891b2;
+  --radius: 14px; --shadow: 0 1px 2px rgba(15,23,42,.04), 0 4px 16px rgba(15,23,42,.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1020; --panel: #121a2e; --panel-2: #18223a; --ink: #e5e9f2; --muted: #94a3b8; --line: #243049;
+    --accent: #818cf8; --accent-ink: #0b1020; --accent-soft: #1e2547;
+    --hero: #070b16; --emergente: #4ade80; --creciendo: #818cf8; --pico: #fbbf24; --saturado: #64748b; --nuevo: #22d3ee;
+    --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+button { font: inherit; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+@media (max-width: 700px) { .wrap { padding: 0 16px; } }
+.oculto { display: none !important; }
+.nota { color: var(--muted); font-size: 13px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.btn { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 10px; padding: 10px 16px; cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; }
+.btn:hover { border-color: var(--accent); text-decoration: none; }
+.btn.primario { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn.grande { padding: 15px 28px; font-size: 17px; border-radius: 12px; }
+.btn.fantasma { background: transparent; color: #fff; border-color: rgba(255,255,255,.25); }
+.btn.chico { padding: 6px 10px; font-size: 13px; font-weight: 500; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.ico { width: 22px; height: 22px; flex: none; }
+h3.sec { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
+.etapa { display: inline-block; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 2px 8px; border-radius: 999px; color: #fff; vertical-align: 2px; }
+
+/* barra superior */
+.top { background: var(--hero); color: var(--hero-ink); position: sticky; top: 0; z-index: 20; }
+.top .wrap { display: flex; align-items: center; gap: 12px; min-height: 60px; }
+.logo { font-weight: 800; font-size: 18px; letter-spacing: -.02em; color: #fff; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+.logo span { color: #a5b4fc; }
+.top nav { margin-left: auto; display: flex; gap: 4px; }
+.top nav button { background: transparent; border: 0; color: var(--hero-muted); padding: 8px 12px; border-radius: 8px; cursor: pointer; }
+.top nav button.on, .top nav button:hover { color: #fff; background: rgba(255,255,255,.08); }
+.top nav a { color: var(--hero-muted); text-decoration: none; padding: 8px 10px; border-radius: 8px; font-weight: 700; font-size: 13px; letter-spacing: .04em; }
+.top nav a.on, .top nav a:hover { color: #fff; background: rgba(255,255,255,.08); text-decoration: none; }
+@media (max-width: 700px) {
+  .top .wrap { flex-wrap: wrap; gap: 4px 8px; padding-top: 8px; padding-bottom: 8px; }
+  .top nav { width: 100%; margin-left: 0; gap: 0; }
+  .top nav button, .top nav a { padding: 8px 6px; font-size: 13px; letter-spacing: 0; }
+}
+
+/* landing */
+.hero { background: var(--hero); color: var(--hero-ink); padding: 64px 0 72px; }
+.hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+@media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
+.hero h1 { font-size: clamp(32px, 4.8vw, 52px); line-height: 1.05; letter-spacing: -.03em; margin: 0 0 16px; color: #fff; }
+.hero h1 em { font-style: normal; color: #a5b4fc; }
+.hero p.lead { color: var(--hero-muted); font-size: 18px; margin: 0 0 28px; max-width: 560px; }
+.hero .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.hero-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.hcard { border: 1px solid rgba(255,255,255,.1); border-radius: 14px; padding: 16px; background: rgba(255,255,255,.04); }
+.hcard .ibox { width: 42px; height: 42px; border-radius: 11px; display: grid; place-items: center; background: rgba(165,180,252,.15); color: #a5b4fc; margin-bottom: 10px; }
+.hcard b { display: block; color: #fff; font-size: 15px; }
+.hcard span { color: var(--hero-muted); font-size: 13px; }
+.seccion { padding: 48px 0 8px; }
+.seccion h2 { font-size: 26px; letter-spacing: -.02em; margin: 0 0 6px; }
+.seccion > .wrap > p.nota { font-size: 15px; margin: 0 0 22px; }
+.pasos-como { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+@media (max-width: 900px) { .pasos-como { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .pasos-como { grid-template-columns: 1fr; } }
+.paso-como { padding: 18px; }
+.paso-como .num { width: 30px; height: 30px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 800; display: grid; place-items: center; margin-bottom: 10px; }
+.paso-como b { display: block; margin-bottom: 4px; }
+.leer { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+@media (max-width: 980px) { .leer { grid-template-columns: 1fr; } }
+.leer .card { padding: 20px; }
+.leer h4 { margin: 0 0 4px; font-size: 17px; display: flex; gap: 8px; align-items: center; }
+.lista-def { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 10px; font-size: 14px; }
+.lista-def b { display: block; }
+.lista-def li span.nota { display: block; }
+
+/* página correr */
+.correr-cab { padding: 36px 0 18px; }
+.correr-cab h2 { margin: 0 0 4px; font-size: 28px; letter-spacing: -.02em; }
+.config { padding: 24px; margin-bottom: 40px; }
+.paso-t { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px; display: block; }
+.sectores { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+.opcion { border: 1.5px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 12px; padding: 12px 16px; cursor: pointer; text-align: left; }
+.opcion.on { border-color: var(--accent); background: var(--accent-soft); }
+.opcion small { display: block; color: var(--muted); font-size: 12px; }
+.opcion.libre { border-style: dashed; }
+.libre-campos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px; }
+@media (max-width: 700px) { .libre-campos { grid-template-columns: 1fr; } }
+.campo-txt { width: 100%; padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font: inherit; }
+.campo-txt:focus { outline: 2px solid var(--accent); border-color: transparent; }
+.redes { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; margin: 8px 0 22px; }
+.red-op { display: flex; gap: 10px; align-items: flex-start; }
+.red-op input { margin-top: 4px; accent-color: var(--accent); width: 16px; height: 16px; }
+.red-op.off { opacity: .5; cursor: not-allowed; }
+.badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 999px; margin-top: 4px; }
+.badge.si { background: #dcfce7; color: #166534; } .badge.no { background: var(--panel-2); color: var(--muted); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge.si { background: #14321f; color: #86efac; } }
+.acciones { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.check { display: flex; gap: 8px; align-items: center; color: var(--muted); font-size: 14px; }
+.aviso-modo { background: var(--accent-soft); border-radius: 10px; padding: 10px 14px; font-size: 14px; margin-bottom: 18px; }
+
+/* pantalla de carga */
+.carga { position: fixed; inset: 0; background: rgba(7, 11, 22, .72); display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 50; }
+.carga-card { background: var(--panel); color: var(--ink); border-radius: 18px; width: min(560px, 100%); padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,.35); max-height: 90vh; overflow: auto; }
+.carga-cab { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px; }
+.carga-cab h3 { margin: 0 0 2px; font-size: 19px; letter-spacing: -.01em; }
+.carga-cab p { margin: 0; }
+.carga-reloj { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--muted); }
+.spinner { width: 34px; height: 34px; border-radius: 50%; border: 4px solid var(--accent-soft); border-top-color: var(--accent); animation: gira .9s linear infinite; flex: none; }
+.spinner.ok { animation: none; border-color: var(--emergente); background: var(--emergente); }
+.spinner.mal { animation: none; border-color: var(--down); background: var(--down); }
+@keyframes gira { to { transform: rotate(360deg); } }
+.pasos { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+.pasos li { display: flex; gap: 10px; align-items: center; color: var(--muted); padding: 5px 0; font-size: 15px; }
+.pasos li .dot { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--line); flex: none; }
+.pasos li.activo { color: var(--ink); font-weight: 600; }
+.pasos li.activo .dot { border-color: var(--accent); border-top-color: transparent; animation: gira .8s linear infinite; }
+.pasos li.hecho { color: var(--ink); }
+.pasos li.hecho .dot { background: var(--emergente); border-color: var(--emergente); }
+.carga-error { background: #fee2e2; color: #991b1b; border-radius: 10px; padding: 12px 14px; margin: 12px 0; font-size: 14px; }
+.carga-det { margin-top: 12px; font-size: 13px; color: var(--muted); }
+.log { background: var(--hero); color: #cbd5e1; font: 12px/1.5 ui-monospace, Consolas, monospace; border-radius: 10px; padding: 10px 12px; max-height: 180px; overflow: auto; white-space: pre-wrap; margin-top: 8px; }
+.carga-acc { display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px; }
+
+/* resultados: menú lateral */
+.res { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 24px; padding: 24px 0 40px; align-items: start; }
+.menu { position: sticky; top: 76px; display: grid; gap: 14px; }
+.menu .card { padding: 14px; }
+.menu h2 { margin: 0 0 2px; font-size: 17px; letter-spacing: -.01em; }
+.menu .meta { color: var(--muted); font-size: 12px; }
+.menu .costo { margin-top: 10px; font-weight: 700; font-size: 20px; cursor: pointer; }
+.menu .costo span { font-weight: 500; font-size: 12px; color: var(--muted); }
+.menu nav { display: grid; gap: 2px; }
+.menu nav button { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; background: transparent; border: 0; padding: 10px 12px; border-radius: 10px; color: var(--muted); font-weight: 600; cursor: pointer; }
+.menu nav button .ico { width: 18px; height: 18px; }
+.menu nav button.on { background: var(--accent-soft); color: var(--ink); }
+.menu nav button:hover { color: var(--ink); }
+@media (max-width: 900px) {
+  .res { grid-template-columns: minmax(0, 1fr); padding-top: 12px; }
+  .menu { position: static; min-width: 0; }
+  .menu .card { min-width: 0; overflow: hidden; }
+  .menu nav { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .menu nav button { white-space: nowrap; width: auto; }
+}
+.res-titulo { font-size: 22px; letter-spacing: -.02em; margin: 0 0 4px; }
+.res-sub { color: var(--muted); margin: 0 0 16px; }
+
+/* tendencias */
+.ajustes { padding: 0; margin-bottom: 14px; }
+.ajustes summary { padding: 14px 16px; cursor: pointer; font-weight: 600; display: flex; gap: 10px; align-items: center; list-style: none; flex-wrap: wrap; }
+.ajustes summary::-webkit-details-marker { display: none; }
+.ajustes summary .nota { font-weight: 400; margin-left: auto; }
+.ajustes .cuerpo { padding: 0 16px 16px; }
+.pesos { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+@media (max-width: 800px) { .pesos { grid-template-columns: 1fr 1fr; } }
+.peso label { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; }
+.peso input { width: 100%; accent-color: var(--accent); }
+.peso small { color: var(--muted); font-size: 12px; display: block; line-height: 1.35; }
+.leyenda-fila { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-size: 12.5px; color: var(--muted); margin-bottom: 14px; }
+.leyenda-fila .etapa { margin-right: 4px; }
+.mov { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 6px; }
+.mov.up { color: var(--up); background: color-mix(in srgb, var(--up) 12%, transparent); }
+.mov.down { color: var(--down); background: color-mix(in srgb, var(--down) 12%, transparent); }
+.mov.nuevo { color: var(--nuevo); background: color-mix(in srgb, var(--nuevo) 14%, transparent); }
+.mov.igual { color: var(--muted); background: var(--panel-2); }
+.ganchos { padding: 16px; margin-bottom: 14px; }
+.ganchos-fila { display: grid; grid-template-columns: 130px 1fr 110px; gap: 12px; align-items: center; padding: 6px 0; font-size: 13.5px; border-bottom: 1px solid var(--line); }
+.ganchos-fila:last-child { border-bottom: 0; }
+.ganchos-fila .barra { width: 100%; height: 8px; }
+.ganchos-fila .crec { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+.ganchos-fila .crec.pos { color: var(--up); } .ganchos-fila .crec.neg { color: var(--down); }
+@media (max-width: 600px) { .ganchos-fila { grid-template-columns: 100px 1fr 80px; } }
+.insight { background: var(--accent-soft); border-radius: 10px; padding: 10px 12px; font-size: 14px; margin-bottom: 8px; }
+.insight .nota { display: block; margin-top: 4px; }
+.tema { padding: 16px 18px; margin-bottom: 12px; display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 2px 14px; }
+.rank { font-size: 24px; font-weight: 800; color: var(--muted); line-height: 1.1; text-align: center; }
+.rank .mov { margin-top: 4px; }
+.tema h4 { margin: 0; font-size: 17px; letter-spacing: -.01em; }
+.tema h4 .etapa { margin-left: 8px; }
+.score { text-align: right; }
+.score b { font-size: 22px; font-variant-numeric: tabular-nums; }
+.score small { display: block; color: var(--muted); font-size: 11px; }
+.barra { height: 6px; background: var(--panel-2); border-radius: 3px; width: 90px; margin-top: 4px; overflow: hidden; }
+.barra i { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+.full { grid-column: 2 / 4; }
+.porque { margin: 4px 0 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; font-size: 12px; align-items: center; }
+.chip { background: var(--accent-soft); padding: 2px 9px; border-radius: 999px; }
+.chip.gris { background: transparent; border: 1px solid var(--line); color: var(--muted); }
+.ruta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; font-size: 12.5px; }
+.ruta .nodo { border: 1px solid var(--line); border-radius: 8px; padding: 3px 8px; background: var(--panel-2); color: var(--ink); }
+.ruta .nodo b { font-weight: 600; }
+.ruta .flecha { color: var(--muted); font-size: 11px; }
+.ruta .origen { border-color: var(--accent); }
+.detalle { display: none; margin-top: 12px; font-size: 13.5px; border-top: 1px dashed var(--line); padding-top: 12px; }
+.tema.abierto .detalle { display: block; }
+.senales { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 12px; }
+.senales div { font-size: 12px; color: var(--muted); }
+.senales .barra { width: 100%; }
+@media (max-width: 600px) { .senales { grid-template-columns: repeat(2, 1fr); } .tema { grid-template-columns: 40px minmax(0,1fr) auto; } }
+.piezas { padding-left: 18px; margin: 8px 0 0; }
+.piezas li { margin-bottom: 5px; }
+.red-t { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.ver { margin-top: 8px; justify-self: start; }
+
+/* lo que viene: lista */
+.preds { display: grid; gap: 12px; }
+.pred { padding: 16px 18px; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 4px 14px; }
+.pred .n { width: 32px; height: 32px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 800; display: grid; place-items: center; }
+.pred h4 { margin: 2px 0 6px; font-size: 17px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.pred h4 .chip { font-size: 11.5px; font-weight: 500; }
+.medidor { display: flex; align-items: center; gap: 10px; max-width: 320px; margin-bottom: 8px; font-size: 13px; }
+.medidor .barra { flex: 1; width: auto; height: 8px; }
+.puntos { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 14px; }
+.puntos li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; }
+.puntos li .ico { width: 18px; height: 18px; color: var(--accent); margin-top: 2px; }
+.puntos b { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.mini { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); margin-top: 8px; }
+.mini b { color: var(--ink); }
+
+/* ideas */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
+.idea { padding: 18px; display: flex; flex-direction: column; gap: 8px; }
+.idea h4 { margin: 0; font-size: 17px; letter-spacing: -.01em; }
+.etq { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--accent); }
+.gancho { font-style: italic; margin: 0; }
+.idea .acc { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 6px; }
+
+/* origen y costo */
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 900px) { .grid2 { grid-template-columns: 1fr; } }
+.kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 12px; }
+@media (max-width: 700px) { .kpis { grid-template-columns: 1fr; } }
+.kpi { padding: 16px; }
+.kpi .v { font-size: 30px; font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.kpi .l { color: var(--muted); font-size: 13px; }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+td, th { padding: 7px 6px; border-bottom: 1px solid var(--line); text-align: left; }
+th { color: var(--muted); font-weight: 500; font-size: 12px; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+details.mas { margin-top: 12px; }
+details.mas > summary { cursor: pointer; font-weight: 600; color: var(--accent); padding: 8px 0; }
+.hist { display: flex; align-items: flex-end; gap: 4px; height: 70px; margin-top: 8px; }
+.hist i { flex: 1; background: var(--accent); border-radius: 3px 3px 0 0; min-height: 2px; opacity: .8; }
+.ahorro { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 8px; }
+.ahorro input { width: 120px; }
+.barras-origen .fila { display: grid; grid-template-columns: 110px 1fr 40px; gap: 10px; align-items: center; margin-bottom: 8px; font-size: 13.5px; }
+.barras-origen .barra { width: 100%; height: 10px; }
+.vacio { padding: 40px; text-align: center; color: var(--muted); }
+.toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--hero); color: #fff; padding: 10px 16px; border-radius: 10px; font-size: 14px; z-index: 60; }
+footer { color: var(--muted); font-size: 12px; padding: 32px 0; }
+
+/* movimiento */
+@keyframes subir { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes crecer { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes girar { to { transform: rotate(360deg); } }
+@keyframes latido { 0% { box-shadow: 0 0 0 0 rgba(217, 249, 157, .7); } 100% { box-shadow: 0 0 0 20px rgba(217, 249, 157, 0); } }
+@keyframes latido-verde { 0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, .55); } 100% { box-shadow: 0 0 0 10px rgba(22, 163, 74, 0); } }
+.hero { position: relative; overflow: hidden; }
+.hero > .wrap { position: relative; z-index: 1; }
+.radar { position: absolute; right: -160px; top: 50%; width: 680px; height: 680px; transform: translateY(-50%); pointer-events: none; opacity: .6; z-index: 0; }
+.radar .anillo { position: absolute; border: 2px solid rgba(165, 180, 252, .16); border-radius: 50%; }
+.radar .barrido { position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 0deg, rgba(165,180,252,0) 0deg, rgba(165,180,252,0) 290deg, rgba(165,180,252,.32) 360deg); animation: girar 5s linear infinite; }
+.radar .punto { position: absolute; width: 14px; height: 14px; border-radius: 50%; background: #d9f99d; animation: latido 2.2s ease-out infinite; }
+@media (max-width: 900px) { .radar { right: -260px; opacity: .35; } }
+.hero h1, .hero p.lead, .hero .cta { animation: subir .7s ease-out both; }
+.hero p.lead { animation-delay: .12s; } .hero .cta { animation-delay: .24s; }
+.hcard { animation: subir .6s ease-out both; animation-delay: calc(var(--i, 0) * 120ms + 300ms); backdrop-filter: blur(6px); background: rgba(11, 16, 32, .55); }
+.revelar { opacity: 0; transform: translateY(24px); transition: opacity .7s ease-out, transform .7s ease-out; }
+.revelar.visto { opacity: 1; transform: none; }
+.barra i { transform-origin: left center; }
+.animar .barra i { animation: crecer 1s cubic-bezier(.2, .8, .2, 1) both; }
+.animar .tema, .animar .pred, .animar .idea, .animar .kpi, .animar .ganchos-fila, .animar .fila { animation: subir .5s ease-out both; animation-delay: calc(var(--i, 0) * 70ms); }
+.etapa.vivo { animation: latido-verde 1.8s ease-out infinite; }
+.demo { padding: 24px; display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 32px; align-items: center; }
+@media (max-width: 860px) { .demo { grid-template-columns: 1fr; } }
+.demo-kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 16px; }
+.demo-kpis .v { font-size: 34px; font-weight: 800; letter-spacing: -.02em; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.demo-kpis .l { color: var(--muted); font-size: 13px; }
+.demo-barras { display: grid; gap: 14px; }
+.demo-fila { display: grid; grid-template-columns: minmax(0, 1fr) 46px; gap: 6px 12px; align-items: center; font-size: 14px; }
+.demo-fila .nom { display: flex; gap: 8px; align-items: center; min-width: 0; }
+.demo-fila .nom b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.demo-fila .barra { grid-column: 1 / 3; width: 100%; height: 10px; }
+.demo-fila .val { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+.revelar .barra i { transform: scaleX(0); }
+.revelar.visto .barra i { transform: none; animation: crecer 1.2s cubic-bezier(.2, .8, .2, 1) both; animation-delay: calc(var(--i, 0) * 130ms + 200ms); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .revelar { opacity: 1; transform: none; }
+  .revelar .barra i { transform: none; }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-radar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6-6"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/></symbol>
+  <symbol id="i-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .9-3 2s1.3 1.7 3 2 3 .9 3 2-1.3 2-3 2c-1.4 0-2.5-.5-3-1.5M12 6v2M12 16v2"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></symbol>
+</svg>
+
+<div class="top">
+  <div class="wrap">
+    <div class="logo" id="ir-landing"><svg class="ico" style="color:#a5b4fc"><use href="#i-radar"/></svg>Radar <span>30X</span></div>
+    <nav aria-label="Secciones"><button id="nav-landing" class="on">Inicio</button><button id="nav-correr">Correr</button><button id="nav-res">Resultados</button><a id="lang-en" class="lang-link" href="/" hreflang="en" lang="en">EN</a><a id="lang-es" class="lang-link on" href="/es/" hreflang="es" lang="es">ES</a></nav>
+  </div>
+</div>
+
+<!-- LANDING -->
+<section id="vista-landing">
+  <div class="hero">
+    <div class="radar" aria-hidden="true">
+      <div class="anillo" style="inset:0"></div><div class="anillo" style="inset:115px"></div><div class="anillo" style="inset:230px"></div>
+      <div class="barrido"></div>
+      <div class="punto" style="left:470px;top:170px"></div>
+      <div class="punto" style="left:200px;top:430px;animation-delay:.8s;background:#a5b4fc"></div>
+      <div class="punto" style="left:410px;top:500px;animation-delay:1.5s;background:#a5b4fc"></div>
+      <div class="punto" style="left:150px;top:230px;animation-delay:.3s;background:#a5b4fc;width:10px;height:10px"></div>
+    </div>
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Descubre qué está <em>creciendo hoy</em> en redes, antes que todos.</h1>
+        <p class="lead">Cinco redes, un ranking hecho con datos y las ideas listas para tu audiencia. En unos minutos y por centavos.</p>
+        <div class="cta">
+          <button class="btn primario grande" id="cta-probar"><svg class="ico"><use href="#i-play"/></svg>Probar ahora</button>
+          <button class="btn fantasma" id="cta-ultima">Ver la última corrida</button>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <div class="hcard" style="--i:0"><div class="ibox"><svg class="ico"><use href="#i-radar"/></svg></div><b>Detecta temprano</b><span>Mide velocidad y saltos entre redes.</span></div>
+        <div class="hcard" style="--i:1"><div class="ibox"><svg class="ico"><use href="#i-bulb"/></svg></div><b>Explica el porqué</b><span>Gancho, formato y origen de cada tema.</span></div>
+        <div class="hcard" style="--i:2"><div class="ibox"><svg class="ico"><use href="#i-target"/></svg></div><b>Filtra por audiencia</b><span>Solo lo que le sirve a tu público.</span></div>
+        <div class="hcard" style="--i:3"><div class="ibox"><svg class="ico"><use href="#i-spark"/></svg></div><b>Predice lo que viene</b><span>Temas que pueden explotar pronto.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion oculto" id="sec-demo">
+    <div class="wrap">
+      <h2>Una corrida real</h2>
+      <p class="nota" id="demo-sub"></p>
+      <div class="card demo revelar" id="demo">
+        <div class="demo-kpis" id="demo-kpis"></div>
+        <div>
+          <h3 class="sec">Top 5 por score</h3>
+          <div class="demo-barras" id="demo-barras"></div>
+          <button class="btn chico" id="demo-ver" style="margin-top:14px">Ver los resultados completos</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <div class="wrap">
+      <h2>Cómo funciona</h2>
+      <p class="nota">Tú eliges el tema y las redes; el radar hace el resto.</p>
+      <div class="pasos-como revelar">
+        <div class="card paso-como"><div class="num">1</div><b>Elige tema y redes</b><span class="nota">IA, fitness o cualquier temática libre. YouTube, Reddit, Instagram, LinkedIn, TikTok y Hacker News.</span></div>
+        <div class="card paso-como"><div class="num">2</div><b>El radar recolecta</b><span class="nota">Trae las piezas públicas de las últimas semanas y mide qué tan rápido crece cada una.</span></div>
+        <div class="card paso-como"><div class="num">3</div><b>JEV clasifica</b><span class="nota">Cada pieza recibe tema, gancho, formato y ajuste a tu audiencia, por fracciones de centavo.</span></div>
+        <div class="card paso-como"><div class="num">4</div><b>Recibes el top 10</b><span class="nota">Con su etapa, por qué funciona, de dónde salió, ideas listas para copiar y lo que viene.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <div class="wrap">
+      <h2>Cómo leer los resultados</h2>
+      <p class="nota">Tres conceptos para entender el ranking.</p>
+      <div class="leer revelar">
+        <div class="card">
+          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-trend"/></svg>Etapas de una tendencia</h4>
+          <ul class="lista-def">
+            <li><span class="etapa" style="background:var(--emergente)">emergente</span> <span class="nota">Acelera rápido y todavía pocos hablan de ella. Es el mejor momento para entrar.</span></li>
+            <li><span class="etapa" style="background:var(--creciendo)">creciendo</span> <span class="nota">Acelera y ya tiene volumen. Todavía hay espacio.</span></li>
+            <li><span class="etapa" style="background:var(--pico)">pico</span> <span class="nota">Mucho volumen, pero ya no acelera. Entra con un ángulo propio.</span></li>
+            <li><span class="etapa" style="background:var(--saturado)">saturado</span> <span class="nota">Muchas cuentas y frenando. Mejor buscar otro tema.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-target"/></svg>Pesos del score</h4>
+          <p class="nota" style="margin:6px 0 0">El score (0 a 100) combina cinco señales. En resultados puedes mover cuánto pesa cada una y el ranking se reordena al instante: si subes &quot;Temprano&quot;, ganan los temas que recién empiezan; si subes &quot;Multired&quot;, los que ya están en varias redes.</p>
+          <ul class="lista-def">
+            <li><b>Fuerza</b><span class="nota">Qué tan rápido crecen sus mejores piezas y cuánto le sirven a tu audiencia.</span></li>
+            <li><b>Aceleración</b><span class="nota">Si está creciendo más rápido que los demás temas.</span></li>
+            <li><b>Temprano</b><span class="nota">Acelera pero todavía tiene poco volumen: oportunidad.</span></li>
+            <li><b>Multired</b><span class="nota">En cuántas redes aparece a la vez.</span></li>
+            <li><b>Frescura</b><span class="nota">Pocas cuentas cubriéndolo: no está saturado.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4><svg class="ico" style="color:var(--accent)"><use href="#i-bulb"/></svg>Ganchos</h4>
+          <p class="nota" style="margin:6px 0 0">El gancho es cómo una pieza atrapa la atención en el título o los primeros segundos. JEV lo detecta en cada pieza y el radar mide cuál crece más.</p>
+          <ul class="lista-def" id="glosario-ganchos"></ul>
+        </div>
+      </div>
+      <div style="text-align:center; margin:32px 0 8px"><button class="btn primario grande" id="cta-probar-2"><svg class="ico"><use href="#i-play"/></svg>Probar ahora</button></div>
+    </div>
+  </div>
+  <footer><div class="wrap">Radar 30X · JEV (TypeSafe) para clasificar, DeepSeek para redactar, código para decidir. Solo datos públicos de piezas, nunca de personas.</div></footer>
+</section>
+
+<!-- CORRER -->
+<section id="vista-correr" class="oculto">
+  <div class="wrap">
+    <div class="correr-cab">
+      <h2>Configura tu corrida</h2>
+      <p class="nota" style="font-size:15px;margin:0">Elige el tema y las redes, y pulsa &quot;Correr radar&quot;. Los resultados se abren solos al terminar.</p>
+    </div>
+    <div class="card config">
+      <div id="aviso-estatico" class="aviso-modo oculto">Modo de solo lectura: esta versión muestra la última corrida guardada.</div>
+      <p class="paso-t">1. Elige el tema</p>
+      <div class="sectores" id="sectores"></div>
+      <div class="libre-campos oculto" id="libre-campos">
+        <div><label class="paso-t" for="nicho">Tu temática</label><input class="campo-txt" id="nicho" maxlength="140" placeholder="Ej.: café de especialidad para emprendedores"></div>
+        <div><label class="paso-t" for="audiencia">¿Para quién? (opcional)</label><input class="campo-txt" id="audiencia" maxlength="140" placeholder="Ej.: dueños de cafeterías en Colombia"></div>
+      </div>
+      <p class="paso-t" style="margin-top:12px">2. Elige las redes</p>
+      <div class="redes" id="redes"></div>
+      <div class="acciones">
+        <input type="password" id="clave-acceso" class="campo-txt oculto" style="width:200px" placeholder="Código de acceso" autocomplete="off">
+        <button class="btn primario grande" id="correr"><svg class="ico"><use href="#i-play"/></svg>Correr radar</button>
+        <label class="check"><input type="checkbox" id="recolectar" checked> Traer datos nuevos de las redes</label>
+      </div>
+      <p class="nota" id="nota-correr" style="margin:12px 0 0"></p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<section id="vista-res" class="oculto">
+  <div class="wrap res">
+    <aside class="menu">
+      <div class="card">
+        <h2 id="r-titulo"></h2>
+        <div class="meta" id="r-meta"></div>
+        <div class="costo" id="r-costo" title="Ver costo"></div>
+      </div>
+      <div class="card">
+        <nav id="tabs">
+          <button data-t="tendencias" class="on"><svg class="ico"><use href="#i-trend"/></svg>Tendencias hoy</button>
+          <button data-t="viene"><svg class="ico"><use href="#i-spark"/></svg>Lo que viene</button>
+          <button data-t="ideas"><svg class="ico"><use href="#i-pen"/></svg><span id="tab-ideas">Ideas para 30X</span></button>
+          <button data-t="origen"><svg class="ico"><use href="#i-route"/></svg>Origen</button>
+          <button data-t="costo"><svg class="ico"><use href="#i-coin"/></svg>Costo y cobertura</button>
+        </nav>
+      </div>
+      <button class="btn" id="nueva-corrida"><svg class="ico"><use href="#i-play"/></svg>Nueva corrida</button>
+    </aside>
+
+    <main>
+      <div id="t-tendencias">
+        <h3 class="res-titulo">Tendencias de hoy</h3>
+        <p class="res-sub" id="r-pregunta"></p>
+        <details class="card ajustes" id="ajustes">
+          <summary><svg class="ico" style="color:var(--accent)"><use href="#i-target"/></svg>Ajustar el ranking <span class="nota">Mueve cuánto pesa cada señal; el orden cambia al instante</span></summary>
+          <div class="cuerpo">
+            <div class="pesos" id="pesos"></div>
+            <div style="margin-top:10px; display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+              <button class="btn chico" id="reset">Restaurar pesos</button>
+              <span class="nota">El ranking lo calcula el código con estos pesos; la IA no decide el orden.</span>
+            </div>
+          </div>
+        </details>
+        <div class="leyenda-fila">
+          <span><span class="etapa" style="background:var(--emergente)">emergente</span>acelera con poco volumen</span>
+          <span><span class="etapa" style="background:var(--creciendo)">creciendo</span>acelera con volumen</span>
+          <span><span class="etapa" style="background:var(--pico)">pico</span>ya no acelera</span>
+          <span><span class="etapa" style="background:var(--saturado)">saturado</span>frenando</span>
+        </div>
+        <div class="leyenda-fila" id="leyenda-mov">
+          <span><span class="mov up">▲ 2</span> subió 2 puestos desde la corrida anterior</span>
+          <span><span class="mov down">▼ 1</span> bajó 1 puesto</span>
+          <span><span class="mov nuevo">NUEVO</span> no estaba en el top de la corrida anterior</span>
+        </div>
+        <div class="card ganchos" id="ganchos"></div>
+        <div id="lista"></div>
+      </div>
+
+      <div id="t-viene" class="oculto">
+        <h3 class="res-titulo">Lo que viene</h3>
+        <p class="res-sub">Hipótesis, no hechos: temas que todavía no son tendencia pero las señales de hoy apuntan a que pueden serlo. La fuerza combina los datos (aceleración de los temas en que se basa) con la evaluación de JEV.</p>
+        <div class="preds" id="preds"></div>
+      </div>
+
+      <div id="t-ideas" class="oculto">
+        <h3 class="res-titulo" id="ideas-titulo">Ideas para 30X</h3>
+        <p class="res-sub" id="ideas-tema"></p>
+        <div class="cards" id="ideas"></div>
+      </div>
+
+      <div id="t-origen" class="oculto">
+        <h3 class="res-titulo">Origen de las tendencias</h3>
+        <p class="res-sub">Dónde apareció primero cada tema y cómo saltó de una red a otra.</p>
+        <div class="grid2">
+          <div class="card" style="padding:18px">
+            <h3 class="sec">Dónde nacen</h3>
+            <div class="barras-origen" id="origen-barras"></div>
+            <p class="nota" id="origen-nota"></p>
+          </div>
+          <div class="card" style="padding:18px">
+            <h3 class="sec">Fuentes externas más citadas</h3>
+            <div id="fuentes"></div>
+          </div>
+        </div>
+        <div class="card" style="padding:18px; margin-top:16px">
+          <h3 class="sec">Ruta de cada tendencia</h3>
+          <div id="rutas"></div>
+        </div>
+      </div>
+
+      <div id="t-costo" class="oculto">
+        <h3 class="res-titulo">Costo y cobertura</h3>
+        <p class="res-sub" id="costo-resumen"></p>
+        <div class="kpis" id="kpis"></div>
+        <div class="card" style="padding:18px">
+          <h3 class="sec">Cobertura por red</h3>
+          <table id="cobertura"></table>
+          <p class="nota" id="conteos"></p>
+        </div>
+        <details class="mas">
+          <summary>Ver desglose del costo, historial y comparación</summary>
+          <div class="grid2" style="margin-top:8px">
+            <div class="card" style="padding:18px">
+              <h3 class="sec">Costo por paso</h3>
+              <table id="costo-tabla"></table>
+              <p class="nota">Medido con el campo usage de cada respuesta de JEV y DeepSeek, no estimado.</p>
+            </div>
+            <div>
+              <div class="card" style="padding:18px; margin-bottom:16px">
+                <h3 class="sec">Historial de corridas</h3>
+                <div class="hist" id="hist"></div>
+                <p class="nota" id="hist-nota"></p>
+              </div>
+              <div class="card" style="padding:18px">
+                <h3 class="sec">Comparación</h3>
+                <div class="nota">¿Cuánto pagas hoy al mes por datos de tendencias?</div>
+                <div class="ahorro"><span>USD</span><input class="campo-txt" type="number" min="0" step="10" id="pago-actual" placeholder="ej. 300"></div>
+                <p id="ahorro-res" class="nota"></p>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </main>
+  </div>
+</section>
+
+<div class="carga oculto" id="carga" role="dialog" aria-modal="true" aria-labelledby="carga-titulo">
+  <div class="carga-card">
+    <div class="carga-cab">
+      <div class="spinner" id="carga-spin"></div>
+      <div>
+        <h3 id="carga-titulo">Lanzando la corrida…</h3>
+        <p id="carga-sub" class="nota">Esto tarda entre 2 y 5 minutos. Puedes dejar esta pestaña abierta.</p>
+      </div>
+      <div class="carga-reloj" id="carga-reloj">0:00</div>
+    </div>
+    <ul class="pasos" id="pasos"></ul>
+    <div class="carga-error oculto" id="carga-error"></div>
+    <details class="carga-det"><summary>Ver detalle técnico</summary><div class="log" id="log"></div></details>
+    <div class="carga-acc">
+      <a class="btn chico oculto" id="carga-gh" target="_blank" rel="noopener">Ver en GitHub Actions</a>
+      <button class="btn chico oculto" id="carga-cerrar">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<script src="/i18n.js"></script>
+<script src="/data.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
